@@ -1,0 +1,16 @@
+#!/bin/bash
+
+startdir=$PWD
+link=$1
+dir=$PWD
+
+if [[ ! -z "$2" ]]
+    then
+        dir=$2
+fi
+
+cd $dir
+youtube-dl -x --audio-format mp3 "$1"
+cd $startdir
+
+echo "File saved in: ""$dir"

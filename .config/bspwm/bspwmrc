@@ -1,0 +1,49 @@
+#! /bin/sh
+
+sxhkd &
+#nm-applet &
+compton &
+/home/zodd/.scripts/dynamic-wallpapers doom next &
+#/home/zodd/.scripts/startup/startup &
+polybar example &
+wmname LG3D &
+lxpolkit &
+xset -dpms s off & # disable screen blanking &
+dropbox &
+dunst &
+
+# Swallow
+
+pidof /home/zodd/.scripts/bspswallow || /home/zodd/.scripts/bspswallow &
+
+# Workspaces
+
+bspc monitor -d I II III IV V VI VII VIII
+
+bspc config border_width         2
+bspc config window_gap          12
+
+bspc config focused_border_color "#fe8019"
+bspc config normal_border_color "#ebdbb2"
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+# bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a firefox desktop='^2'
+bspc rule -a Chromium desktop='^2'
+bspc rule -a discord desktop='^7'
+bspc rule -a mplayer2 state=floating
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+bspc config pointer_modifier mod4
+
+# Autostart applications:
+sleep 1 
+konsole &
+firefox &
+
+# Restart rules
+sleep 2
+bspc rule -a firefox desktop='^'

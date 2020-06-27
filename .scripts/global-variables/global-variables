@@ -1,0 +1,3 @@
+#!/bin/bash
+
+set MY_WALLPAPERS '~/.local/share/wallpapers'
