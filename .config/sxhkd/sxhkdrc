@@ -54,8 +54,8 @@ super + Escape
 	pkill -USR1 -x sxhkd
 
 # spotify
-ctrl + alt + s
-    bspc rule -a \* -o desktop='^8' && spotify
+#ctrl + alt + s
+#    bspc desktop -f '^8' --follow ; spotify
 
 # AUDIO (pulsemixer)
 # pulsemixer

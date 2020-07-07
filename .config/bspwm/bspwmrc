@@ -5,7 +5,8 @@ sxhkd &
 compton &
 /home/zodd/.scripts/dynamic-wallpapers doom next &
 #/home/zodd/.scripts/startup/startup &
-polybar example &
+#polybar example &
+/home/zodd/.config/polybar/launch.sh &
 wmname LG3D &
 lxpolkit &
 xset -dpms s off & # disable screen blanking &
@@ -42,4 +43,4 @@ bspc config pointer_modifier mod4
 sleep 1 
 konsole &
 sleep 0.5
-bspc rule -a \* -o desktop='^2' && firefox &
+bspc rule -a \* -o desktop='^2' && sleep 0.15 && firefox &
