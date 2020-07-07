@@ -1,0 +1,29 @@
+{
+  "name": "keyboard-layout",
+  "version": "2.0.16",
+  "description": "Read and observe the current keyboard layout on OS X.",
+  "main": "./lib/keyboard-layout",
+  "scripts": {
+    "test": "jasmine-focused --captureExceptions --forceexit spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atom/keyboard-layout.git"
+  },
+  "bugs": {
+    "url": "https://github.com/atom/keyboard-layout/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/atom/keyboard-layout/raw/master/LICENSE.md"
+    }
+  ],
+  "dependencies": {
+    "event-kit": "^2.0.0",
+    "nan": "^2.13.2"
+  },
+  "devDependencies": {
+    "jasmine-focused": "^1.0.4"
+  }
+}

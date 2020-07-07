@@ -1,0 +1,8 @@
+#!/bin/bash
+# Compiles and run a C program
+# crun {$fullpath}
+
+fullpath=$1
+dir=$(dirname "$fullpath")
+file=$(basename "$fullpath")
+cd "$dir" && gcc "$file" && ./a.out
