@@ -63,18 +63,19 @@ function fish_prompt
 
   # set_color $fish_color_cwd
   set_color $color4
-  printf "["    
+  #printf "["    
   set_color $color2
   printf '%s' (prompt_pwd_full)
   # set_color $fish_color_cwd
   set_color $color4
-  printf "]"    
+  #printf "]"    
   set_color white 
   printf '%s ' (__fish_git_prompt)
-  echo
+  #echo
   # set_color $fish_color_cwd
   set_color $color4
-  echo -n "→ "
+  #echo -n "→ "
+  echo -n "λ "
   # set_color $fish_color_cwd
   set_color $color4
 end

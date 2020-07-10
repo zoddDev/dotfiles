@@ -48,7 +48,7 @@ super + shift + Print
 
 # rofi 
 super + Return 
-    rofi -font "Hack Nerd Font 11" -show drun -show-icons 
+    rofi -font "Iosevka Bold 11" -show drun -show-icons 
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
