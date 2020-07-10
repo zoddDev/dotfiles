@@ -5,4 +5,4 @@
 fullpath=$1
 dir=$(dirname "$fullpath")
 file=$(basename "$fullpath")
-cd "$dir" && gcc "$file" && ./a.out
+gcc -o /tmp/a.out "$fullpath" && /tmp/a.out && rm /tmp/a.out
