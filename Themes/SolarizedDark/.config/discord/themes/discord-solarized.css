@@ -1,0 +1,82 @@
+/* Solarized Dark & Light(SoonTM(MaybeIDK)) for Discord */
+
+/* base color */
+.app {
+    background-color: white !important;
+}
+
+/* Dark theme configuration */
+
+/* Message bar */
+.app.theme-dark .content, .app.theme-dark .typing {
+    background-color: #073642 !important;
+}
+/* Sidebar */
+.app.theme-dark .scroller {
+    background-color: #002b36 !important;
+}
+/* Account sidebar */
+.app.theme-dark .account {
+    background-color: #002b36 !important;
+    border: 0px;
+}
+/* Code blocks */
+.app.theme-dark code {
+    background-color: #002b36 !important;
+}
+/* Message area */
+.app.theme-dark .scroller.messages {
+    background-color: #073642 !important;
+}
+/* Scroll bar */
+.app.theme-dark .scroller ::scrollbar-track-piece {
+    background-color: background-color: #002b36 !important;
+    border-color: #073642 !important;
+}
+/* Statuses */
+.app.theme-dark .status { border-color: #002b36 !important; }
+.status-online { 
+    color: #859900 !important; 
+    background-color: #859900 !important; 
+}
+.status-idle {
+    color: #b58900 !important;
+    background-color: #b58900 !important;
+}
+.status-dnd {
+    color: ##dc322f!important;
+    background-color: #dc322f!important;
+}
+.status-streaming {
+    color: #6c71c4!important;
+    background-color: #6c71c4!important;
+}
+.status-invisible
+{
+    color: #073642!important;
+    background-color: #073642!important;
+}
+/* Top bars */
+.app.theme-dark .title-wrap
+{
+    background-color: #002b36 !important;
+    border: 0px;
+}
+.app.theme-dark .guild-header header, .app.theme-dark .friends-header, .app.theme-dark .friends-table-header, .app.theme-dark .search-bar
+{
+    background-color: #002b36 !important;
+    border: 0px;
+}
+/* Other stuff I'm too lazy to comment on */
+.app.theme-dark .guild-inner
+{
+    background-color: #073642!important;
+}
+.app.theme-dark .guild-channels .selected, .app.theme-dark .selected.private, .app.theme-dark .btn-friends.selected {
+    background-image: linear-gradient(to right,#073642 85%,#073660)!important;
+}
+.app.theme-dark .btn-group .btn
+{
+    background-color: #073642!important;
+    border: 0px;
+}
