@@ -71,7 +71,6 @@ function fish_prompt
   #printf "]"    
   set_color white 
   printf '%s ' (__fish_git_prompt)
-  #echo
   # set_color $fish_color_cwd
   set_color $color4
   #echo -n "→ "

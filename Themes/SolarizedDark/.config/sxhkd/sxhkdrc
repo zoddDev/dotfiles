@@ -14,9 +14,13 @@ super + e
 super + d
 	dolphin ~/Downloads
 
-# dolphin screenshots
+# ranger screenshots
 shift + super + s
     alacritty -e ranger /home/zodd/Pictures/Screenshots 
+
+# ranger downloads
+shift + super + d
+    alacritty -e ranger /home/zodd/Downloads
 
 # ranger
 ctrl + alt + n
