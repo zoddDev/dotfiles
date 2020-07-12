@@ -1,3 +1,0 @@
-# dotfiles
-
-My bspwm dotfiles
