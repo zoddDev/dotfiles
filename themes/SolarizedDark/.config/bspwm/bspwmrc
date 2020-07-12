@@ -4,8 +4,8 @@ sxhkd &
 #nm-applet &
 compton &
 #/home/zodd/.scripts/dynamic-wallpapers doom next &
-feh --bg-fill /home/zodd/Pictures/Wallpapers/Wallpapers/vaporwave-theme/palms.jpg
-/home/zodd/.config/polybar/launch.sh &
+feh --bg-fill $HOME/Pictures/Wallpapers/Wallpapers/vaporwave-theme/palms.jpg &
+$HOME/.config/polybar/launch.sh &
 wmname LG3D &
 lxpolkit &
 xset -dpms s off & # disable screen blanking &
@@ -14,7 +14,7 @@ dunst &
 
 # Swallow
 
-pidof /home/zodd/.scripts/bspswallow || /home/zodd/.scripts/bspswallow &
+pidof $HOME/.scripts/bspswallow || $HOME/.scripts/bspswallow &
 
 # Workspaces
 
