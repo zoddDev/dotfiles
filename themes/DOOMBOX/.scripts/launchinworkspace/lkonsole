@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sleep 3
+liw 2 konsole 0.55
