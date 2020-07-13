@@ -19,8 +19,7 @@ Use:
 ```
 
 where 
-```<ARG>
-```
+```<ARG>```
 may be:
 
 general      - installs necessary packages from pacman 
@@ -32,7 +31,9 @@ You can also do:
 ```shell
 ./setup.sh <OPTION> <THEME_NAME>
 ```
-where <ARG> may be:
+where 
+```<ARG>```
+may be:
 
 theme        - installs <THEME_NAME> theme
 all          - installs all packages and finally installs selected theme if 2nd argument exists
