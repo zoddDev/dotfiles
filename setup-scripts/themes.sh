@@ -6,19 +6,52 @@ SETUP_ROOT="$(dirname "$PWD")"
 arg=$1
 
 function setup_config {
-   config_name=$1 
+   # args
+   config_name=$1
+   spicetify_theme=$2
+   beautifuldiscord_theme=$3
+   
+   #
+   # copying theme dotfiles
+   #
+   echo
    echo "[INFO]: applying \"$config_name\" theme..."
 
    cp -r $SETUP_ROOT/themes/$config_name/* $HOME
+
+   #
+   # configuring spotify theme (spicetify)
+   #
+   echo 
+   echo "[INFO]: applying \"$config_name\" spicetify theme..."
+
+   spicetify config current_theme $spicetify_theme 
+
+   #
+   # configuring discord theme (beautifuldiscord)
+   #
+   echo 
+   echo "[INFO]: applying \"$config_name\" beautiful-discord theme..."
+
+   discord > /dev/null & 
+   sleep 5 
+   python -m beautifuldiscord --css $HOME/.config/discord/themes/$beautifuldiscord_theme
 }
 
 shopt -s nocasematch
 case "$arg" in 
-    "doombox" ) setup_config "DOOMBOX";; 
-    "alternative-gruvbox" ) setup_config "AlternativeGruvbox";; 
-    "solarized-dark" ) setup_config "SolarizedDark";; 
+    "doombox" ) setup_config "DOOMBOX" "Gruvbox-Gold" "Duvbox/duvbox.css" ;; 
+    "alternative-gruvbox" ) setup_config "AlternativeGruvbox" "Gruvbox-Gold" "Duvbox/duvbox.css" ;; 
+    "solarized-dark" ) setup_config "SolarizedDark" "SolarizedDark" "SolarizedDark/solarized_dark.css
+" ;; 
 
     *) echo "[ERROR]: no config with name \"$arg\" found" && exit 1 ;;
 esac
 
+echo "[INFO]: You maybe also need to manually set the beautiful-discord and spicetify theme separately if their installations didn't work properly"
+# use:
+# spicetify config current_theme $THEME_NAME
+# spicetify auto backup apply
 echo "[FINISHED]: theme installation (success!)"
+
+
