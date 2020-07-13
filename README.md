@@ -29,7 +29,6 @@ wifi         - (only for wireless connection!) installs 2 packages for wireless 
 You can also do:
 
 
-```
 ```shell
 ./setup.sh <ARG> <THEME_NAME>
 ```
@@ -43,7 +42,6 @@ all          - installs all packages and finally installs selected theme if 2nd 
 
 
 where 
-```
 ```<THEME_NAME>```
 may be:
 
