@@ -4,7 +4,18 @@ Hello there!
 
 Those are my different bspwm themes dotfiles, hope you find something useful in this mess hehe ^^
 
-# install
+# Theme Previews
+
+SolarizedDark
+![alt text](screenshots/SolarizedDark.png)
+
+DOOMBOX
+![alt text](screenshots/Doombox.jpg)
+
+AlternativeGruvbox
+![alt text](screenshots/Alternative-Gruvbox.png)
+
+# Install
 
 You can install one of them by running the setup executable.
 
