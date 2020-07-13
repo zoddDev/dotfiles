@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+    <path d="M32 5C16.55 5 4 17.55 4 33s12.55 28 28 28 28-12.55 28-28S47.45 5 32 5z" opacity=".2"/>
+    <path d="M32 4C16.55 4 4 16.55 4 32s12.55 28 28 28 28-12.55 28-28S47.45 4 32 4z" fill="#504945"/>
+    <path d="M32 4C16.55 4 4 16.55 4 32c0 .113.011.224.018.336C4.372 17.194 16.773 5 32 5c15.227 0 27.628 12.194 27.982 27.336.007-.112.018-.223.018-.336C60 16.55 47.45 4 32 4z" opacity=".1" fill="#F9F5D7"/>
+    <path d="M32 11c-12.139 0-22 9.861-22 22s9.861 22 22 22 22-9.861 22-22-9.861-22-22-22z" opacity=".2"/>
+    <path d="M32 10c-12.139 0-22 9.861-22 22s9.861 22 22 22 22-9.861 22-22-9.861-22-22-22z" fill="#FD8019"/>
+    <path d="M32 10c-12.139 0-22 9.861-22 22 0 .114.012.225.018.338C10.369 20.505 20.083 11 32 11s21.63 9.505 21.982 21.338c.006-.113.018-.224.018-.338 0-12.139-9.861-22-22-22z" opacity=".1" fill="#F9F5D7"/>
+    <path d="M32 33l23-23" opacity=".2" fill="none" stroke="#151819" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M32 32L55 9" fill="none" stroke="#F9F5D7" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M19 24l13 9" opacity=".2" fill="none" stroke="#151819" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M19 23l13 9" fill="none" stroke="#F9F5D7" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M32 27c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6z" opacity=".2"/>
+    <path d="M32 26c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6z" fill="#504945"/>
+</svg>

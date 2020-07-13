@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" version="1">
+    <rect width="56" height="56" x="4" y="5" rx="2.8" ry="2.8" opacity=".2"/>
+    <rect width="56" height="56" x="4" y="4" rx="2.8" ry="2.8" fill="#48B9C7"/>
+    <rect width="22" height="18" x="-43" y="-48" rx="1.375" ry="1.385" transform="scale(-1)" opacity=".1"/>
+    <rect width="50" height="20" x="7" y="22" rx="1.389" ry="1.429" opacity=".1"/>
+    <rect width="50" height="20" x="7" y="21" rx="1.389" ry="1.429" fill="#8F3F71"/>
+    <rect width="21" height="13" x="16" y="-27" rx=".7" ry=".722" transform="rotate(90)" opacity=".2"/>
+    <rect width="21" height="13" x="15" y="-27" rx=".7" ry=".722" transform="rotate(90)" fill="#73C48F"/>
+    <rect width="21" height="14" x="16" y="-50" rx=".7" ry=".7" transform="rotate(90)" opacity=".2"/>
+    <rect width="21" height="14" x="15" y="-50" rx=".7" ry=".7" transform="rotate(90)" fill="#B7BB25"/>
+    <rect width="22" height="18" x="-43" y="-47" rx="1.375" ry="1.385" transform="scale(-1)" fill="#CB241D"/>
+    <path d="M6.8 4C5.25 4 4 5.25 4 6.8v1C4 6.25 5.25 5 6.8 5h50.4C58.75 5 60 6.25 60 7.8v-1C60 5.25 58.75 4 57.2 4H6.8zM14.723 15a.71.71 0 0 0-.723.7v1c0-.389.323-.7.723-.7h11.554c.4 0 .723.311.723.7v-1a.71.71 0 0 0-.723-.7H14.723zM36.7 15c-.389 0-.7.311-.7.7v1c0-.389.311-.7.7-.7h12.6c.389 0 .7.311.7.7v-1c0-.389-.311-.7-.7-.7H36.7z" fill="#F9F5D7" opacity=".2"/>
+</svg>

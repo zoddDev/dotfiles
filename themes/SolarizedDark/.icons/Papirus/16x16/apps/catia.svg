@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" version="1">
+    <rect width="58" height="58" x="-62" y="-61" rx="2.9" ry="2.9" transform="matrix(0 -1 -1 0 0 0)" opacity=".2"/>
+    <rect width="58" height="58" x="-61" y="-61" rx="2.9" ry="2.9" transform="matrix(0 -1 -1 0 0 0)" fill="#A04A73"/>
+    <path d="M19 33c10.61 0 15.39 20 26 20" opacity=".2" fill="none" stroke="#151819" stroke-width="3"/>
+    <path d="M19 32c10.61 0 15.39 20 26 20" fill="none" stroke="#448588" stroke-width="3"/>
+    <path d="M19 13c10.61 0 15.39 20 26 20" opacity=".2" fill="none" stroke="#151819" stroke-width="3"/>
+    <path d="M15.024 30l-.048.055L12 33l3.024 3H21v-6z" opacity=".2" fill-rule="evenodd"/>
+    <path d="M15.024 29l-.048.055L12 32l3.024 3H21v-6z" fill="#8F3F71" fill-rule="evenodd"/>
+    <path d="M43 50v6h6.034L52 53l-2.966-3h-.068z" opacity=".2" fill-rule="evenodd"/>
+    <path d="M43 49v6h6.034L52 52l-2.966-3h-.068z" fill="#8F3F71" fill-rule="evenodd"/>
+    <path d="M19 12c10.61 0 15.39 20 26 20" fill="none" stroke="#448588" stroke-width="3"/>
+    <path d="M15.024 10l-.048.055L12 13l3.024 3H21v-6z" opacity=".2" fill-rule="evenodd"/>
+    <path d="M15.024 9l-.048.055L12 12l3.024 3H21V9z" fill="#8F3F71" fill-rule="evenodd"/>
+    <path d="M43 30v6h6.034L52 33l-2.966-3h-.068z" opacity=".2" fill-rule="evenodd"/>
+    <path d="M43 29v6h6.034L52 32l-2.966-3h-.068z" fill="#8F3F71" fill-rule="evenodd"/>
+    <path d="M5.898 3A2.891 2.891 0 0 0 3 5.898v1A2.891 2.891 0 0 1 5.898 4h52.204A2.891 2.891 0 0 1 61 6.898v-1A2.891 2.891 0 0 0 58.102 3H5.898z" opacity=".1" fill="#F9F5D7"/>
+</svg>

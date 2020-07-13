@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" version="1">
+    <rect width="40" height="40" x="-45" y="-44" rx="5.714" ry="5.714" transform="matrix(0 -1 -1 0 0 0)" opacity=".2"/>
+    <rect width="40" height="40" x="-44" y="-44" rx="5.714" ry="5.714" transform="matrix(0 -1 -1 0 0 0)" fill="#C77089"/>
+    <rect width="40" height="40" x="-53" y="-52" rx="5.714" ry="5.714" transform="matrix(0 -1 -1 0 0 0)" opacity=".2"/>
+    <rect width="40" height="40" x="-52" y="-52" rx="5.714" ry="5.714" transform="matrix(0 -1 -1 0 0 0)" fill="#7CB668"/>
+    <rect width="40" height="40" x="-61" y="-60" rx="5.714" ry="5.714" transform="matrix(0 -1 -1 0 0 0)" opacity=".2"/>
+    <rect width="40" height="40" x="-59.85" y="-60" rx="5.714" ry="5.714" transform="matrix(0 -1 -1 0 0 0)" fill="#48B9C7"/>
+    <path d="M9.715 4A5.703 5.703 0 0 0 4 9.715v1A5.703 5.703 0 0 1 9.715 5h28.57A5.703 5.703 0 0 1 44 10.715v-1A5.703 5.703 0 0 0 38.285 4H9.715zM17.715 12A5.703 5.703 0 0 0 12 17.715v1A5.703 5.703 0 0 1 17.715 13h28.57A5.703 5.703 0 0 1 52 18.715v-1A5.703 5.703 0 0 0 46.285 12h-28.57zM25.715 20A5.703 5.703 0 0 0 20 25.715v1A5.703 5.703 0 0 1 25.715 21h28.57A5.703 5.703 0 0 1 60 26.715v-1A5.703 5.703 0 0 0 54.285 20h-28.57z" opacity=".1" fill="#F9F5D7"/>
+    <path d="M36.528 49.485s8.088.7 8-8c-.087-8.7-8-8-8-8M36.5 49.472v-16" opacity=".1" stroke-linejoin="bevel" stroke="#151819" stroke-linecap="round" stroke-width="3" fill="none"/>
+    <path d="M36.528 48.485s8.088.7 8-8c-.087-8.7-8-8-8-8M36.5 48.472v-16" stroke-linejoin="bevel" stroke="#3A393A" stroke-linecap="round" stroke-width="3" fill="none"/>
+    <path d="M48.521 41.478h8m-8-8h8m-8 16v-16" opacity=".1" stroke-linejoin="bevel" stroke="#151819" stroke-linecap="round" stroke-width="3" fill="none"/>
+    <path d="M48.521 40.478h8m-8-8h8m-8 16v-16" stroke-linejoin="bevel" stroke="#3A393A" stroke-linecap="round" stroke-width="3" fill="none"/>
+    <path d="M24.521 41.478s8 .93 8-4c0-4.929-8-4-8-4m0 16v-16" opacity=".1" stroke-linejoin="bevel" stroke="#151819" stroke-linecap="round" stroke-width="3" fill="none"/>
+    <path d="M24.521 40.478s8 .93 8-4c0-4.929-8-4-8-4m0 16v-16" stroke-linejoin="bevel" stroke="#3A393A" stroke-linecap="round" stroke-width="3" fill="none"/>
+</svg>

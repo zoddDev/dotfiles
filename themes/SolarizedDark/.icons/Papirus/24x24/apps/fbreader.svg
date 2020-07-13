@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" version="1">
+    <rect width="56" height="42" x="4" y="13" rx="4.2" ry="4.2" opacity=".2"/>
+    <rect width="56" height="42" x="4" y="12" rx="4.2" ry="4.2" fill="#CB241D"/>
+    <path d="M8.2 12A4.19 4.19 0 0 0 4 16.2v1A4.19 4.19 0 0 1 8.2 13h47.6a4.19 4.19 0 0 1 4.2 4.2v-1a4.19 4.19 0 0 0-4.2-4.2H8.2z" fill="#F9F5D7" opacity=".1"/>
+    <path d="M32 12V54h19.765C54.11 54 56 52.127 56 49.8V16.2c0-2.327-1.889-4.2-4.235-4.2H34.824z" fill="#F9F5D7"/>
+    <path d="M35 17v3h18v-3zm0 6v3h18v-3zm0 6v3h18v-3zm0 6v3h18v-3zm0 6v3h18v-3zm0 6v3h18v-3z" opacity=".2"/>
+    <path d="M32 11.375S32 10 36 10s4 1.375 4 1.375V32l-4-2.063L32 32z" opacity=".1"/>
+    <path d="M32 10.375S32 9 36 9s4 1.375 4 1.375V31l-4-2.063L32 31z" fill="#CB241D"/>
+    <path d="M32 12V54H12.235C9.89 54 8 52.127 8 49.8V16.2c0-2.327 1.889-4.2 4.235-4.2h16.941z" fill="#F9F5D7"/>
+    <path d="M11 17v3h18v-3zm0 6v3h18v-3zm0 6v3h18v-3zm0 6v3h18v-3zm0 6v3h18v-3zm0 6v3h18v-3z" opacity=".2"/>
+    <path d="M36 9c-4 0-4 1.375-4 1.375v1S32 10 36 10s4 1.375 4 1.375v-1S40 9 36 9z" opacity=".1" fill="#F9F5D7"/>
+</svg>

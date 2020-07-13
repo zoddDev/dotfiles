@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" version="1">
+    <path d="M8 5S4 5 4 9v48c0 4 4 4 4 4h32l20-20V9c0-4-4-4-4-4z" opacity=".2"/>
+    <path d="M8 4S4 4 4 8v48c0 4 4 4 4 4h32l20-20V8c0-4-4-4-4-4z" fill="#F9BD2E"/>
+    <path d="M60 40H43c-1.656 0-3 1.344-3 3v17z" fill="#FAEEBB"/>
+    <path d="M43 40c-1.656 0-3 1.344-3 3v1c0-1.656 1.344-3 3-3h16l1-1zM8 4S4 4 4 8v1c0-4 4-4 4-4h48s4 0 4 4V8c0-4-4-4-4-4H8z" opacity=".2" fill="#F9F5D7"/>
+</svg>

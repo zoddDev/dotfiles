@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" version="1">
+    <defs>
+        <linearGradient id="a" x1="12.897" x2="16.213" y1="18.858" y2="20.316" gradientTransform="matrix(2 0 0 2 0 -1)" gradientUnits="userSpaceOnUse">
+            <stop offset="0"/>
+            <stop offset="1" stop-opacity="0"/>
+        </linearGradient>
+    </defs>
+    <path d="M23.386 42l-1.078 2H32v-2h-8.614zM25 14l7 12 7-12h-1.168L32 24l-5.832-10H25zM5.102 50L4 52h14l-1.234-2H5.102zm42.132 0L46 52h14l-1.102-2H47.234z" opacity=".2"/>
+    <path d="M4 51h14l14-26 14 26h14L39 13H25z" fill="#504945"/>
+    <path d="M25 13L4 51h.553L25 14h14l20.447 37H60L39 13H25z" opacity=".2" fill="#F9F5D7"/>
+    <path d="M10.6 39L18 51H4z" fill="#CB241D"/>
+    <path d="M53.4 39L60 51H46z" fill="#F9BD2E"/>
+    <path d="M32 25l7-12H25z" fill="#066678"/>
+    <path d="M28.77 31l-6.462 12H32V31h-3.23z" fill="#504945"/>
+    <path d="M28.77 31l-6.462 12H32V31h-3.23z" opacity=".15" fill="url(#a)"/>
+    <path d="M28.77 31l-6.461 12h.539l5.922-11H32v-1h-3.23zM25 13l.584 1h12.832L39 13H25zM10.602 39L4 51h.55l6.052-11 .015.025.291-.527-.306-.498zm42.796 0l-.306.498.29.527.016-.025 6.051 11H60l-6.602-12zm-41.906 1.443l-.29.528L17.381 51H18l-6.508-10.557zm41.016 0L46 51h.617L52.8 40.97l-.291-.527z" opacity=".2" fill="#F9F5D7"/>
+</svg>

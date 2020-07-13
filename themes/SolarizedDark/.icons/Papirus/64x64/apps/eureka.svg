@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" version="1">
+    <rect width="56" height="56" x="4" y="5" rx="2.8" ry="2.8" opacity=".2"/>
+    <rect width="56" height="56" x="4" y="4" rx="2.8" ry="2.8" fill="#504945"/>
+    <path d="M20.7 12l1.278 2.349.044.076V57.32L41 42.8V36h-6v2.6l-7 4.2V32h8v-6h-8v-7h7v2h6v-6.2L38.2 12H22.1z" opacity=".2"/>
+    <path d="M20.7 11l1.278 2.349.044.076V56.32L41 41.8V35h-6v2.6l-7 4.2V31h8v-6h-8v-7h7v2h6v-6.2L38.2 11H22.1z" fill="#48B9C7"/>
+    <path d="M35 35v2.6l-7 4.2v-3.172l-5.978 3.232v14.46L41 41.8V35z" fill="#F9BD2E"/>
+    <path d="M6.8 4C5.25 4 4 5.25 4 6.8v1C4 6.25 5.25 5 6.8 5h50.4C58.75 5 60 6.25 60 7.8v-1C60 5.25 58.75 4 57.2 4H6.8zM20.7 11l.544 1H38.2L41 14.8v-1L38.2 11H20.7zM28 25v1h8v-1h-8zm7 10v1h6v-1h-6zm0 2.6l-7 4.2v1l7-4.2v-1z" fill="#F9F5D7" opacity=".1"/>
+    <path d="M35 35v1h6v-1h-6zm0 2.6l-7 4.2v1l7-4.2v-1zm-7 1.029l-5.979 3.23v1L28 39.63v-1z" opacity=".2" fill="#F9F5D7"/>
+</svg>
