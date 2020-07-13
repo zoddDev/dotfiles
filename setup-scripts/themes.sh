@@ -30,6 +30,7 @@ function setup_config {
    echo "[INFO]: applying \"$config_name\" spicetify theme..."
 
    spicetify config current_theme $spicetify_theme 
+   spicetify auto backup apply
 
    #
    # configuring discord theme (beautifuldiscord)
