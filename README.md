@@ -22,9 +22,11 @@ where
 ```<ARG>```
 may be:
 
+```
 general      - installs necessary packages from pacman
 git          - installs necessary packages from AUR and github
 wifi         - (only for wireless connection!) installs 2 packages for wireless connection support
+```
 
 You can also do:
 
@@ -37,15 +39,17 @@ where
 ```<ARG>```
 may be:
 
+```
 theme        - installs <THEME_NAME> theme
 all          - installs all packages and finally installs selected theme if 2nd argument exists
-
+```
 
 where 
 ```<THEME_NAME>```
 may be:
 
+```
 doombox                 - Doom version of gruvbox
 alternative-gruvbox     - atypical version of gruvbox with lightly changed palette
 solarized-dark          - Solarized Dark theme with a small vaporwave flavour (with some pinkier colors)
-
+```
