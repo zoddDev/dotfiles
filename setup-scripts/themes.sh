@@ -21,7 +21,7 @@ function setup_config {
    echo
    echo "[INFO]: applying \"$config_name\" theme..."
 
-   cp -r $SETUP_ROOT/dotfiles/themes/$config_name/* $HOME
+   cp -r -a $SETUP_ROOT/dotfiles/themes/$config_name/. $HOME
 
    #
    # configuring spotify theme (spicetify)
