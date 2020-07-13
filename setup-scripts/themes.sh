@@ -11,6 +11,10 @@ function setup_config {
    spicetify_theme=$2
    beautifuldiscord_theme=$3
    
+   # backup of .xinitrc and .bashrc
+   cp $HOME/.xinitrc $HOME/.xinitrc-backup
+   cp $HOME/.bashrc $HOME/.bashrc
+
    #
    # copying theme dotfiles
    #
