@@ -1,0 +1,39 @@
+<svg width="64" xmlns="http://www.w3.org/2000/svg" height="64" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient id="b">
+            <stop stop-color="#1D2021"/>
+            <stop offset="1" stop-color="#282727"/>
+        </linearGradient>
+        <linearGradient id="e" xlink:href="#a" y1="543.798" y2="503.798" gradientUnits="userSpaceOnUse" x2="0" gradientTransform="matrix(1.02718 0 0 1 -394.979 -499.798)"/>
+        <linearGradient id="a">
+            <stop stop-color="#282727"/>
+            <stop offset="1" stop-color="#3A393A"/>
+        </linearGradient>
+        <linearGradient id="c">
+            <stop stop-color="#CB241D"/>
+            <stop offset="1" stop-color="#CB241D"/>
+        </linearGradient>
+        <linearGradient xlink:href="#b" id="f" y1="543.798" y2="511.798" x2="0" gradientUnits="userSpaceOnUse"/>
+        <linearGradient xlink:href="#c" id="h" y1="520.347" y2="503.798" x2="0" gradientUnits="userSpaceOnUse"/>
+        <linearGradient xlink:href="#d" id="g" y1="32" x1="24" y2="56" x2="48" gradientUnits="userSpaceOnUse"/>
+        <linearGradient id="d">
+            <stop stop-color="#282727"/>
+            <stop offset="1" stop-opacity="0"/>
+        </linearGradient>
+    </defs>
+    <g transform="translate(-376.571 -491.798)">
+        <path d="M388.571 510.798c-.554 0-1 .446-1 1v7c0 .554.446 1 1 1h2v-9h-2z" fill="#83A498"/>
+        <path d="M11 6v14h2v13h-2v25h42V28h-1v-5h1V13l-7-7H11z" transform="translate(376.571 491.798)" fill="url(#e)"/>
+        <path fill="#1D2021" d="M387.571 548.798h42v1h-42z"/>
+        <rect width="15.6" x="400.772" y="506.898" rx="7.8" height="15.6" fill="#83A498"/>
+        <path fill="url(#f)" d="M390.571 511.798h36v32h-36z"/>
+        <path d="M28.707 31.293l-1.414 1.414 8.05 8.05-.224.243 17 17H53v-8.88L39.805 35.923 36.7 39.287l-7.994-7.994zm-2.146 6.146l-2.122 2.122 5.5 5.5-1.353 1.353L40.172 58h6.95L26.56 37.44z" transform="translate(376.571 491.798)" fill="url(#g)" opacity=".2"/>
+        <path fill="url(#h)" d="M390.571 505.798h36v11h-36z"/>
+        <rect width="31" x="393.071" y="545.798" rx="1" height="2" fill="#1D2021"/>
+        <path fill="#83A498" d="M387.571 511.798h2v1h-2z"/>
+        <path d="M404.571 522.798c-.554 0-1 .446-1 1s.446 1 1 1 1-.446 1-1-.446-1-1-1zM411.571 522.798l-2 2 3 3-3 3 2 2 3-3 2-2-5-5zM402.071 528.798c-.83 0-1.5.669-1.5 1.5s.67 1.5 1.5 1.5c.831 0 1.5-.669 1.5-1.5s-.669-1.5-1.5-1.5zM406.571 534.798c-1.108 0-2 .892-2 2s.892 2 2 2 2-.892 2-2-.892-2-2-2z" fill="#83A498"/>
+        <path d="M392.571 507.798v1h12v-1h-12zm0 2v1h18v-1h-18zm0 2v1h8v-1h-8zm0 2v1h5v-1h-5z" fill="#F9F5D7"/>
+        <path d="M394.571 519.798l-1 1-1-1z" fill="#F9F5D7" fill-rule="evenodd"/>
+        <path d="M419.571 538.798v1h5v-1h-5zm0 2v1h2v-1h-2z" fill="#83A498"/>
+    </g>
+</svg>

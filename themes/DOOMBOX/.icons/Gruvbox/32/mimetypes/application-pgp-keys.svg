@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+    <g fill="none" stroke="#7B6F64" stroke-width="1.535" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6.5 2.5l-1 1v26l1 1h20l.999-1v-19l-8-8z" stroke-width="1.00006785"/>
+        <path d="M19.5 2.5l8 8H20.5l-1-1z" stroke-width="1.00006785"/>
+    </g>
+    <g transform="scale(1 1) translate(5.5 8)" id="g2522">     <defs>
+        <filter id="a" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+            <feColorMatrix in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+        </filter>
+        <mask id="d">
+            <g filter="url(#a)">
+                <path fill-opacity=".525" d="M0 0h22v22H0z"/>
+            </g>
+        </mask>
+        <clipPath id="b">
+            <path d="M0 0h22v22H0z"/>
+        </clipPath>
+        <g id="c" clip-path="url(#b)">
+            <path d="M14.871 5.313a1.807 1.807 0 1 0-.003 3.614 1.807 1.807 0 0 0 .003-3.614m0 1.03a.776.776 0 1 1-.005 1.553.776.776 0 0 1 .005-1.552m-4.59 5.879l-7.02 7.015h2.583l6.12-6.02a5.443 5.443 0 0 1-1.687-.995" fill="#7CB668"/>
+        </g>
+    </defs>
+    <path d="M13.832 2.734a5.413 5.413 0 0 0-5.414 5.41 5.4 5.4 0 0 0 .504 2.274l-.926 1.094-.082 1.031c-.008.004-1.012.035-1.012.035l-.515.371s.004 1.125 0 1.11v.004l-1.102.015-.465.535-.011 1.004s-.954-.058-1.047.028v.003a53.5 53.5 0 0 0-1.02.957l.004 2.641.871-.008h-.36l7.02-7.015c.422.367.91.652 1.43.879a5.37 5.37 0 0 0 2.125.457 5.417 5.417 0 0 0 5.418-5.414 5.417 5.417 0 0 0-5.418-5.415m1.035 2.583a1.805 1.805 0 1 1-.001 3.61 1.805 1.805 0 0 1 .001-3.61" fill="#7CB668"/>
+    <use xlink:href="#c" mask="url(#d)"/>
+    </g>
+</svg>

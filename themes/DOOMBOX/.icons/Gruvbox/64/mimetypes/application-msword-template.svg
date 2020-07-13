@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="64" width="64">
+    <g fill="none" stroke="#7B6F64" stroke-width=".768" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M10.454 2.638c-1.535 0-2.302.768-2.302 2.303v38.372c0 1.535.767 2.302 2.302 2.302H38.85c1.535 0 2.302-.767 2.302-2.302V14.918L29.64 2.638z" transform="matrix(1.30303 0 0 1.30302 .878 1.062)"/>
+        <path d="M29.64 2.638l11.512 12.28h-9.21c-1.534 0-2.302-.768-2.302-2.303z" transform="matrix(1.30303 0 0 1.30302 .878 1.062)"/>
+    </g>
+    <g transform="scale(1.5 1.5) translate(11 12)" id="g2522">     <defs>
+        <filter id="a" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+            <feColorMatrix in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+        </filter>
+        <mask id="d">
+            <g filter="url(#a)">
+                <path fill-opacity=".75" d="M0 0h22v22H0z"/>
+            </g>
+        </mask>
+        <clipPath id="b">
+            <path d="M0 0h22v22H0z"/>
+        </clipPath>
+        <g id="c" clip-path="url(#b)">
+            <path d="M4.813 19.25a1.372 1.372 0 0 1-1.375-1.375V4.125c0-.762.613-1.375 1.374-1.375h12.375c.762 0 1.375.613 1.375 1.375v13.75c0 .762-.613 1.375-1.375 1.375zm0-1.375h12.375V4.125H4.813zm1.375-2.75V13.75h9.625v1.375zm0-2.75V11h9.625v1.375zm0-2.75V8.25h9.625v1.375zm0-2.75V5.5h9.625v1.375zm0 0" fill="#8F3F71"/>
+        </g>
+    </defs>
+    <use xlink:href="#c" mask="url(#d)"/>
+    </g>
+</svg>

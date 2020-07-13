@@ -1,0 +1,9 @@
+<svg height="16">
+    <path d="M0 0h4.233v4.233H0z" fill="none"/>
+    <g fill="#fbf1c7" transform="translate(-73.184 -102.678)">
+        <rect height="1.058" ry=".066" width="1.058" x="73.978" y="103.473"/>
+        <rect height="1.058" ry=".066" width="1.058" x="75.565" y="103.473"/>
+        <rect height="1.058" ry=".066" width="1.058" x="73.978" y="105.061"/>
+        <rect height="1.058" ry=".066" width="1.058" x="75.565" y="105.061"/>
+    </g>
+</svg>

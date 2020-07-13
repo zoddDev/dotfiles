@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" version="1">
+    <rect width="56" height="56" x="4" y="5" rx="2.8" ry="2.8" opacity=".2"/>
+    <rect width="56" height="56" x="4" y="4" rx="2.8" ry="2.8" fill="#8F3F71"/>
+    <path d="M20 24.976v11.798c0 3.165-2.003 4.252-4 4.2-1.872.008-4-.995-4-4.2V24.976" opacity=".2" fill="none" stroke="#151819" stroke-width="4" stroke-linecap="round" stroke-linejoin="bevel"/>
+    <path d="M20 24v11.798c0 3.164-2.003 4.252-4 4.2-1.872.008-4-.996-4-4.2V24" fill="none" stroke="#F9F5D7" stroke-width="4" stroke-linecap="round" stroke-linejoin="bevel"/>
+    <path d="M34 40.976l-4-6m-3.8-2s7.8 1.149 7.8-4c0-5.148-7.972-3.827-7.972-3.827m0 15.799v-15.8" opacity=".2" fill="none" stroke="#151819" stroke-width="4" stroke-linecap="round"/>
+    <path d="M34 40l-4-6m-3.8-2s7.8 1.149 7.8-4-7.972-3.828-7.972-3.828m0 15.8v-15.8" fill="none" stroke="#F9F5D7" stroke-width="4" stroke-linecap="round"/>
+    <path d="M52 40.948V24.976m-12 0l6 8 6-8M40 40.948V24.976" opacity=".2" fill="none" stroke="#151819" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M52 39.972V24m-12 0l6 8 6-8M40 39.972V24" fill="none" stroke="#F9F5D7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M6.8 4C5.25 4 4 5.25 4 6.8v1C4 6.25 5.25 5 6.8 5h50.4C58.75 5 60 6.25 60 7.8v-1C60 5.25 58.75 4 57.2 4H6.8z" opacity=".2" fill="#F9F5D7"/>
+</svg>

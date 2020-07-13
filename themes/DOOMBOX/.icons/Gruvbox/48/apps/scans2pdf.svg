@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" version="1">
+    <rect width="56" height="45" x="-61" y="-54" rx="2.8" ry="2.813" transform="matrix(0 -1 -1 0 0 0)" opacity=".2"/>
+    <rect width="56" height="45" x="-60" y="-54" rx="2.8" ry="2.813" transform="matrix(0 -1 -1 0 0 0)" fill="#504945"/>
+    <path d="M16 11v14.539L30.633 11z" fill="#8F3F71"/>
+    <path d="M30.633 11L16 25.539v14.697L45.426 11z" fill="#CB241D"/>
+    <path d="M45.426 11L16 40.236V53h1.946L47 24.133V11z" fill="#FD8019"/>
+    <path d="M47 24.133L17.946 53H32.74L47 38.833z" fill="#F9BD2E"/>
+    <path d="M47 38.833L32.741 53H47z" fill="#7CB668"/>
+    <rect width="57" height="6" x="3" y="22" rx="1.425" ry="1.5" opacity=".2"/>
+    <rect width="57" height="6" x="3" y="21" rx="1.425" ry="1.5" fill="#066678"/>
+    <rect width="1" height="31" x="-54" y="-47" rx="0" ry="0" transform="matrix(0 -1 -1 0 0 0)" opacity=".2"/>
+    <rect width="1" height="31" x="-12" y="-47" rx="0" ry="0" transform="matrix(0 -1 -1 0 0 0)" opacity=".2" fill="#F9F5D7"/>
+    <path d="M11.813 4A2.8 2.8 0 0 0 9 6.8v1A2.8 2.8 0 0 1 11.813 5h39.374A2.8 2.8 0 0 1 54 7.8v-1A2.8 2.8 0 0 0 51.187 4H11.813z" fill="#F9F5D7" opacity=".1"/>
+</svg>
