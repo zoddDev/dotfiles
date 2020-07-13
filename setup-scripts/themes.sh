@@ -13,7 +13,7 @@ function setup_config {
    
    # backup of .xinitrc and .bashrc
    cp $HOME/.xinitrc $HOME/.xinitrc-backup
-   cp $HOME/.bashrc $HOME/.bashrc
+   cp $HOME/.bashrc $HOME/.bashrc-backup
 
    #
    # copying theme dotfiles
@@ -21,7 +21,7 @@ function setup_config {
    echo
    echo "[INFO]: applying \"$config_name\" theme..."
 
-   cp -r $SETUP_ROOT/themes/$config_name/* $HOME
+   cp -r '$SETUP_ROOT/dotfiles/themes/$config_name/*' $HOME
 
    #
    # configuring spotify theme (spicetify)
