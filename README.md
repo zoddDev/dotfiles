@@ -6,14 +6,20 @@ Those are my different bspwm themes dotfiles, hope you find something useful in 
 
 # Theme Previews
 
-SolarizedDark
+## SolarizedDark
 ![alt text](screenshots/SolarizedDark.png)
 
-DOOMBOX
+<br/><br/>
+
+## DOOMBOX
 ![alt text](screenshots/Doombox.jpg)
 
-AlternativeGruvbox
+<br/><br/>
+
+## AlternativeGruvbox
 ![alt text](screenshots/Alternative-Gruvbox.png)
+
+<br/><br/>
 
 # Install
 
