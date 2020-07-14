@@ -159,6 +159,71 @@ font:
   use_thin_strokes: true
 
 # If `true`, bold text is drawn using the bright color variants.
+draw_bold_text_with_bright_colors: false
+
+# # Colors (Solarized Light)
+# colors:
+#   # Default colors
+#   primary:
+#     background: '0xfdf6e3' # base3
+#     foreground: '0x657b83' # base00
+
+#   # Cursor colors
+#   cursor:
+#     text:   '0xfdf6e3' # base3
+#     cursor: '0x657b83' # base00
+
+#   # Normal colors
+#   normal:
+#     black:   '0x073642' # base02
+#     red:     '0xdc322f' # red
+#     green:   '0x859900' # green
+#     yellow:  '0xb58900' # yellow
+#     blue:    '0x268bd2' # blue
+#     magenta: '0xd33682' # magenta
+#     cyan:    '0x2aa198' # cyan
+#     white:   '0xeee8d5' # base2
+
+#   # Bright colors
+#   bright:
+#     black:   '0x002b36' # base03
+#     red:     '0xcb4b16' # orange
+#     green:   '0x586e75' # base01
+#     yellow:  '0x657b83' # base00
+#     blue:    '0x839496' # base0
+#     magenta: '0x6c71c4' # violet
+#     cyan:    '0x93a1a1' # base1
+#     white:   '0xfdf6e3' # base3
+
+# Colors (Solarized Dark)
+colors:
+  # Default colors
+  primary:
+    background: '0x002b36'
+    foreground: '0x839496'
+
+  # Normal colors
+  normal:
+    black:   '0x073642'
+    red:     '0xdc322f'
+    green:   '0x859900'
+    yellow:  '0xb58900'
+    blue:    '0x268bd2'
+    magenta: '0xd33682'
+    cyan:    '0x2aa198'
+    white:   '0xb9a8b9'
+    # white:   '0xa3b5b5'
+
+  # Bright colors
+  bright:
+    black:   '0x002b36'
+    red:     '0xcb4b16'
+    green:   '0x586e75'
+    yellow:  '0x657b83'
+    blue:    '0xb9a8b9'
+    magenta: '0x6c71c4'
+    cyan:    '0x93a1a1'
+    white:   '0xfdf6e3'
 
 #  bright:
 #    black:   '0x002b36'
@@ -234,7 +299,7 @@ visual_bell:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.90
+background_opacity: 1.0
 
 # Mouse bindings
 #
@@ -595,35 +660,3 @@ key_bindings:
   - { key: F11,      mods: Super,   chars: "\x1b[23;3~"                      }
   - { key: F12,      mods: Super,   chars: "\x1b[24;3~"                      }
   - { key: NumpadEnter,             chars: "\n"                              }
-# Colors (Gruvbox dark)
-colors:
-  # Default colors
-  primary:
-    # hard contrast: background = '0x1d2021'
-    background: '0x282828'
-    # soft contrast: background = '0x32302f'
-    foreground: '0xebdbb2'
-
-  # Normal colors
-  normal:
-    black:   '0x282828'
-    red:     '0xcc241d'
-    green:   '0xd65d0e' 
-    yellow:  '0xd79921'
-    blue:    '0x458588'
-    magenta: '0xb16286'
-    cyan:    '0x98971a'
-    white:   '0xa89984'
-
-  # Bright colors
-  bright:
-    black:   '0x928374'
-    red:     '0xfb4934'
-    green:   '0xfe8019'
-    yellow:  '0xfabd2f'
-    blue:    '0x83a598'
-    magenta: '0xd3869b'
-    cyan:    '0xb8bb26'
-    white:   '0xebdbb2'
-
-draw_bold_text_with_bright_colors: true

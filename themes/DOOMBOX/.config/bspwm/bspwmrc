@@ -3,7 +3,7 @@ xsetroot -cursor_name left_ptr &
 sxhkd &
 #nm-applet &
 compton &
-$HOME/.scripts/dynamic-wallpapers doom next &
+feh --bg-fill $HOME/Pictures/Wallpapers/Wallpapers/doom-theme/Doom-Eternal_Maurader_Wallpaper_3840x2160-01.jpg
 $HOME/.config/polybar/launch.sh &
 wmname LG3D &
 lxpolkit &
