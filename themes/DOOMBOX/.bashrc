@@ -7,3 +7,6 @@
 export XDG_CURRENT_DESKTOP=KDE
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH=/usr/lib/go/bin:$PATH
