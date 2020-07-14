@@ -1,12 +1,10 @@
 #! /bin/sh
-
+xsetroot -cursor_name left_ptr &
 sxhkd &
 #nm-applet &
 compton &
-/home/zodd/.scripts/dynamic-wallpapers doom next &
-#/home/zodd/.scripts/startup/startup &
-#polybar example &
-/home/zodd/.config/polybar/launch.sh &
+$HOME/.scripts/dynamic-wallpapers doom next &
+$HOME/.config/polybar/launch.sh &
 wmname LG3D &
 lxpolkit &
 xset -dpms s off & # disable screen blanking &
@@ -15,7 +13,7 @@ dunst &
 
 # Swallow
 
-pidof /home/zodd/.scripts/bspswallow || /home/zodd/.scripts/bspswallow &
+pidof $HOME/.scripts/bspswallow || $HOME/.scripts/bspswallow &
 
 # Workspaces
 
@@ -42,5 +40,5 @@ bspc config pointer_modifier mod4
 # Autostart applications:
 sleep 1 
 konsole &
-sleep 0.5
+sleep 1.0
 bspc rule -a \* -o desktop='^2' && sleep 0.15 && firefox &

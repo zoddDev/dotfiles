@@ -3,13 +3,13 @@
 dir=$1
 
 #SECONDS OF COOLDOWN
-COOLDOWN=120
+COOLDOWN=256
 
 # Dictionary
-[ $dir = 'nord' ] && dir='/home/zodd/Pictures/Wallpapers/Wallpapers/nord-theme'
-[ $dir = 'vaporwave' ] && dir='/home/zodd/Pictures/Wallpapers/Wallpapers/vaporwave-theme'
-[ $dir = 'gruvbox' ] && dir='/home/zodd/Pictures/Wallpapers/Wallpapers/gruvbox-theme'
-[ $dir = 'doom' ] && dir='/home/zodd/Pictures/Wallpapers/Wallpapers/doom-theme'
+[ $dir = 'nord' ] && dir="$HOME/Pictures/Wallpapers/Wallpapers/nord-theme"
+[ $dir = 'vaporwave' ] && dir="$HOME/Pictures/Wallpapers/Wallpapers/vaporwave-theme"
+[ $dir = 'gruvbox' ] && dir="$HOME/Pictures/Wallpapers/Wallpapers/gruvbox-theme"
+[ $dir = 'doom' ] && dir="$HOME/Pictures/Wallpapers/Wallpapers/doom-theme"
 # --- </> ---
 
 # Error check

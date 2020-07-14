@@ -3,11 +3,8 @@
 sxhkd &
 #nm-applet &
 compton &
-#/home/zodd/.scripts/dynamic-wallpapers doom next &
-feh --bg-fill /home/zodd/Pictures/Wallpapers/Wallpapers/gruvbox-theme/randall-mackey-mural2.jpg
-#/home/zodd/.scripts/startup/startup &
-#polybar example &
-/home/zodd/.config/polybar/launch.sh &
+feh --bg-fill $HOME/Pictures/Wallpapers/Wallpapers/gruvbox-theme/randall-mackey-mural2.jpg
+$HOME/.config/polybar/launch.sh &
 wmname LG3D &
 lxpolkit &
 xset -dpms s off & # disable screen blanking &
@@ -16,7 +13,7 @@ dunst &
 
 # Swallow
 
-pidof /home/zodd/.scripts/bspswallow || /home/zodd/.scripts/bspswallow &
+pidof $HOME/.scripts/bspswallow || $HOME/.scripts/bspswallow &
 
 # Workspaces
 
@@ -43,5 +40,5 @@ bspc config pointer_modifier mod4
 # Autostart applications:
 sleep 1 
 konsole &
-sleep 0.5
+sleep 1.5
 bspc rule -a \* -o desktop='^2' && sleep 0.15 && firefox &
