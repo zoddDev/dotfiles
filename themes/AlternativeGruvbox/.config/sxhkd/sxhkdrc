@@ -4,7 +4,7 @@
 
 # terminal emulator
 ctrl + alt + t
-	konsole
+	alacritty -e /bin/fish -C pfetch
 
 # dolphin
 super + e
@@ -14,13 +14,17 @@ super + e
 super + d
 	dolphin ~/Downloads
 
-# dolphin screenshots
-ctrl + super + s
-    dolphin ~/Pictures/Screenshots 
+# ranger screenshots
+shift + super + s
+    alacritty -e ranger /home/zodd/Pictures/Screenshots 
+
+# ranger downloads
+shift + super + d
+    alacritty -e ranger /home/zodd/Downloads
 
 # ranger
 ctrl + alt + n
-    konsole -e ranger
+    alacritty -e ranger
 
 # firefox
 ctrl + alt + f
@@ -46,9 +50,9 @@ super + Print
 super + shift + Print
     spectacle -r
 
-# program launcher
+# rofi 
 super + Return 
-    rofi -font "Inconsolata Bold 12" -show drun -show-icons 
+    rofi -font "Iosevka Bold 11" -show drun -show-icons 
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
@@ -60,7 +64,7 @@ super + Escape
 # AUDIO (pulsemixer)
 # pulsemixer
 ctrl + alt + v
-    bspc rule -a \* -o state=floating && konsole -e /bin/fish -C pulsemixer
+    bspc rule -a \* -o state=floating && alacritty -e /bin/fish -C pulsemixer
 
 # pulsemixer volume UP (+5)
 super + F8
@@ -128,6 +132,9 @@ bspc node -g {marked,locked,sticky,private}
 super + {_,shift + }{Left,Down,Up,Right}
 	bspc node -{f,s} {west,south,north,east}
 
+super + {_,shift + }{h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
+
 # focus the node for the given path jump
 super + {p,b,comma,period}
 	bspc node -f @{parent,brother,first,second}
@@ -161,6 +168,9 @@ super + {_,shift + }{1-9,0}
 
 # preselect the direction
 super + ctrl + {Left,Down,Up,Right}
+	bspc node -p {west,south,north,east}
+
+super + ctrl + {h,j,k,l}
 	bspc node -p {west,south,north,east}
 
 # preselect the ratio

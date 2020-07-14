@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" version="1">
+    <rect width="56" height="56" x="4" y="5" rx="2.8" ry="2.8" opacity=".2"/>
+    <rect width="56" height="56" x="4" y="4" rx="2.8" ry="2.8" fill="#504945"/>
+    <path d="M8 16v34h5V35h9v-5h-9v-9h9v-5H8zm17 0v34h14v-5h-9V35h9v-5h-9v-9h9v-5H25zm17 0v34h5V35h4v15h5V16h-5v14h-4V16h-5z" opacity=".2"/>
+    <path fill="#CB241D" d="M8 15h5v34H8z"/>
+    <path fill="#CB241D" d="M22 15v5H8v-5zM22 29v5H8v-5zM25 15h5v34h-5z"/>
+    <path fill="#CB241D" d="M39 15v5H25v-5zM39 29v5H25v-5zM42 15h5v34h-5z"/>
+    <path fill="#CB241D" d="M56 29v5H42v-5zM39 44v5H25v-5z"/>
+    <path fill="#CB241D" d="M51 15h5v34h-5z"/>
+    <path d="M8 15v1h14v-1H8zm17 0v1h14v-1H25zm17 0v1h5v-1h-5zm9 0v1h5v-1h-5zM13 29v1h9v-1h-9zm17 0v1h9v-1h-9zm17 0v1h4v-1h-4zM30 44v1h9v-1h-9zM6.8 4C5.25 4 4 5.25 4 6.8v1C4 6.25 5.25 5 6.8 5h50.4C58.75 5 60 6.25 60 7.8v-1C60 5.25 58.75 4 57.2 4H6.8z" opacity=".1" fill="#F9F5D7"/>
+</svg>

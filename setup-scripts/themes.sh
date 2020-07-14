@@ -29,8 +29,8 @@ function setup_config {
    echo 
    echo "[INFO]: applying \"$config_name\" spicetify theme..."
 
-   spicetify config current_theme $spicetify_theme 
-   spicetify auto backup apply
+   fish -C spicetify config current_theme $spicetify_theme &
+   fish -C spicetify apply
 
    #
    # configuring discord theme (beautifuldiscord)

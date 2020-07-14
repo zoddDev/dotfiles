@@ -1,8 +1,10 @@
+set background=dark
+colorscheme solarized
+
 syntax on
 filetype plugin on
 
-set background=dark
-colorscheme solarized
+
 set relativenumber
 set nu rnu
 

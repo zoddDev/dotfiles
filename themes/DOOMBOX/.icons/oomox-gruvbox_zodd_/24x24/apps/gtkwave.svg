@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" version="1">
+    <rect width="56" height="56" x="4" y="5" rx="2.8" ry="2.8" opacity=".2"/>
+    <rect width="56" height="56" x="4" y="4" rx="2.8" ry="2.8" fill="#3A393A"/>
+    <path d="M12 4v8H4v4h8v8H4v4h8v8H4v4h8v8H4v4h8v8h4v-8h8v8h4v-8h8v8h4v-8h8v8h4v-8h8v-4h-8v-8h8v-4h-8v-8h8v-4h-8v-8h8v-4h-8V4h-4v8h-8V4h-4v8h-8V4h-4v8h-8V4zm4 12h8v8h-8zm12 0h8v8h-8zm12 0h8v8h-8zM16 28h8v8h-8zm12 0h8v8h-8zm12 0h8v8h-8zM16 40h8v8h-8zm12 0h8v8h-8zm12 0h8v8h-8z" opacity=".2" fill="#B7BB25"/>
+    <path d="M54 53h-6.306l-9.232-42h-7.18M10 53h6.306l9.232-42h7.18" opacity=".2" fill="none" stroke="#151819" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M54 52h-6.306l-9.232-42h-7.18M10 52h6.306l9.232-42h7.18" fill="none" stroke="#B7BB25" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M6.8 4C5.25 4 4 5.25 4 6.8v1C4 6.25 5.25 5 6.8 5h50.4C58.75 5 60 6.25 60 7.8v-1C60 5.25 58.75 4 57.2 4H6.8z" opacity=".1" fill="#F9F5D7"/>
+    <path d="M25.54 8a2 2 0 0 0-1.954 1.57L14.697 50H10a2 2 0 0 0-1.963 2.5A2 2 0 0 1 10 51h4.697l8.889-40.43A2 2 0 0 1 25.539 9h12.922a2 2 0 0 1 1.953 1.57L49.303 51H54a2 2 0 0 1 1.963 1.5A2 2 0 0 0 54 50h-4.697L40.414 9.57A2 2 0 0 0 38.461 8H25.539z" opacity=".2" fill="#F9F5D7"/>
+</svg>

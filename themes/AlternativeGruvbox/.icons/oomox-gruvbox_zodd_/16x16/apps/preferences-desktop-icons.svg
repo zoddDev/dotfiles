@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" version="1">
+    <rect width="56" height="56" x="4" y="4" rx="2.8" ry="2.8" fill="#066678"/>
+    <path d="M6.8 4C5.25 4 4 5.25 4 6.8v1C4 6.25 5.25 5 6.8 5h50.4C58.75 5 60 6.25 60 7.8v-1C60 5.25 58.75 4 57.2 4H6.8z" opacity=".1" fill="#F9F5D7"/>
+    <path d="M4 57.2v1C4 59.75 5.25 61 6.8 61h50.4c1.55 0 2.8-1.25 2.8-2.8v-1c0 1.55-1.25 2.8-2.8 2.8H6.8C5.25 60 4 58.75 4 57.2z" opacity=".2"/>
+    <g transform="matrix(1.99997 0 0 2 0 1)" opacity=".2">
+        <rect width="6" height="6" x="5" y="5" rx=".75" ry=".75"/>
+        <rect width="6" height="6" x="13" y="5" rx=".75" ry=".75"/>
+        <rect width="6" height="6" x="5" y="13" rx=".75" ry=".75"/>
+        <rect width="6" height="6" x="13" y="13" rx=".75" ry=".75"/>
+        <rect width="6" height="6" x="5" y="21" rx=".75" ry=".75"/>
+    </g>
+    <g transform="matrix(1.99997 0 0 2 0 0)" fill="#F9F5D7">
+        <rect width="6" height="6" x="5" y="5" rx=".75" ry=".75"/>
+        <rect width="6" height="6" x="13" y="5" rx=".75" ry=".75"/>
+        <rect width="6" height="6" x="5" y="13" rx=".75" ry=".75"/>
+        <rect width="6" height="6" x="13" y="13" rx=".75" ry=".75"/>
+        <rect width="6" height="6" x="5" y="21" rx=".75" ry=".75"/>
+    </g>
+</svg>

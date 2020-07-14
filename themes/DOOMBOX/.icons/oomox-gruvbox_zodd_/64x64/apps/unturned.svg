@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" version="1">
+    <rect width="56" height="56" x="4" y="5" rx="2.8" ry="2.8" opacity=".2"/>
+    <rect width="56" height="56" x="4" y="4" rx="2.8" ry="2.8" fill="#4F8660"/>
+    <path d="M9 28v6h6v-6H9z" opacity=".2" fill-rule="evenodd"/>
+    <path d="M9 27v6h6v-6H9z" fill="#3A393A" fill-rule="evenodd"/>
+    <path d="M49 28v6h6v-6h-6z" opacity=".2" fill-rule="evenodd"/>
+    <path d="M49 27v6h6v-6h-6z" fill="#3A393A" fill-rule="evenodd"/>
+    <path d="M24 38v3h15v-3zm15 3v3h4v3H20.1v-3H24v-3h-7v6h-3v7h3v-4h26v5h3.2V41H43z" opacity=".2" fill-rule="evenodd"/>
+    <path d="M24 37v3h15v-3zm15 3v3h4v3H20.1v-3H24v-3h-7v6h-3v7h3v-4h26v5h3.2V40H43z" fill="#3A393A" fill-rule="evenodd"/>
+    <path d="M24 41v3h-4v3h23v-3h-4v-3z" opacity=".2" fill-rule="evenodd"/>
+    <path d="M24 40v3h-4v3h23v-3h-4v-3z" fill="#9D0006" fill-rule="evenodd"/>
+    <path d="M24 40v1h15v-1H24zm-4 3v1h4v-1h-4zm19 0v1h4v-1h-4z" opacity=".1" fill="#F9F5D7" fill-rule="evenodd"/>
+    <path d="M6.8 4C5.25 4 4 5.25 4 6.8v1C4 6.25 5.25 5 6.8 5h50.4C58.75 5 60 6.25 60 7.8v-1C60 5.25 58.75 4 57.2 4H6.8z" fill="#F9F5D7" opacity=".2"/>
+</svg>

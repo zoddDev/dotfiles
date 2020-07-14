@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" version="1">
+    <rect width="56" height="56" x="4" y="4" rx="3" ry="3" fill="#B7BB25"/>
+    <path d="M17.753 17.74A47.013 47.055 0 0 0 4.73 59.258 47.013 47.055 0 0 0 46.248 46.26 47.013 47.055 0 0 0 59.27 4.742 47.013 47.055 0 0 0 17.752 17.74z" opacity=".2"/>
+    <path d="M7 4C5.338 4 4 5.337 4 6.999V8a2.993 2.993 0 0 1 3-2.999h50c1.662 0 3 1.338 3 2.999V6.999A2.993 2.993 0 0 0 57 4H7z" opacity=".1" fill="#F9F5D7"/>
+    <path d="M4 57v1c0 1.662 1.338 3 3 3h50c1.662 0 3-1.338 3-3v-1c0 1.662-1.338 3-3 3H7c-1.662 0-3-1.338-3-3z" opacity=".2"/>
+    <circle cx="32" cy="32" r="12" opacity=".3"/>
+    <circle cx="32" cy="32" r="8" fill="#F9BD2E"/>
+    <g transform="matrix(1.99998 0 0 1.99998 0 0)">
+        <circle cx="24" cy="8" r="3" opacity=".3"/>
+        <circle cx="24" cy="8" r="2" fill="#F9BD2E"/>
+    </g>
+    <g transform="matrix(1.99998 0 0 1.99998 -32 32)">
+        <circle cx="24" cy="8" r="3" opacity=".3"/>
+        <circle cx="24" cy="8" r="2" fill="#F9BD2E"/>
+    </g>
+</svg>
