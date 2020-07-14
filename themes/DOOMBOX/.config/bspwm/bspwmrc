@@ -39,6 +39,6 @@ bspc config pointer_modifier mod4
 
 # Autostart applications:
 sleep 1 
-konsole &
+alacritty -e /bin/fish -C pfetch &
 sleep 1.0
 bspc rule -a \* -o desktop='^2' && sleep 0.15 && firefox &

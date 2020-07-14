@@ -21,7 +21,7 @@ function setup_config {
    echo
    echo "[INFO]: applying \"$config_name\" theme..."
 
-   cp -r -a $SETUP_ROOT/dotfiles/themes/$config_name/. $HOME
+   sudo cp -r -a $SETUP_ROOT/dotfiles/themes/$config_name/. $HOME
 
    #
    # configuring spotify theme (spicetify)
@@ -47,8 +47,7 @@ shopt -s nocasematch
 case "$arg" in 
     "doombox" ) setup_config "DOOMBOX" "Gruvbox-Gold" "Duvbox/duvbox.css" ;; 
     "alternative-gruvbox" ) setup_config "AlternativeGruvbox" "Gruvbox-Gold" "Duvbox/duvbox.css" ;; 
-    "solarized-dark" ) setup_config "SolarizedDark" "SolarizedDark" "SolarizedDark/solarized_dark.css
-" ;; 
+    "solarized-dark" ) setup_config "SolarizedDark" "SolarizedDark" "SolarizedDark/solarized_dark.css" ;; 
 
     *) echo "[ERROR]: no config with name \"$arg\" found" && exit 1 ;;
 esac
