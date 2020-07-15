@@ -49,6 +49,7 @@ case "$arg" in
     "doombox" ) setup_config "DOOMBOX" "Gruvbox-Gold" "Duvbox/duvbox.css" ;; 
     "alternative-gruvbox" ) setup_config "AlternativeGruvbox" "Gruvbox-Gold" "Duvbox/duvbox.css" ;; 
     "solarized-dark" ) setup_config "SolarizedDark" "SolarizedDark" "SolarizedDark/solarized_dark.css" ;; 
+    "dracula" ) setup_config "Dracula" "Dracula" "Dracula/discord-dracula.css" ;; 
 
     *) echo "[ERROR]: no config with name \"$arg\" found" && exit 1 ;;
 esac
