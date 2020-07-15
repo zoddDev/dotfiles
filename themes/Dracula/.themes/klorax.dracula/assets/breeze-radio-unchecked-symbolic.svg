@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="svg8" version="1.1" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+    <path id="path2" class="warning" d="M 16.5,9 A 7.5,7.5 0 0 1 9,16.5 7.5,7.5 0 0 1 1.5,9 7.5,7.5 0 0 1 9,1.5 7.5,7.5 0 0 1 16.5,9 Z" fill="#f57900"/>
+    <path id="path4" class="success" d="m9 1a8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8 8 8 0 0 0-8-8zm0 1a7 7 0 0 1 7 7 7 7 0 0 1-7 7 7 7 0 0 1-7-7 7 7 0 0 1 7-7z" fill="#ff0404"/>
+</svg>

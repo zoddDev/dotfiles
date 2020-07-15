@@ -1,7 +1,5 @@
 syntax on
 
-let g:gruvbox_contrast_dark = 'hard'
-colorscheme gruvbox
 
 filetype plugin on
 
@@ -66,7 +64,15 @@ Plug 'preservim/nerdcommenter'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'morhetz/gruvbox'
 call plug#end()
 
-let g:airline_powerline_fonts = 1
 set t_Co=256
+let g:airline_powerline_fonts = 1
+colorscheme gruvbox
+
+"highlight Normal ctermbg=14
+"highlight airline_a ctermbg = 1
+
+
+

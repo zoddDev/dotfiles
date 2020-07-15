@@ -1,25 +1,25 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR DOTFILES:/home/zodd/Documents/git\x2dlab/dotfiles/
+SETUVAR DOTFILES:/home/zodd/Documents/git\x2dlab/dotfiles
 SETUVAR __fish_initialized:3100
-SETUVAR fish_color_autosuggestion:FFC473
+SETUVAR fish_color_autosuggestion:a1b56c
 SETUVAR fish_color_cancel:\x2dr
-SETUVAR fish_color_command:FF9400
-SETUVAR fish_color_comment:A63100
+SETUVAR fish_color_command:ba8baf
+SETUVAR fish_color_comment:f7ca88
 SETUVAR fish_color_cwd:green
 SETUVAR fish_color_cwd_root:red
-SETUVAR fish_color_end:FF4C00
-SETUVAR fish_color_error:FFDD73
-SETUVAR fish_color_escape:00a6b2
+SETUVAR fish_color_end:ba8baf
+SETUVAR fish_color_error:ab4642
+SETUVAR fish_color_escape:86c1b9
 SETUVAR fish_color_history_current:\x2d\x2dbold
 SETUVAR fish_color_host:normal
 SETUVAR fish_color_host_remote:yellow
-SETUVAR fish_color_match:\x2d\x2dbackground\x3dbrblue
+SETUVAR fish_color_match:7cafc2
 SETUVAR fish_color_normal:normal
-SETUVAR fish_color_operator:00a6b2
-SETUVAR fish_color_param:FFC000
-SETUVAR fish_color_quote:BF9C30
-SETUVAR fish_color_redirection:BF5B30
+SETUVAR fish_color_operator:7cafc2
+SETUVAR fish_color_param:a1b56c
+SETUVAR fish_color_quote:f7ca88
+SETUVAR fish_color_redirection:d8d8d8
 SETUVAR fish_color_search_match:\x2d\x2dbackground\x3dgreen
 SETUVAR fish_color_selection:white\x1e\x2d\x2dbold\x1e\x2d\x2dbackground\x3dbrblack
 SETUVAR fish_color_status:red
