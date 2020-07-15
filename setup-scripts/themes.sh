@@ -30,7 +30,8 @@ function setup_config {
    echo "[INFO]: applying \"$config_name\" spicetify theme..."
 
    fish -C spicetify config current_theme $spicetify_theme &
-   fish -C spicetify apply
+   sleep 5
+   fish -C spicetify apply &
 
    #
    # configuring discord theme (beautifuldiscord)
