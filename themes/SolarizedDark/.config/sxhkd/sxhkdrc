@@ -98,7 +98,8 @@ super + alt + {q,r}
 
 # close and kill
 ctrl + q
-	bspc node -{c,k}
+	bspc node -c
+#bspc node -{c,k}
 
 # alternate between the tiled and monocle layout
 super + m

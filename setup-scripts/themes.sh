@@ -47,6 +47,7 @@ function setup_config {
 shopt -s nocasematch
 case "$arg" in 
     "doombox" ) setup_config "DOOMBOX" "Gruvbox-Gold" "Duvbox/duvbox.css" ;; 
+    "gruvbox" ) setup_config "Gruvbox" "Gruvbox-Gold" "Duvbox/duvbox.css" ;; 
     "alternative-gruvbox" ) setup_config "AlternativeGruvbox" "Gruvbox-Gold" "Duvbox/duvbox.css" ;; 
     "solarized-dark" ) setup_config "SolarizedDark" "SolarizedDark" "SolarizedDark/solarized_dark.css" ;; 
     "dracula" ) setup_config "Dracula" "Dracula" "Dracula/discord-dracula.css" ;; 

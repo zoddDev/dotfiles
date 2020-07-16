@@ -1,9 +1,16 @@
 #! /bin/sh
 
+#
+#                 ░█▀▄░█▀▀░█▀█░█░█░█▄█
+#                 ░█▀▄░▀▀█░█▀▀░█▄█░█░█
+#                 ░▀▀░░▀▀▀░▀░░░▀░▀░▀░▀
+#
+
+xsetroot -cursor_name left_ptr &
 sxhkd &
 #nm-applet &
 compton &
-feh --bg-fill $HOME/Pictures/Wallpapers/Wallpapers/gruvbox-theme/frog_gruvbox_hard.png &
+feh --bg-fill $HOME/Pictures/Wallpapers/Wallpapers/gruvbox-theme/gruvbox-hard-piramid.png &
 polybar example &
 wmname LG3D &
 lxpolkit &
@@ -17,7 +24,7 @@ pidof $HOME/.scripts/bspswallow || $HOME/.scripts/bspswallow &
 
 # Workspaces
 
-bspc monitor -d    ﳁ    
+bspc monitor -d    ﳁ     
 
 bspc config border_width         2
 bspc config window_gap          12
@@ -37,6 +44,15 @@ bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 bspc config pointer_modifier mod4
 
+sleep 0.69
+
 # Autostart applications:
 alacritty -e /bin/fish -C neofetch &
-sleep 0.15 && bspc rule -a \* -o desktop='^2' && sleep 0.85 && firefox &
+
+sleep 0.55 
+/bin/bash -c 'bspc desktop -f '^2' --follow ; bspc rule -a \* -o node=@$(bspc query -D -d):.focused split_dir=south follow=off ; firefox https://www.google.es &' 
+bspc desktop -f '^1' --follow
+
+sleep 3.5
+/bin/bash -c 'bspc desktop -f '^8' --follow ; bspc rule -a \* -o node=@$(bspc query -D -d):.focused split_dir=south follow=off ; spotify &' 
+bspc desktop -f '^1' --follow
