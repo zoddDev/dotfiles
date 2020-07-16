@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" version="1">
+    <rect width="52" height="52" x="-59" y="-58" rx="26" ry="26" transform="matrix(0 -1 -1 0 0 0)" opacity=".2"/>
+    <rect width="52" height="52" x="-58" y="-58" rx="26" ry="26" transform="matrix(0 -1 -1 0 0 0)" fill="#CB241D"/>
+    <path d="M32 6C17.596 6 6 17.596 6 32c0 .11.012.219.018.328C6.373 18.238 17.82 7 32 7c14.179 0 25.627 11.238 25.982 25.328.006-.11.018-.217.018-.328C58 17.596 46.404 6 32 6z" opacity=".1" fill="#F9F5D7"/>
+    <circle cx="32" cy="33" r="16" opacity=".2"/>
+    <circle cx="32" cy="32" r="16" fill="#F9F5D7"/>
+    <rect width="60" height="12" x="2" y="27" rx="2.857" ry="3" opacity=".2"/>
+    <rect width="60" height="12" x="2" y="26" rx="2.857" ry="3" fill="#8F3F71"/>
+</svg>

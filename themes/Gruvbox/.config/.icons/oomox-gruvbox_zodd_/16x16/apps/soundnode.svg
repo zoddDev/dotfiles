@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" version="1">
+    <rect width="56" height="56" x="4" y="5" rx="28" ry="28" opacity=".2"/>
+    <rect width="56" height="56" x="4" y="4" rx="28" ry="28" fill="#8F3F71"/>
+    <path d="M24 23l17-7 5 12-5 16-13 3-11-8zM34 37l7-21M34 37L24 23M34 37l-17 2" opacity=".6" fill="none" stroke="#F9F5D7" stroke-width="1.4"/>
+    <path d="M34 37l7 7" opacity=".5" fill="none" stroke="#F9F5D7" stroke-width="1.4"/>
+    <path d="M34 37l-6 10M34 37l12-9" opacity=".6" fill="none" stroke="#F9F5D7" stroke-width="1.4"/>
+    <g transform="translate(0 1)" opacity=".2">
+        <circle cx="41" cy="16" r="3"/>
+        <circle cx="46" cy="28" r="3"/>
+        <circle cx="41" cy="44" r="3"/>
+        <circle cx="28" cy="47" r="3"/>
+        <circle cx="17" cy="39" r="3"/>
+        <circle cx="24" cy="23" r="3"/>
+        <circle cx="34" cy="37" r="3"/>
+    </g>
+    <g fill="#F9F5D7">
+        <circle cx="41" cy="16" r="3"/>
+        <circle cx="46" cy="28" r="3"/>
+        <circle cx="41" cy="44" r="3"/>
+        <circle cx="28" cy="47" r="3"/>
+        <circle cx="17" cy="39" r="3"/>
+        <circle cx="24" cy="23" r="3"/>
+        <circle cx="34" cy="37" r="3"/>
+    </g>
+    <path d="M32 4C16.488 4 4 16.488 4 32c0 .168.01.333.014.5C4.28 17.221 16.656 5 32 5c15.344 0 27.72 12.221 27.986 27.5.003-.167.014-.332.014-.5C60 16.488 47.512 4 32 4z" fill="#F9F5D7" opacity=".1"/>
+</svg>
