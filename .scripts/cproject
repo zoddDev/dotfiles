@@ -1,0 +1,13 @@
+#!/bin/bash
+dir=$1
+name=$2
+
+code=$'#include <stdio.h>\n\nint main(void) {\n\tprintf(\"Hello '
+code+=$USER
+code+=$'\\n\");\n}\n'
+
+cd "$dir"
+mkdir "$name"
+cd "$name"
+touch "$name".c
+echo "$code" > "$name".c
