@@ -12,7 +12,7 @@ super + e
 
 # open downloads folder
 super + d
-	dolphin ~/Downloads
+	thunar ~/Downloads
 
 # ranger screenshots
 shift + super + s
