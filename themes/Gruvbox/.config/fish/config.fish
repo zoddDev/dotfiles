@@ -14,7 +14,13 @@
 
     # dotfiles
     alias dotfiles='cd $HOME/Documents/git-lab/dotfiles'
+
+    # git-d => cd git-downloads
+    alias git-d='cd $HOME/Downloads/git-downloads'
  
+    # java
+    alias javadir='cd $HOME/Dropbox/Programming/Java'
+
     # opens sqldeveloper
     alias sqldeveloper='$HOME/250gb/Desktop/sqldeveloper/sqldeveloper.sh'
     
@@ -69,10 +75,10 @@
     alias kbind='nvim $HOME/.config/sxhkd/sxhkdrc'
     
     # git-clean (clean /home/zodd/Downloads/git-downloads)    
-    alias git-clean='rm -rf -$HOME/Downloads/git-downloads/*'
+    alias git-clean='rm -rf $HOME/Downloads/git-downloads/*'
     
     # choose neofetch ascii distro
-    #alias neofetch='neofetch --ascii_distro freebsd'
+    alias neofetch='bash -c "clear && neofetch && fish"'
           
     # animalese
     alias animalese='java -jar ~/Dropbox/Programming/Java/Tests/Animalese/out/artifacts/Animalese_jar/Animalese.jar'

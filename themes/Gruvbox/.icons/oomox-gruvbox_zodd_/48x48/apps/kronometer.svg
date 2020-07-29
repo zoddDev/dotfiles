@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" version="1">
+    <rect width="16.8" height="16.8" x="-9.07" y="11.67" rx="2.8" ry="2.8" transform="rotate(-45)" opacity=".2"/>
+    <rect width="57.999" height="57.999" x="-62" y="-61" rx="29" ry="29" transform="matrix(0 -1 -1 0 0 0)" opacity=".2"/>
+    <rect width="16.8" height="16.8" x="-8.38" y="10.98" rx="2.8" ry="2.8" transform="rotate(-45)" fill="#79740D"/>
+    <path d="M13.723 2.959a2.79 2.79 0 0 0-1.98.82L3.823 11.7a2.78 2.78 0 0 0-.77 2.469c.1-.537.353-1.05.77-1.467l7.918-7.922a2.79 2.79 0 0 1 1.98-.82 2.79 2.79 0 0 1 1.981.82l7.918 7.922c.416.416.67.928.77 1.463a2.783 2.783 0 0 0-.77-2.465l-7.918-7.92a2.79 2.79 0 0 0-1.98-.82z" opacity=".1" fill="#F9F5D7"/>
+    <rect width="57.999" height="57.999" x="-61" y="-61" rx="29" ry="29" transform="matrix(0 -1 -1 0 0 0)" fill="#B7BB25"/>
+    <circle cx="32" cy="33" r="21" opacity=".2"/>
+    <circle cx="32" cy="32.001" r="21" fill="#F9F5D7"/>
+    <g transform="matrix(1.99997 0 0 1.99997 -1 2)" opacity=".1">
+        <circle cx="16.5" cy="23.5" r="1.5"/>
+        <circle cx="16.5" cy="7.5" r="1.5"/>
+        <circle cx="15.5" cy="-8.5" r="1.5" transform="rotate(90)"/>
+        <circle cx="15.5" cy="-24.5" r="1.5" transform="rotate(90)"/>
+    </g>
+    <rect width="6" height="18" x="40.77" y="-3.39" rx="3" ry="2.572" transform="rotate(30)" fill="#FA4934"/>
+    <circle cx="32" cy="33" r="5" opacity=".1"/>
+    <circle cx="32" cy="32.001" r="5" fill="#504945"/>
+    <g transform="matrix(1.99997 0 0 1.99997 -1 1.001)" fill="#504945">
+        <circle cx="16.5" cy="23.5" r="1.5"/>
+        <circle cx="16.5" cy="7.5" r="1.5"/>
+        <circle cx="15.5" cy="-8.5" r="1.5" transform="rotate(90)"/>
+        <circle cx="15.5" cy="-24.5" r="1.5" transform="rotate(90)"/>
+    </g>
+    <path d="M32 3.002C15.934 3.002 3 15.934 3 32c0 .11.011.219.018.328C3.374 16.577 16.16 4.002 32 4.002s28.626 12.575 28.982 28.326c.007-.11.018-.217.018-.328A28.935 28.935 0 0 0 32 3.002z" opacity=".2" fill="#F9F5D7"/>
+</svg>

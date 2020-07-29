@@ -6,11 +6,13 @@
 #                 ░▀▀░░▀▀▀░▀░░░▀░▀░▀░▀
 #
 
+$HOME/.scripts/autostart.bspwm
 xsetroot -cursor_name left_ptr &
 sxhkd &
 #nm-applet &
 compton &
-feh --bg-fill $HOME/Pictures/Wallpapers/Wallpapers/gruvbox-theme/gruvbox-hard-piramid.png &
+#feh --bg-fill $HOME/Pictures/Wallpapers/Wallpapers/gruvbox-theme/gruvbox-hard-piramid.png &
+feh --bg-fill $HOME/Pictures/Wallpapers/Wallpapers/gruvbox-theme/wallhaven-ym8937.jpg
 polybar example &
 wmname LG3D &
 lxpolkit &

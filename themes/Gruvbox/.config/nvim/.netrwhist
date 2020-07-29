@@ -1,7 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =5
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/home/zodd/.themes/oomox-gruvbox_zodd_/openbox-3'
+let g:netrw_dirhist_1='/home/zodd/.themes/oomox-gruvbox_zodd_'
+let g:netrw_dirhist_0='/home/zodd/.themes/oomox-gruvbox_zodd_/openbox-3'
+let g:netrw_dirhist_9='/home/zodd/.themes/oomox-gruvbox_zodd_'
+let g:netrw_dirhist_8='/home/zodd/.config/polybar'
+let g:netrw_dirhist_7='/home/zodd/.config/alacritty'
+let g:netrw_dirhist_6='/usr/lib/udev/rules.d'
 let g:netrw_dirhist_5='/home/zodd/Documents/git-lab/dotfiles/themes/AlternativeGruvbox/.config/nvim/autoload/airline/themes'
 let g:netrw_dirhist_4='/home/zodd/Documents/git-lab/dotfiles/themes/AlternativeGruvbox/.config/nvim/autoload/airline'
 let g:netrw_dirhist_3='/home/zodd/.config/sxhkd'
-let g:netrw_dirhist_2='/home/zodd/.config/fish/functions'
-let g:netrw_dirhist_1='/home/zodd/.config/nvim/colors'

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" version="1">
+    <path d="M57.2 9H6.8C5.249 9 4 10.338 4 12v41c0 1.662 1.249 3 2.8 3h50.4c1.551 0 2.8-1.338 2.8-3V12c0-1.662-1.249-3-2.8-3z" opacity=".2"/>
+    <path d="M57.2 9H6.8C5.249 9 4 10.338 4 12v40c0 1.662 1.249 3 2.8 3h50.4c1.551 0 2.8-1.338 2.8-3V12c0-1.662-1.249-3-2.8-3z" fill="#FA4934"/>
+    <rect width="28" height="28" x="10" y="18" rx="1.4" ry="1.4" fill="#3A393A"/>
+    <path d="M12 33h4.6l2.8-6 2.8 15 4.2-17 2.8 8h7" opacity=".2" fill="none" stroke="#151819" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M12 32h4.6l2.8-6 2.8 15 4.2-17 2.8 8h7" fill="none" stroke="#F9F5D7" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M49 15a5 5 0 0 0-5 5 5 5 0 0 0 5 5 5 5 0 0 0 5-5 5 5 0 0 0-5-5zm-4 14a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3zm8 0a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3zm-8 8a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3zm8 0a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3zm-8 8a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3zm8 0a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z" opacity=".2"/>
+    <g transform="scale(2)">
+        <circle cx="22.5" cy="15.5" r="1.5" fill="#F9F5D7"/>
+        <circle cx="24.5" cy="9.5" r="2.5" fill="#F9F5D7" stroke="#151819" stroke-width="0" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="22.5" cy="19.5" r="1.5" fill="#F9F5D7"/>
+        <circle cx="22.5" cy="23.5" r="1.5" fill="#F9F5D7"/>
+        <circle cx="26.5" cy="15.5" r="1.5" fill="#F9F5D7"/>
+        <circle cx="26.5" cy="19.5" r="1.5" fill="#F9F5D7"/>
+        <circle cx="26.5" cy="23.5" r="1.5" fill="#3A393A"/>
+    </g>
+    <path d="M6.8 9C5.25 9 4 10.338 4 12v1c0-1.662 1.25-3 2.8-3h50.4c1.55 0 2.8 1.338 2.8 3v-1c0-1.662-1.25-3-2.8-3z" opacity=".2" fill="#F9F5D7"/>
+</svg>

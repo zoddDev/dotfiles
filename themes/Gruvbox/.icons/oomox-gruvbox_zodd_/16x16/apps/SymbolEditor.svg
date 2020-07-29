@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" version="1">
+    <rect width="57" height="57" x="-61" y="-61" rx="2.85" ry="2.85" transform="matrix(0 -1 -1 0 0 0)" opacity=".2"/>
+    <rect width="57" height="57" x="-60" y="-61" rx="2.85" ry="2.85" transform="matrix(0 -1 -1 0 0 0)" fill="#F9F5D7"/>
+    <path d="M8 8v20h20V8zm38.775.225a10 10 0 0 0-10 10 10 10 0 0 0 10 10 10 10 0 0 0 10-10 10 10 0 0 0-10-10zM12 12h12v12H12zm2 25v6H8v8h6v6h8v-6h6v-8h-6v-6zm33 0L37 57h20zm0 4.791v13.066h-6.535z" opacity=".1"/>
+    <circle cx="46.775" cy="17.225" r="10" fill="#3A393A"/>
+    <path d="M8 7v20h20V7H8zm4 4h12v12H12V11zM14 36h8v20h-8z" fill="#3A393A"/>
+    <path fill="#3A393A" d="M28 42v8H8v-8zM47 36L37 56h20zm0 4.79l6.535 13.067h-13.07z"/>
+    <path d="M47 38.857L55.571 56H47z" fill="#3A393A"/>
+    <path d="M31 3v27H4v3h27v27h3V33h27v-3H34V3z" opacity=".3"/>
+    <path d="M6.85 3A2.843 2.843 0 0 0 4 5.85v1C4 5.27 5.27 4 6.85 4h51.3C59.73 4 61 5.27 61 6.85v-1C61 4.27 59.73 3 58.15 3H6.85z" fill="#F9F5D7" opacity=".2"/>
+</svg>
