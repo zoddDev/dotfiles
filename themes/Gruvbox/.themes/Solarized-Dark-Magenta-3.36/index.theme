@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Solarized-Dark-Magenta
+Comment=Solarized is a sixteen color palette (eight monotones, eight accent colors) designed for use with terminal and gui applications. It has several unique properties, with the colorscheme designed with both precise CIELAB lightness relationships and a refined set of hues based on fixed color wheel relationships. It has been tested extensively in real world use on color calibrated displays (as well as uncalibrated/intentionally miscalibrated displays) and in a variety of lighting conditions.
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=Solarized-Dark-Magenta
+GtkTheme=Solarized-Dark-Magenta
+IconTheme=Solarized
+MetacityTheme=Solarized-Dark-Magenta

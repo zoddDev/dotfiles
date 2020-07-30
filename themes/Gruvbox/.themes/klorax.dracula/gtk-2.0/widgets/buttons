@@ -1,0 +1,385 @@
+style "button"
+{
+  xthickness  = 4
+  ythickness  = 5
+
+  engine "pixmap"
+  {
+    image
+    {
+      function      = BOX
+      state         = NORMAL
+      file          = "../assets/button.png"
+      border        = {4, 4, 4, 4 }
+      stretch       = TRUE
+    }
+    image
+    {
+      function      = BOX
+      state         = PRELIGHT
+      file          = "../assets/button-hover.png"
+      border        = { 4, 4, 4, 4 }
+      stretch       = TRUE
+    }
+    image
+    {
+      function      = BOX
+      state         = ACTIVE
+      file          = "../assets/button-active.png"
+      border        = { 4, 4, 4, 4 }
+      stretch       = TRUE
+    }
+    image
+   {
+     function       = BOX
+     state          = INSENSITIVE
+     file           = "../assets/button-insensitive.png"
+     border         = { 4, 4, 4, 4 }
+     stretch        = TRUE
+    }
+
+
+
+    # Arrows
+
+    image
+    {
+      function              = ARROW
+      state                   = NORMAL
+      overlay_file          = "../assets/arrow-up.png"
+      overlay_border        = { 0, 0, 0, 0 }
+      overlay_stretch       = FALSE
+      arrow_direction       = UP
+    }
+    image
+    {
+      function              = ARROW
+      state                   = PRELIGHT
+      overlay_file          = "../assets/arrow-up.png"
+      overlay_border        = { 0, 0, 0, 0 }
+      overlay_stretch       = FALSE
+      arrow_direction       = UP
+    }
+    image
+    {
+      function              = ARROW
+      state                   = ACTIVE
+      overlay_file          = "../assets/arrow-up.png"
+      overlay_border        = { 0, 0, 0, 0 }
+      overlay_stretch       = FALSE
+      arrow_direction       = UP
+    }
+    image
+    {
+      function              = ARROW
+      state                   = INSENSITIVE
+      overlay_file          = "../assets/arrow-up-insensitive.png"
+      overlay_border        = { 0, 0, 0, 0 }
+      overlay_stretch       = FALSE
+      arrow_direction       = UP
+    }
+
+    image
+    {
+    function                = ARROW
+      state                   = NORMAL
+      overlay_file          = "../assets/arrow-down.png"
+      overlay_border        = { 0, 0, 0, 0 }
+      overlay_stretch       = FALSE
+      arrow_direction       = DOWN
+    }
+    image
+    {
+      function              = ARROW
+      state                   = PRELIGHT
+      overlay_file          = "../assets/arrow-down.png"
+      overlay_border        = { 0, 0, 0, 0 }
+      overlay_stretch       = FALSE
+      arrow_direction       = DOWN
+    }
+    image
+    {
+      function              = ARROW
+      state                   = ACTIVE
+      overlay_file          = "../assets/arrow-down.png"
+      overlay_border        = { 0, 0, 0, 0 }
+      overlay_stretch       = FALSE
+      arrow_direction       = DOWN
+    }
+
+    image
+    {
+      function              = ARROW
+      state                   = INSENSITIVE
+      overlay_file          = "../assets/arrow-down-insensitive.png"
+      overlay_border        = { 0, 0, 0, 0 }
+      overlay_stretch       = FALSE
+      arrow_direction       = DOWN
+    }
+
+    image
+    {
+      function              = ARROW
+      state                   = NORMAL
+      overlay_file          = "../assets/arrow-left.png"
+      overlay_border        = { 0, 0, 0, 0 }
+      overlay_stretch       = FALSE
+      arrow_direction       = LEFT
+    }
+    image
+    {
+        function                = ARROW
+        state                   = PRELIGHT
+        overlay_file          = "../assets/arrow-left.png"
+        overlay_border      = { 0, 0, 0, 0 }
+        overlay_stretch     = FALSE
+        arrow_direction     = LEFT
+    }
+    image
+    {
+        function                = ARROW
+        state                   = ACTIVE
+        overlay_file          = "../assets/arrow-left.png"
+        overlay_border      = { 0, 0, 0, 0 }
+        overlay_stretch     = FALSE
+        arrow_direction     = LEFT
+    }
+    image
+    {
+        function                = ARROW
+        state                   = INSENSITIVE
+        overlay_file          = "../assets/arrow-left-insensitive.png"
+        overlay_border      = { 0, 0, 0, 0 }
+        overlay_stretch     = FALSE
+        arrow_direction     = LEFT
+    }
+
+    image
+    {
+        function                = ARROW
+        state                     = NORMAL
+        overlay_file          = "../assets/arrow-right.png"
+        overlay_border      = { 0, 0, 0, 0 }
+        overlay_stretch     = FALSE
+        arrow_direction     = RIGHT
+    }
+    image
+    {
+        function                = ARROW
+        state                   = PRELIGHT
+        overlay_file          = "../assets/arrow-right.png"
+        overlay_border      = { 0, 0, 0, 0 }
+        overlay_stretch     = FALSE
+        arrow_direction     = RIGHT
+    }
+    image
+    {
+        function                = ARROW
+        state                   = ACTIVE
+        overlay_file          = "../assets/arrow-right.png"
+        overlay_border      = { 0, 0, 0, 0 }
+        overlay_stretch     = FALSE
+        arrow_direction     = RIGHT
+    }
+    image
+    {
+        function                = ARROW
+        state                   = INSENSITIVE
+        overlay_file          = "../assets/arrow-right-insensitive.png"
+        overlay_border      = { 0, 0, 0, 0 }
+        overlay_stretch     = FALSE
+        arrow_direction     = RIGHT
+    }
+
+
+
+
+    image
+    {
+      function            = TAB
+      state                 = INSENSITIVE
+      overlay_file        = "../assets/arrow-down-insensitive.png"
+      overlay_stretch     = FALSE
+    }
+    image
+    {
+      function              = TAB
+      state                   = NORMAL
+      overlay_file          = "../assets/arrow-down.png"
+      overlay_border        = { 0, 0, 0, 0 }
+      overlay_stretch       = FALSE
+    }
+    image
+    {
+      function              = TAB
+      state                   = PRELIGHT
+      overlay_file          = "../assets/arrow-down.png"
+      overlay_border        = { 0, 0, 0, 0 }
+      overlay_stretch       = FALSE
+    }
+  }
+}
+
+style "togglebutton"
+{
+  xthickness  = 4
+  ythickness  = 5
+
+  engine "pixmap"
+  {
+    image
+    {
+      function      = BOX
+      state         = NORMAL
+      file          = "../assets/togglebutton.png"
+      border        = {4, 4, 4, 4 }
+      stretch       = TRUE
+    }
+    image
+    {
+      function      = BOX
+      state         = PRELIGHT
+      file          = "../assets/togglebutton-hover.png"
+      border        = { 4, 4, 4, 4 }
+      stretch       = TRUE
+    }
+    image
+    {
+      function      = BOX
+      state         = ACTIVE
+      file          = "../assets/togglebutton-active.png"
+      border        = { 4, 4, 4, 4 }
+      stretch       = TRUE
+    }
+    image
+   {
+     function       = BOX
+     state          = INSENSITIVE
+     file           = "../assets/togglebutton-insensitive.png"
+     border         = { 4, 4, 4, 4 }
+     stretch        = TRUE
+    }
+  }
+}
+
+style "spinbutton" = "default"
+{
+  #bg[NORMAL] = @bg_color
+
+  xthickness  = 3
+  ythickness  = 3
+  GtkWidget::interior_focus = 1
+
+engine "pixmap"
+  {
+    image
+    {
+      function      = ARROW
+    }
+
+  #Spin-up
+  image
+  {
+    function          = BOX
+    state             = NORMAL
+    detail            = "spinbutton_up"
+    file              = "../assets/spinbutton-up.png"
+    border            = { 5, 5, 5, 5 }
+    stretch           = TRUE
+    overlay_file      = "../assets/arrow-small-up.png"
+    overlay_stretch   = FALSE
+  }
+  image
+  {
+    function          = BOX
+    state             = PRELIGHT
+    detail            = "spinbutton_up"
+    file              = "../assets/spinbutton-up.png"
+    border            = { 5, 5, 5, 5 }
+    stretch           = TRUE
+    overlay_file      = "../assets/arrow-small-up-hover.png"
+    overlay_stretch   = FALSE
+  }
+  image
+  {
+    function          = BOX
+    state             = INSENSITIVE
+    detail            = "spinbutton_up"
+    file              = "../assets/spinbutton-up-insensitive.png"
+    border            = { 5, 5, 5, 5 }
+    stretch           = TRUE
+    overlay_file      = "../assets/arrow-small-up-insensitive.png"
+    overlay_stretch   = FALSE
+  }
+  image
+  {
+    function          = BOX
+    state             = ACTIVE
+    detail            = "spinbutton_up"
+    file              = "../assets/spinbutton-up.png"
+    border            = { 5, 5, 5, 5 }
+    stretch           = TRUE
+    overlay_file      = "../assets/arrow-small-up-active.png"
+    overlay_stretch   = FALSE
+  }
+
+  # Spin-Down
+    image
+    {
+      function        = BOX
+      state           = NORMAL
+      detail          = "spinbutton_down"
+      file            = "../assets/spinbutton-down.png"
+      border          = { 5, 5, 5, 5 }
+      stretch         = TRUE
+      overlay_file    = "../assets/arrow-small-down.png"
+      overlay_stretch = FALSE
+    }
+    image
+    {
+      function        = BOX
+      state           = PRELIGHT
+      detail          = "spinbutton_down"
+      file            = "../assets/spinbutton-down.png"
+      border          = { 5, 5, 5, 5 }
+      stretch         = TRUE
+      overlay_file    = "../assets/arrow-small-down-hover.png"
+      overlay_stretch = FALSE
+    }
+    image
+    {
+      function        = BOX
+      state           = INSENSITIVE
+      detail          = "spinbutton_down"
+      file            = "../assets/spinbutton-down-insensitive.png"
+      border          = { 5, 5, 5, 5 }
+      stretch         = TRUE
+      overlay_file    = "../assets/arrow-small-down-insensitive.png"
+      overlay_stretch = FALSE
+    }
+    image
+    {
+      function        = BOX
+      state           = ACTIVE
+      detail          = "spinbutton_down"
+      file            = "../assets/spinbutton-down.png"
+      border          = { 5, 5, 5, 5 }
+      stretch         = TRUE
+      overlay_file    = "../assets/arrow-small-down-hover.png"
+      overlay_stretch = FALSE
+    }
+  }
+}
+
+style "button_label" {
+  fg[NORMAL]      = @button_fg_color
+  fg[ACTIVE]      = @button_fg_color
+  fg[INSENSITIVE] = @button_insensitive_fg_color
+}
+
+style "combobox_separator"
+{
+  xthickness = 0
+  ythickness = 0
+  GtkWidget::wide-separators = 1
+}

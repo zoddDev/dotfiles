@@ -182,8 +182,15 @@
     <!-- 'Left', 'Middle', 'Right' -->
   </dock>
   <keyboard>
+    <keybind key="W-c">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>center</x>
+        <y>center</y>
+      </action>
+    </keybind>
     <keybind key="W-f">
-        <action name="ToggleFullscreen"/>
+      <action name="ToggleFullscreen"/>
     </keybind>
     <keybind key="W-Up">
       <action name="ToggleMaximize"/>
@@ -795,8 +802,17 @@
         <y>center</y>
       </position>
     </application>
-    <application class="Polybar"><layer>below</layer></application>
-    <!--<decor>no</decor>-->
+    <application class="Polybar">
+      <layer>below</layer>
+    </application>
+    <application name="chromium">
+      <desktop>2</desktop>
+      <maximized>yes</maximized>
+    </application>
+    <application name="discord">
+      <desktop>7</desktop>
+      <maximized>yes</maximized>
+    </application>
     <!-- enable or disable window decorations -->
     <!--
   # this is an example with comments through out. use these to make your

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Marwaita Pop Dark
+Comment=GTK Theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Marwaita Pop Dark
+MetacityTheme=Marwaita Pop Dark
+IconTheme=Marwaita-Dark
+CursorTheme=Marwaita
+CursorSize=24

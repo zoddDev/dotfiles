@@ -52,7 +52,7 @@ super + shift + Print
 
 # rofi 
 super + Return 
-    rofi -font "Iosevka Bold 11" -show drun -show-icons 
+    rofi -font "Iosevka Bold 11" -show drun -show-icons -width 25 -lines 11
 
 # rofi-usb unmount
 super + u
@@ -69,7 +69,7 @@ super + Escape
 # AUDIO (pulsemixer)
 # pulsemixer
 ctrl + alt + v
-    bspc rule -a \* -o state=floating && alacritty -e /bin/fish -C pulsemixer
+    alacritty -e /bin/fish -C "pulsemixer"
 
 # pulsemixer volume UP (+5)
 super + F8
