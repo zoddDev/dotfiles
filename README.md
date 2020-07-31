@@ -78,6 +78,8 @@ where
 may be:
 
 ```
+gruvbox                 - Classic Gruvbox look
+dracula                 - Classic Dracula look
 doombox                 - Doom version of gruvbox
 alternative-gruvbox     - atypical version of gruvbox with lightly changed palette
 solarized-dark          - Solarized Dark theme with a small vaporwave flavour (with some pinkier colors)
