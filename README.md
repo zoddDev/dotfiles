@@ -37,7 +37,8 @@ You can install one of them by running the setup executable.
 
 Installing necessary packages:
 
-[WARNING!]: Support for Arch Linux based systems only (installation via pacman):
+[WARNING!]: Executing these scripts will overwrite several files in your system, only execute this in case you have a backup of your files.
+[WARNING!]: Support for Arch Linux based systems only (installation via pacman).
 
 Use:
 
