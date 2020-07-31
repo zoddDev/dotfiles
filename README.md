@@ -11,13 +11,23 @@ Those are my different bspwm themes dotfiles, hope you find something useful in 
 
 <br/><br/>
 
-## DOOMBOX
-![alt text](screenshots/Doombox.jpg)
+## Gruvbox
+![alt text](screenshots/Gruvbox.png)
+
+<br/><br/>
+
+## Dracula
+![alt text](screenshots/Dracula.png)
 
 <br/><br/>
 
 ## AlternativeGruvbox
 ![alt text](screenshots/Alternative-Gruvbox.png)
+
+<br/><br/>
+
+## DOOMBOX
+![alt text](screenshots/Doombox.jpg)
 
 <br/><br/>
 
