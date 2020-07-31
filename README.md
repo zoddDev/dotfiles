@@ -33,11 +33,12 @@ Those are my different bspwm themes dotfiles, hope you find something useful in 
 
 # Install
 
+## [WARNING!]: These are my personal config files, I don't recommend using this script since this will overwrite several files in your system, only execute this in case you have a backup of your files.
+
 You can install one of them by running the setup executable.
 
 Installing necessary packages:
 
-[WARNING!]: Executing these scripts will overwrite several files in your system, only execute this in case you have a backup of your files.
 [WARNING!]: Support for Arch Linux based systems only (installation via pacman).
 
 Use:
