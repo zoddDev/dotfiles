@@ -69,7 +69,7 @@ may be:
 
 ```
 theme        - installs <THEME_NAME> theme
-all          - installs all packages and finally installs selected theme if 2nd argument exists
+all          - installs all packages and finally installs <THEME_NAME> theme if this argument was passed
 ```
 
 where 
