@@ -6798,6 +6798,12 @@ XfdesktopIconView.view .rubberband {
 
 .thunar .sidebar .view:not(:selected) {
   background-color: transparent;
+  color: #d5c4a1
+}
+
+.thunar .sidebar .view {
+  background-color: transparent;
+  color: #1d2021
 }
 
 .thunar statusbar {
@@ -6934,7 +6940,7 @@ XfdesktopIconView.view .rubberband {
    use responsibly! */
 /*
 widget text/foreground color */
-@define-color theme_fg_color #d5c4a1;
+@define-color theme_fg_color #ffffff;
 /*
 text color for entries, views and content in general */
 @define-color theme_text_color #d5c4a1;

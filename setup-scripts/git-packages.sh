@@ -12,7 +12,7 @@ echo "[START]: git-packages installation..."
 
 # spicetify-cli
 # https://aur.archlinux.org/spicetify-cli.git
-./aur-get https://aur.archlinux.org/spicetify-cli.git &&
+./aur-get https://aur.archlinux.org/spicetify-cli.git
 sudo chmod a+wr /opt/spotify
 sudo chmod a+wr /opt/spotify/Apps -R
 # use:
@@ -21,15 +21,19 @@ sudo chmod a+wr /opt/spotify/Apps -R
 
 # compton-tyrone-git
 # https://aur.archlinux.org/compton-tryone-git.git
-./aur-get https://aur.archlinux.org/compton-tryone-git.git &&
+./aur-get https://aur.archlinux.org/compton-tryone-git.git
 
 # pfetch-git
 # https://aur.archlinux.org/pfetch-git.git
-./aur-get https://aur.archlinux.org/pfetch-git.git &&
+./aur-get https://aur.archlinux.org/pfetch-git.git
 
 # dropbox
 # https://aur.archlinux.org/dropbox.git
 ./aur-get https://aur.archlinux.org/dropbox.git
+
+# yay
+# https://aur.archlinux.org/yay.git
+./aur-get https://aur.archlinux.org/yay.git
 
 #
 # GITHUB
@@ -37,7 +41,7 @@ sudo chmod a+wr /opt/spotify/Apps -R
 
 # BeautifulDiscord
 # https://github.com/leovoel/BeautifulDiscord
-python3 -m pip install -U https://github.com/leovoel/BeautifulDiscord/archive/master.zip &&
+python3 -m pip install -U https://github.com/leovoel/BeautifulDiscord/archive/master.zip
 # use: python -m beautifuldiscord --css ~/.config/discord/themes/$THEME_NAME
 
-echo "[FINISHED]: git-packages installation (success!)"
+echo "[FINISHED]: git-packages installation"
