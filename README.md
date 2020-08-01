@@ -11,8 +11,13 @@ Those are my different bspwm themes dotfiles, hope you find something useful in 
 
 <br/><br/>
 
-## DOOMBOX
-![alt text](screenshots/Doombox.jpg)
+## Gruvbox
+![alt text](screenshots/Gruvbox.png)
+
+<br/><br/>
+
+## Dracula
+![alt text](screenshots/Dracula.png)
 
 <br/><br/>
 
@@ -21,13 +26,20 @@ Those are my different bspwm themes dotfiles, hope you find something useful in 
 
 <br/><br/>
 
+## DOOMBOX
+![alt text](screenshots/Doombox.jpg)
+
+<br/><br/>
+
 # Install
+
+## [WARNING!]: These are my personal config files, I don't recommend using this script since this will overwrite several files in your system, only execute this in case you have a backup of your files.
 
 You can install one of them by running the setup executable.
 
 Installing necessary packages:
 
-[WARNING!]: Support for Arch Linux based systems only (installation via pacman):
+[WARNING!]: Support for Arch Linux based systems only (installation via pacman).
 
 Use:
 
@@ -58,7 +70,7 @@ may be:
 
 ```
 theme        - installs <THEME_NAME> theme
-all          - installs all packages and finally installs selected theme if 2nd argument exists
+all          - installs all packages and finally installs <THEME_NAME> theme if this argument was passed
 ```
 
 where 
@@ -66,7 +78,9 @@ where
 may be:
 
 ```
+gruvbox                 - Classic Gruvbox look
+dracula                 - Classic Dracula look
 doombox                 - Doom version of gruvbox
-alternative-gruvbox     - atypical version of gruvbox with lightly changed palette
+alternative-gruvbox     - Atypical version of gruvbox with lightly changed palette
 solarized-dark          - Solarized Dark theme with a small vaporwave flavour (with some pinkier colors)
 ```
