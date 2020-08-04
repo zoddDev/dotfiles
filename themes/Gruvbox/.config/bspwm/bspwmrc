@@ -26,7 +26,7 @@ pidof $HOME/.scripts/bspswallow || $HOME/.scripts/bspswallow &
 
 # Workspaces
 
-bspc monitor -d    ﳁ     
+bspc monitor -d    ﳁ   ﭮ  
 
 bspc config border_width         2
 bspc config window_gap          12

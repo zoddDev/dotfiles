@@ -78,7 +78,7 @@
     alias git-clean='rm -rf $HOME/Downloads/git-downloads/*'
     
     # choose neofetch ascii distro
-    alias neofetch='bash -c "clear && neofetch && fish"'
+    alias neofetch='bash -c "clear && /bin/neofetch --ascii $HOME/.config/neofetch/btw --ascii_colors 5 --colors 2 7 7 2 2 7 && fish"'
           
     # animalese
     alias animalese='java -jar ~/Dropbox/Programming/Java/Tests/Animalese/out/artifacts/Animalese_jar/Animalese.jar'

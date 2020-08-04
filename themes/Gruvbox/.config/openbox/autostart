@@ -4,7 +4,8 @@ sxhkd &
 dunst &
 compton &
 dropbox &
-feh --bg-fill $HOME/Pictures/Wallpapers/Wallpapers/gruvbox-theme/wallhaven-ym8937.jpg
+/*feh --bg-fill $HOME/Pictures/Wallpapers/Wallpapers/gruvbox-theme/wallhaven-ym8937.jpg*/
+feh --bg-fill $HOME/Pictures/Wallpapers/Wallpapers/gruvbox-theme/nikolai-edit.jpg
 polybar example &
 lxpolkit &
 xset -dpms s off & # disable screen blanking &

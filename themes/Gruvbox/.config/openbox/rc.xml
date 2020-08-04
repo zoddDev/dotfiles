@@ -93,19 +93,19 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>Cantarell</name>
+      <name>Monoid Bold Semi-Condensed</name>
       <size>9</size>
       <!-- font size in points -->
-      <weight>Bold</weight>
+      <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
       <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>Cantarell</name>
+      <name>Monoid Bold Semi-Condensed</name>
       <size>9</size>
       <!-- font size in points -->
-      <weight>Bold</weight>
+      <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
       <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
@@ -129,7 +129,7 @@
       <name>ﳁ</name>
       <name></name>
       <name></name>
-      <name></name>
+      <name>ﭮ</name>
       <name></name>
       <name></name>
     </names>
@@ -796,7 +796,7 @@
     <!-- show the manage desktops section in the client-list-(combined-)menu -->
   </menu>
   <applications>
-    <application type="normal">
+<application type="normal">
       <position>
         <x>center</x>
         <y>center</y>
@@ -807,6 +807,10 @@
     </application>
     <application name="chromium">
       <desktop>2</desktop>
+      <maximized>yes</maximized>
+    </application>
+    <application name="Spotify">
+      <desktop>8</desktop>
       <maximized>yes</maximized>
     </application>
     <application name="discord">

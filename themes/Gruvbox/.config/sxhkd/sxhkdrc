@@ -95,4 +95,4 @@ super + alt + r
 super + alt + q
     openbox --exit
 # ------------------------------------------------------------------------
-
+# gpg --keyserver keys.gnupg.net --recv-keys 1D1F0DC78F173680

@@ -5,43 +5,94 @@ echo "[START]: theme installation..."
 SETUP_ROOT="$(dirname "$PWD")"
 arg=$1
 
+function restart_applications {
+    # args
+    config_name=$1
+
+    # kill
+    killall dunst &
+    killall polybar &
+    killall compton &
+     
+    # restart
+    dunst &
+    pkill -USR1 -x sxhkd &
+    compton &
+
+    case "$arg" in 
+        "doombox" ) 
+            feh --bg-fill $HOME/Pictures/Wallpapers/Wallpapers/doom-theme/Doom-Eternal_Maurader_Wallpaper_3840x2160-01.jpg &
+            $HOME/.config/polybar/launch.sh & ;;        
+
+        "alternative-gruvbox" ) 
+            feh --bg-fill $HOME/Pictures/Wallpapers/Wallpapers/gruvbox-theme/randall-mackey-mural2.jpg &
+            $HOME/.config/polybar/launch.sh & ;; 
+
+        "solarized-dark" ) 
+            feh --bg-fill $HOME/Pictures/Wallpapers/Wallpapers/vaporwave-theme/palms.jpg &
+            $HOME/.config/polybar/launch.sh & ;; 
+
+        "dracula" ) 
+            feh --bg-fill $HOME/Pictures/Wallpapers/Wallpapers/dracula-theme/dracula-purplish.png &
+            polybar example & ;;
+
+        "gruvbox" ) 
+            feh --bg-fill $HOME/Pictures/Wallpapers/Wallpapers/gruvbox-theme/wallhaven-ym8937.jpg &
+            polybar example & ;;
+    
+        *) echo "[ERROR]: no config with name \"$arg\" found" && exit 1 ;;
+    esac
+}
+
 function setup_config {
-   # args
-   config_name=$1
-   spicetify_theme=$2
-   beautifuldiscord_theme=$3
-   
-   # backup of .xinitrc and .bashrc
-   cp $HOME/.xinitrc $HOME/.xinitrc-backup
-   cp $HOME/.bashrc $HOME/.bashrc-backup
+    # args
+    config_name=$1
+    spicetify_theme=$2
+    beautifuldiscord_theme=$3
+    
+    # backup of .xinitrc and .bashrc
+    cp $HOME/.xinitrc $HOME/.xinitrc-backup
+    cp $HOME/.bashrc $HOME/.bashrc-backup
 
-   #
-   # copying theme dotfiles
-   #
-   echo
-   echo "[INFO]: applying \"$config_name\" theme..."
+    #
+    # copying theme dotfiles
+    #
+    echo
+    echo "[INFO]: applying \"$config_name\" theme..."
 
-   sudo cp -r -a $SETUP_ROOT/dotfiles/themes/$config_name/. $HOME
+    sudo cp -r -a $SETUP_ROOT/dotfiles/themes/$config_name/. $HOME
 
-   #
-   # configuring spotify theme (spicetify)
-   #
-   echo 
-   echo "[INFO]: applying \"$config_name\" spicetify theme..."
+    #
+    # restarting applications
+    #
+    echo
+    echo "[INFO]: restarting some applications..."
 
-   fish -C spicetify config current_theme $spicetify_theme &
-   sleep 5
-   fish -C spicetify apply &
+    #restart_applications $config_name
 
-   #
-   # configuring discord theme (beautifuldiscord)
-   #
-   echo 
-   echo "[INFO]: applying \"$config_name\" beautiful-discord theme..."
+    #
+    # configuring spotify theme (spicetify)
+    #
+    echo 
+    echo "[INFO]: applying \"$config_name\" spicetify theme..."
 
-   discord > /dev/null & 
-   sleep 5 
-   python -m beautifuldiscord --css $HOME/.config/discord/themes/$beautifuldiscord_theme
+    fish -C spicetify config current_theme $spicetify_theme &
+    sleep 5
+    fish -C spicetify apply &
+
+    #
+    # configuring discord theme (beautifuldiscord)
+    #
+    echo 
+    echo "[INFO]: applying \"$config_name\" beautiful-discord theme..."
+
+    discord > /dev/null & 
+    sleep 5 
+    python -m beautifuldiscord --css $HOME/.config/discord/themes/$beautifuldiscord_theme
+
+    # restart
+
+    bspc quit || openbox --exit
 }
 
 shopt -s nocasematch
