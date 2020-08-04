@@ -15,9 +15,9 @@ function restart_applications {
     killall compton &
      
     # restart
+    compton &
     dunst &
     pkill -USR1 -x sxhkd &
-    compton &
 
     case "$arg" in 
         "doombox" ) 
@@ -102,6 +102,7 @@ case "$arg" in
     "alternative-gruvbox" ) setup_config "AlternativeGruvbox" "Gruvbox-Gold" "Duvbox/duvbox.css" ;; 
     "solarized-dark" ) setup_config "SolarizedDark" "SolarizedDark" "SolarizedDark/solarized_dark.css" ;; 
     "dracula" ) setup_config "Dracula" "Dracula" "Dracula/discord-dracula.css" ;; 
+    "nord" ) setup_config "Nord" "Nord" "Nord/discord-nord.css" ;; 
 
     *) echo "[ERROR]: no config with name \"$arg\" found" && exit 1 ;;
 esac
