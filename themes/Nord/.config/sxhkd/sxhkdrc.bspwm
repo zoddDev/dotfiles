@@ -4,7 +4,7 @@
 
 # terminal emulator
 ctrl + alt + t
-	alacritty -e /bin/fish -C pfetch
+	alacritty -e /bin/fish -C neofetch
 
 # dolphin
 super + e
