@@ -6,6 +6,9 @@ Those are my different bspwm themes dotfiles, hope you find something useful in 
 
 # Theme Previews
 
+## Nord
+![alt text](screenshots/Nord.png)
+
 ## SolarizedDark
 ![alt text](screenshots/SolarizedDark.png)
 
