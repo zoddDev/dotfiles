@@ -1,3 +1,19 @@
+; ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗ 
+; ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+; ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+; ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+; ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+; ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+                                                       
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;    ____ ___  _     ___  ____  ____  
+;   / ___/ _ \| |   / _ \|  _ \/ ___| 
+;  | |  | | | | |  | | | | |_) \___ \ 
+;  | |__| |_| | |__| |_| |  _ < ___) |
+;   \____\___/|_____\___/|_| \_\____/ 
+                                    
 [colors]
 background = #282e3a
 background-alt = #d1c4e99
@@ -6,6 +22,17 @@ foreground-alt = #282e3a
 primary = #ffb52a
 secondary = #e60053
 alert = #B48EAD
+
+cyan = #88C0D0
+aqua = #8FBCBB
+red = #BF616A
+yellow = #EBCB8B
+green = #A3BE8C
+orange = #D08770
+magenta = #BF616A
+white = #D8DEE9
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 [bar/example]
 width = 100%
@@ -20,7 +47,7 @@ padding-left = 0
 padding-right = 0
 
 border-size = 0
-border-color = #e5e9f0
+border-color = 
 
 module-margin-left = 0
 module-margin-right = 0
@@ -28,8 +55,8 @@ module-margin-right = 0
 font-0 = "Inconsolata CondensedBlack:size=12;3"
 font-1 = "SauceCodePro Nerd Font Mono:size=20;5"
 font-2 = "Material Icons:pixelsize=15;5"
-;font-0 = "Siji:size=64:pixelsize=15;1"
 
+; MODULES SETUP
 modules-left = workspaces 
 modules-center = spotify
 modules-right = volume battery network date shutdown
@@ -39,7 +66,7 @@ modules-right = volume battery network date shutdown
 ;tray-background = #0063ff
 
 cursor-click = pointer
-cursor-scroll = ns-resize
+cursor-scroll = pointer
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [module/bspwm]
@@ -79,7 +106,7 @@ wrapping-scroll = false
 ;pin-workspaces = true
 
 label-mode-padding = 2
-label-mode-foreground = #000
+label-mode-foreground = 
 label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
@@ -121,7 +148,7 @@ format = <label-state>
 label-active = %name%
 label-active-padding = 2
 label-active-foreground = ${colors.background}
-label-active-background = #8FBCBB
+label-active-background = ${colors.aqua}
 label-active-underline = ${colors.background}
 
 label-occupied = %name%
@@ -132,7 +159,7 @@ label-occupied-background = ${colors.background}
 label-urgent = %name%
 label-urgent-padding = 2
 label-urgent-foreground = ${colors.foreground}
-label-urgent-background = #BF616A
+label-urgent-background = ${colors.magenta}
 label-urgent-underline = ${colors.background}
 
 label-empty = %name%
@@ -161,12 +188,12 @@ ramp-volume-1 =墳
 ramp-volume-1-font = 2
 ramp-volume-2 =墳
 ramp-volume-2-font = 2
-format-volume-background = #EBCB8B
+format-volume-background = ${colors.yellow}
 format-volume-foreground = ${colors.background}
 format-volume-padding = 1
 
 format-muted = <label-muted>
-format-muted-background = #83a598 	
+format-muted-background = ${colors.white} 	
 format-muted-foreground = ${colors.background}
 label-muted ="  "
 format-muted-font = 2
@@ -187,15 +214,15 @@ label-discharging = "%percentage%% "
 format-discharging-prefix = " "
 format-discharging-prefix-font = 2
 
-format-discharging-background = #B48EAD
-format-discharging-foreground = #000
+format-discharging-background = ${colors.aqua}
+format-discharging-foreground = ${colors.background}
 
-format-charging-background = #B48EAD
-format-charging-foreground = #000
+format-charging-background = ${colors.orange}
+format-charging-foreground = ${colors.background}
 
 label-full = 
-format-full-background = #B48EAD
-format-full-foreground = #000
+format-full-background = ${colors.green}
+format-full-foreground = ${colors.background}
 format-full-prefix-font = 1
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [module/network]
@@ -211,15 +238,18 @@ format-disconnected = <label-disconnected>
 label-disconnected = 
 label-disconnected-font = 2
 
-format-connected-background = #8be9fd
-format-connected-foreground = #000
+format-connected-background = ${colors.cyan}
+format-connected-foreground = ${colors.background}
+format-disconnected-background = ${colors.white}
+format-disconnected-foreground = ${colors.background}
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [module/spotify]
 type = custom/script
 interval = 1
 format-prefix ="  "
 format = <label>
-format-background = #88C0D0
+format-background = ${colors.cyan}
 format-foreground = ${colors.background}
 format-padding = 4
 
@@ -248,7 +278,7 @@ label = %date% %time%
 [module/shutdown]
 type = custom/text
 content = "ﴚ"
-content-background = #BF616A
+content-background = ${colors.red}
 content-foreground = ${colors.background}
 content-padding = 2
 click-left = systemctl poweroff
