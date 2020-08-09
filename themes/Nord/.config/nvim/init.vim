@@ -8,8 +8,6 @@ set nu rnu
 
 " Better searches
 
-nnoremap <C-f> :nohlsearch
-
 filetype plugin indent on
 
 set tabstop=4
