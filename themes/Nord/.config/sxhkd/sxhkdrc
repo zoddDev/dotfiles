@@ -10,6 +10,10 @@ ctrl + alt + t
 super + e
     thunar 
 
+# mutt gmail
+ctrl + alt + g
+	alacritty -e /bin/fish -C neomutt
+
 # open downloads folder
 super + d
 	thunar ~/Downloads
