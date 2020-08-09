@@ -10,9 +10,13 @@ echo "[START]: git-packages installation..."
 # AUR
 #
 
+# yay
+# https://aur.archlinux.org/yay.git
+./aur-get https://aur.archlinux.org/yay.git
+
 # spicetify-cli
 # https://aur.archlinux.org/spicetify-cli.git
-./aur-get https://aur.archlinux.org/spicetify-cli.git
+yay -S spicetify-cli compton-tryone-git pfetch-git dropbox
 sudo chmod a+wr /opt/spotify
 sudo chmod a+wr /opt/spotify/Apps -R
 # use:
@@ -21,19 +25,12 @@ sudo chmod a+wr /opt/spotify/Apps -R
 
 # compton-tyrone-git
 # https://aur.archlinux.org/compton-tryone-git.git
-./aur-get https://aur.archlinux.org/compton-tryone-git.git
 
 # pfetch-git
 # https://aur.archlinux.org/pfetch-git.git
-./aur-get https://aur.archlinux.org/pfetch-git.git
 
 # dropbox
 # https://aur.archlinux.org/dropbox.git
-./aur-get https://aur.archlinux.org/dropbox.git
-
-# yay
-# https://aur.archlinux.org/yay.git
-./aur-get https://aur.archlinux.org/yay.git
 
 #
 # GITHUB
