@@ -19,6 +19,8 @@ echo "[START]: git-packages installation..."
 yay -S spicetify-cli compton-tryone-git pfetch-git dropbox polybar python-pip
 sudo chmod a+wr /opt/spotify
 sudo chmod a+wr /opt/spotify/Apps -R
+
+pip install dbus-python
 # use:
 # spicetify config current_theme $THEME_NAME
 # spicetify auto backup apply

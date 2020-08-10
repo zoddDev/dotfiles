@@ -96,6 +96,7 @@ function setup_config {
 }
 
 cp -r ../.scripts $HOME
+sudo cp ../enviroment /etc/enviroment
 
 shopt -s nocasematch
 case "$arg" in 
