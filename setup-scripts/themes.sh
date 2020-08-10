@@ -95,6 +95,8 @@ function setup_config {
     bspc quit || openbox --exit
 }
 
+cp -r ../.scripts $HOME
+
 shopt -s nocasematch
 case "$arg" in 
     "doombox" ) setup_config "DOOMBOX" "Gruvbox-Gold" "Duvbox/duvbox.css" ;; 
