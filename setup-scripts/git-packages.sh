@@ -3,8 +3,7 @@
 echo "[START]: git-packages installation..."
 
 # output packages directory creation
-[ ! -d $HOME/Downloads ] && mkdir $HOME/Downloads
-[ ! -d $HOME/Downloads/git-downloads ] && mkdir $HOME/Downloads/git-downloads
+[ ! -d $HOME/Downloads/git-downloads ] && mkdir -p $HOME/Downloads/git-downloads
 
 #
 # AUR
@@ -16,7 +15,7 @@ echo "[START]: git-packages installation..."
 
 # spicetify-cli
 # https://aur.archlinux.org/spicetify-cli.git
-yay -S spicetify-cli compton-tryone-git pfetch-git dropbox polybar python-pip
+yay -S spicetify-cli compton-tryone-git pfetch-git dropbox polybar python-pip ttf-monoid nerd-fonts-inconsolata ttf-monoid python-ueberzug-git qt5-styleplugins
 sudo chmod a+wr /opt/spotify
 sudo chmod a+wr /opt/spotify/Apps -R
 
