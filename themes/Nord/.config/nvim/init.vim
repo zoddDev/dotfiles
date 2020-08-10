@@ -34,7 +34,11 @@ nnoremap <CR> G
 noremap ' $
 
 " delete default status bar
+let s:hidden_all = 1
+set noshowmode
+set noruler
 set laststatus=0
+set noshowcmd
 
 " idk what is this tbh
 "let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 0
