@@ -1,0 +1,7 @@
+#!/bin/bash
+
+for var in "$@"
+do
+    mv $var $HOME/Trash
+    echo Moved $var to "$HOME/Trash"
+done
