@@ -2,7 +2,7 @@
 
 Hello there!
 
-Those are my different bspwm and openbox themes dotfiles, hope you find something useful in this mess hehe ^^
+Those are my different bspwm and openbox themes dotfiles, hope you find something useful in this mess ^^
 
 # Theme Previews
 
