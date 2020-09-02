@@ -2,12 +2,19 @@
 
 Hello there!
 
-Those are my different bspwm themes dotfiles, hope you find something useful in this mess hehe ^^
+Those are my different bspwm and openbox themes dotfiles, hope you find something useful in this mess hehe ^^
 
 # Theme Previews
 
+## PinkNord
+![alt text](screenshots/PinkNord.png)
+
+<br/><br/>
+
 ## Nord
 ![alt text](screenshots/Nord.png)
+
+<br/><br/>
 
 ## SolarizedDark
 ![alt text](screenshots/SolarizedDark.png)
