@@ -1,0 +1,214 @@
+style "entry"
+{
+    xthickness    = 4
+    ythickness      = 4
+
+  base[NORMAL] = @base_color
+  base[ACTIVE] = @base_color
+  base[INSENSITIVE] = @insensitive_base_color
+
+    engine "pixmap"
+    {
+    image
+    {
+        function        = SHADOW
+        detail          = "entry"
+    state       = NORMAL
+        shadow          = IN
+        file            = "../assets/entry.png"
+        border          = { 4, 4, 4, 4 }
+        stretch         = TRUE
+    }
+    image
+    {
+        function        = SHADOW
+        detail          = "entry"
+    state       = INSENSITIVE
+        shadow          = IN
+        file            = "../assets/entry-insensitive.png"
+        border          = { 4, 4, 4, 4 }
+        stretch         = TRUE
+    }
+  image
+  {
+        function        = SHADOW
+        detail          = "entry"
+    state       = ACTIVE
+        file              = "../assets/entry-active.png"
+        border          = { 4, 4, 4, 4 }
+        stretch         = TRUE
+    }
+    image
+    {
+        function    = FLAT_BOX
+        detail      = "entry_bg"
+        state       = ACTIVE
+        file              = "../assets/null.png"
+        border          = { 0, 0, 0, 0 }
+        stretch         = TRUE
+    }
+ }
+}
+
+style "combobox_entry"
+{
+  xthickness = 3
+  ythickness = 4
+
+  engine "pixmap" {
+
+    # LTR version
+
+    image {
+      function = SHADOW
+      detail = "entry"
+      state = NORMAL
+      shadow = IN
+      file = "../assets/combo-entry.png"
+      border = { 4, 4, 5, 4 }
+      stretch = TRUE
+      direction = LTR
+    }
+
+    image {
+      function = SHADOW
+      detail = "entry"
+      state = INSENSITIVE
+      shadow = IN
+      file = "../assets/combo-entry-insensitive.png"
+      border = { 4, 4, 5, 4 }
+      stretch = TRUE
+      direction = LTR
+    }
+
+    image {
+      function = SHADOW
+      detail = "entry"
+      state = ACTIVE
+      file = "../assets/combo-entry-active.png"
+      border = { 4, 4, 5, 4 }
+      stretch = TRUE
+      direction = LTR
+    }
+
+    # RTL version
+
+    image {
+      function = SHADOW
+      detail = "entry"
+      state = NORMAL
+      shadow = IN
+      file = "../assets/combo-entry-button.png"
+      border = { 4, 4, 5, 4 }
+      stretch = TRUE
+      direction = RTL
+    }
+
+    image {
+      function = SHADOW
+      detail = "entry"
+      state = INSENSITIVE
+      shadow = IN
+      file = "../assets/combo-entry-button-insensitive.png"
+      border = { 4, 4, 5, 4 }
+      stretch = TRUE
+      direction = RTL
+    }
+
+    image {
+      function = SHADOW
+      detail = "entry"
+      state = ACTIVE
+      file = "../assets/combo-entry-button-active.png"
+      border = { 4, 4, 5, 4 }
+      stretch = TRUE
+      direction = RTL
+    }
+  }
+}
+
+style "combobox_entry_button"
+{
+  xthickness = 6
+
+  fg[ACTIVE] = @text_color
+
+  engine "pixmap" {
+
+    # LTR version
+
+    image {
+      function = BOX
+      state = NORMAL
+      file = "../assets/combo-entry-button.png"
+      border = { 4, 4, 5, 4 }
+      stretch = TRUE
+      direction = LTR
+    }
+
+    image {
+      function = BOX
+      state = PRELIGHT
+      file = "../assets/combo-entry-button.png"
+      border = { 4, 4, 5, 4 }
+      stretch = TRUE
+      direction = LTR
+    }
+
+    image {
+      function = BOX
+      state = INSENSITIVE
+      file = "../assets/combo-entry-button-insensitive.png"
+      border = { 4, 4, 5, 4 }
+      stretch = TRUE
+      direction = LTR
+    }
+
+    image {
+      function = BOX
+      state = ACTIVE
+      file = "../assets/combo-entry-button-active.png"
+      border = { 4, 4, 5, 4 }
+      stretch = TRUE
+      direction = LTR
+    }
+
+    # RTL version
+    image {
+      function = BOX
+      state = NORMAL
+      file = "../assets/combo-entry.png"
+      border = { 4, 4, 5, 4 }
+      stretch = TRUE
+      direction = RTL
+    }
+
+    image {
+      function = BOX
+      state = PRELIGHT
+      file = "../assets/combo-entry.png"
+      border = { 4, 4, 5, 4 }
+      stretch = TRUE
+      direction = RTL
+    }
+
+    image {
+      function = BOX
+      state = INSENSITIVE
+      file = "../assets/combo-entry-insensitive.png"
+      border = { 4, 4, 5, 4 }
+      stretch = TRUE
+      direction = RTL
+    }
+
+    image {
+      function = BOX
+      state = ACTIVE
+      file = "../assets/combo-entry-active.png"
+      border = { 4, 4, 5, 4 }
+      stretch = TRUE
+      direction = RTL
+    }
+  }
+}
+

@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">
-    <path d="M6.5 3A4.49 4.49 0 0 0 2 7.5v51A4.49 4.49 0 0 0 6.5 63h51a4.49 4.49 0 0 0 4.5-4.5v-51A4.49 4.49 0 0 0 57.5 3H14z" opacity=".2" fill-rule="evenodd"/>
-    <path d="M14 2v12H2v36h12v12h36V50h12V14H50V2z" fill="#BDAD93" fill-rule="evenodd"/>
-    <path d="M6.5 2A4.49 4.49 0 0 0 2 6.5V14h12V2zM50 50v12h7.5a4.49 4.49 0 0 0 4.5-4.5V50z" fill="#7CB668" fill-rule="evenodd"/>
-    <path d="M2 50v7.5A4.49 4.49 0 0 0 6.5 62H14V50zM50 2v12h12V6.5A4.49 4.49 0 0 0 57.5 2z" fill="#FA4934" fill-rule="evenodd"/>
-    <path d="M14 2v12h12V2zm12 12v12h12V14zm12 0h12V2H38zm12 0v12h12V14zm0 12H38v12h12zm0 12v12h12V38zm0 12H38v12h12zm-12 0V38H26v12zm-12 0H14v12h12zm-12 0V38H2v12zm0-12h12V26H14zm0-12V14H2v12z" fill="#665C54" fill-rule="evenodd"/>
-    <path d="M2 14v1h12v-1H2zm24 0v1h12v-1H26zm24 0v1h12v-1H50zM14 26v1h12v-1H14zm24 0v1h12v-1H38zM2 38v1h12v-1H2zm24 0v1h12v-1H26zm24 0v1h12v-1H50zM14 50v1h12v-1H14zm24 0v1h12v-1H38z" opacity=".2" fill-rule="evenodd"/>
-    <path d="M6.5 2A4.49 4.49 0 0 0 2 6.5v1A4.49 4.49 0 0 1 6.5 3h51A4.49 4.49 0 0 1 62 7.5v-1A4.49 4.49 0 0 0 57.5 2h-51z" opacity=".2" fill="#F9F5D7" fill-rule="evenodd"/>
-</svg>

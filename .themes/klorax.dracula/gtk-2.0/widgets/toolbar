@@ -1,0 +1,94 @@
+style "toolbar"
+{
+    engine "pixmap"
+    {
+        image
+        {
+            function    = BOX
+            file          = "../assets/toolbar-background.png"
+            stretch     = TRUE
+            }
+    }
+}
+
+style "toolbuttons"
+{
+  xthickness                = 2
+    ythickness                = 2
+    GtkWidget::focus_padding  = 2
+
+    engine "pixmap" {
+
+image
+        {
+            function                = BOX
+            state                       = NORMAL
+            file                    = "../assets/null.png"
+            border                  = { 4, 4, 4, 4 }
+            stretch                 = TRUE
+        }
+image
+        {
+            function                = BOX
+            state                       = PRELIGHT
+            file                    = "../assets/toolbutton-hover.png"
+            border                  = { 4, 4, 4, 4 }
+            stretch                 = TRUE
+        }
+image
+        {
+            function                = BOX
+            state                       = ACTIVE
+            file                    = "../assets/toolbutton-active.png"
+            border                  = { 4, 4, 4, 4 }
+            stretch                 = TRUE
+        }
+image
+        {
+            function                = BOX
+            state                       = INSENSITIVE
+            file                    = "../assets/null.png"
+            border                  = { 4, 4, 4, 4 }
+            stretch                 = TRUE
+        }
+    }
+}
+
+style "tooltoggle_buttons"
+{
+    engine "pixmap"
+    {
+    image
+        {
+            function      = BOX
+            state                 = NORMAL
+            file          = "../assets/null.png"
+            border        = { 4, 4, 4, 4 }
+            stretch       = TRUE
+        }
+  image
+        {
+            function      = BOX
+            state                 = PRELIGHT
+            file          = "../assets/toolbutton-hover.png"
+            border        = { 4, 4, 4, 4 }
+            stretch       = TRUE
+        }
+  image
+        {
+            function            = BOX
+            state                 = ACTIVE
+            file                  = "../assets/toolbutton-toggled.png"
+            border              = { 4, 4, 4, 4}
+            stretch             = TRUE
+        }
+  image
+        {
+            function      = BOX
+            state                 = INSENSITIVE
+            file          = "../assets/null.png"
+            border        = { 4, 4, 4, 4 }
+            stretch       = TRUE
+        }
+    }
+}

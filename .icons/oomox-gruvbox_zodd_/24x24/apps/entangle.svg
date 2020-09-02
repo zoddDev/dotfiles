@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" version="1">
+    <circle cx="40" cy="41" r="20" opacity=".2"/>
+    <circle cx="40" cy="40" r="20" fill="#066678"/>
+    <circle cx="40" cy="41" r="12" opacity=".2"/>
+    <circle cx="40" cy="40" r="12" fill="#F9F5D7"/>
+    <circle cx="24" cy="25" r="20" opacity=".2"/>
+    <circle cx="24" cy="24" r="20" fill="#48B9C7"/>
+    <circle cx="24" cy="25" r="12" opacity=".2"/>
+    <circle cx="24" cy="24" r="12" fill="#F9F5D7"/>
+    <path d="M39.014 44.986s-1.307-9.4-6-14-12-6-12-6" opacity=".2" stroke="#151819" stroke-linecap="round" stroke-width="2" fill="none"/>
+    <path d="M39.014 43.986s-1.307-9.4-6-14-12-6-12-6" stroke="#F15C22" stroke-linecap="round" stroke-width="2" fill="none"/>
+    <path d="M25.002 20.997s1.307 9.401 6 14c4.693 4.6 12 6 12 6" opacity=".2" stroke="#151819" stroke-linecap="round" stroke-width="2" fill="none"/>
+    <path d="M25.002 19.997s1.307 9.401 6 14c4.693 4.6 12 6 12 6" stroke="#F15C22" stroke-linecap="round" stroke-width="2" fill="none"/>
+    <path d="M24 4A20 20 0 0 0 4 24a20 20 0 0 0 .018.494A20 20 0 0 1 24 5a20 20 0 0 1 19.975 19.49A20 20 0 0 0 44 24 20 20 0 0 0 24 4z" opacity=".2" fill="#F9F5D7"/>
+</svg>

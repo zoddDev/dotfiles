@@ -12,7 +12,9 @@ theme_dir="$DOTFILES/themes/${theme_name}"
 
 theme_config="$theme_dir/.config"
 [ ! -d $theme_config ] && mkdir $theme_config && echo [INFO]: created .config directory in $theme_dir
-[ ! -d $theme_dir/Pictures/Wallpapers/Wallpapers ] && mkdir -p $theme_dir/Pictures/Wallpapers/Wallpapers && echo [INFO]: created Pictures/Wallpapers/Wallpapers directory in $theme_dir
+#[ ! -d $theme_dir/Pictures/Wallpapers/Wallpapers ] && mkdir -p $theme_dir/Pictures/Wallpapers/Wallpapers && echo [INFO]: created Pictures/Wallpapers/Wallpapers directory in $theme_dir
+
+cp -r $HOME/Pictures/Wallpapers/Wallpapers $DOTFILES
 
 # $HOME
 echo [INFO]: copying $HOME/{.bashrc, .xprofile, .profile, .xinitrc} to $theme_dir ...
@@ -43,5 +45,6 @@ cp -r $HOME/.config/discord/themes $theme_config/discord
 cp -r $HOME/.config/spicetify $theme_config
 
 cp -r $HOME/.config/gtk-3.0 $theme_config
+cp -r $HOME/.config/nitrogen $theme_config
 
 echo [INFO]: finished copying config files

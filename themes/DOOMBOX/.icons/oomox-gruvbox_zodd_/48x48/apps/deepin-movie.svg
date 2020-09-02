@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">
-    <rect width="56" height="56" x="4" y="5" rx="4.2" ry="4.2" opacity=".2"/>
-    <rect width="56" height="56" x="4" y="4" rx="4.2" ry="4.2" fill="#8F3F71"/>
-    <path d="M9 9v6h6V9zm10 0v6h6V9zm10 0v6h6V9zm10 0v6h6V9zm10 0v6h6V9z" opacity=".3" fill-rule="evenodd"/>
-    <path d="M27 40.322V25.677c0-.374.316-.677.705-.677.13 0 .255.034.366.098L40.66 32.42a.662.662 0 0 1 0 1.16l-12.59 7.322a.722.722 0 0 1-.968-.229.658.658 0 0 1-.102-.35z" opacity=".2" fill-rule="evenodd"/>
-    <path d="M27 39.322V24.677c0-.374.316-.677.705-.677.13 0 .255.034.366.098L40.66 31.42a.662.662 0 0 1 0 1.16l-12.59 7.322a.722.722 0 0 1-.968-.229.658.658 0 0 1-.102-.35z" fill="#F9F5D7" fill-rule="evenodd"/>
-    <path d="M9 49v6h6v-6zm10 0v6h6v-6zm10 0v6h6v-6zm10 0v6h6v-6zm10 0v6h6v-6z" opacity=".3" fill-rule="evenodd"/>
-    <path d="M8.2 4A4.19 4.19 0 0 0 4 8.2v1A4.19 4.19 0 0 1 8.2 5h47.6A4.19 4.19 0 0 1 60 9.2v-1A4.19 4.19 0 0 0 55.8 4H8.2z" fill="#F9F5D7" opacity=".1"/>
-</svg>

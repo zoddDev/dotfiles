@@ -1,0 +1,108 @@
+style "range"
+{
+  engine "pixmap"
+  {
+    image
+    {
+      function			= BOX
+      detail			  = "trough"
+      file			    = "../assets/scale-trough-horizontal.png"
+      border			  = { 4, 4, 0, 0 }
+      stretch			  = TRUE
+      orientation		= HORIZONTAL
+    }
+    image
+    {
+      function			= BOX
+      detail			  = "trough"
+      file			    = "../assets/scale-trough-vertical.png"
+      border			  = { 0, 0, 4, 4 }
+      stretch			  = TRUE
+      orientation		= VERTICAL
+    }
+
+    # Horizontal
+
+    image
+    {
+      function				= SLIDER
+      state           = NORMAL
+      file				    = "../assets/null.png"
+      border				  = { 0, 0, 0, 0 }
+      stretch				  = TRUE
+      overlay_file		= "../assets/scale-slider.png"
+      overlay_stretch	= FALSE
+      orientation			= HORIZONTAL
+    }
+    image
+    {
+      function				= SLIDER
+      state           = PRELIGHT
+      file				    = "../assets/null.png"
+      border				  = { 0, 0, 0, 0 }
+      stretch				  = TRUE
+      overlay_file		= "../assets/scale-slider-active.png"
+      overlay_stretch	= FALSE
+      orientation			= HORIZONTAL
+    }
+    image
+    {
+      function				= SLIDER
+      state           = INSENSITIVE
+      file				    = "../assets/null.png"
+      border				  = { 0, 0, 0, 0 }
+      stretch				  = TRUE
+      overlay_file		= "../assets/scale-slider.png"
+      overlay_stretch	= FALSE
+      orientation			= HORIZONTAL
+    }
+
+    # Vertical
+
+    image
+    {
+      function				= SLIDER
+      state           = NORMAL
+      file				    = "../assets/null.png"
+      border				  = { 0, 0, 0, 0 }
+      stretch				  = TRUE
+      overlay_file		= "../assets/scale-slider.png"
+      overlay_stretch	= FALSE
+      orientation			= VERTICAL
+    }
+    image
+    {
+      function				= SLIDER
+      state           = PRELIGHT
+      file				    = "../assets/null.png"
+      border				  = { 0, 0, 0, 0 }
+      stretch				  = TRUE
+      overlay_file		= "../assets/scale-slider-active.png"
+      overlay_stretch	= FALSE
+      orientation			= VERTICAL
+    }
+		
+    image
+    {
+      function				= SLIDER
+      state           = INSENSITIVE
+      file				    = "../assets/null.png"
+      border				  = { 0, 0, 0, 0 }
+      stretch				  = TRUE
+      overlay_file		= "../assets/scale-slider.png"
+      overlay_stretch	= FALSE
+      orientation			= VERTICAL
+    }
+	# Function below removes ugly boxes
+
+	image
+      	{
+        	function		= BOX
+		      file        = "../assets/null.png"
+		      border      = { 3, 3, 3, 3 }
+		      stretch     = TRUE
+      	}
+
+  }
+}
+

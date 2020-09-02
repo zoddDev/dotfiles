@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg version="1.1" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-    <rect class="warning" x="1.5" y="1.5" width="15" height="15" rx="2" ry="2" fill="#eff0f1"/>
-    <path class="error" d="m4 4v10h10v-10zm7.293 2h0.70703v6h-6v-0.70703z" fill="#3daee9"/>
-    <path class="error" d="m3.5 1c-1.385 0-2.5 1.115-2.5 2.5v11c0 1.385 1.115 2.5 2.5 2.5h11c1.385 0 2.5-1.115 2.5-2.5v-11c0-1.385-1.115-2.5-2.5-2.5zm0 1h11c0.831 0 1.5 0.669 1.5 1.5v11c0 0.831-0.669 1.5-1.5 1.5h-11c-0.831 0-1.5-0.669-1.5-1.5v-11c0-0.831 0.669-1.5 1.5-1.5z" color="#000000" color-rendering="auto" dominant-baseline="auto" fill="#7c8288" image-rendering="auto" shape-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
-</svg>

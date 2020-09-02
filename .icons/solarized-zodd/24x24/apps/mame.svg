@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+    <path d="M41 13L3 51h15l17-17v17l16-16v16l9.08-9.08L60 13 41 32z" opacity=".2" fill-rule="evenodd"/>
+    <path d="M41 12L3 50h15l17-17v17l16-16v16l9.08-9.08L60 12 41 31z" fill="#066678" fill-rule="evenodd"/>
+    <path d="M41 12L3 50h1l37-37zm19 0L41 31v1l19-19z" opacity=".2" fill="#F9F5D7" fill-rule="evenodd"/>
+</svg>

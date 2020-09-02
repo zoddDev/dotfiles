@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" version="1">
+    <rect width="57" height="57" x="4" y="-61" rx="2.85" ry="2.85" transform="scale(1 -1)" opacity=".2"/>
+    <rect width="57" height="57" x="4" y="-60" rx="2.85" ry="2.85" transform="scale(1 -1)" fill="#F9BD2E"/>
+    <path d="M8 8v5h5V8H8zm11 0v5h5V8h-5zm11 0v5h5V8h-5zm11 0v5h5V8h-5zm11 0v5h5V8h-5zM10 19v28h19V19H10zm26 0v28h19V19H36zM8 52v5h5v-5H8zm11 0v5h5v-5h-5zm11 0v5h5v-5h-5zm11 0v5h5v-5h-5zm11 0v5h5v-5h-5z" opacity=".2"/>
+    <path d="M8 7v5h5V7H8zm11 0v5h5V7h-5zm11 0v5h5V7h-5zm11 0v5h5V7h-5zm11 0v5h5V7h-5zM10 18v28h19V18H10zm26 0v28h19V18H36zM8 51v5h5v-5H8zm11 0v5h5v-5h-5zm11 0v5h5v-5h-5zm11 0v5h5v-5h-5zm11 0v5h5v-5h-5z" fill="#066678"/>
+    <path d="M6.85 3A2.843 2.843 0 0 0 4 5.85v1C4 5.27 5.27 4 6.85 4h51.3C59.73 4 61 5.27 61 6.85v-1C61 4.27 59.73 3 58.15 3H6.85z" fill="#F9F5D7" opacity=".2"/>
+</svg>

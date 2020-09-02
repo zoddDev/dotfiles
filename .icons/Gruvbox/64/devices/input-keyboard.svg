@@ -1,0 +1,14 @@
+<svg width="64" xmlns="http://www.w3.org/2000/svg" height="64" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient id="a">
+            <stop stop-color="#83A498"/>
+            <stop offset="1" stop-color="#F9F5D7"/>
+        </linearGradient>
+        <linearGradient xlink:href="#a" id="b" y1="539.798" y2="506.472" x2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(.8125 0 0 .88235 76.607 64.506)"/>
+    </defs>
+    <path fill="url(#b)" d="M382.571 510.798h52v30h-52z" transform="translate(-376.571 -493.798)"/>
+    <path d="M7 21v2h5v-2H7zm6 0v2h4v-2h-4zm5 0v2h4v-2h-4zm5 0v2h4v-2h-4zm5 0v2h4v-2h-4zm5 0v2h4v-2h-4zm5 0v2h4v-2h-4zm5 0v2h4v-2h-4zm5 0v2h4v-2h-4zm5 0v2h4v-2h-4zM7 24v4h4v-4H7zm5 0v4h4v-4h-4zm5 0v4h4v-4h-4zm5 0v4h4v-4h-4zm5 0v4h4v-4h-4zm5 0v4h4v-4h-4zm5 0v4h4v-4h-4zm5 0v4h4v-4h-4zm5 0v4h4v-4h-4zm5 0v4h5v-4h-5zM7 29v4h6v-4H7zm7 0v4h4v-4h-4zm5 0v4h4v-4h-4zm5 0v4h4v-4h-4zm5 0v4h4v-4h-4zm5 0v4h4v-4h-4zm5 0v4h4v-4h-4zm5 0v4h4v-4h-4zm5 0v4h8v-4h-8zM7 34v4h10v-4H7zm11 0v4h4v-4h-4zm5 0v4h4v-4h-4zm5 0v4h4v-4h-4zm5 0v4h4v-4h-4zm5 0v4h4v-4h-4zm5 0v4h4v-4h-4zm5 0v4h9v-4h-9zM7 39v4h6.1v-4H7zm7 0v4h4v-4h-4zm5 0v4h18v-4H19zm19 0v4h4v-4h-4zm10 0v4h4v-4h-4zm-5 2v2h4v-2h-4zm10 0v2h4v-2h-4z" fill="#3A393A"/>
+    <path fill="#83A498" d="M6 46h52v1H6z"/>
+    <path fill="#73C48F" d="M55 18h1v1h-1zM52 18h1v1h-1zM49 18h1v1h-1z"/>
+    <path d="M7 22v1h5v-1H7zm6 0v1h4v-1h-4zm5 0v1h4v-1h-4zm5 0v1h4v-1h-4zm5 0v1h4v-1h-4zm5 0v1h4v-1h-4zm5 0v1h4v-1h-4zm5 0v1h4v-1h-4zm5 0v1h4v-1h-4zm5 0v1h4v-1h-4zM7 27v1h4v-1H7zm5 0v1h4v-1h-4zm5 0v1h4v-1h-4zm5 0v1h4v-1h-4zm5 0v1h4v-1h-4zm5 0v1h4v-1h-4zm5 0v1h4v-1h-4zm5 0v1h4v-1h-4zm5 0v1h4v-1h-4zm5 0v1h5v-1h-5zM7 32v1h6v-1H7zm7 0v1h4v-1h-4zm5 0v1h4v-1h-4zm5 0v1h4v-1h-4zm5 0v1h4v-1h-4zm5 0v1h4v-1h-4zm5 0v1h4v-1h-4zm5 0v1h4v-1h-4zm5 0v1h8v-1h-8zM7 37v1h10v-1H7zm11 0v1h4v-1h-4zm5 0v1h4v-1h-4zm5 0v1h4v-1h-4zm5 0v1h4v-1h-4zm5 0v1h4v-1h-4zm5 0v1h4v-1h-4zm5 0v1h9v-1h-9zm0 3v1h4v-1h-4zM7 42v1h6.1v-1H7zm7 0v1h4v-1h-4zm5 0v1h18v-1H19zm19 0v1h4v-1h-4zm5 0v1h4v-1h-4zm5 0v1h4v-1h-4zm5 0v1h4v-1h-4z" fill="#1D2021"/>
+</svg>

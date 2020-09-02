@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" version="1">
+    <path d="M4 33v25.2C4 59.75 5.25 61 6.8 61h50.4c1.55 0 2.8-1.25 2.8-2.8V33H4z" opacity=".2"/>
+    <path d="M32 4H6.8A2.794 2.794 0 0 0 4 6.8V32h28z" fill="#928274"/>
+    <path d="M32 4h25.2C58.751 4 60 5.249 60 6.8V32H32z" fill="#F9F5D7"/>
+    <path d="M32 60H6.8A2.794 2.794 0 0 1 4 57.2V32h28z" fill="#578D57"/>
+    <path d="M32 60h25.2c1.551 0 2.8-1.249 2.8-2.8V32H32z" fill="#928274"/>
+    <circle cx="18" cy="19" r="8" opacity=".1"/>
+    <circle cx="18" cy="18" r="8" fill="#F9F5D7"/>
+    <path d="M18 37l5 10 5 10H8l5-10z" opacity=".1"/>
+    <path d="M18 36l5 10 5 10H8l5-10z" fill="#FECE4F"/>
+    <path d="M44 11v6h-6v4h6v6h4v-6h6v-4h-6v-6h-4z" opacity=".1"/>
+    <path d="M44 10v6h-6v4h6v6h4v-6h6v-4h-6v-6h-4z" fill="#3A393A"/>
+    <path opacity=".1" d="M50 41h4v16h-4z"/>
+    <path fill="#3A393A" d="M50 40h4v16h-4z"/>
+    <path d="M36 44l9 3.5 9 3.5V37l-9 3.5z" opacity=".1"/>
+    <path d="M36 43l9 3.5 9 3.5V36l-9 3.5z" fill="#CB241D"/>
+    <path d="M6.8 4C5.25 4 4 5.25 4 6.8v1C4 6.25 5.25 5 6.8 5h50.4C58.75 5 60 6.25 60 7.8v-1C60 5.25 58.75 4 57.2 4H6.8z" opacity=".2" fill="#F9F5D7"/>
+</svg>

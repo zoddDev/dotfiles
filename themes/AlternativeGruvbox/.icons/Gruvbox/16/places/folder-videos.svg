@@ -1,9 +1,0 @@
-<svg height="16">
-    <path d="M0 0v4.233h4.233V0z" fill="none"/>
-    <g fill="#fbf1c7" transform="translate(-83.767 -107.971)">
-        <circle cx="84.826" cy="109.558" r=".794"/>
-        <circle cx="86.678" cy="109.558" r=".794"/>
-        <path d="M86.942 110.617l.794-.53v1.588l-.794-.529z"/>
-        <rect height="1.587" ry=".529" width="2.91" x="84.032" y="110.088"/>
-    </g>
-</svg>

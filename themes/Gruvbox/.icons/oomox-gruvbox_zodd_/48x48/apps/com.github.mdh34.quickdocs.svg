@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" version="1">
-    <path d="M10 56v2c0 1.662 1.338 3 3 3h38c1.662 0 3-1.338 3-3v-2c0 1.662-1.338 3-3 3H13c-1.662 0-3-1.338-3-3z" opacity=".2"/>
-    <path d="M54 57V7c0-1.662-1.338-3-3-3H13c-1.662 0-3 1.338-3 3v50c0 1.662 1.338 3 3 3h38c1.662 0 3-1.338 3-3z" fill="#066678"/>
-    <path d="M13 4c-1.662 0-3 1.338-3 3v1c0-1.662 1.338-3 3-3h38c1.662 0 3 1.338 3 3V7c0-1.662-1.338-3-3-3H13z" opacity=".1" fill="#F9F5D7"/>
-    <path d="M29.002 23H22v20h6.998m4.028 0h.948C38.406 43 42 39.432 42 35v-4c0-4.432-3.594-8-8.026-8h-.948" opacity=".2" fill="none" stroke="#151819" stroke-width="4"/>
-    <path d="M29.002 22H22v20h6.998m4.028 0h.948C38.406 42 42 38.432 42 34v-4c0-4.432-3.594-8-8.026-8h-.948" fill="none" stroke="#F9F5D7" stroke-width="4"/>
-    <path d="M15 12v6h6v-6zm11 0v6h23v-6zM15 23v6h13v-6zm18 0v6h5v-6zm10 0v6h6v-6zM15 34v6h5.667v-6zm11 0v6h7v-6zm13 0v6h10v-6zM15 46v6h11v-6zm17 0v6h17v-6z" opacity=".15" fill="#F9F5D7" fill-rule="evenodd"/>
-</svg>
