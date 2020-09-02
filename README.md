@@ -16,11 +16,6 @@ Those are my different bspwm and openbox themes dotfiles, hope you find somethin
 
 <br/><br/>
 
-## SolarizedDark
-![alt text](screenshots/SolarizedDark.png)
-
-<br/><br/>
-
 ## Gruvbox
 ![alt text](screenshots/Gruvbox.png)
 
@@ -28,6 +23,11 @@ Those are my different bspwm and openbox themes dotfiles, hope you find somethin
 
 ## Dracula
 ![alt text](screenshots/Dracula.png)
+
+<br/><br/>
+
+## SolarizedDark
+![alt text](screenshots/SolarizedDark.png)
 
 <br/><br/>
 
