@@ -97,6 +97,8 @@ function setup_config {
 
 cp -r ../.scripts $HOME
 sudo cp ../environment /etc/environment
+[ -d $HOME/Pictures/Wallpapers ] || mkdir -p $HOME/Pictures/Wallpapers
+cp -r ../Wallpapers $HOME/Pictures/Wallpapers
 
 shopt -s nocasematch
 case "$arg" in 

@@ -11,7 +11,6 @@
  ╚═════╝ ╚═╝     ╚══════╝╚═╝  ╚═══╝╚═════╝  ╚═════╝ ╚═╝  ╚═╝
 
 -->
-
 <openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
   <resistance>
     <strength>10</strength>
@@ -817,6 +816,14 @@
       <layer>below</layer>
     </application>
     <application name="chromium">
+      <desktop>2</desktop>
+      <maximized>yes</maximized>
+    </application>
+    <application name="google-chrome">
+      <desktop>2</desktop>
+      <maximized>yes</maximized>
+    </application>
+    <application name="Google-chrome">
       <desktop>2</desktop>
       <maximized>yes</maximized>
     </application>

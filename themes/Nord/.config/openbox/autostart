@@ -4,11 +4,12 @@ sxhkd &
 dunst &
 compton &
 dropbox &
-feh --bg-fill $HOME/Pictures/Wallpapers/Wallpapers/nord-theme/rock-mountain-cliff-black-and-white-wallpaper-for-1920x1080-63-1177.jpg &
+/*feh --bg-fill $HOME/Pictures/Wallpapers/Wallpapers/nord-theme/rock-mountain-cliff-black-and-white-wallpaper-for-1920x1080-63-1177.jpg &*/
+nitrogen --restore & 
 polybar example &
 lxpolkit &
 xset -dpms s off & # disable screen blanking &
 wmname LG3D &
 sleep 0.7
 alacritty -e /bin/fish -C neofetch &
-chromium &
+google-chrome-stable &

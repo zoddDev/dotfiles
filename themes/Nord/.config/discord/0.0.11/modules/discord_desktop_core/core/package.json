@@ -1,0 +1,14 @@
+{
+  "name": "discord_desktop_core",
+  "description": "Discord Client for Desktop - Core App",
+  "main": "app/index.js",
+  "private": true,
+  "dependencies": {
+    "invariant": "2.2.4",
+    "lodash": "4.17.11",
+    "mkdirp": "^0.5.1",
+    "request": "2.88.0",
+    "rimraf": "^2.6.3",
+    "yauzl": "^2.10.0"
+  }
+}

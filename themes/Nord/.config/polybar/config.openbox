@@ -59,7 +59,7 @@ font-2 = "Material Icons:pixelsize=15;5"
 ; MODULES SETUP
 modules-left = workspaces 
 modules-center = spotify
-modules-right = volume battery network date shutdown
+modules-right = cpu memory volume battery network date shutdown
 
 ;tray-position = center
 ;tray-padding = 2
@@ -255,6 +255,53 @@ format-padding = 4
 
 exec = python3 $HOME/.config/polybar/modules/spotify/spotify_status.py -t 65 -qf '{artist}: {song}'
 format-underline = #1db954
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[module/memory]
+type = internal/memory
+; Seconds to sleep between updates
+interval = 3
+
+label = "   %percentage_used%%  "
+
+format-prefix-padding = 2
+format-prefix-font = 2
+format-prefix-foreground = #ffffff
+format-background = ${colors.background}
+format-foreground = ${colors.foreground}
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[module/wired-network]
+type = internal/network
+interface = enp2s0
+interval = 3.0
+
+udspeed-minwidth = 5
+
+accumulate-stats = true
+unknown-as-up = true
+
+format-connected = <label-connected>
+format-disconnected = <label-disconnected>
+
+label-connected = "  %downspeed%  "
+label-connected-foreground = ${colors.background}
+label-connected-background = ${colors.green}
+
+label-disconnected = "  "
+label-disconnected-foreground = ${colors.background}
+label-disconnected-background = ${colors.white}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[module/cpu]
+type = internal/cpu
+
+interval = 1
+format = <label>
+label = "   %percentage%%  "
+
+format-background = ${colors.aqua}
+format-foreground = ${colors.background}
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [module/date]
 type = internal/date

@@ -1,0 +1,33 @@
+2020/08/28-15:14:14.570 5f5 Reusing MANIFEST leveldb/MANIFEST-000001
+2020/08/28-15:14:14.570 5f5 Recovering log #1413
+2020/08/28-15:14:14.571 5f5 Reusing old log leveldb/001413.log 
+2020/08/28-15:35:15.116 5f5 Level-0 table #1418: started
+2020/08/28-15:35:15.120 5f5 Level-0 table #1418: 17587 bytes OK
+2020/08/28-15:35:15.123 5f5 Delete type=0 #1413
+2020/08/28-16:26:15.116 5f5 Level-0 table #1420: started
+2020/08/28-16:26:15.119 5f5 Level-0 table #1420: 16579 bytes OK
+2020/08/28-16:26:15.122 5f5 Delete type=0 #1417
+2020/08/28-17:16:15.116 24bd Level-0 table #1422: started
+2020/08/28-17:16:15.119 24bd Level-0 table #1422: 16404 bytes OK
+2020/08/28-17:16:15.122 24bd Delete type=0 #1419
+2020/08/28-18:08:15.116 24bd Level-0 table #1424: started
+2020/08/28-18:08:15.121 24bd Level-0 table #1424: 17415 bytes OK
+2020/08/28-18:08:15.125 24bd Delete type=0 #1421
+2020/08/28-18:08:15.125 63ba Compacting 4@0 + 1@1 files
+2020/08/28-18:08:15.131 63ba Generated table #1425@0: 50 keys, 13390 bytes
+2020/08/28-18:08:15.131 63ba Compacted 4@0 + 1@1 files => 13390 bytes
+2020/08/28-18:08:15.134 63ba compacted to: files[ 0 1 1 0 0 0 0 ]
+2020/08/28-18:08:15.135 63ba Delete type=2 #1424
+2020/08/28-18:08:15.135 63ba Delete type=2 #1422
+2020/08/28-18:08:15.135 63ba Delete type=2 #1418
+2020/08/28-18:08:15.135 63ba Delete type=2 #1415
+2020/08/28-18:08:15.135 63ba Delete type=2 #1420
+2020/08/28-18:56:15.116 24bd Level-0 table #1427: started
+2020/08/28-18:56:15.120 24bd Level-0 table #1427: 17611 bytes OK
+2020/08/28-18:56:15.123 24bd Delete type=0 #1423
+2020/08/28-19:43:15.114 9776 Level-0 table #1429: started
+2020/08/28-19:43:15.118 9776 Level-0 table #1429: 16782 bytes OK
+2020/08/28-19:43:15.121 9776 Delete type=0 #1426
+2020/08/28-20:35:15.116 cb82 Level-0 table #1431: started
+2020/08/28-20:35:15.123 cb82 Level-0 table #1431: 17524 bytes OK
+2020/08/28-20:35:15.130 cb82 Delete type=0 #1428
