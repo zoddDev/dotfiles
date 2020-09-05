@@ -111,6 +111,7 @@ case "$arg" in
     "solarized-dark" ) setup_config "SolarizedDark" "SolarizedDark" "SolarizedDark/solarized_dark.css" ;; 
     "dracula" ) setup_config "Dracula" "Dracula" "Dracula/discord-dracula.css" ;; 
     "nord" ) setup_config "Nord" "Nord" "Nord/discord-nord.css" ;; 
+    "pink-nord" ) setup_config "PinkNord" "Nord" "Nord/discord-nord.css" ;; 
 
     *) echo "[ERROR]: no config with name \"$arg\" found" && exit 1 ;;
 esac
@@ -119,6 +120,6 @@ echo "[INFO]: You maybe also need to manually set the beautiful-discord and spic
 # use:
 # spicetify config current_theme $THEME_NAME
 # spicetify auto backup apply
-echo "[FINISHED]: theme installation (success!)"
+echo "[FINISHED]: theme installation"
 
 
