@@ -61,7 +61,7 @@ font-3 = "Sinji:pixelsize=15;5"
 font-4 = "Togalite medium:pixelsize=12;4"
 
 ; MODULES SETUP
-modules-left = bspwm 
+modules-left = bspwm theme-swap
 modules-center = windowtitle spotify
 modules-right = pacman-updates filesystem cpu memory volume date shutdown
 
@@ -170,6 +170,18 @@ label-empty = %name%
 label-empty-padding = 2
 label-empty-foreground = ${colors.foreground}
 label-empty-background = ${colors.background}
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[module/theme-swap]
+type = custom/script
+exec = echo 
+interval = 100
+label = "  %output%  "
+
+format-background = ${colors.white}
+format-foreground = ${colors.background}
+
+click-left = $HOME/.config/polybar/scripts/theme-swap.sh
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [module/filesystem]
@@ -222,7 +234,7 @@ label-unmounted-foreground = #55
 
 [module/pacman-updates]
 type = custom/script
-exec = sudo pacman -Sy > /dev/null ; pacman -Qu | wc -l
+exec = sudo $HOME/.config/polybar/scripts/remove-pacman-update-lock.sh ; sudo pacman -Sy > /dev/null ; pacman -Qu | wc -l
 interval = 120
 label = "   %output%  "
 format-foreground = ${colors.background}
@@ -392,8 +404,8 @@ content = "ﴚ"
 content-background = ${colors.red}
 content-foreground = ${colors.background}
 content-padding = 2
-click-left = $HOME/.scripts/rofi-poweroff.sh
-click-right = $HOME/.scripts/rofi-poweroff.sh 
+click-left = $HOME/.config/polybar/scripts/rofi-poweroff.sh
+click-right = $HOME/.config/polybar/scripts/rofi-poweroff.sh 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [settings]
 screenchange-reload = true
