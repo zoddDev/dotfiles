@@ -1,0 +1,14 @@
+#!/bin/sh
+# bspwindows
+# get targets for drawing borders/whatever on in bspwm
+
+target="${1:-active}"
+
+case "$target" in
+    active)
+        bspc query -N -n .local.descendant_of.window.leaf.!fullscreen
+    ;;
+    inactive)
+        bspc query -N -n .local.!descendant_of.window.leaf.!fullscreen
+    ;;
+esac
