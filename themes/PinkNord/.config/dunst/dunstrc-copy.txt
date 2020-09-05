@@ -3,8 +3,7 @@ title = Dunst
 class = Dunst
 monitor = 0
 follow = mouse
-/*geometry = "350x6+24+60"*/
-geometry = "300x6-30+60" # top right
+geometry = "350x6+24+60"
 indicate_hidden = yes
 shrink = yes
 
@@ -13,14 +12,14 @@ separator_height = 2
 padding = 8
 horizontal_padding = 13
 frame_width = 8
-frame_color = "#2E3440"
+frame_color = "#3b4252"
 separator_color = "#404859"
 
-font = Inconsolata Bold 10
+font = mplus nerd font 8.5
 
 line_height = 0
 markup = full
-format = "<span size='x-large' font_desc='Inconsolata 11' weight='bold' foreground='#c394b4'>%s</span>\n\n%b"
+format = "<span size='x-large' font_desc='Cantarell 9' weight='bold' foreground='#cf8ef4'>%s</span>\n%b"
 alignment = center
 
 idle_threshold = 120
@@ -53,22 +52,16 @@ history = ctrl+Escape
 context = ctrl+shift+period
 
 [urgency_low]
-    # IMPORTANT: colors have to be defined in quotation marks.
-    # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#2E3440"
-    foreground = "#D8DEE9"
-    timeout = 5 
-    # Icon for notifications with low urgency, uncomment to enable
-    #icon = /path/to/icon
+timeout = 3
+background = "#3b4252"
+foreground = "#f9f9f9"
 
 [urgency_normal]
-    background = "#2E3440"
-    foreground = "#D8DEE9"
-    timeout = 5
-    # Icon for notifications with normal urgency, uncomment to enable
-    #icon = /path/to/icon
+timeout = 6
+background = "#3b4252"
+foreground = "#f9f9f9"
 
 [urgency_critical]
-    background = "#2E3440"
-    foreground = "#D8DEE9"
-    timeout = 5
+timeout = 0
+background = "#3b4252"
+foreground = "#f9f9f9"

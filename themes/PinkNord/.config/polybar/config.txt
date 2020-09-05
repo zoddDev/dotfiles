@@ -1,0 +1,265 @@
+[colors]
+background = #0d0f12
+foreground = #C9c0c9
+foreground-alt = #b294bb
+
+primary = #ffb52a
+secondary = #e60053
+alert = #af8744
+active = #C5608F
+
+red = #973b53
+bred = #c54d6c
+
+bblue = #4880b7
+blue = #3b6a97
+
+yellow = #97753b
+byellow = #af8744
+
+turq = #3b9791
+bturq = #45b0a9
+
+green = #335051
+bgreen = #487173
+
+purple = #996b87
+bpurple = #b294bb
+
+black = #0f0f0f
+
+
+[bar/bush]
+width = 100%
+height = 25
+fixed-center = true 
+
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 2
+line-color = #f00
+
+padding-left = 1
+padding-right = 1
+
+module-margin-left = 2
+module-margin-right = 2
+
+font-0 = Rubik2:pixelsize=10:antialias=true;3
+font-1 = Material Icons:fontformat=truetype:size=11:antialias=true;4
+font-2 = Font Awesome 5 Free:pixelsize=10;1
+
+modules-left = i3 xwindow 
+modules-center = mpris 
+modules-right = pulseaudio memory wlan battery date
+
+
+;wm-restack = bspwm
+;wm-restack = i3
+
+border-color = ${colors.background}
+border-size = 5
+
+;override-redirect = true
+
+
+;scroll-up = i3wm-wsnext
+;scroll-down = i3wm-wsprev
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+bottom = true
+
+[module/mpris]
+type = custom/script
+exec = ~/.config/polybar/player-mpris-tail.py --truncate-text "..." --icon-playing "  " --icon-paused "Paused:" -f '{icon} {:t35:{title}:}'
+tail = true
+label = "%output%"
+click-left = playerctl play-pause
+click-right = playerctl next
+click-middle = playerctl previous
+format-foreground = ${colors.foreground}
+format-background = ${colors.blue}
+format-padding = 2
+
+
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:45:...%
+
+format-foreground = ${colors.foreground-alt}
+
+
+[module/i3]
+type = internal/i3
+format = <label-state> <label-mode>
+index-sort = true
+wrapping-scroll = true
+strip-wsnumbers = true
+
+; Only show workspaces on the same output as the bar
+;pin-workspaces = true
+
+label-mode-padding = 2
+label-mode-foreground = ${colors.background}
+label-mode-background = ${colors.red}
+
+; focused = Active workspace on focused monitor
+label-focused = %name%
+label-focused-padding = 3
+label-focused-foreground = ${colors.foreground}
+label-focused-background = ${colors.red}
+
+; unfocused = Inactive workspace on any monitor
+label-unfocused = %name%
+label-unfocused-padding = 3
+label-unfocused-foreground = ${colors.foreground-alt}
+
+; visible = Active workspace on unfocused monitor
+label-visible = %name%
+label-visible-padding = 3
+label-visible-foreground = 
+
+; urgent = Workspace with urgency hint set
+label-urgent = %name%
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 3
+
+; Separator in between workspaces
+;label-separator = ◇
+;label-separator-foreground = #727ba8
+
+[module/xbacklight]
+type = internal/xbacklight
+
+format = <label> <bar>
+label = BL
+
+bar-width = 10
+bar-indicator = |
+bar-indicator-foreground = #fff
+bar-indicator-font = 1
+bar-fill = ─
+bar-fill-font = 1
+bar-fill-foreground = #9f78e1
+bar-empty = ─
+bar-empty-font = 1
+bar-empty-foreground = ${colors.foreground-alt}
+
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-prefix = " "
+format-foreground =  ${colors.foreground}
+label = %percentage:2%%
+
+[module/memory]
+type = internal/memory
+interval = 2
+format-prefix = " "
+format-foreground =  ${colors.foreground}
+format-background = ${colors.purple}
+label = %percentage_used%%
+format-padding = 2
+
+[module/wlan]
+type = internal/network
+interface = wlp3s0
+interval = 3.0
+
+format-connected-prefix = " " 
+format-connected = Connected to <label-connected>
+format-connected-foreground =  ${colors.foreground}
+format-connected-background = ${colors.green}
+format-connected-padding = 2
+label-connected = %essid%
+
+format-disconnected = <label-disconnected>
+label-disconnected =  %ifname% disconnected
+label-disconnected-foreground = ${colors.foreground-alt}
+format-disconnected-padding = 2
+
+
+[module/date]
+type = internal/date
+interval = 5
+date = " %a,"
+date-alt = " %m-%d-%Y"
+
+time =%l:%M %p
+time-alt = %l:%M %p
+
+format-prefix =""
+format-foreground = ${colors.foreground}
+format-background = ${colors.byellow}
+format-padding = 2 
+
+label = %date% %time%
+
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+format-volume = <label-volume>
+label-volume =  %percentage%%
+format-volume-foreground =  ${colors.foreground}
+format-volume-background = ${colors.bblue}
+format-volume-prefix =" " 
+format-volume-padding = 2
+
+label-muted =
+label-muted-foreground = #BF616A
+
+use-ui-max = false
+
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = ADP1
+full-at = 92
+
+format-charging = <label-charging>
+format-charging-foreground =  ${colors.foreground}
+format-charging-prefix = " "
+format-charging-background = ${colors.bgreen}
+
+
+format-discharging =  <label-discharging>
+format-discharging-foreground = ${self.format-full-foreground}
+format-discharging-prefix = " "
+format-discharging-background =${colors.yellow}
+
+format-full-prefix = " "
+format-full-foreground = ${self.format-charging-foreground}
+format-full-background = ${colors.bgreen}
+
+format-charging-padding = 2
+format-full-padding = 2
+format-discharging-padding = 2
+
+
+[module/temperature]
+type = internal/temperature
+thermal-zone = 0
+
+format = <label>
+format-foreground = ${colors.foreground} 
+
+label = %temperature-c%
+format-prefix = " "
+
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+;pseudo-transparency = false
+
+[global/wm]
+margin-top = 10
+; vim:ft=dosini

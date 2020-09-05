@@ -30,9 +30,9 @@ shift + super + d
 ctrl + alt + n
     alacritty -e ranger
 
-# chromium
+# chrome
 ctrl + alt + f
-    chromium
+    google-chrome-stable
 
 # idea
 ctrl + alt + i

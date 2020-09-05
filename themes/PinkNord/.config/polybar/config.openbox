@@ -74,7 +74,7 @@ cursor-scroll = pointer
 type = internal/bspwm
 
 label-focused = %name%
-label-focused-background = #8FBCBB
+label-focused-background = ${colors.pink}
 label-focused-underline= ${colors.primary}
 label-focused-foreground = ${colors.foreground-alt}
 label-focused-padding = 2
@@ -85,8 +85,8 @@ label-occupied-foreground = #e5e9f0
 label-occupied-padding = 2
 
 label-urgent = %name%
-label-urgent-background = ${colors.background}
-label-urgent-foreground = #B48EAD
+label-urgent-background = ${colors.red}
+label-urgent-foreground = #e5e9f0
 label-urgent-padding = 2
 
 label-empty = %name% 

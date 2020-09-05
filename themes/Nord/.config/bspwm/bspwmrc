@@ -11,7 +11,7 @@ xsetroot -cursor_name left_ptr &
 sxhkd &
 #nm-applet &
 compton &
-feh --bg-fill $HOME/Pictures/Wallpapers/Wallpapers/nord-theme/rock-mountain-cliff-black-and-white-wallpaper-for-1920x1080-63-1177.jpg
+feh --bg-fill $HOME/Pictures/Wallpapers/Wallpapers/nord-theme/japanese-street.png
 polybar example &
 wmname LG3D &
 lxpolkit &
@@ -30,8 +30,8 @@ bspc monitor -d    ﳁ   ﭮ  
 bspc config border_width         1
 bspc config window_gap          12
 
-bspc config focused_border_color "#D8DEE9"
-bspc config normal_border_color "#2E3440"
+bspc config focused_border_color "#c394b4"
+bspc config normal_border_color "#181e2a"
 
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
