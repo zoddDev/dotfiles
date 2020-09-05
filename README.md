@@ -7,7 +7,7 @@ Those are my different bspwm and openbox themes dotfiles, hope you find somethin
 # Theme Previews
 
 ## PinkNord
-![alt text](screenshots/PinkNord.png)
+![alt text](screenshots/PinkNord_.png)
 
 <br/><br/>
 
@@ -88,6 +88,8 @@ where
 may be:
 
 ```
+pink-nord               - Pink Nord look
+nord                    - Classic Nord look
 gruvbox                 - Classic Gruvbox look
 dracula                 - Classic Dracula look
 doombox                 - Doom version of gruvbox
