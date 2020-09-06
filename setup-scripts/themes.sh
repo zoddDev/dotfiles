@@ -95,13 +95,13 @@ function setup_config {
     bspc quit || openbox --exit
 }
 
-cp -r ../.scripts $HOME
-sudo cp ../environment /etc/environment
+cp -r $SETUP_ROOT/dotfiles/.scripts $HOME
+sudo cp $SETUP_ROOT/dotfiles/environment /etc/environment
 [ -d $HOME/Pictures/Wallpapers ] || mkdir -p $HOME/Pictures/Wallpapers
-cp -r ../Wallpapers $HOME/Pictures/Wallpapers
-cp -r ../.fonts $HOME
-cp -r ../.icons $HOME
-cp -r ../.themes $HOME
+cp -r $SETUP_ROOT/dotfiles/Wallpapers $HOME/Pictures/Wallpapers
+cp -r $SETUP_ROOT/dotfiles/.fonts $HOME
+cp -r $SETUP_ROOT/dotfiles/.icons $HOME
+cp -r $SETUP_ROOT/dotfiles/.themes $HOME
 
 shopt -s nocasematch
 case "$arg" in 
