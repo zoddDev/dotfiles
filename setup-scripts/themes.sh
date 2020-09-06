@@ -54,6 +54,8 @@ function setup_config {
     cp $HOME/.xinitrc $HOME/.xinitrc-backup
     cp $HOME/.bashrc $HOME/.bashrc-backup
 
+    notify-send -i $SETUP_ROOT/dotfiles/setup-scripts/resources/white-brush.png "[INFO]: copying \"$config_name\" config files..."
+
     #
     # copying theme dotfiles
     #
@@ -65,35 +67,45 @@ function setup_config {
     #
     # restarting applications
     #
-    echo
-    echo "[INFO]: restarting some applications..."
+    #echo
+    #echo "[INFO]: restarting some applications..."
 
     #restart_applications $config_name
 
     #
     # configuring spotify theme (spicetify)
     #
-    echo 
-    echo "[INFO]: applying \"$config_name\" spicetify theme..."
+    #echo 
+    #echo "[INFO]: applying \"$config_name\" spicetify theme..."
 
-    fish -C spicetify config current_theme $spicetify_theme &
-    sleep 5
-    fish -C spicetify apply &
+    #fish -C spicetify config current_theme $spicetify_theme &
+    #sleep 5
+    #fish -C spicetify apply &
 
     #
     # configuring discord theme (beautifuldiscord)
     #
-    echo 
-    echo "[INFO]: applying \"$config_name\" beautiful-discord theme..."
+    #echo 
+    #echo "[INFO]: applying \"$config_name\" beautiful-discord theme..."
 
-    discord > /dev/null & 
-    sleep 5 
-    python -m beautifuldiscord --css $HOME/.config/discord/themes/$beautifuldiscord_theme
+    #discord > /dev/null & 
+    #sleep 5 
+    #python -m beautifuldiscord --css $HOME/.config/discord/themes/$beautifuldiscord_theme
+
+    echo "[INFO]: You maybe also need to manually set the beautiful-discord and spicetify theme separately if their installations didn't work properly"
+    # use:
+    # spicetify config current_theme $THEME_NAME
+    # spicetify auto backup apply
+    notify-send -i $SETUP_ROOT/dotfiles/setup-scripts/resources/white-brush.png "[INFO]: finished \"$config_name\" installation!"
+    echo "[FINISHED]: theme installation"
 
     # restart
-
-    bspc quit || openbox --exit
+    notify-send -i $SETUP_ROOT/dotfiles/setup-scripts/resources/white-brush.png "[INFO]: You can restart your WM now"
+    echo You can restart your WM now.
+    #bspc quit || openbox --exit
 }
+
+notify-send -i $SETUP_ROOT/dotfiles/setup-scripts/resources/white-brush.png "[INFO]: Copying themes, icons and scripts..."
 
 cp -r $SETUP_ROOT/dotfiles/.scripts $HOME
 sudo cp $SETUP_ROOT/dotfiles/environment /etc/environment
@@ -113,13 +125,8 @@ case "$arg" in
     "nord" ) setup_config "Nord" "Nord" "Nord/discord-nord.css" ;; 
     "pink-nord" ) setup_config "PinkNord" "Nord" "Nord/discord-nord.css" ;; 
 
-    *) echo "[ERROR]: no config with name \"$arg\" found" && exit 1 ;;
+    *) echo "[ERROR]: no config with name \"$arg\" found" && notify-send -i $SETUP_ROOT/dotfiles/setup-scripts/resources/white-brush.png "[ERROR]: Selected theme does not exist" && exit 1 ;;
 esac
 
-echo "[INFO]: You maybe also need to manually set the beautiful-discord and spicetify theme separately if their installations didn't work properly"
-# use:
-# spicetify config current_theme $THEME_NAME
-# spicetify auto backup apply
-echo "[FINISHED]: theme installation"
 
 

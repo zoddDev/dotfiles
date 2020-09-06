@@ -181,7 +181,7 @@ label = "  %output%  "
 format-background = ${colors.white}
 format-foreground = ${colors.background}
 
-click-left = $HOME/.config/polybar/scripts/theme-swap.sh
+click-left = sudo $HOME/.config/polybar/scripts/theme-swap.sh
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [module/filesystem]
