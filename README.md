@@ -41,3 +41,4 @@ Those are my different bspwm and openbox themes dotfiles, hope you find somethin
 
 <br/><br/>
 
+# Install scripts are still work in progress. Do NOT use them.
