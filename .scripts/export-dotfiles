@@ -1,6 +1,7 @@
 #!/bin/bash
 
 theme_name=$1
+
 # e.g. $DOTFILES/themes/Dracula
 
 echo [INFO]: preparing $theme_name theme configuration ...
@@ -12,7 +13,7 @@ theme_dir="$DOTFILES/themes/${theme_name}"
 
 theme_config="$theme_dir/.config"
 [ ! -d $theme_config ] && mkdir $theme_config && echo [INFO]: created .config directory in $theme_dir
-[ ! -d $theme_dir/Pictures/Wallpapers/Wallpapers ] && mkdir -p $theme_dir/Pictures/Wallpapers/Wallpapers && echo [INFO]: created Pictures/Wallpapers/Wallpapers directory in $theme_dir
+#[ ! -d $theme_dir/Pictures/Wallpapers/Wallpapers ] && mkdir -p $theme_dir/Pictures/Wallpapers/Wallpapers && echo [INFO]: created Pictures/Wallpapers/Wallpapers directory in $theme_dir
 
 # $HOME
 echo [INFO]: copying $HOME/{.bashrc, .xprofile, .profile, .xinitrc} to $theme_dir ...
@@ -22,12 +23,10 @@ cp $HOME/.xprofile $theme_dir
 cp $HOME/.profile $theme_dir
 cp $HOME/.xinitrc $theme_dir
 
-
 # $HOME/.config
 echo [INFO]: copying $HOME/.config/{} to $theme_config ...
 
 mkdir $theme_config/discord
-
 
 cp -r $HOME/.config/compton.conf $theme_config
 cp -r $HOME/.config/alacritty $theme_config
@@ -39,12 +38,13 @@ cp -r $HOME/.config/rofi $theme_config
 cp -r $HOME/.config/ranger $theme_config
 cp -r $HOME/.config/polybar $theme_config
 cp -r $HOME/.config/dunst $theme_config
-
 cp -r $HOME/.config/discord/themes $theme_config/discord
 cp -r $HOME/.config/spicetify $theme_config
-
 cp -r $HOME/.config/gtk-3.0 $theme_config
-dconf dump /org/gnome/gedit/ > $HOME/.config/gedit-dump.dconf
-cp $HOME/.config/gedit-dump.dconf $theme_config
+cp -r $HOME/.config/JetBrains
+
+mkdir -p "$HOME/.config/Code - OSS/User"
+cp -r "$HOME/.config/Code - OSS/Cookies" "$HOME/.config/Code - OSS/Cookies-journal" "$HOME/.config/Code - OSS/languagepacks.json" "$HOME/.config/Code - OSS/machineid" "$HOME/.config/Code - OSS/storage.json" "$HOME/.config/Code - OSS/rapid_render.json" $theme_config "$HOME/.config/Code - OSS"
+cp "$HOME/.config/Code - OSS/User/keybindings.json" "$HOME/.config/Code - OSS/User/settings.json" "$HOME/.config/Code - OSS/User/syncLocalSettings.json" "$HOME/.config/Code - OSS/User"
 
 echo [INFO]: finished copying config files
