@@ -1,0 +1,182 @@
+ls
+sudo pacman -Sy xorg-server
+sudo pacman -Sy sddm
+systemctl enable sddm
+sudo pacman -Sy plasma kde-applications
+reboot
+sudo pacman -Sy firefox
+sudo pacman -Sy neofetch
+neofetch
+vim
+vim /etc/fstab 
+lsblk
+sudo pacman -Ss gnome-
+sudo pacman -Ss gnome-disk
+sudo pacman -Sy gnome-disk-utility
+blkid
+sudo pacman -Sy dropbox
+sudo pacman -Ss dropbox
+sudo pacman -Syu
+sudo pacman -S libreoffice-still
+ls /media
+ls /run/media/
+ls /run/media
+sudo mount /dev/sdc /run/media
+sudo pacman -Ss nfs-utils
+sudo pacman -Sy nfs-utils
+sudo mount -a
+blkid
+lsblk
+ls /mnt
+mount /dev/sdc2 /mnt
+sudo mount /dev/sdc2 /mnt
+ls /mnt
+sudo ls /mnt
+sudo vim /etc/fstab 
+reboot
+vim /etc/fstab 
+blkid
+sudo blkid
+da
+sudo blkid
+lsblk
+ls
+sudo vim /etc/fstab 
+sudo vim /etc/fstab 
+sudo vim /etc/fstab 
+sudo mount -a
+sudo blkid
+sudo vim /etc/fstab 
+sudo mount -a
+mkdir /media/data
+mkdir /media
+sudo mkdir /media
+sudo mkdir /media/data
+sudo vim /etc/fstab 
+sudo vim /etc/fstab 
+sudo vim /etc/fstab 
+sudo mount -a
+sudo pacman -Ss ntfs
+sudo pacman -Sy ntfs-3g
+sudo mount -a
+sudo vim /etc/fstab 
+sudo mount -a
+sudo vim /etc/fstab 
+sudo vim /etc/fstab 
+sudo mount -a
+blkid
+lsblk
+sudo vim /etc/fstab 
+reboot
+pwd
+cd
+mkdir /run/media/A8CA16CBCA1695A2
+blkid
+sudo blkid
+mkdir /run/media/2C8228D48228A3F4
+ls /run/media/zodd/A8CA16CBCA1695A2/
+ls
+ls /run/media/zodd/A8CA16CBCA1695A2
+sudo vim /etc/fstab 
+sudo vim /etc/fstab 
+reboot
+pwd
+cd Downloads/git-downloads/
+ls
+git clone https://aur.archlinux.org/dropbox.git
+sudo pacman -Sy git
+git clone https://aur.archlinux.org/dropbox.git
+cd dropbox/
+makepkg -si
+gpg --help
+gpg --recv-keys FC918B335044912E
+makepkg -si
+cd ..
+ls
+cd
+sudo pacman -Sy fish
+ln -s /run/media/2C8228D48228A3F4/ /home/zodd/250gb
+ln -s /run/media/2C8228D48228A3F4/Users/JOSE/ /home/zodd/250gb
+ln -s /run/media/2C8228D48228A3F4/Users/JOSE/ /home/zodd/250gb
+ln -s /run/media/A8CA16CBCA1695A2/Users/aa /home/zodd/2tb
+cd 2tb/Documents/BACKUP-MANJARO-2020/
+ls
+cp -r ./* ~
+cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+fish
+pip install --upgrade pip
+fish
+ranger
+ranger
+ranger
+ls
+ranger
+echo $LANG
+ls
+neofetch
+neofetch
+clear && neofetch
+clear && neofetch
+ranger
+fish
+ls
+ls
+ls
+cd Documents/
+ls
+cd DOc
+cd Documents/
+ls
+ll
+ls
+cd Doc
+ls
+pwd
+ls
+gcc base.c -o base `pkg-config --cflags --libs gtk+-3.0
+g++ main.cpp -o base `pkg-config --cflags --libs gtk+-3.0
+g++ main.cpp `pkg-config --libs --cflags gtk+-3.0`
+./a.out 
+g++ main.cpp `pkg-config --libs --cflags gtk+-3.0`
+./a.out 
+g++ main.cpp `pkg-config --libs --cflags gtk+-3.0`
+./a.out 1 2
+g++ main.cpp `pkg-config --libs --cflags gtk+-3.0`
+./a.out 1 2
+gcc main.c -o success `pkg-config --cflags gtk+-3.0` `pkg-config --libs gtk+-3.0`
+./success
+gcc main.c $(pkg-config --cflags --libs gtk+-3.0 girara-gtk3)
+ls '/usr/include/gtk-3.0/gtk/gtk.h' 
+gcc main.c pkg-config --cflags --libs gtk+-3.0
+pkg-config --cflags --libs gtk+-3.0
+gcc base.c -o base `pkg-config --libs --cflags gtk+-2.0
+gcc main.c -o main `pkg-config --libs --cflags gtk+-2.0
+ls
+gcc main.c -o main `pkg-config --libs --cflags gtk+-2.0`
+gcc main.c -o main `pkg-config --libs --cflags gtk+-3.0`
+gcc main.c -o success `pkg-config --libs --cflags gtk+-3.0`
+ls
+./success 
+nvim main.c
+gcc main.c -o success `pkg-config --libs --cflags gtk+-3.0`
+./success 
+nvim main.c
+gcc main.c -o success `pkg-config --libs --cflags gtk+-3.0`
+./success 
+gcc main.c -o success `pkg-config --libs --cflags gtk+-3.0`
+nvim main.c
+gcc main.c -o success `pkg-config --libs --cflags gtk+-3.0`
+nvim main.c
+gcc main.c -o success `pkg-config --cflags gtk+-3.0` `pkg-config --libs gtk+-3.0`
+./success 
+GDK_SCALE=3 ./success 
+nvim main.c
+gcc main.c -o success `pkg-config --cflags gtk+-3.0` `pkg-config --libs gtk+-3.0`
+GDK_SCALE=3 ./success 
+ps -e
+myps
+nvim main.c
+gcc main.c -o success `pkg-config --cflags gtk+-3.0` `pkg-config --libs gtk+-3.0`
+GDK_SCALE=3 ./success 
+nvim main.c
+cat main.c

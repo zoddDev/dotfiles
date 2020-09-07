@@ -4,11 +4,15 @@
 
 # terminal emulator
 ctrl + alt + t
-	alacritty -e /bin/fish -C pfetch
+	kitty -e /bin/fish -C neofetch
 
 # dolphin
 super + e
     thunar 
+
+# mutt gmail
+ctrl + alt + g
+    kitty -e /bin/fish -C neomutt
 
 # open downloads folder
 super + d
@@ -16,19 +20,27 @@ super + d
 
 # ranger screenshots
 shift + super + s
-    alacritty -e ranger /home/zodd/Pictures/Screenshots 
+    kitty -e ranger /home/zodd/Pictures/Screenshots 
 
 # ranger downloads
 shift + super + d
-    alacritty -e ranger /home/zodd/Downloads
+    kitty -e ranger /home/zodd/Downloads
+
+# ranger wallpapers
+shift + super + w
+    kitty -e ranger /home/zodd/Pictures/Wallpapers/Wallpapers/nord-theme
+
+# nitrogen
+ctrl + alt + w
+    bspc rule -a \* -o state=floating && nitrogen
 
 # ranger
 ctrl + alt + n
-    alacritty -e ranger
+    kitty -e ranger
 
-# chromium
+# chrome
 ctrl + alt + f
-    chromium
+    vivaldi-stable file:///home/zodd/Dropbox/Programming/Web/startpage/index.html
 
 # idea
 ctrl + alt + i
@@ -52,7 +64,7 @@ super + shift + Print
 
 # rofi 
 super + Return 
-    rofi -font "Iosevka Bold 11" -show drun -show-icons 
+    rofi -font "Iosevka Bold 11" -show drun -show-icons -width 25 -lines 11
 
 # rofi-usb unmount
 super + u
@@ -69,7 +81,7 @@ super + Escape
 # AUDIO (pulsemixer)
 # pulsemixer
 ctrl + alt + v
-    bspc rule -a \* -o state=floating && alacritty -e /bin/fish -C pulsemixer
+    bspc rule -a \* -o state=floating && kitty -e /bin/fish -C pulsemixer
 
 # pulsemixer volume UP (+5)
 super + F8

@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+source $HOME/.scripts/colors
+
+c_out="0x282828"
+c_focused="0x928374"
+c_unfocused="0x1d2021"
+
+unfocus() {
+	for wid in $(lsw | sed "/$(pfw)/d"); do
+		chwb2 -I $c_unfocused -O $c_out -i 4 -o 4 $wid
+	done
+}
+
+tempprint() {
+  echo "event: $1"
+  echo "wid: $2"
+}
+
+# read all focus events from bspwm
+bspc subscribe node_geometry node_focus | while read var; do
+#  event=$(echo "$var" | awk '{print $1}')
+#  echo "event: $event"
+  # focus colors on focused window
+  chwb2 -i 4 -o 4 -I $c_focused -O $c_out $(pfw)
+  unfocus
+  
+done
+

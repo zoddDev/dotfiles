@@ -8,8 +8,6 @@ set nu rnu
 
 " Better searches
 
-nnoremap <CR> :nohlsearch<cr>
-
 filetype plugin indent on
 
 set tabstop=4
@@ -36,7 +34,11 @@ nnoremap <CR> G
 noremap ' $
 
 " delete default status bar
+let s:hidden_all = 1
+set noshowmode
+set noruler
 set laststatus=0
+set noshowcmd
 
 " idk what is this tbh
 "let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 0
@@ -60,19 +62,42 @@ let mapleader=" "
 call plug#begin()
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdcommenter'
-"Plug 'wincent/command-t'
+Plug 'chrisbra/colorizer'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'morhetz/gruvbox'
+Plug 'arcticicestudio/nord-vim'
+Plug 'miyakogi/sidepanel.vim'
+Plug 'preservim/nerdtree'
 call plug#end()
 
 "set t_Co=256
 let g:airline_powerline_fonts = 1
 let g:gruvbox_termcolors = '16'
+let g:gruvbox_contrast_dark = 'hard'
 
 colorscheme gruvbox
 
 "highlight Normal ctermbg=0
 "highlight airline_a ctermbg = 0
+
+" Set position (left or right) if neccesary (default: "left").
+let g:sidepanel_pos = "left"
+" Set width if neccesary (default: 32)
+let g:sidepanel_width = 26
+
+" To use rabbit-ui.vim
+let g:sidepanel_use_rabbit_ui = 1
+
+" Activate plugins in SidePanel
+let g:sidepanel_config = {}
+let g:sidepanel_config['nerdtree'] = {}
+let g:sidepanel_config['tagbar'] = {}
+let g:sidepanel_config['gundo'] = {}
+let g:sidepanel_config['buffergator'] = {}
+let g:sidepanel_config['vimfiler'] = {}
+let g:sidepanel_config['defx'] = {}
+
+map <C-s> :NERDTreeToggle<CR>
 

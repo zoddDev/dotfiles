@@ -1,0 +1,34 @@
+<application>
+  <component name="NodeJsLocalInterpreters">
+    <local-interpreter path="/usr/bin/node" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ColorChooser.RecentColors" value="251-73-52-255" />
+    <property name="KEYMAP" value="comment line&#10;delete line" />
+    <property name="MarketplacePluginsSearchHistory" value="solarized&#10;gruvbo" />
+    <property name="NonModalCommitCustomization.IsApplied" value="true" />
+    <property name="PyCharm.InitialConfiguration" value="true" />
+    <property name="PyCharm.InitialConfiguration.V2" value="true" />
+    <property name="PyCharm.InitialConfiguration.V3" value="true" />
+    <property name="PyCharm.InitialConfiguration.V4" value="true" />
+    <property name="PyCharm.InitialConfiguration.V5" value="true" />
+    <property name="PyCharm.InitialConfiguration.V6" value="true" />
+    <property name="PyCharm.InitialConfiguration.V7" value="true" />
+    <property name="SettingsSearchHistory" value="rename&#10;caret&#10;keyma" />
+    <property name="UITheme.relaunch" value="true" />
+    <property name="appcds.runOnSecondStart" value="PY-201.7846.77-8c61fc8575628e811f31af6efa2e04627dccfafa6b3327b6a689e25a899ce715" />
+    <property name="ask.about.ctrl.y.shortcut" value="true" />
+    <property name="evlsprt3.201" value="19" />
+    <property name="file.chooser.recent.files" value="$USER_HOME$/Dropbox/Programming/Python/Tests/Test" />
+    <property name="file.gist.reindex.count" value="6183" />
+    <property name="fileTypeChangedCounter" value="1" />
+    <property name="ide.memory.adjusted" value="true" />
+    <property name="lastSeenTip" value="neue-Switcher.html" />
+    <property name="lastTimeTipsWereShown" value="1593808622286" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Dropbox/Programming/Python/Tests/Test" />
+    <property name="seenTips" value="neue-Switcher.html" />
+    <property name="selected.color.option.type" value="PY.KEYWORD" />
+    <property name="tasks.pass.word.conversion.enforced" value="true" />
+    <property name="ts.lib.d.ts.version" value="3.8.2" />
+  </component>
+</application>

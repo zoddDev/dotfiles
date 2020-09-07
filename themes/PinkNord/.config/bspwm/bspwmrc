@@ -7,6 +7,7 @@
 #
 
 $HOME/.scripts/autostart.bspwm
+$HOME/.config/bspwm/autostart
 xsetroot -cursor_name left_ptr &
 sxhkd &
 #nm-applet &
@@ -19,7 +20,7 @@ lxpolkit &
 xset -dpms s off & # disable screen blanking &
 dropbox &
 dunst &
-$HOME/.scripts/bspborders &
+$HOME/.config/bspwm/bspborders &
 
 # Swallow
 
@@ -51,7 +52,7 @@ bspc config pointer_modifier mod4
 sleep 0.69
 
 # Autostart applications:
-bspc rule -a \* -o state=floating && kitty -e /bin/fish -C neofetch &
+bspc rule -a \* -o state=floating && sleep 0.015 ; kitty -e /bin/fish -C neofetch &
 
 sleep 0.55 
 #/bin/bash -c 'bspc desktop -f '^2' --follow ; bspc rule -a \* -o node=@$(bspc query -D -d):.focused split_dir=south follow=off ; firefox https://www.google.es &' 

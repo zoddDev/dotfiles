@@ -4,11 +4,15 @@
 
 # terminal emulator
 ctrl + alt + t
-	alacritty -e /bin/fish -C neofetch
+	kitty -e /bin/fish -C neofetch
 
 # dolphin
 super + e
     thunar 
+
+# mutt gmail
+ctrl + alt + g
+    kitty -e /bin/fish -C neomutt
 
 # open downloads folder
 super + d
@@ -16,19 +20,27 @@ super + d
 
 # ranger screenshots
 shift + super + s
-    alacritty -e ranger /home/zodd/Pictures/Screenshots 
+    kitty -e ranger /home/zodd/Pictures/Screenshots 
 
 # ranger downloads
 shift + super + d
-    alacritty -e ranger /home/zodd/Downloads
+    kitty -e ranger /home/zodd/Downloads
+
+# ranger wallpapers
+shift + super + w
+    kitty -e ranger /home/zodd/Pictures/Wallpapers/Wallpapers/nord-theme
+
+# nitrogen
+ctrl + alt + w
+    bspc rule -a \* -o state=floating && nitrogen
 
 # ranger
 ctrl + alt + n
-    alacritty -e ranger
+    kitty -e ranger
 
-# chromium
+# chrome
 ctrl + alt + f
-    chromium
+    vivaldi-stable file:///home/zodd/Dropbox/Programming/Web/startpage/index.html
 
 # idea
 ctrl + alt + i
@@ -69,7 +81,7 @@ super + Escape
 # AUDIO (pulsemixer)
 # pulsemixer
 ctrl + alt + v
-    alacritty -e /bin/fish -C "pulsemixer"
+    bspc rule -a \* -o state=floating && kitty -e /bin/fish -C pulsemixer
 
 # pulsemixer volume UP (+5)
 super + F8
@@ -83,6 +95,12 @@ super + F7
 super + F5
 	pulsemixer --toggle-mute
 
+# ------------------------------------------------------------------------
+
+#
+# bspwm hotkeys
+#
+
 # system shutdown
 super + alt + s
     systemctl poweroff
@@ -91,8 +109,118 @@ super + alt + s
 super + alt + r
     reboot
 
-# quit openbox
-super + alt + q
-    openbox --exit
-# ------------------------------------------------------------------------
-# gpg --keyserver keys.gnupg.net --recv-keys 1D1F0DC78F173680
+# quit/restart bspwm
+super + alt + {q,r}
+	bspc {quit,wm -r}
+
+# close and kill
+ctrl + q
+	bspc node -c
+#bspc node -{c,k}
+
+# alternate between the tiled and monocle layout
+super + m
+	bspc desktop -l next
+
+# send the newest marked node to the newest preselected node
+super + y
+	bspc node newest.marked.local -n newest.!automatic.local
+
+# swap the current node and the biggest node
+super + g
+	bspc node -s biggest
+
+#
+# state/flags
+#
+
+# set the window state
+super + {t,shift + t,s,f}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+# set the node flags
+super + ctrl + {m,x,y,z}
+bspc node -g {marked,locked,sticky,private}
+
+#
+# focus/swap
+#
+
+# focus the node in the given direction
+super + {_,shift + }{Left,Down,Up,Right}
+	bspc node -{f,s} {west,south,north,east}
+
+super + {_,shift + }{h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
+
+# focus the node for the given path jump
+super + {p,b,comma,period}
+	bspc node -f @{parent,brother,first,second}
+
+# focus the next/previous node in the current desktop
+super + {_,shift + }c
+	bspc node -f {next,prev}.local
+
+# focus the next/previous desktop in the current monitor
+super + bracket{left,right}
+	bspc desktop -f {prev,next}.local
+
+# focus the last node/desktop
+super + {grave,Tab}
+	bspc {node,desktop} -f last
+
+# focus the older or newer node in the focus history
+super + {o,i}
+	bspc wm -h off; \
+	bspc node {older,newer} -f; \
+	bspc wm -h on
+
+# focus or send to the given desktop
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}' --follow
+
+
+ctrl + alt + {Left,Right}
+    bspc node -d {prev,next} -f
+
+ctrl + alt + {h,l}
+    bspc node -d {prev,next} -f
+#
+#
+# preselect
+#
+
+# preselect the direction
+super + ctrl + {Left,Down,Up,Right}
+	bspc node -p {west,south,north,east}
+
+super + ctrl + {h,j,k,l}
+	bspc node -p {west,south,north,east}
+
+# preselect the ratio
+super + ctrl + {1-9}
+	bspc node -o 0.{1-9}
+
+# cancel the preselection for the focused node
+super + ctrl + space
+	bspc node -p cancel
+
+# cancel the preselection for the focused desktop
+super + ctrl + shift + space
+	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
+
+#
+# move/resize
+#
+
+# expand a window by moving one of its side outward
+super + alt + {Left,Down,Up,Right}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+# contract a window by moving one of its side inward
+super + alt + shift + {Left,Down,Up,Right}
+	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+
+# move a floating window
+super + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}

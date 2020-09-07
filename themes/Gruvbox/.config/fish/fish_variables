@@ -1,6 +1,9 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR DOTFILES:/home/zodd/Documents/git\x2dlab/dotfiles
+SETUVAR GRUVBOX:/home/zodd/Documents/git\x2dlab/dotfiles/themes/Gruvbox/
+SETUVAR PINK_NORD:/home/zodd/Documents/git\x2dlab/dotfiles/themes/PinkNord/
+SETUVAR WALLPAPERS:/home/zodd/Pictures/Wallpapers/Wallpapers/
 SETUVAR __fish_initialized:3100
 SETUVAR fish_color_autosuggestion:585858
 SETUVAR fish_color_cancel:\x2dr
