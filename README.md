@@ -93,6 +93,15 @@ pink-nord               - Pink Nord look
 gruvbox                 - Classic Gruvbox look
 ```
 
+example:
+
+```
+setup.sh all pink-nord
+```
+
+You can try to install all at once by using "all" argument, however I'd install it one by one in case some installation fails. 
+I'd follow this order: general, aur, themes, rice.
+
 # Deprecated (old rices, they need a lot of cleaning)
 ```
 nord                    - Classic Nord look
