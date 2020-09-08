@@ -101,7 +101,7 @@ setup.sh all pink-nord
 (this command would install all necessary packages, themes, icons and would install pink-nord rice)
 
 ### Recomendation
-You can try to install all at once by using "all" argument, however I'd install it one by one in case some installation fails. 
+You can try to install all at once by using "all" argument, however I'd install it one by one in case any installation fails. 
 I'd follow this order: general, aur, themes, rice.
 
 # Deprecated (old rices, they need a lot of cleaning)
