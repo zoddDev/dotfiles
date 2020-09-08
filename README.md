@@ -21,25 +21,19 @@ Those are my different bspwm and openbox themes dotfiles, hope you find somethin
 
 <br/><br/>
 
-## Dracula
-![alt text](screenshots/Dracula.png)
-
-<br/><br/>
-
 ## SolarizedDark
 ![alt text](screenshots/SolarizedDark.png)
 
-<br/><br/>
+# Custom Theme Swap Utility
 
-## AlternativeGruvbox
-![alt text](screenshots/Alternative-Gruvbox.png)
+## Click the brush icon
+![alt text](screenshots/brush.jpg)
 
-<br/><br/>
+## Choose the rice that you desire
+![alt text](screenshots/theme-swap-showcase.png)
 
-## DOOMBOX
-![alt text](screenshots/Doombox.jpg)
-
-<br/><br/>
+## Nice! Now you have a completely look and feel for your Linux desktop!
+![alt text](screenshots/theme-swap-showcase-2.png)
 
 # Install
 
