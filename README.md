@@ -7,7 +7,7 @@ Those are my different bspwm and openbox themes dotfiles, hope you find somethin
 # Theme Previews
 
 ## PinkNord
-![alt text](screenshots/PinkNord_.png)
+![alt text](screenshots/PinkNord.png)
 
 <br/><br/>
 
@@ -17,7 +17,7 @@ Those are my different bspwm and openbox themes dotfiles, hope you find somethin
 <br/><br/>
 
 ## Gruvbox
-![alt text](screenshots/Gruvbox.png)
+![alt text](screenshots/_Gruvbox.png)
 
 <br/><br/>
 
