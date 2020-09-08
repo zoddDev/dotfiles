@@ -27,7 +27,7 @@ Those are my different bspwm and openbox themes dotfiles, hope you find somethin
 # Custom Theme Swap Utility
 
 ## Click the brush icon
-![](./screenshots/brush.jpg =200x200)
+![](./screenshots/brush.jpg =250x)
 
 ## Choose the rice that you desire
 ![alt text](screenshots/theme-swap-showcase.png)
