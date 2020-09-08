@@ -2,7 +2,9 @@
 
 if [[ $* == *--update* || $* == -*u* ]];
 then
+    echo
     echo "updating dotfiles global configuration..."
+    echo
 
     # fish
     [ -d $DOTFILES/global-config/.config/fish ] || mkdir -p $DOTFILES/global-config/.config/fish
@@ -39,8 +41,7 @@ then
 
     # .bashrc
     cp $HOME/.bashrc $DOTFILES/global-config
-    cp $HOME/.profile $DOTFILES/global-config
-    cp $HOME/.xprofile $DOTFILES/global-config
+    cp $HOME/.zprofile $DOTFILES/global-config
     cp $HOME/.xinitrc $DOTFILES/global-config
 
     # Additional flags
@@ -48,6 +49,12 @@ then
     [[ $* == "*--themes*" || $* == -*t* ]] && echo "copying themes..." && cp -r $HOME/.themes/ $DOTFILES
     [[ $* == *--icons* || $* == -*i* ]] && echo "copying icons..." && cp -r $HOME/.icons/ $DOTFILES
     [[ $* == *--wallpapers* || $* == -*w* ]] && echo "copying wallpapers..." && cp -r $HOME/Pictures/Wallpapers/Wallpapers $DOTFILES
+
+    echo
+    echo finished copying config files
+    echo
+    
+    figlet "done !"
 
     exit
 fi
@@ -87,4 +94,8 @@ cp -r $HOME/.config/spicetify $theme_config
 
 cp -r $HOME/.config/gtk-3.0 $theme_config
 
+echo
 echo [INFO]: finished copying config files
+echo
+
+figlet "done !"
