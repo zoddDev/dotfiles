@@ -54,7 +54,7 @@ where
 may be:
 
 ```
-pacman      - installs necessary packages from pacman
+pacman       - installs necessary packages from pacman
 aur          - installs necessary packages from AUR and external sources
 themes       - installs .themes, .icons, .fonts, wallpapers and necessary/personal scripts
 ```
