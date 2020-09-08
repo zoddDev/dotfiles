@@ -234,7 +234,7 @@ label-unmounted-foreground = #55
 
 [module/pacman-updates]
 type = custom/script
-exec = $HOME/.config/polybar/scripts/pacman-updates.sh
+exec = echo `$HOME/.config/polybar/scripts/pacman-updates.sh`
 interval = 120
 label = "   %output%  "
 format-foreground = ${colors.background}

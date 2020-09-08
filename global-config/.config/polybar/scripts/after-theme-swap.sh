@@ -8,34 +8,10 @@ function restart_applications {
     killall dunst &
     killall compton &
     killall polybar &
-    #killall sxhkd &
     killall dropbox &
      
     # restart applications
-    #compton &
-    #dunst &
-    #pkill -USR1 -x sxhkd &
-
-    case "$arg" in 
-        "doombox" ) 
-            feh --bg-fill $HOME/Pictures/Wallpapers/Wallpapers/doom-theme/Doom-Eternal_Maurader_Wallpaper_3840x2160-01.jpg &
-            $HOME/.config/polybar/launch.sh & ;;        
-
-        "alternative-gruvbox" ) 
-            feh --bg-fill $HOME/Pictures/Wallpapers/Wallpapers/gruvbox-theme/randall-mackey-mural2.jpg &
-            $HOME/.config/polybar/launch.sh & ;; 
-
-        "solarized-dark" ) 
-            feh --bg-fill $HOME/Pictures/Wallpapers/Wallpapers/vaporwave-theme/palms.jpg &
-            $HOME/.config/polybar/launch.sh & ;; 
-
-        "dracula" ) 
-            feh --bg-fill $HOME/Pictures/Wallpapers/Wallpapers/dracula-theme/dracula-purplish.png &
-            polybar example & ;;
-
-        *) nitrogen --restore ;;
-    esac
-
+    nitrogen --restore
     bspwm_running=`ps -e | grep bspwm | wc -l` 
 
     if [ $bspwm_running > 0 ]; 
@@ -45,13 +21,7 @@ function restart_applications {
         killall bspswallow
         killall polybar
 
-        case "$arg" in 
-            "gruvbox" ) bspc monitor -d    ﳁ   ﭮ   & ;;
-            "*nord" ) bspc monitor -d 一 二 三 四 五 六 七 八 九 十 & ;;
-            *) bspc monitor -d    ﳁ   ﭮ   & ;;
-        esac
-
-        $HOME/.scripts/autostart.bspwm &
+        $HOME/.config/bspwm/autostart &
         xsetroot -cursor_name left_ptr &
         nohup compton &
         nohup nitrogen --restore &
@@ -67,9 +37,6 @@ function restart_applications {
     fi
 
     killall kitty
-    bspc rule -a \* -o state=floating && sleep 0.015 
-    bspc desktop -f '^1' --follow
-    kitty -e $SHELL -c neofetch &
 }
 
 restart_applications $1

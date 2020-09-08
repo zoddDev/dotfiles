@@ -11,7 +11,7 @@ then
     cp $HOME/.config/fish/config.fish $HOME/.config/fish/fish_variables $DOTFILES/global-config/.config/fish
 
     # zsh
-    cp -r $HOME/.zshrc $HOME/.oh-my-zsh $DOTFILES/global-config
+    cp -r $HOME/.zshrc $HOME/.oh-my-zsh $DOTFILES/global-config &> /dev/null
 
     # kitty
     cp -r $HOME/.config/kitty/kitty.conf $DOTFILES/global-config/.config/kitty
@@ -21,7 +21,7 @@ then
     cp -r $HOME/.config/neofetch/config.conf $DOTFILES/global-config/.config/neofetch
 
     # nvim
-    cp -r $HOME/.config/nvim $DOTFILES/global-config/.config
+    cp -r $HOME/.config/nvim $DOTFILES/global-config/.config &> /dev/null
     rm $DOTFILES/global-config/.config/nvim/colorscheme.vim
 
     # browser startpage
@@ -36,7 +36,7 @@ then
     cp -r $HOME/.config/sxhkd $DOTFILES/global-config/.config
 
     # ranger
-    cp -r $HOME/.config/ranger $DOTFILES/global-config/.config
+    cp -r $HOME/.config/ranger $DOTFILES/global-config/.config &> /dev/null
 
     # thunar
     cp $HOME/.config/thunar $DOTFILES/global-config/.config
@@ -54,12 +54,10 @@ then
 
     # Additional flags
     [[ $* == *--fonts* || $* == -*f* ]] && echo "copying fonts..." && cp -r $HOME/.fonts/ $DOTFILES
-    [[ $* == "*--themes*" || $* == -*t* ]] && echo "copying themes..." && cp -r $HOME/.themes/ $DOTFILES
+    [[ $* == *--themes* || $* == -*t* ]] && echo "copying themes..." && cp -r $HOME/.themes/ $DOTFILES
     [[ $* == *--icons* || $* == -*i* ]] && echo "copying icons..." && cp -r $HOME/.icons/ $DOTFILES
     [[ $* == *--wallpapers* || $* == -*w* ]] && echo "copying wallpapers..." && cp -r $HOME/Pictures/Wallpapers/Wallpapers $DOTFILES
 
-    echo
-    echo finished copying config files
     echo
     
     figlet "done !"
@@ -118,7 +116,7 @@ mkdir -p $theme_config/rofi
 cp -r $HOME/.config/rofi/config.rasi $theme_config/rofi
 
 mkdir $theme_config/polybar
-cp -r $HOME/.config/polybar/config $HOME/.config/polybar/config.bpswm $HOME/.config/polybar/config.openbox $theme_config/polybar
+cp -r $HOME/.config/polybar/config.bpswm $HOME/.config/polybar/config.openbox $theme_config/polybar
 
 cp -r $HOME/.config/dunst $theme_config
 cp -r $HOME/.config/discord/themes $theme_config/discord

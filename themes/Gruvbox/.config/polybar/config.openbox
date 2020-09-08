@@ -89,7 +89,7 @@ label-occupied-foreground = ${colors.white}
 label-occupied-padding = 2
 
 label-urgent = %name%
-label-urgent-background = ${colors.red}
+label-urgent-background = ${colors.yellow}
 label-urgent-foreground = ${colors.background}
 label-urgent-padding = 2
 
@@ -235,7 +235,7 @@ label-unmounted-foreground = #55
 
 [module/pacman-updates]
 type = custom/script
-exec = $HOME/.config/polybar/scripts/pacman-updates.sh
+exec = echo `$HOME/.config/polybar/scripts/pacman-updates.sh`
 interval = 120
 label = "   %output%  "
 format-foreground = ${colors.background}
