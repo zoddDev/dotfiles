@@ -26,11 +26,17 @@ Those are my different bspwm and openbox themes dotfiles, hope you find somethin
 ## Nice! Now you have a completely look and feel for your Linux desktop!
 ![alt text](screenshots/theme-swap-showcase-2.png)
 
-# Install
+# Installation
 
 ## [WARNING]: Installation scripts are still work in progress. Use them at your own risk!!
 ### [WARNING!]: These are my personal config files, executing these scripts will overwrite several files in your system, only execute these in case you have a backup of your files.
 
+## Download
+```
+mkdir -p ~/Documents/git-lab && git clone https://github.com/zodd18/dotfiles.git ~/Documents/git-lab
+```
+
+## Executing the script
 You can install one of them by running the setup executable.
 
 Installing necessary packages:
@@ -48,7 +54,7 @@ where
 may be:
 
 ```
-pacman      - installs necessary packages from pacman
+pacman       - installs necessary packages from pacman
 aur          - installs necessary packages from AUR and external sources
 themes       - installs .themes, .icons, .fonts, wallpapers and necessary/personal scripts
 ```
