@@ -41,4 +41,4 @@ Those are my different bspwm and openbox themes dotfiles, hope you find somethin
 
 <br/><br/>
 
-# Installation scripts are still work in progress. Do NOT use them.
+# Installation scripts are still work in progress. Use them at your own risk!!
