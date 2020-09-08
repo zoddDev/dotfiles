@@ -173,8 +173,8 @@ alias kbind='nvim $HOME/.config/sxhkd/sxhkdrc'
 alias git-clean='rm -rf $HOME/Downloads/git-downloads/*'
 
 # choose neofetch ascii distro
-alias neofetch='zsh -c "clear && /bin/neofetch --ascii $HOME/.config/neofetch/btw --ascii_colors 5 --colors 6 7 7 6 6 7 && zsh"'
-      
+alias neofetch="clear && $HOME/.config/neofetch/launch-neofetch.sh"
+
 # animalese
 alias animalese='java -jar ~/Dropbox/Programming/Java/Tests/Animalese/out/artifacts/Animalese_jar/Animalese.jar'
 

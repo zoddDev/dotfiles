@@ -11,6 +11,9 @@ then
     # zsh
     cp -r $HOME/.zshrc $HOME/.oh-my-zsh $DOTFILES/global-config
 
+    # kitty
+    cp -r $HOME/.config/kitty/kitty.conf $DOTFILES/global-config/.config/kitty
+
     # browser startpage
     cp $HOME/.config/startpage/index.html $HOME/.config/startpage/script.js $DOTFILES/global-config/.config/startpage
     [ -d $DOTFILES/global-config/.config/startpage/resources ] || mkdir -p $DOTFILES/global-config/.config/startpage/resources
@@ -66,12 +69,8 @@ theme_config="$theme_dir/.config"
 [ ! -d $theme_config ] && mkdir $theme_config && echo [INFO]: created .config directory in $theme_dir
 [ ! -d $theme_dir/Pictures/Wallpapers/Wallpapers ] && mkdir -p $theme_dir/Pictures/Wallpapers/Wallpapers && echo [INFO]: created Pictures/Wallpapers/Wallpapers directory in $theme_dir
 
-# $HOME
-echo [INFO]: copying $HOME/{.bashrc, .xprofile, .profile, .xinitrc} to $theme_dir ...
-cp $HOME/.bashrc $HOME/.xprofile $HOME/.profile $HOME/.xinitrc $theme_dir
-
 # $HOME/.config
-echo [INFO]: copying $HOME/.config/{} to $theme_config ...
+echo [INFO]: copying $HOME/.config to $theme_config ...
 
 mkdir $theme_config/discord
 
@@ -83,7 +82,6 @@ cp -r $HOME/.config/nvim $theme_config
 cp -r $HOME/.config/rofi $theme_config
 cp -r $HOME/.config/polybar $theme_config
 cp -r $HOME/.config/dunst $theme_config
-
 cp -r $HOME/.config/discord/themes $theme_config/discord
 cp -r $HOME/.config/spicetify $theme_config
 

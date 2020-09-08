@@ -12,13 +12,13 @@ notify-send -i $SETUP_ROOT/dotfiles/setup-scripts/resources/white-brush.png "[IN
 if [ `ps -e | grep discord | wc -l` > 0 ];
 then
     discord > /dev/null & 
-    sleep 0.5
+    sleep 1
 fi
                                                                                                                                                     
 python -m beautifuldiscord --revert
 sleep 3
 python -m beautifuldiscord --css $HOME/.config/discord/themes/$beautifuldiscord_theme
-sleep 2
+sleep 3
 killall discord
 
 bspc desktop -f '^1' --follow
