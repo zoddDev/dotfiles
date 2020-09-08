@@ -93,7 +93,7 @@ pink-nord               - Pink Nord look
 gruvbox                 - Classic Gruvbox look
 ```
 
-# Deprecated
+# Deprecated (old rices, they need a lot of cleaning)
 ```
 nord                    - Classic Nord look
 dracula                 - Classic Dracula look
