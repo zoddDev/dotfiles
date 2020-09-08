@@ -41,4 +41,75 @@ Those are my different bspwm and openbox themes dotfiles, hope you find somethin
 
 <br/><br/>
 
-# Installation scripts are still work in progress. Do NOT use them.
+# Install
+
+## [WARNING]: Installation scripts are still work in progress. Use them at your own risk!!
+### [WARNING!]: These are my personal config files, executing these scripts will overwrite several files in your system, only execute these in case you have a backup of your files.
+
+You can install one of them by running the setup executable.
+
+Installing necessary packages:
+
+[WARNING!]: Support for Arch Linux based systems only (installation via pacman).
+
+Use:
+
+```shell
+./setup.sh <ARG> 
+```
+
+where 
+```<ARG>```
+may be:
+
+```
+general      - installs necessary packages from pacman
+aur          - installs necessary packages from AUR and external sources
+themes       - installs .themes, .icons, .fonts, wallpapers and necessary/personal scripts
+```
+
+You can also do:
+
+
+```shell
+./setup.sh <ARG> <THEME_NAME>
+```
+
+where 
+```<ARG>```
+may be:
+
+```
+rice         - installs <RICE_NAME> rice
+all          - installs all at once: general packages, aur packages, GTK themes, etc. And finally installs <RICE_NAME> theme if this argument was passed
+```
+
+where 
+```<RICE_NAME>```
+may be:
+
+```
+pink-nord               - Pink Nord look
+gruvbox                 - Classic Gruvbox look
+```
+
+example:
+
+```
+setup.sh all pink-nord
+```
+(this command would install all necessary packages, themes, icons and would install pink-nord rice)
+
+### Recomendation
+You can try to install all at once by using "all" argument, however I'd install it one by one in case any installation fails. 
+I'd follow this order: general, aur, themes, rice.
+
+# Deprecated (old rices, they need a lot of cleaning)
+```
+nord                    - Classic Nord look
+dracula                 - Classic Dracula look
+doombox                 - Doom version of gruvbox
+alternative-gruvbox     - Atypical version of gruvbox with lightly changed palette
+solarized-dark          - Solarized Dark theme with a small vaporwave flavour (with some pinkier colors)
+```
+
