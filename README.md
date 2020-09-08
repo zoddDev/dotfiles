@@ -11,13 +11,13 @@ Those are my different bspwm and openbox themes dotfiles, hope you find somethin
 
 <br/><br/>
 
-## Nord
-![alt text](screenshots/Nord.png)
+## Gruvbox
+![alt text](screenshots/_Gruvbox.png)
 
 <br/><br/>
 
-## Gruvbox
-![alt text](screenshots/_Gruvbox.png)
+## Nord
+![alt text](screenshots/Nord.png)
 
 <br/><br/>
 
