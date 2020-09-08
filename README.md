@@ -14,20 +14,11 @@ Those are my different bspwm and openbox themes dotfiles, hope you find somethin
 ## Gruvbox
 ![alt text](screenshots/_Gruvbox.png)
 
-<br/><br/>
-
-## Nord
-![alt text](screenshots/Nord.png)
-
-<br/><br/>
-
-## SolarizedDark
-![alt text](screenshots/SolarizedDark.png)
 
 # Custom Theme Swap Utility
 
 ## Click the brush icon
-![](./screenshots/brush.jpg =250x)
+![alt text](./screenshots/brush_.jpg)
 
 ## Choose the rice that you desire
 ![alt text](screenshots/theme-swap-showcase.png)
