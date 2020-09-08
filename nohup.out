@@ -58,3 +58,38 @@ Found Discord under /opt/discord
 Could not find Discord executable.
 discord: no process found
 desktop: Unknown command: '--follow'.
+
+[INFO]: applying "" beautiful-discord theme...
+
+[INFO]: applying "Nord" spicetify theme...
+[32msuccess[0m Config changed: current_theme = Nord
+[34minfo[0m Run "spicetify apply" to apply new config
+[1mspicetify v0.9.9[0m
+[1mOverwriting themed assets:[0m
+[32mOK[0m
+[1mTransferring user.css:[0m
+[32mOK[0m
+[1mApplying additional modifications:[0m
+[32mOK[0m
+[32msuccess[0m Spotify is spiced up!
+[56312:0908/232347.101270:ERROR:buffer_manager.cc(488)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : glBufferData: <- error from previous GL command
+Found Discord under /opt/discord
+Reverted changes, no more CSS hot-reload :(
+/home/zodd/Documents/git-lab/dotfiles/setup-scripts/set-discord-theme.sh: line 19: 56134 Killed                  discord > /dev/null
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/zodd/.local/lib/python3.8/site-packages/beautifuldiscord/__main__.py", line 3, in <module>
+    main()
+  File "/home/zodd/.local/lib/python3.8/site-packages/beautifuldiscord/app.py", line 235, in main
+    discord.terminate()
+  File "/home/zodd/.local/lib/python3.8/site-packages/beautifuldiscord/app.py", line 21, in terminate
+    process.kill()
+  File "/home/zodd/.local/lib/python3.8/site-packages/psutil/__init__.py", line 291, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: psutil.NoSuchProcess process no longer exists (pid=56771)
+Found Discord under /opt/discord
+discord: no process found
+desktop: Unknown command: '--follow'.
