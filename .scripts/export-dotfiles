@@ -16,6 +16,10 @@ then
     # kitty
     cp -r $HOME/.config/kitty/kitty.conf $DOTFILES/global-config/.config/kitty
 
+    # nvim
+    cp -r $HOME/.config/nvim $DOTFILES/global-config/.config
+    rm $DOTFILES/global-config/.config/nvim/colorscheme.vim
+
     # browser startpage
     cp $HOME/.config/startpage/index.html $HOME/.config/startpage/script.js $DOTFILES/global-config/.config/startpage
     [ -d $DOTFILES/global-config/.config/startpage/resources ] || mkdir -p $DOTFILES/global-config/.config/startpage/resources

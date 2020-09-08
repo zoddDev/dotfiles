@@ -186,6 +186,9 @@ alias jpop='zsh -c "cd $HOME/Music/JapanesePop && mpv `$HOME/Music/select-random
 
 alias reload=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zshrc'"
 
+# go to theme directory
+alias pink-nord="cd $HOME/Documents/git-lab/dotfiles/themes/PinkNord"
+alias gruvbox="cd $HOME/Documents/git-lab/dotfiles/themes/Gruvbox"
 
 #
 # -------------------- VARIABLES --------------------

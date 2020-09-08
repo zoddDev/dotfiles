@@ -1,14 +1,17 @@
+"            _           
+" _ ____   _(_)_ __ ___  
+"| '_ \ \ / / | '_ ` _ \ 
+"| | | \ V /| | | | | | |
+"|_| |_|\_/ |_|_| |_| |_|
+"
+
 syntax on
-
-
-filetype plugin on
+filetype plugin indent on
 
 set relativenumber
 set nu rnu
 
-" Better searches
-
-filetype plugin indent on
+" TAB {
 
 set tabstop=4
 " when indenting with '>', use 4 spaces width
@@ -16,49 +19,59 @@ set shiftwidth=4
 " On pressing tab, insert 3 spaces
 set expandtab
 
-" auto-complete:
+" }
+
+" auto-completion (both are necessary) {
+
 inoremap {      {}<Left>
 inoremap {<CR>  {<CR>}<Esc>O
 inoremap {{     {
 inoremap {}     {}
 
 " Automatically closing braces
-inoremap {<CR> {<CR>}<Esc>ko<tab>
+inoremap {<CR> {<CR>}<Esc>ko<space><space><space><space>
 inoremap [<CR> [<CR>]<Esc>ko<tab>
 inoremap (<CR> (<CR>)<Esc>ko<tab>
 
-" n + enter -> go to line n
-nnoremap <CR> G
+" }
 
-" go to end of the line with '
-noremap ' $
+" delete default status bar {
 
-" delete default status bar
 let s:hidden_all = 1
 set noshowmode
 set noruler
 set laststatus=0
 set noshowcmd
 
-" idk what is this tbh
-"let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 0
+" }
+
+" no arrows {
 
 noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 
-" move to adjacent nodes
-nnoremap <C-h> <Esc><C-w>h
-nnoremap <C-j> <Esc><C-w>j
-nnoremap <C-k> <Esc><C-w>k
-nnoremap <C-l> <Esc><C-w>l
+" }
 
-" set <Leader> key
+" move to adjacent nodes {
+
+noremap <C-h> <Esc>b
+noremap <C-j> <Esc>5j
+noremap <C-k> <Esc>5k
+noremap <C-l> <Esc>w
+
+" }
+
+" set <Leader> key {
+
 nnoremap <SPACE> <Nop>
 let mapleader=" "
 
-" plugins
+" }
+
+" plugins {
+
 call plug#begin()
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdcommenter'
@@ -72,20 +85,17 @@ Plug 'miyakogi/sidepanel.vim'
 Plug 'preservim/nerdtree'
 call plug#end()
 
-"set t_Co=256
-let g:airline_powerline_fonts = 1
-let g:gruvbox_termcolors = '16'
+" }
 
-colorscheme nord
+" NERDTree {
 
-"highlight Normal ctermbg=0
-"highlight airline_a ctermbg = 0
+" Toggle
+map <C-s> :NERDTreeToggle<CR>
 
 " Set position (left or right) if neccesary (default: "left").
 let g:sidepanel_pos = "left"
 " Set width if neccesary (default: 32)
 let g:sidepanel_width = 26
-
 " To use rabbit-ui.vim
 let g:sidepanel_use_rabbit_ui = 1
 
@@ -98,5 +108,9 @@ let g:sidepanel_config['buffergator'] = {}
 let g:sidepanel_config['vimfiler'] = {}
 let g:sidepanel_config['defx'] = {}
 
-map <C-s> :NERDTreeToggle<CR>
+" }
 
+" go to end of the line with '
+noremap ' $
+
+source $HOME/.config/nvim/colorscheme.vim
