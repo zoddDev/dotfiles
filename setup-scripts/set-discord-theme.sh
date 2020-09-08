@@ -1,0 +1,24 @@
+#!/bin/bash
+
+beautifuldiscord_theme=$1
+
+#
+# configuring discord theme (beautifuldiscord)
+#
+echo 
+echo "[INFO]: applying \"$config_name\" beautiful-discord theme..."
+notify-send -i $SETUP_ROOT/dotfiles/setup-scripts/resources/white-brush.png "[INFO]: applying \"$config_name\" beautiful-discord theme..."
+                                                                                                                                                    
+if [ `ps -e | grep discord | wc -l` > 0 ];
+then
+    discord > /dev/null & 
+    sleep 0.5
+fi
+                                                                                                                                                    
+python -m beautifuldiscord --revert
+sleep 3
+python -m beautifuldiscord --css $HOME/.config/discord/themes/$beautifuldiscord_theme
+sleep 2
+killall discord
+
+bspc desktop -f '^1' --follow

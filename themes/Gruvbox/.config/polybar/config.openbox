@@ -90,7 +90,7 @@ label-occupied-padding = 2
 
 label-urgent = %name%
 label-urgent-background = ${colors.red}
-label-urgent-foreground = ${colors.white}
+label-urgent-foreground = ${colors.background}
 label-urgent-padding = 2
 
 label-empty = %name% 
@@ -153,7 +153,7 @@ format = <label-state>
 label-active = %name%
 label-active-padding = 2
 label-active-foreground = ${colors.background}
-label-active-background = ${colors.green}
+label-active-background = ${colors.pink}
 label-active-underline = ${colors.background}
 
 label-occupied = %name%
@@ -235,12 +235,12 @@ label-unmounted-foreground = #55
 
 [module/pacman-updates]
 type = custom/script
-exec = sudo $HOME/.config/polybar/scripts/remove-pacman-update-lock.sh ; sudo pacman -Sy > /dev/null ; pacman -Qu | wc -l
+exec = $HOME/.config/polybar/scripts/pacman-updates.sh
 interval = 120
 label = "   %output%  "
 format-foreground = ${colors.background}
 format-background = ${colors.green}
-click-left = kitty -e /bin/fish -C 'sudo pacman -Syu'
+click-left = kitty -e $SHELL -c 'sudo pacman -Syu'
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [module/windowtitle]

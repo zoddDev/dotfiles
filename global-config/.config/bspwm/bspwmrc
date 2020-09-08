@@ -1,0 +1,56 @@
+#! /bin/sh
+
+#
+#                 ░█▀▄░█▀▀░█▀█░█░█░█▄█
+#                 ░█▀▄░▀▀█░█▀▀░█▄█░█░█
+#                 ░▀▀░░▀▀▀░▀░░░▀░▀░▀░▀
+#
+
+$HOME/.scripts/autostart.bspwm
+xsetroot -cursor_name left_ptr &
+sxhkd &
+#nm-applet &
+compton &
+nitrogen --restore
+polybar example &
+wmname LG3D &
+lxpolkit &
+xset -dpms s off & # disable screen blanking
+dropbox &
+dunst &
+$HOME/.config/bspwm/bspborders &
+
+# Swallow
+
+pidof $HOME/.scripts/bspswallow || $HOME/.scripts/bspswallow &
+
+# Workspaces
+
+$HOME/.config/bspwm/autostart
+bspc config border_width         10
+bspc config window_gap          20
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+# bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Chromium desktop='^2'
+bspc rule -a discord desktop='^7'
+bspc rule -a mplayer2 state=floating
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+bspc config pointer_modifier mod4
+
+sleep 0.69
+
+# Autostart applications:
+bspc rule -a \* -o state=floating && sleep 0.015 ; kitty -e $SHELL -c "$HOME/.config/neofetch/launch-neofetch.sh && $SHELL" &
+
+sleep 0.55 
+#/bin/bash -c 'bspc desktop -f '^2' --follow ; bspc rule -a \* -o node=@$(bspc query -D -d):.focused split_dir=south follow=off ; firefox https://www.google.es &' 
+/bin/bash -c 'bspc desktop -f '^2' --follow ; bspc rule -a \* -o node=@$(bspc query -D -d):.focused split_dir=south follow=off ; google-chrome-stable file:///home/zodd/.config/startpage/index.html &' 
+bspc desktop -f '^2' --follow
+
+#sleep 3.5
+#/bin/bash -c 'bspc desktop -f '^8' --follow ; bspc rule -a \* -o node=@$(bspc query -D -d):.focused split_dir=south follow=off ; spotify &' 
+#bspc desktop -f '^2' --follow

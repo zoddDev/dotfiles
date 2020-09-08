@@ -1,8 +1,59 @@
 #!/bin/bash
 
+if [[ $* == *--update* || $* == -*u* ]];
+then
+    echo "updating dotfiles global configuration..."
+
+    # fish
+    [ -d $DOTFILES/global-config/.config/fish ] || mkdir -p $DOTFILES/global-config/.config/fish
+    cp $HOME/.config/fish/config.fish $HOME/.config/fish/fish_variables $DOTFILES/global-config/.config/fish
+
+    # zsh
+    cp -r $HOME/.zshrc $HOME/.oh-my-zsh $DOTFILES/global-config
+
+    # browser startpage
+    cp $HOME/.config/startpage/index.html $HOME/.config/startpage/script.js $DOTFILES/global-config/.config/startpage
+    [ -d $DOTFILES/global-config/.config/startpage/resources ] || mkdir -p $DOTFILES/global-config/.config/startpage/resources
+
+    # bspwm
+    [ -d $DOTFILES/global-config/.config/bspwm ] || mkdir -p $DOTFILES/global-config/.config/bspwm
+    cp $HOME/.config/bspwm/bspwmrc $HOME/.config/bspwm/noswallow $HOME/.config/bspwm/terminals $DOTFILES/global-config/.config/bspwm
+
+    # sxhkd
+    cp -r $HOME/.config/sxhkd $DOTFILES/global-config/.config
+
+    # ranger
+    cp -r $HOME/.config/ranger $DOTFILES/global-config/.config
+
+    # thunar
+    cp $HOME/.config/thunar $DOTFILES/global-config/.config
+    
+    # ~/.scripts
+    cp -r $HOME/.scripts $DOTFILES
+
+    # polybar scripts
+    cp -r $HOME/.config/polybar/scripts $HOME/.config/polybar/fonts $HOME/.config/polybar/modules $DOTFILES/global-config/.config/polybar
+
+    # .bashrc
+    cp $HOME/.bashrc $DOTFILES/global-config
+    cp $HOME/.profile $DOTFILES/global-config
+    cp $HOME/.xprofile $DOTFILES/global-config
+    cp $HOME/.xinitrc $DOTFILES/global-config
+
+    # Additional flags
+    [[ $* == *--fonts* || $* == -*f* ]] && echo "copying fonts..." && cp -r $HOME/.fonts/ $DOTFILES
+    [[ $* == "*--themes*" || $* == -*t* ]] && echo "copying themes..." && cp -r $HOME/.themes/ $DOTFILES
+    [[ $* == *--icons* || $* == -*i* ]] && echo "copying icons..." && cp -r $HOME/.icons/ $DOTFILES
+    [[ $* == *--wallpapers* || $* == -*w* ]] && echo "copying wallpapers..." && cp -r $HOME/Pictures/Wallpapers/Wallpapers $DOTFILES
+
+    exit
+fi
+
+# ------------------- SPECIFIC THEME -------------------
+
 theme_name=$1
 
-# e.g. $DOTFILES/themes/Dracula
+## e.g. $DOTFILES/themes/Dracula
 
 echo [INFO]: preparing $theme_name theme configuration ...
 
@@ -13,15 +64,11 @@ theme_dir="$DOTFILES/themes/${theme_name}"
 
 theme_config="$theme_dir/.config"
 [ ! -d $theme_config ] && mkdir $theme_config && echo [INFO]: created .config directory in $theme_dir
-#[ ! -d $theme_dir/Pictures/Wallpapers/Wallpapers ] && mkdir -p $theme_dir/Pictures/Wallpapers/Wallpapers && echo [INFO]: created Pictures/Wallpapers/Wallpapers directory in $theme_dir
+[ ! -d $theme_dir/Pictures/Wallpapers/Wallpapers ] && mkdir -p $theme_dir/Pictures/Wallpapers/Wallpapers && echo [INFO]: created Pictures/Wallpapers/Wallpapers directory in $theme_dir
 
 # $HOME
 echo [INFO]: copying $HOME/{.bashrc, .xprofile, .profile, .xinitrc} to $theme_dir ...
-
-cp $HOME/.bashrc $theme_dir
-cp $HOME/.xprofile $theme_dir
-cp $HOME/.profile $theme_dir
-cp $HOME/.xinitrc $theme_dir
+cp $HOME/.bashrc $HOME/.xprofile $HOME/.profile $HOME/.xinitrc $theme_dir
 
 # $HOME/.config
 echo [INFO]: copying $HOME/.config/{} to $theme_config ...
@@ -31,20 +78,15 @@ mkdir $theme_config/discord
 cp -r $HOME/.config/compton.conf $theme_config
 cp -r $HOME/.config/alacritty $theme_config
 cp -r $HOME/.config/bspwm $theme_config
-cp -r $HOME/.config/sxhkd $theme_config
 cp -r $HOME/.config/fish $theme_config
 cp -r $HOME/.config/nvim $theme_config
 cp -r $HOME/.config/rofi $theme_config
-cp -r $HOME/.config/ranger $theme_config
 cp -r $HOME/.config/polybar $theme_config
 cp -r $HOME/.config/dunst $theme_config
+
 cp -r $HOME/.config/discord/themes $theme_config/discord
 cp -r $HOME/.config/spicetify $theme_config
-cp -r $HOME/.config/gtk-3.0 $theme_config
-cp -r $HOME/.config/JetBrains
 
-mkdir -p "$HOME/.config/Code - OSS/User"
-cp -r "$HOME/.config/Code - OSS/Cookies" "$HOME/.config/Code - OSS/Cookies-journal" "$HOME/.config/Code - OSS/languagepacks.json" "$HOME/.config/Code - OSS/machineid" "$HOME/.config/Code - OSS/storage.json" "$HOME/.config/Code - OSS/rapid_render.json" $theme_config "$HOME/.config/Code - OSS"
-cp "$HOME/.config/Code - OSS/User/keybindings.json" "$HOME/.config/Code - OSS/User/settings.json" "$HOME/.config/Code - OSS/User/syncLocalSettings.json" "$HOME/.config/Code - OSS/User"
+cp -r $HOME/.config/gtk-3.0 $theme_config
 
 echo [INFO]: finished copying config files

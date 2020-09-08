@@ -1,4 +1,0 @@
-#!/bin/bash
-
-cp $HOME/.config/sxhkd/sxhkdrc.openbox $HOME/.config/sxhkd/sxhkdrc
-cp $HOME/.config/polybar/config.openbox $HOME/.config/polybar/config

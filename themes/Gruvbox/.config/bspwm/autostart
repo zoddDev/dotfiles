@@ -1,1 +1,7 @@
+#!/bin/bash
 bspc monitor -d    ﳁ   ﭮ  
+
+bspc config focused_border_color "#928374"
+bspc config normal_border_color "#282828"
+
+$HOME/.scripts/autostart.bspwm

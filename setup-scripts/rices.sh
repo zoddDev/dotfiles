@@ -25,41 +25,22 @@ function setup_config {
     echo "[INFO]: applying \"$config_name\" theme..."
 
     sudo cp -r -a $SETUP_ROOT/dotfiles/themes/$config_name/. $HOME
-
     dconf load /org/gnome/gedit/ < $HOME/.config/gedit-dump.dconf
-
-    #
-    # configuring spotify theme (spicetify)
-    #
-    #echo 
-    #echo "[INFO]: applying \"$config_name\" spicetify theme..."
-
-    #fish -C spicetify config current_theme $spicetify_theme &
-    #sleep 5
-    #fish -C spicetify apply &
+    cp -r $SETUP_ROOT/dotfiles/global-config/. $HOME
+    [ -f $HOME/.config/fish/additional_config.fish ] && cat $HOME/.config/fish/additional_config.fish >> $HOME/.config/fish/config.fish
 
     #
     # configuring discord theme (beautifuldiscord)
     #
-    #echo 
-    #echo "[INFO]: applying \"$config_name\" beautiful-discord theme..."
+    nohup $SETUP_ROOT/dotfiles/setup-scripts/set-discord-theme.sh $beautifuldiscord_theme &
 
-    #discord > /dev/null & 
-    #sleep 5 
-    #python -m beautifuldiscord --css $HOME/.config/discord/themes/$beautifuldiscord_theme
+    #
+    # configuring spotify theme (spicetify)
+    #
+    nohup $SETUP_ROOT/dotfiles/setup-scripts/set-spotify-theme.sh $spicetify_theme &
 
-    echo "[INFO]: You maybe also need to manually set the beautiful-discord and spicetify theme separately if their installations didn't work properly"
-    # use:
-    # spicetify config current_theme $THEME_NAME
-    # spicetify auto backup apply
-    notify-send -i $SETUP_ROOT/dotfiles/setup-scripts/resources/white-brush.png "[INFO]: finished \"$config_name\" installation!"
     echo "[FINISHED]: theme installation"
-
-    # restart
-    notify-send -i $SETUP_ROOT/dotfiles/setup-scripts/resources/white-brush.png "[INFO]: You can restart your WM now"
-    echo You can restart your WM now.
-    #bspc quit || openbox --exit
-    #restart_applications $config_name
+    notify-send -i $SETUP_ROOT/dotfiles/setup-scripts/resources/white-brush.png "[INFO]: FINISHED! Enjoy your new theme :)"
 }
 
 shopt -s nocasematch

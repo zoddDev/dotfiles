@@ -1,5 +1,0 @@
-#! /bin/bash
-
-sleep 1
-wmctrl -r Spotify -t 8 
-exit
