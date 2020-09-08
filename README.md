@@ -57,7 +57,7 @@ where
 may be:
 
 ```
-general      - installs necessary packages from pacman
+pacman      - installs necessary packages from pacman
 aur          - installs necessary packages from AUR and external sources
 themes       - installs .themes, .icons, .fonts, wallpapers and necessary/personal scripts
 ```
@@ -75,7 +75,7 @@ may be:
 
 ```
 rice         - installs <RICE_NAME> rice
-all          - installs all at once: general packages, aur packages, GTK themes, etc. And finally installs <RICE_NAME> theme if this argument was passed
+all          - installs all at once: pacman packages, aur packages, GTK themes, etc. And finally installs <RICE_NAME> theme if this argument was passed
 ```
 
 where 
@@ -96,7 +96,7 @@ setup.sh all pink-nord
 
 ### Recomendation
 You can try to install all at once by using "all" argument, however I'd install it one by one in case any installation fails. 
-I'd follow this order: general, aur, themes, rice.
+I'd follow this order: pacman, aur, themes, rice.
 
 # Deprecated (old rices, they need a lot of cleaning)
 ```

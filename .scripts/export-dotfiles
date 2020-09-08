@@ -16,6 +16,10 @@ then
     # kitty
     cp -r $HOME/.config/kitty/kitty.conf $DOTFILES/global-config/.config/kitty
 
+    # neofetch
+    [ -d $DOTFILES/global-config/.config/neofetch ] || mkdir -p $DOTFILES/global-config/.config/neofetch
+    cp -r $HOME/.config/neofetch/config.conf $DOTFILES/global-config/.config/neofetch
+
     # nvim
     cp -r $HOME/.config/nvim $DOTFILES/global-config/.config
     rm $DOTFILES/global-config/.config/nvim/colorscheme.vim
@@ -67,18 +71,26 @@ fi
 
 theme_name=$1
 
-## e.g. $DOTFILES/themes/Dracula
-
 echo [INFO]: preparing $theme_name theme configuration ...
-
 echo with dotfiles in $DOTFILES ...
 
 theme_dir="$DOTFILES/themes/${theme_name}"
+
+if [ -d $theme_dir ];
+then
+    echo -n "Theme $theme_name already exists, do you want to override its entire configuration? (y/N) " && read REPLY
+    
+    shopt -s nocasematch
+    case "$REPLY" in
+     "y" ) echo "[INFO]: overriding configuration ...";;
+     *) exit ;;
+    esac
+fi
+
 [ ! -d $theme_dir ] && mkdir -p $theme_dir && echo [INFO]: created theme directory in $theme_dir
 
 theme_config="$theme_dir/.config"
 [ ! -d $theme_config ] && mkdir $theme_config && echo [INFO]: created .config directory in $theme_dir
-[ ! -d $theme_dir/Pictures/Wallpapers/Wallpapers ] && mkdir -p $theme_dir/Pictures/Wallpapers/Wallpapers && echo [INFO]: created Pictures/Wallpapers/Wallpapers directory in $theme_dir
 
 # $HOME/.config
 echo [INFO]: copying $HOME/.config to $theme_config ...
@@ -86,20 +98,41 @@ echo [INFO]: copying $HOME/.config to $theme_config ...
 mkdir $theme_config/discord
 
 cp -r $HOME/.config/compton.conf $theme_config
-cp -r $HOME/.config/alacritty $theme_config
-cp -r $HOME/.config/bspwm $theme_config
-cp -r $HOME/.config/fish $theme_config
-cp -r $HOME/.config/nvim $theme_config
-cp -r $HOME/.config/rofi $theme_config
-cp -r $HOME/.config/polybar $theme_config
+
+cp -r $HOME/.config/nitrogen $theme_config
+
+mkdir -p $theme_config/kitty
+cp -r $HOME/.config/kitty/colorscheme.conf $theme_config/kitty
+
+mkdir -p $theme_config/bspwm
+cp -r $HOME/.config/bspwm/bspborders $HOME/.config/bspwm/autostart $theme_config/bspwm
+
+mkdir -p $theme_config/nvim
+cp -r $HOME/.config/nvim/colorscheme.vim $theme_config/nvim
+
+cp -r $HOME/.config/Thunar $theme_config
+
+dconf dump /org/gnome/gedit/ > $theme_config/gedit-dump.dconf
+
+mkdir -p $theme_config/rofi
+cp -r $HOME/.config/rofi/config.rasi $theme_config/rofi
+
+mkdir $theme_config/polybar
+cp -r $HOME/.config/polybar/config $HOME/.config/polybar/config.bpswm $HOME/.config/polybar/config.openbox $theme_config/polybar
+
 cp -r $HOME/.config/dunst $theme_config
 cp -r $HOME/.config/discord/themes $theme_config/discord
-cp -r $HOME/.config/spicetify $theme_config
+
+mkdir $theme_config/spicetify
+cp -r $HOME/.config/spicetify/Extracted $HOME/.config/spicetify/config.ini $theme_config/spicetify
 
 cp -r $HOME/.config/gtk-3.0 $theme_config
+cp -r $HOME/.config/gtk-2.0 $theme_config
+cp -r $HOME/.config/.gtkrc-2.0 ../$theme_config
 
 echo
 echo [INFO]: finished copying config files
 echo
 
 figlet "done !"
+

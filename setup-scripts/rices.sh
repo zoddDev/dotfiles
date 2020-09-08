@@ -28,7 +28,6 @@ function setup_config {
     dconf load /org/gnome/gedit/ < $HOME/.config/gedit-dump.dconf
     cp -r $SETUP_ROOT/dotfiles/global-config/. $HOME
     [ -f $HOME/.config/fish/additional_config.fish ] && cat $HOME/.config/fish/additional_config.fish >> $HOME/.config/fish/config.fish
-    [ -f $HOME/.config/current_theme ] && echo "include `cat ~/.config/current_theme `.conf" >> $HOME/.config/kitty/kitty.conf
 
     #
     # configuring discord theme (beautifuldiscord)
