@@ -50,17 +50,17 @@ ctrl + alt + i
 ctrl + alt + c
     code
 
-# spectacle (all)
+# screenshot (entire screen)
 Print
-    spectacle
+    scrot $HOME/Pictures/Screenshots/screenshot-$(date +%F_%T).png -e 'xclip -selection c -t image/png < $f'
 
-# spectacle (window)
+# screenshot (window)
 super + Print
-    spectacle -a
+    scrot -u $HOME/Pictures/Screenshots/screenshot-$(date +%F_%T).png -e 'xclip -selection c -t image/png < $f'
 
-# spectacle (region)
+# screenshot (region)
 super + shift + Print
-    spectacle -r
+    maim -s -u | xclip -selection clipboard -t image/png -i
 
 # rofi 
 super + Return 
