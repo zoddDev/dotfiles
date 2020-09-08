@@ -81,7 +81,7 @@ may be:
 
 ```
 rice         - installs <RICE_NAME> rice
-all          - installs all packages and finally installs <RICE_NAME> theme if this argument was passed
+all          - installs all at once: general packages, aur packages, GTK themes, etc. And finally installs <RICE_NAME> theme if this argument was passed
 ```
 
 where 
@@ -98,7 +98,9 @@ example:
 ```
 setup.sh all pink-nord
 ```
+(this command would install all necessary packages, themes, icons and would install pink-nord rice)
 
+### Recomendation
 You can try to install all at once by using "all" argument, however I'd install it one by one in case some installation fails. 
 I'd follow this order: general, aur, themes, rice.
 
