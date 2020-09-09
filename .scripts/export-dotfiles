@@ -25,7 +25,8 @@ then
     rm $DOTFILES/global-config/.config/nvim/colorscheme.vim
 
     # gedit
-    cp -r $HOME/.local/share/gedit/styles $DOTFILES/global-config
+    mkdir -p $DOTFILES/global-config/.local/share/gedit &> /dev/null
+    cp -r $HOME/.local/share/gedit/styles $DOTFILES/global-config/.local/share/gedit
 
     # browser startpage
     cp $HOME/.config/startpage/{index.html,script.js} $DOTFILES/global-config/.config/startpage
