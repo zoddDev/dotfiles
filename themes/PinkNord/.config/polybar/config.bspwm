@@ -240,6 +240,7 @@ label = "   %output%  "
 format-foreground = ${colors.background}
 format-background = ${colors.green}
 click-left = kitty -e $SHELL -c 'sudo pacman -Syu'
+click-right = bspc rule -a \* -o state=floating ; sleep 0.015 ; kitty -e $SHELL -c 'pacman -Qu | less'
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [module/windowtitle]
