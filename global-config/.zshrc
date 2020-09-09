@@ -85,7 +85,7 @@ source $ZSH/oh-my-zsh.sh
  if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR='nvim'
  else
-   export EDITOR='vim'
+   export EDITOR='nvim'
  fi
 
 # Compilation flags
@@ -134,16 +134,13 @@ alias piskel='$HOME/software/Piskel-0.14.0-64bits/piskel'
 # -------------------- Pops this file in order to add/edit/remove aliases --------------------
  
 # aliaschanger
-alias aliaschanger='nvim $HOME/.zshrc'
+alias aliases='nvim $HOME/.zshrc'
 
 # ------------------------------------------------------------------------------------------------
 
 
 # i3 config file
 # alias i3config='nvim $HOME/.config/i3/config'
-
-# Rofi theme
-alias rofitheme='nvim $HOME/.config/rofi/themes'
 
 # Check disks space
 alias fdisks='df --total --block-size=G | grep dev/sd --color=never'
@@ -157,17 +154,17 @@ alias myps='watch ps o pid,ppid,stat,comm'
 # spiecitify
 alias spicetify='$HOME/spicetify-cli/spicetify'
 
-# Prints my wallpapers directory
-alias mywallpapers='cd $HOME/Pictures/Wallpapers/Wallpapers'
-
 # Ranger configuration file
 alias rangerc='nvim $HOME/.config/ranger'
+
+# nvim configuration file
+alias vimrc='nvim $HOME/.config/nvim/init.vim'
     
 # Polybar config
-alias polyconfig='nvim $HOME/.config/polybar/config.ini' 
+alias polyconfig='nvim $HOME/.config/polybar/config.bspwm' 
  
 # sxhkd config
-alias kbind='nvim $HOME/.config/sxhkd/sxhkdrc'
+alias kbinds='nvim $HOME/.config/sxhkd/sxhkdrc'
 
 # git-clean (clean /home/zodd/Downloads/git-downloads)    
 alias git-clean='rm -rf $HOME/Downloads/git-downloads/*'

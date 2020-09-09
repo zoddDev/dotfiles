@@ -4,4 +4,6 @@ bspc monitor -d    ﳁ   ﭮ  
 bspc config focused_border_color "#928374"
 bspc config normal_border_color "#282828"
 
+ln -s $WALLPAPERS/gruvbox-theme $HOME/.config/GIMP/2.10/splashes
+
 $HOME/.scripts/autostart.bspwm

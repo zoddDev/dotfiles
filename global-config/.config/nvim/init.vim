@@ -47,8 +47,8 @@ set noshowcmd
 
 " no arrows {
 
-noremap <Up> <Nop>
-noremap <Down> <Nop>
+"noremap <Up> <Nop>
+"noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 
@@ -56,10 +56,10 @@ noremap <Right> <Nop>
 
 " move to adjacent nodes {
 
-noremap <C-h> <Esc>b
+noremap <C-h> <Esc>bb
 noremap <C-j> <Esc>5j
 noremap <C-k> <Esc>5k
-noremap <C-l> <Esc>w
+noremap <C-l> <Esc>ww
 
 " }
 
@@ -113,6 +113,24 @@ let g:sidepanel_config['defx'] = {}
 " go to end of the line with '
 noremap ' $
 
+" toggle line numbers
 nnoremap <F2> :set nonumber!<CR>:set rnu!<CR>
 
+" faster scrolling
+nnoremap <C-e> <C-e><C-e><C-e>
+nnoremap <C-y> <C-y><C-y><C-y>
+
+" alt + p || alt + y
+nnoremap <M-p> <Esc>p<Esc>
+nnoremap <M-y> <Esc>y<Esc>
+
+" shared clipboard
+nnoremap y "+y
+vnoremap y "+y
+nnoremap d "+d
+vnoremap d "+d
+nnoremap p "+p
+vnoremap p "+p
+
 source $HOME/.config/nvim/colorscheme.vim
+
