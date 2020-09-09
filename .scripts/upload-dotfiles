@@ -8,4 +8,5 @@ cd $DOTFILES
 
 # Default operation
 MESSAGE=$1
+[ -z $MESSAGE ] && MESSAGE="Minor changes"
 git pull && git add -f ./. && git add -f * && git commit -m "$MESSAGE" && git push

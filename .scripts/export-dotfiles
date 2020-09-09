@@ -65,6 +65,7 @@ then
     exit
 fi
 
+
 # ------------------- SPECIFIC THEME -------------------
 
 theme_name=$1
@@ -90,7 +91,9 @@ fi
 theme_config="$theme_dir/.config"
 [ ! -d $theme_config ] && mkdir $theme_config && echo [INFO]: created .config directory in $theme_dir
 
-# $HOME/.config
+
+# ------------------- Copying files... -------------------
+
 echo [INFO]: copying $HOME/.config to $theme_config ...
 
 mkdir $theme_config/discord
