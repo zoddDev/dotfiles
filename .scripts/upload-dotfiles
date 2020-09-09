@@ -1,0 +1,11 @@
+#!/bin/bash
+
+cd $DOTFILES
+
+# Additional flags                                                                                                                                                                       
+[[ $* == *--pull* ]] && git pull && [[ $* == *--push* ]] && git push && exit
+[[ $* == *--push* ]] && git push && [[ $* == *--pull* ]] && git pull && exit
+
+# Default operation
+MESSAGE=$1
+git pull && git add -f ./. && git add -f * && git commit -m "$MESSAGE" && git push

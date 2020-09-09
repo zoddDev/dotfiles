@@ -113,4 +113,6 @@ let g:sidepanel_config['defx'] = {}
 " go to end of the line with '
 noremap ' $
 
+nnoremap <F2> :set nonumber!<CR>:set rnu!<CR>
+
 source $HOME/.config/nvim/colorscheme.vim
