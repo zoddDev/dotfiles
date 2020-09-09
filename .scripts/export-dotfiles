@@ -8,10 +8,10 @@ then
 
     # fish
     [ -d $DOTFILES/global-config/.config/fish ] || mkdir -p $DOTFILES/global-config/.config/fish
-    cp $HOME/.config/fish/config.fish $HOME/.config/fish/fish_variables $DOTFILES/global-config/.config/fish
+    cp $HOME/.config/fish/{config.fish,fish_variables} $DOTFILES/global-config/.config/fish
 
     # zsh
-    cp -r $HOME/.zshrc $HOME/.oh-my-zsh $DOTFILES/global-config &> /dev/null
+    cp -r $HOME/{.zshrc,.oh-my-zsh} $DOTFILES/global-config &> /dev/null
 
     # kitty
     cp -r $HOME/.config/kitty/kitty.conf $DOTFILES/global-config/.config/kitty
@@ -24,13 +24,16 @@ then
     cp -r $HOME/.config/nvim $DOTFILES/global-config/.config &> /dev/null
     rm $DOTFILES/global-config/.config/nvim/colorscheme.vim
 
+    # gedit
+    cp -r $HOME/.local/share/gedit/styles $DOTFILES/global-config
+
     # browser startpage
-    cp $HOME/.config/startpage/index.html $HOME/.config/startpage/script.js $DOTFILES/global-config/.config/startpage
+    cp $HOME/.config/startpage/{index.html,script.js} $DOTFILES/global-config/.config/startpage
     [ -d $DOTFILES/global-config/.config/startpage/resources ] || mkdir -p $DOTFILES/global-config/.config/startpage/resources
 
     # bspwm
     [ -d $DOTFILES/global-config/.config/bspwm ] || mkdir -p $DOTFILES/global-config/.config/bspwm
-    cp $HOME/.config/bspwm/bspwmrc $HOME/.config/bspwm/noswallow $HOME/.config/bspwm/terminals $DOTFILES/global-config/.config/bspwm
+    cp $HOME/.config/bspwm/{bspwmrc,noswallow,terminals} $DOTFILES/global-config/.config/bspwm
 
     # sxhkd
     cp -r $HOME/.config/sxhkd $DOTFILES/global-config/.config
@@ -45,9 +48,9 @@ then
     cp -r $HOME/.scripts $DOTFILES
 
     # polybar scripts
-    cp -r $HOME/.config/polybar/scripts $HOME/.config/polybar/fonts $HOME/.config/polybar/modules $DOTFILES/global-config/.config/polybar
+    cp -r $HOME/.config/polybar/{scripts,fonts,modules} $DOTFILES/global-config/.config/polybar
 
-    # .bashrc
+    # .bashrc, .zprofile, .xinitrc
     cp $HOME/.bashrc $DOTFILES/global-config
     cp $HOME/.zprofile $DOTFILES/global-config
     cp $HOME/.xinitrc $DOTFILES/global-config
@@ -59,9 +62,7 @@ then
     [[ $* == *--wallpapers* || $* == -*w* ]] && echo "copying wallpapers..." && cp -r $HOME/Pictures/Wallpapers/Wallpapers $DOTFILES
 
     echo
-    
     figlet "done !"
-
     exit
 fi
 
@@ -96,40 +97,58 @@ theme_config="$theme_dir/.config"
 
 echo [INFO]: copying $HOME/.config to $theme_config ...
 
-mkdir $theme_config/discord
-
 cp -r $HOME/.config/compton.conf $theme_config
 
 cp -r $HOME/.config/nitrogen $theme_config
 
-mkdir -p $theme_config/kitty
+mkdir -p $theme_config/kitty &> /dev/null
 cp -r $HOME/.config/kitty/colorscheme.conf $theme_config/kitty
 
-mkdir -p $theme_config/bspwm
-cp -r $HOME/.config/bspwm/bspborders $HOME/.config/bspwm/autostart $theme_config/bspwm
+mkdir -p $theme_config/bspwm &> /dev/null
+cp -r $HOME/.config/bspwm/{bspborders,autostart} $theme_config/bspwm
 
-mkdir -p $theme_config/nvim
+mkdir -p $theme_config/nvim &> /dev/null
 cp -r $HOME/.config/nvim/colorscheme.vim $theme_config/nvim
 
 cp -r $HOME/.config/Thunar $theme_config
 
 dconf dump /org/gnome/gedit/ > $theme_config/gedit-dump.dconf
 
-mkdir -p $theme_config/rofi
+# browser startpage
+mkdir -p $theme_config/startpage &> /dev/null
+cp -r $HOME/.config/startpage/{style.css,resources} $theme_config/startpage
+
+mkdir $theme_config/neofetch &> /dev/null
+cp -r $HOME/.config/neofetch/{ascii,launch-neofetch.sh} $theme_config/neofetch
+
+mkdir -p $theme_config/rofi &> /dev/null
 cp -r $HOME/.config/rofi/config.rasi $theme_config/rofi
 
-mkdir $theme_config/polybar
-cp -r $HOME/.config/polybar/config.bpswm $HOME/.config/polybar/config.openbox $theme_config/polybar
+mkdir $theme_config/polybar &> /dev/null
+cp -r $HOME/.config/polybar/{config.bspwm,config.openbox} $theme_config/polybar
 
 cp -r $HOME/.config/dunst $theme_config
-cp -r $HOME/.config/discord/themes $theme_config/discord
 
-mkdir $theme_config/spicetify
-cp -r $HOME/.config/spicetify/Extracted $HOME/.config/spicetify/config.ini $theme_config/spicetify
+mkdir $theme_config/discord &> /dev/null
+cp $HOME/.config/discord/custom-discord-theme.css $theme_config/discord
+
+mkdir $theme_config/spicetify &> /dev/null
+cp -r $HOME/.config/spicetify/{Extracted,config.ini} $theme_config/spicetify
+
+cp -r $HOME/.config/JetBrains $theme_config
+
+mkdir $theme_config/Code\ -\ OSS &> /dev/null
+cp $HOME/.config/Code\ -\ OSS/{Cookies,Cookies-journal,languagepacks.json,machineid,rapid_render.json,storage.json,TransportSecurity} $theme_config/Code\ -\ OSS
+mkdir -p $theme_config/Code\ -\ OSS/User &> /dev/null
+cp $HOME/.config/Code\ -\ OSS/User/{keybindings.json,settings.json,syncLocalSettings.json} $theme_config/Code\ -\ OSS/User
+
+
+[ -d $theme_dir/.oh-my-zsh/additional ] || mkdir -p $theme_dir/.oh-my-zsh/additional
+cp -r $HOME/.oh-my-zsh/additional $theme_dir/.oh-my-zsh
 
 cp -r $HOME/.config/gtk-3.0 $theme_config
 cp -r $HOME/.config/gtk-2.0 $theme_config
-cp -r $HOME/.config/.gtkrc-2.0 ../$theme_config
+cp -r $HOME/.config/.gtkrc-2.0 $theme_dir
 
 echo
 echo [INFO]: finished copying config files

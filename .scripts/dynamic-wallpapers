@@ -1,16 +1,9 @@
 #!/bin/bash
 
-dir=$1
+dir="$HOME/Pictures/Wallpapers/Wallpapers/$1-theme"
 
 #SECONDS OF COOLDOWN
 COOLDOWN=256
-
-# Dictionary
-[ $dir = 'nord' ] && dir="$HOME/Pictures/Wallpapers/Wallpapers/nord-theme"
-[ $dir = 'vaporwave' ] && dir="$HOME/Pictures/Wallpapers/Wallpapers/vaporwave-theme"
-[ $dir = 'gruvbox' ] && dir="$HOME/Pictures/Wallpapers/Wallpapers/gruvbox-theme"
-[ $dir = 'doom' ] && dir="$HOME/Pictures/Wallpapers/Wallpapers/doom-theme"
-# --- </> ---
 
 # Error check
 [ ! -d $dir ] && echo "Directory $dir does not exist" && exit 1

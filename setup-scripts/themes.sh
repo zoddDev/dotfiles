@@ -7,6 +7,7 @@ sudo cat $SETUP_ROOT/dotfiles/environment >> /etc/environment
 
 [ -d $HOME/Pictures/Wallpapers ] || mkdir -p $HOME/Pictures/Wallpapers
 cp -r $SETUP_ROOT/dotfiles/Wallpapers $HOME/Pictures/Wallpapers
+cp -r $SETUP_ROOT/dotfiles/.scripts $HOME
 cp -r $SETUP_ROOT/dotfiles/.fonts $HOME
 cp -r $SETUP_ROOT/dotfiles/.icons $HOME
 cp -r $SETUP_ROOT/dotfiles/.themes $HOME

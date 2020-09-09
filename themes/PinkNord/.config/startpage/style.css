@@ -14,7 +14,7 @@
 body {
     background-color: #252934;
 	color: white;
-    background-image: url("resources/retro-pc.jpg");
+    background-image: url("resources/background.png");
     backdrop-filter: blur(10px);
     background-repeat: no-repeat;
     background-attachment: fixed;

@@ -1,0 +1,39 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/Documents/git-lab/zodd18.github.io">
+          <value>
+            <RecentProjectMetaInfo projectWorkspaceId="1eM9nbH0NPT3T1mYwV8UrykkCqL">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="WS-201.7846.79" />
+              <option name="buildTimestamp" value="1591087798838" />
+              <frame x="12" y="50" width="1892" height="1014" />
+              <option name="productionCode" value="WS" />
+              <option name="projectOpenTimestamp" value="1594221903607" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/WebstormProjects/untitled">
+          <value>
+            <RecentProjectMetaInfo projectWorkspaceId="1ePSrdQ1IRUodeY8o1P8fciieMU">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="WS-201.7846.79" />
+              <option name="buildTimestamp" value="1591087798838" />
+              <frame x="12" y="50" width="1892" height="1014" />
+              <option name="productionCode" value="WS" />
+              <option name="projectOpenTimestamp" value="1594221934922" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastProjectLocation" value="$USER_HOME$/WebstormProjects" />
+    <option name="recentPaths">
+      <list>
+        <option value="$USER_HOME$/WebstormProjects/untitled" />
+        <option value="$USER_HOME$/Documents/git-lab/zodd18.github.io" />
+      </list>
+    </option>
+  </component>
+</application>

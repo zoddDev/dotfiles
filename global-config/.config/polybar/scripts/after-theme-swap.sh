@@ -5,10 +5,9 @@ function restart_applications {
     config_name=$1
 
     # kill applications
-    killall dunst &
-    killall compton &
     killall polybar &
-    killall dropbox &
+    killall dunst &
+    #killall compton &
      
     # restart applications
     nitrogen --restore
@@ -19,24 +18,20 @@ function restart_applications {
         killall bspc 
         killall bspwmrc 
         killall bspswallow
-        killall polybar
 
         $HOME/.config/bspwm/autostart &
         xsetroot -cursor_name left_ptr &
-        nohup compton &
-        nohup nitrogen --restore &
-        nohup polybar example &
-        nohup wmname LG3D &
-        nohup lxpolkit &
-        nohup xset -dpms s off & # disable screen blanking &
-        nohup dunst &
-        nohup $HOME/.config/bspwm/bspborders &
-        nohup pidof $HOME/.scripts/bspswallow || $HOME/.scripts/bspswallow &
-        nohup dropbox &
-        nohup $HOME/.config/bspwm/autostart &
+        #compton &
+        nitrogen --restore &
+        dunst &
+        $HOME/.config/bspwm/bspborders &
+        pidof $HOME/.scripts/bspswallow || $HOME/.scripts/bspswallow &
+        $HOME/.config/bspwm/autostart &
     fi
-
+    
     killall kitty
+    nohup $HOME/.config/polybar/scripts/restart-polybar.sh &
+    nohup floating-term-bspwm.sh
 }
 
 restart_applications $1

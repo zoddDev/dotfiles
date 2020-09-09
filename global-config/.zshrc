@@ -162,9 +162,13 @@ alias vimrc='nvim $HOME/.config/nvim/init.vim'
     
 # Polybar config
 alias polyconfig='nvim $HOME/.config/polybar/config.bspwm' 
+alias polscripts='nvim $HOME/.config/polybar/scripts' 
  
 # sxhkd config
 alias kbinds='nvim $HOME/.config/sxhkd/sxhkdrc'
+
+# rices.sh config
+alias rices='nvim $DOTFILES/setup-scripts/rices.sh'
 
 # git-clean (clean /home/zodd/Downloads/git-downloads)    
 alias git-clean='rm -rf $HOME/Downloads/git-downloads/*'
@@ -175,11 +179,17 @@ alias neofetch="clear && $HOME/.config/neofetch/launch-neofetch.sh"
 # animalese
 alias animalese='java -jar ~/Dropbox/Programming/Java/Tests/Animalese/out/artifacts/Animalese_jar/Animalese.jar'
 
+# colors showcase
+alias colors="~/.scripts/color-scripts/`ls ~/.scripts/color-scripts | sort -R | head -n 1`"
+
 # opens a random pornhub video
 alias porn='mpv "http://www.pornhub.com/random"'
 
 # 80s jpop
-alias jpop='zsh -c "cd $HOME/Music/JapanesePop && mpv `$HOME/Music/select-random.sh $HOME/Music/JapanesePop`"'
+alias jpop='mpv --shuffle $HOME/Music/JapanesePop'
+
+# rock
+alias rock='mpv --shuffle $HOME/Music/ROCK'
 
 alias reload=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zshrc'"
 
@@ -200,6 +210,8 @@ export WALLPAPERS="$HOME/Pictures/Wallpapers/Wallpapers"
 export PINK_NORD="$DOTFILES/themes/PinkNord"
 export GRUVBOX="$DOTFILES/themes/Gruvbox"
 
+#ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=2,regular,underline"
+
 
 #
 # -------------------- KEYBINDINGS --------------------
@@ -214,3 +226,12 @@ bindkey "^[k" up-line-or-history
 
 bindkey '^ ' autosuggest-accept
 bindkey '^H' autosuggest-clear
+
+#
+# -------------------- ADDITIONAL SOURCES --------------------
+#
+
+# autosuggestions color
+autosuggestions_colorscheme_dir="$HOME/.oh-my-zsh/additional/plugins/auto-suggestions/auto-suggestions.colorscheme.conf"
+[ -f $autosuggestions_colorscheme_dir ] && ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=`$autosuggestions_colorscheme_dir`
+

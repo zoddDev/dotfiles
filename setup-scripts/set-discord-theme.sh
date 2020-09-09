@@ -1,6 +1,6 @@
 #!/bin/bash
 
-beautifuldiscord_theme=$1
+beautifuldiscord_theme="custom-discord-theme.css"
 
 #
 # configuring discord theme (beautifuldiscord)

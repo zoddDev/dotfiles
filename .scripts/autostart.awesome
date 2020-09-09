@@ -1,3 +1,0 @@
-#!/bin/bash
-
-cp $HOME/.config/sxhkd/sxhkdrc.awesome $HOME/.config/sxhkd/sxhkdrc

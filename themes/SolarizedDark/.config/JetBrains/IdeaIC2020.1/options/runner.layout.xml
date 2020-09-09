@@ -1,0 +1,53 @@
+<application>
+  <component name="RunnerLayoutSettings">
+    <runner id="JavaRunner">
+      <ViewImpl>
+        <option name="ID" value="ConsoleContent" />
+        <option name="placeInGrid" value="bottom" />
+      </ViewImpl>
+      <TabImpl>
+        <option name="bottomProportion" value="0.0" />
+      </TabImpl>
+    </runner>
+    <runner id="Debug">
+      <ViewImpl>
+        <option name="ID" value="FrameContent" />
+        <option name="placeInGrid" value="left" />
+      </ViewImpl>
+      <ViewImpl>
+        <option name="ID" value="VariablesContent" />
+        <option name="placeInGrid" value="center" />
+      </ViewImpl>
+      <ViewImpl>
+        <option name="ID" value="ConsoleContent" />
+        <option name="placeInGrid" value="bottom" />
+        <option name="tabIndex" value="1" />
+      </ViewImpl>
+      <ViewImpl>
+        <option name="ID" value="ThreadsContent" />
+        <option name="minimizedInGrid" value="true" />
+        <option name="placeInGrid" value="left" />
+      </ViewImpl>
+      <ViewImpl>
+        <option name="ID" value="MemoryView" />
+        <option name="minimizedInGrid" value="true" />
+        <option name="placeInGrid" value="right" />
+      </ViewImpl>
+      <ViewImpl>
+        <option name="ID" value="OverheadMonitor" />
+        <option name="minimizedInGrid" value="true" />
+        <option name="placeInGrid" value="right" />
+      </ViewImpl>
+      <TabImpl>
+        <option name="displayName" value="Debugger" />
+        <option name="leftProportion" value="0.19910942" />
+        <option name="rightProportion" value="0.19910942" />
+      </TabImpl>
+      <TabImpl>
+        <option name="bottomProportion" value="0.0" />
+        <option name="defaultIndex" value="1" />
+        <option name="index" value="1" />
+      </TabImpl>
+    </runner>
+  </component>
+</application>

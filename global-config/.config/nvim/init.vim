@@ -112,7 +112,7 @@ let g:sidepanel_config['defx'] = {}
 " }
 
 " go to end of the line with '
-noremap ' $
+noremap ' $h
 
 " toggle line numbers
 nnoremap <F2> :set nonumber!<CR>:set rnu!<CR>

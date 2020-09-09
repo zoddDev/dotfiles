@@ -71,4 +71,4 @@ context = ctrl+shift+period
 [urgency_critical]
     background = "#2E3440"
     foreground = "#D8DEE9"
-    timeout = 5
+    timeout = 120

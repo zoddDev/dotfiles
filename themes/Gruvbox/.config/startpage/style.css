@@ -14,7 +14,7 @@
 body {
     background-color: #282828;
 	color: #ebdbb2;
-    background-image: url("resources/gruv-girl.jpg");
+    background-image: url("resources/background.png");
     backdrop-filter: blur(10px);
     background-repeat: no-repeat;
     background-attachment: fixed;

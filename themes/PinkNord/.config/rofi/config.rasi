@@ -106,3 +106,8 @@
     border: 1px;
     border-color: #ff0000;
 }
+
+element-icon {
+    size: 2.8ch;
+}
+
