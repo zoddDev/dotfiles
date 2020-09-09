@@ -10,6 +10,10 @@ ctrl + alt + t
 super + e
     thunar 
 
+# update
+super + u
+    bspc rule -a \* -o state=floating && kitty -e $SHELL -c "figlet update... && sudo pacman -Syu"
+
 # mutt gmail
 ctrl + alt + g
     kitty -e /bin/zsh -c neomutt

@@ -206,3 +206,11 @@ export GRUVBOX="$DOTFILES/themes/Gruvbox"
 #
 
 bindkey "^U" backward-kill-line
+
+bindkey "^[l" forward-word
+bindkey "^[h" backward-word
+bindkey "^[j" down-line-or-history
+bindkey "^[k" up-line-or-history
+
+bindkey '^ ' autosuggest-accept
+bindkey '^H' autosuggest-clear

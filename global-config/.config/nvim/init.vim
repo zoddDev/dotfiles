@@ -8,6 +8,7 @@
 syntax on
 filetype plugin indent on
 
+set undofile
 set relativenumber
 set nu rnu
 
@@ -120,10 +121,6 @@ nnoremap <F2> :set nonumber!<CR>:set rnu!<CR>
 nnoremap <C-e> <C-e><C-e><C-e>
 nnoremap <C-y> <C-y><C-y><C-y>
 
-" alt + p || alt + y
-nnoremap <M-p> <Esc>p<Esc>
-nnoremap <M-y> <Esc>y<Esc>
-
 " shared clipboard
 nnoremap y "+y
 vnoremap y "+y
@@ -132,5 +129,8 @@ vnoremap d "+d
 nnoremap p "+p
 vnoremap p "+p
 
-source $HOME/.config/nvim/colorscheme.vim
+" alt + p || alt + y
+map <M-p> <M-P><Esc>
+map <M-y> <M-Y><Esc>
 
+source $HOME/.config/nvim/colorscheme.vim
