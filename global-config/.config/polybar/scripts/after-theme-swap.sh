@@ -1,15 +1,14 @@
 #!/bin/bash
 
 function restart_applications {
-    # args
     config_name=$1
 
-    # kill applications
+    # ------ kill applications ------
     killall polybar &
     killall dunst &
     #killall compton &
      
-    # restart applications
+    # ------ restart applications ------
     nitrogen --restore
     bspwm_running=`ps -e | grep bspwm | wc -l` 
 

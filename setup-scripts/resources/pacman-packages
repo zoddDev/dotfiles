@@ -156,7 +156,6 @@ gnome-themes-extra
 gnu-free-fonts
 gnupg
 gnutls
-go
 go-tools
 gobject-introspection-runtime
 gperf
@@ -208,6 +207,7 @@ ijs
 imagemagick
 imlib2
 inetutils
+iniparser
 inkscape
 iproute2
 iptables
@@ -903,6 +903,7 @@ xcb-util-xrm
 xclip
 xdg-dbus-proxy
 xdg-utils
+xdo
 xf86-input-libinput
 xfconf
 xfsprogs

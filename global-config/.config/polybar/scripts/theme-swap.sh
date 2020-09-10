@@ -6,13 +6,13 @@ function change_theme {
     current_theme=`cat $HOME/.config/current_theme`
     chosen=$1
     [[ $chosen == $current_theme ]] && notify-send -i $HOME/.config/polybar/scripts/resources/white-brush.png "[WARNING]: You are already using this theme!" && return 1
-    DOTFILES=/home/zodd/Documents/git-lab/dotfiles
     cd $DOTFILES 
 
     bspc rule -a \* -o state=floating
     nohup kitty -e $SHELL -c "$HOME/.config/neofetch/launch-neofetch.sh ; $DOTFILES/setup-scripts/rices.sh $chosen"
 
     bspc rule -a \* -o state=floating
+
     #nohup $HOME/.config/polybar/scripts/after-theme-swap.sh
     nohup kitty -e $SHELL -c "$HOME/.config/polybar/scripts/after-theme-swap.sh"
 }

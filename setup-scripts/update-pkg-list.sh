@@ -1,19 +1,26 @@
 #!/bin/bash
 
+function update {
+    pacman_arg=$1
+    output_file=$2
+    sudo pacman -$pacman_arg | cut -d ' ' -f 1 > $DOTFILES/setup-scripts/resources/$output_file
+}
+
 arg=$1
 
 if [ "$arg" = "aur" ];
 then 
-    pacman_arg='Qm'
-    output_file='aur-packages'
+    update 'Qm' 'aur-packages'
 elif [ "$arg" = "pacman" ];
 then
-    pacman_arg='Qn'
-    output_file='pacman-packages'
+    update 'Qn' 'pacman-packages'
+elif [ "$arg" = "all" ];
+then
+    update 'Qm' 'aur-packages'
+    update 'Qn' 'pacman-packages'
 else
     echo "No option named: \"$arg\""
     echo "No packages list to update, exiting..."
     exit
 fi
 
-sudo pacman -$pacman_arg | cut -d ' ' -f 1 > $DOTFILES/setup-scripts/resources/$output_file
