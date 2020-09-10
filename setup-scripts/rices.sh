@@ -27,7 +27,7 @@ function setup_config {
     nohup cp -r -a $SETUP_ROOT/dotfiles/themes/$config_name/. $HOME #&> /dev/null
     nohup dconf load /org/gnome/gedit/ < $HOME/.config/gedit-dump.dconf
     nohup [ -f $HOME/.config/fish/additional_config.fish ] && cat $HOME/.config/fish/additional_config.fish >> $HOME/.config/fish/config.fish
-    rm $HOME/.config/GIMP/2.10/splashes &> /dev/null
+    rm -rf $HOME/.config/GIMP/2.10/splashes &> /dev/null
 
     #
     # configuring discord theme (beautifuldiscord)
