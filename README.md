@@ -12,12 +12,12 @@ Those are my different bspwm and openbox themes dotfiles, hope you find somethin
 <br/><br/>
 
 ## Gruvbox
-![alt text](screenshots/_Gruvbox.png)
+![alt text](screenshots/Gruvbox.png)
 
 <br/><br/>
 
 ## SolarizedDark
-![alt text](screenshots/SolarizedDark_.png)
+![alt text](screenshots/SolarizedDark.png)
 
 # Custom Theme Swap Utility
 
