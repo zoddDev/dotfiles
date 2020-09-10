@@ -41,7 +41,7 @@ PROMPT='%F{magenta}%1~%f %F{red}❯%F{yellow}❯%F{green}❯ %f'
 # DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
+ DISABLE_AUTO_TITLE="false"
 
 # Uncomment the following line to enable command auto-correction.
  ENABLE_CORRECTION="false"
@@ -91,20 +91,21 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# ---------------------------------------- ALIASES ----------------------------------------
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# o---------------------------------------------------------------------------------------o
+# |--------------------------------------- ALIASES ---------------------------------------|
+# o---------------------------------------------------------------------------------------o
 
 
-alias sayhello='printf "hello $USER!\n"'
-alias whoilove='printf "$USER really loves Ada!\n"'
+# -------------------- Apps --------------------
+
+alias idea='$HOME/software/idea-IC-201.7846.76/bin/idea.sh'
+alias animalese='java -jar ~/Dropbox/Programming/Java/Tests/Animalese/out/artifacts/Animalese_jar/Animalese.jar'
+alias sqldeveloper='$HOME/250gb/Desktop/sqldeveloper/sqldeveloper.sh'
+alias godot='$HOME/software/Godot/Godot_v3.2.1-stable_x11.64'
+alias piskel='$HOME/software/Piskel-0.14.0-64bits/piskel'
+
+
+# -------------------- Places --------------------
 
 # Go to 2TB
 alias 2tb='cd $HOME/2tb'
@@ -112,47 +113,25 @@ alias 2tb='cd $HOME/2tb'
 # Go to 250GB
 alias 250gb='cd $HOME/250gb'
 
-# zodd18 webpage
-alias webpage='nvim $HOME/Documents/git-lab/zodd18.github.io'
-
 # dotfiles
 alias dotfiles='cd $HOME/Documents/git-lab/dotfiles'
 
-# git-d => cd git-downloads
+# git-d => cd ~/Downloads/git-downloads
 alias git-d='cd $HOME/Downloads/git-downloads'
 
 # java
 alias javadir='cd $HOME/Dropbox/Programming/Java'
 
-# opens sqldeveloper
-alias sqldeveloper='$HOME/250gb/Desktop/sqldeveloper/sqldeveloper.sh'
+# custom themes directories
+alias pink-nord="cd $HOME/Documents/git-lab/dotfiles/themes/PinkNord"
+alias gruvbox="cd $HOME/Documents/git-lab/dotfiles/themes/Gruvbox"
+alias solarized="cd $HOME/Documents/git-lab/dotfiles/themes/SolarizedDark"
 
-alias godot='$HOME/software/Godot/Godot_v3.2.1-stable_x11.64'
-alias piskel='$HOME/software/Piskel-0.14.0-64bits/piskel'
- 
 
-# -------------------- Pops this file in order to add/edit/remove aliases --------------------
+# ---------------------------------------- File Editing ----------------------------------------
  
 # aliaschanger
 alias aliases='nvim $HOME/.zshrc'
-
-# ------------------------------------------------------------------------------------------------
-
-
-# i3 config file
-# alias i3config='nvim $HOME/.config/i3/config'
-
-# Check disks space
-alias fdisks='df --total --block-size=G | grep dev/sd --color=never'
-
-# Launches intellij idea
-alias idea='$HOME/software/idea-IC-201.7846.76/bin/idea.sh'
-
-# My ps
-alias myps='watch ps o pid,ppid,stat,comm'
-
-# spiecitify
-alias spicetify='$HOME/spicetify-cli/spicetify'
 
 # Ranger configuration file
 alias rangerc='nvim $HOME/.config/ranger'
@@ -161,8 +140,8 @@ alias rangerc='nvim $HOME/.config/ranger'
 alias vimrc='nvim $HOME/.config/nvim/init.vim'
     
 # Polybar config
-alias polyconfig='nvim $HOME/.config/polybar/config.bspwm' 
-alias polscripts='nvim $HOME/.config/polybar/scripts' 
+alias polycfg='nvim $HOME/.config/polybar/config' 
+alias polyscr='nvim $HOME/.config/polybar/scripts' 
  
 # sxhkd config
 alias kbinds='nvim $HOME/.config/sxhkd/sxhkdrc'
@@ -170,33 +149,48 @@ alias kbinds='nvim $HOME/.config/sxhkd/sxhkdrc'
 # rices.sh config
 alias rices='nvim $DOTFILES/setup-scripts/rices.sh'
 
+# zodd18 webpage
+alias webpage='nvim $HOME/Documents/git-lab/zodd18.github.io'
+
+
+# ---------------------------------------- Functionality ----------------------------------------
+
 # git-clean (clean /home/zodd/Downloads/git-downloads)    
 alias git-clean='rm -rf $HOME/Downloads/git-downloads/*'
+
+# reloads zsh config
+alias reload=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zshrc'"
+
+# partitions used space
+alias used='df --total --block-size=G | grep dev/sd --color=never'
+
+# My ps
+alias myps='watch ps o pid,ppid,stat,comm'
+
+# spiecitify
+alias spicetify='$HOME/spicetify-cli/spicetify'
+
+
+# ---------------------------------------- Showcase ----------------------------------------
 
 # choose neofetch ascii distro
 alias neofetch="clear && $HOME/.config/neofetch/launch-neofetch.sh"
 
-# animalese
-alias animalese='java -jar ~/Dropbox/Programming/Java/Tests/Animalese/out/artifacts/Animalese_jar/Animalese.jar'
-
 # colors showcase
 alias colors="~/.scripts/color-scripts/`ls ~/.scripts/color-scripts | sort -R | head -n 1`"
 
+# ---------------------------------------- Random ----------------------------------------
+
 # opens a random pornhub video
 alias porn='mpv "http://www.pornhub.com/random"'
+
+# ---------------------------------------- Music ----------------------------------------
 
 # 80s jpop
 alias jpop='mpv --shuffle $HOME/Music/JapanesePop'
 
 # rock
 alias rock='mpv --shuffle $HOME/Music/ROCK'
-
-alias reload=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zshrc'"
-
-# go to theme directory
-alias pink-nord="cd $HOME/Documents/git-lab/dotfiles/themes/PinkNord"
-alias gruvbox="cd $HOME/Documents/git-lab/dotfiles/themes/Gruvbox"
-alias solarized="cd $HOME/Documents/git-lab/dotfiles/themes/SolarizedDark"
 
 #
 # -------------------- VARIABLES --------------------

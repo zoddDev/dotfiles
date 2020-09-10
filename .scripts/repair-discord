@@ -13,7 +13,7 @@ function repair {
     rm -rf $HOME/.config/discord
     cp -r $DOTFILES/themes/$theme/.config/discord $HOME/.config
 
-    if [ `ps -e | grep discord | wc -l` > 0 ];    
+    if [ `ps -e | grep discord | wc -l` -gt 0 ];    
     then    
         discord > /dev/null &    
         sleep 1

@@ -67,6 +67,11 @@ noremap <M-j> <Esc>5j
 noremap <M-k> <Esc>5k
 noremap <M-l> <Esc>ww
 
+vnoremap <M-h> bb
+vnoremap <M-j> 5j
+vnoremap <M-k> 5k
+vnoremap <M-l> ww
+
 " }
 
 " set <Leader> key {

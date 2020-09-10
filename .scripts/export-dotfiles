@@ -37,7 +37,10 @@ then
     cp $HOME/.config/bspwm/{bspwmrc,noswallow,terminals} $DOTFILES/global-config/.config/bspwm
 
     # sxhkd
-    cp -r $HOME/.config/sxhkd $DOTFILES/global-config/.config
+    mkdir -p $DOTFILES/global-config/.config/sxhkd &> /dev/null
+    cp $HOME/.config/sxhkd/{sxhkdrc.bspwm,sxhkdrc.openbox} $DOTFILES/global-config/.config/sxhkd
+    [ `ps -e | grep bspwm | wc -l` -gt 0 ] && cp $HOME/.config/sxhkd/sxhkdrc $DOTFILES/global-config/.config/sxhkd/sxhkdrc.bspwm
+    [ `ps -e | grep openbox | wc -l` -gt 0 ] && cp $HOME/.config/sxhkd/sxhkdrc $DOTFILES/global-config/.config/sxhkd/sxhkdrc.openbox
 
     # ranger
     cp -r $HOME/.config/ranger $DOTFILES/global-config/.config &> /dev/null
@@ -125,8 +128,12 @@ cp -r $HOME/.config/neofetch/{ascii,launch-neofetch.sh} $theme_config/neofetch
 mkdir -p $theme_config/rofi &> /dev/null
 cp -r $HOME/.config/rofi/config.rasi $theme_config/rofi
 
+# polybar
 mkdir $theme_config/polybar &> /dev/null
 cp -r $HOME/.config/polybar/{config.bspwm,config.openbox} $theme_config/polybar
+[ `ps -e | grep bspwm | wc -l` -gt 0 ] && cp $HOME/.config/polybar/config $theme_config/global-config/.config/polybar/config.bspwm
+[ `ps -e | grep openbox | wc -l` -gt 0 ] && cp $HOME/.config/polybar/config $theme_config/global-config/.config/polybar/config.openbox
+
 
 cp -r $HOME/.config/dunst $theme_config
 

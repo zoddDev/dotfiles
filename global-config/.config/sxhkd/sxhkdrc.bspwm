@@ -39,7 +39,7 @@ ctrl + alt + w
     bspc rule -a \* -o state=floating && nitrogen
 
 # ranger
-ctrl + alt + n
+shift + super + r
     kitty -e ranger
 
 # chrome
@@ -228,3 +228,5 @@ super + alt + shift + {Left,Down,Up,Right}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# test2

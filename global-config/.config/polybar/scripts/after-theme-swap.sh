@@ -12,7 +12,7 @@ function restart_applications {
     nitrogen --restore
     bspwm_running=`ps -e | grep bspwm | wc -l` 
 
-    if [ $bspwm_running > 0 ]; 
+    if [ $bspwm_running -gt 0 ]; 
     then
         killall bspc 
         killall bspwmrc 
