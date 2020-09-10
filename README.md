@@ -105,6 +105,5 @@ nord                    - Classic Nord look
 dracula                 - Classic Dracula look
 doombox                 - Doom version of gruvbox
 alternative-gruvbox     - Atypical version of gruvbox with lightly changed palette
-solarized-dark          - Solarized Dark theme with a small vaporwave flavour (with some pinkier colors)
 ```
 
