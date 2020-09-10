@@ -196,6 +196,7 @@ alias reload=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zshrc'"
 # go to theme directory
 alias pink-nord="cd $HOME/Documents/git-lab/dotfiles/themes/PinkNord"
 alias gruvbox="cd $HOME/Documents/git-lab/dotfiles/themes/Gruvbox"
+alias solarized="cd $HOME/Documents/git-lab/dotfiles/themes/SolarizedDark"
 
 #
 # -------------------- VARIABLES --------------------
@@ -208,6 +209,7 @@ export DOTFILES="$HOME/Documents/git-lab/dotfiles"
 export BROWSER="google-chrome-stable"
 export WALLPAPERS="$HOME/Pictures/Wallpapers/Wallpapers"
 export PINK_NORD="$DOTFILES/themes/PinkNord"
+export SOLARIZED="$DOTFILES/themes/SolarizedDark"
 export GRUVBOX="$DOTFILES/themes/Gruvbox"
 
 #ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=2,regular,underline"

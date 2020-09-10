@@ -23,11 +23,11 @@ function setup_config {
     echo
     echo "[INFO]: applying \"$config_name\" theme..."
 
-    cp -r $SETUP_ROOT/dotfiles/global-config/. $HOME &> /dev/null
-    rm -rf $HOME/.oh-my-zsh/additional/* &> /dev/null || mkdir -p $HOME/.oh-my-zsh/additional &> /dev/null
-    cp -r -a $SETUP_ROOT/dotfiles/themes/$config_name/. $HOME #&> /dev/null
-    dconf load /org/gnome/gedit/ < $HOME/.config/gedit-dump.dconf
-    [ -f $HOME/.config/fish/additional_config.fish ] && cat $HOME/.config/fish/additional_config.fish >> $HOME/.config/fish/config.fish
+    nohup cp -r $SETUP_ROOT/dotfiles/global-config/. $HOME &> /dev/null
+    nohup rm -rf $HOME/.oh-my-zsh/additional/* &> /dev/null || mkdir -p $HOME/.oh-my-zsh/additional &> /dev/null
+    nohup cp -r -a $SETUP_ROOT/dotfiles/themes/$config_name/. $HOME #&> /dev/null
+    nohup dconf load /org/gnome/gedit/ < $HOME/.config/gedit-dump.dconf
+    nohup [ -f $HOME/.config/fish/additional_config.fish ] && cat $HOME/.config/fish/additional_config.fish >> $HOME/.config/fish/config.fish
 
     #
     # configuring discord theme (beautifuldiscord)
@@ -40,7 +40,7 @@ function setup_config {
     #nohup $SETUP_ROOT/dotfiles/setup-scripts/set-spotify-theme.sh $spicetify_theme &
 
     echo "[FINISHED]: theme installation"
-    notify-send -i $SETUP_ROOT/dotfiles/setup-scripts/resources/white-brush.png "[INFO]: FINISHED! Enjoy your new theme :)"
+    nohup notify-send -i $SETUP_ROOT/dotfiles/setup-scripts/resources/white-brush.png "[INFO]: FINISHED! Enjoy your new theme :)"
 }
 
 shopt -s nocasematch

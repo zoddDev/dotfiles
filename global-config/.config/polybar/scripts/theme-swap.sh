@@ -13,8 +13,8 @@ function change_theme {
     nohup kitty -e $SHELL -c "$HOME/.config/neofetch/launch-neofetch.sh ; $DOTFILES/setup-scripts/rices.sh $chosen"
 
     bspc rule -a \* -o state=floating
-    nohup $HOME/.config/polybar/scripts/after-theme-swap.sh
-    #nohup kitty -e $SHELL -c "$HOME/.config/polybar/scripts/after-theme-swap.sh"
+    #nohup $HOME/.config/polybar/scripts/after-theme-swap.sh
+    nohup kitty -e $SHELL -c "$HOME/.config/polybar/scripts/after-theme-swap.sh"
 }
 
 

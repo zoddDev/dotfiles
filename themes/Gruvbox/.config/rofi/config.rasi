@@ -23,21 +23,13 @@
     scrollbar: true;
     margin: 0;
     dynamic: true;
-<<<<<<< HEAD
-
-    icon: "";
-=======
->>>>>>> ccad48f3c78278e1662e71fa35da2ef2adf6f3bf
 }
 
 #window {
     background-color: @backgroundcolor;
     border-color: @separatorcolor;
     border: 1;
-<<<<<<< HEAD
-=======
     border-radius: 2px;
->>>>>>> ccad48f3c78278e1662e71fa35da2ef2adf6f3bf
 }
 
 #mainbox {
