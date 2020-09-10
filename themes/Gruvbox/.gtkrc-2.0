@@ -2,8 +2,8 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/zodd/.gtkrc-2.0.mine"
-gtk-theme-name="oomox-zodd-pink-nord"
-gtk-icon-theme-name="oomox-pink-nord"
+gtk-theme-name="oomox-gruvbox_zodd_"
+gtk-icon-theme-name="oomox-gruvbox_zodd_"
 gtk-font-name="Cantarell 9"
 gtk-cursor-theme-name="Breeze"
 gtk-cursor-theme-size=0

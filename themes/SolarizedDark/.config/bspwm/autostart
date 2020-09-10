@@ -4,4 +4,7 @@ bspc monitor -d    ﳁ   ﭮ  
 bspc config focused_border_color "#81908F"
 bspc config normal_border_color "#002731"
 
+mkdir -p $HOME/.config/GIMP/2.10/splashes &> /dev/null
+ln -s $WALLPAPERS/solarized-theme $HOME/.config/GIMP/2.10/splashes
+
 $HOME/.scripts/autostart.bspwm
