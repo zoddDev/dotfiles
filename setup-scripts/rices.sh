@@ -9,7 +9,6 @@ copy_icons_and_themes=$2
 function setup_config {
     # args
     config_name=$1
-    spicetify_theme=$2
     
     # backup of .xinitrc and .bashrc
     cp $HOME/.xinitrc $HOME/.xinitrc-backup
@@ -38,7 +37,7 @@ function setup_config {
     #
     # configuring spotify theme (spicetify)
     #
-    #nohup $SETUP_ROOT/dotfiles/setup-scripts/set-spotify-theme.sh $spicetify_theme &
+    #nohup $SETUP_ROOT/dotfiles/setup-scripts/set-spotify-theme.sh &
 
     echo "[FINISHED]: theme installation"
     nohup notify-send -i $SETUP_ROOT/dotfiles/setup-scripts/resources/white-brush.png "[INFO]: FINISHED! Enjoy your new theme :)"
@@ -46,10 +45,10 @@ function setup_config {
 
 shopt -s nocasematch
 case "$arg" in 
-    "gruvbox" ) setup_config "Gruvbox" "Gruvbox-Gold" ;; 
-    "solarized-dark" ) setup_config "SolarizedDark" "SolarizedDark" ;; 
-    "pink-nord" ) setup_config "PinkNord" "Nord" ;; 
-    #"nord" ) setup_config "Nord" "Nord" ;; 
+    "gruvbox" ) setup_config "Gruvbox" ;; 
+    "solarized-dark" ) setup_config "SolarizedDark" ;; 
+    "pink-nord" ) setup_config "PinkNord" ;; 
+    #"nord" ) setup_config "Nord" ;; 
     *) echo "[ERROR]: no config with name \"$arg\" found" && notify-send -i $SETUP_ROOT/dotfiles/setup-scripts/resources/white-brush.png "[ERROR]: Selected theme does not exist" && exit 1 ;;
 esac
 

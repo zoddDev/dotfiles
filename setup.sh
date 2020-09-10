@@ -8,8 +8,8 @@ case "$option" in
     "all" ) ./setup-scripts/pacman-packages.sh && ./setup-scripts/aur-packages.sh && ./setup-scripts/themes.sh && ./setup-scripts/rices.sh $theme ;; # $theme is theme name
     "pacman" ) ./setup-scripts/pacman-packages.sh ;; 
     "aur" ) ./setup-scripts/aur-packages.sh ;; 
-    "rice" ) ./setup-scripts/rices.sh $theme ;; # $theme is theme name
     "themes" ) ./setup-scripts/themes.sh ;; # Installs themes, icons, fonts, wallpapers and scripts
+    "rice" ) ./setup-scripts/rices.sh $theme ;; # $theme is theme name
 
     *) echo "[ERROR]: no config with name \"$option\" found" && exit 1 ;;
 esac
