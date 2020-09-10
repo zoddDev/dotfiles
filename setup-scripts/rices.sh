@@ -24,7 +24,7 @@ function setup_config {
     echo "[INFO]: applying \"$config_name\" theme..."
 
     nohup cp -r $SETUP_ROOT/dotfiles/global-config/. $HOME &> /dev/null
-    nohup rm -rf $HOME/.oh-my-zsh/additional/* &> /dev/null || mkdir -p $HOME/.oh-my-zsh/additional &> /dev/null
+    nohup rm -rf $HOME/.oh-my-zsh/additional/* &> /dev/null
     nohup cp -r -a $SETUP_ROOT/dotfiles/themes/$config_name/. $HOME #&> /dev/null
     nohup dconf load /org/gnome/gedit/ < $HOME/.config/gedit-dump.dconf
     nohup [ -f $HOME/.config/fish/additional_config.fish ] && cat $HOME/.config/fish/additional_config.fish >> $HOME/.config/fish/config.fish

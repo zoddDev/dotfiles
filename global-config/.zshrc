@@ -203,6 +203,8 @@ alias solarized="cd $HOME/Documents/git-lab/dotfiles/themes/SolarizedDark"
 #
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="$HOME/.config/polybar/scripts:$PATH"
+export PATH="$DOTFILES/setup-scripts:$PATH"
 PATH=$PATH:$HOME/.config/polybar/scripts:$HOME/.scripts
 
 export DOTFILES="$HOME/Documents/git-lab/dotfiles"
@@ -233,7 +235,22 @@ bindkey '^H' autosuggest-clear
 # -------------------- ADDITIONAL SOURCES --------------------
 #
 
+source $HOME/.oh-my-zsh/custom/plugins/zsh-directory-history/directory-history.plugin.zsh
+
 # autosuggestions color
-autosuggestions_colorscheme_dir="$HOME/.oh-my-zsh/additional/plugins/auto-suggestions/auto-suggestions.colorscheme.conf"
-[ -f $autosuggestions_colorscheme_dir ] && ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=`$autosuggestions_colorscheme_dir`
+#autosuggestions_colorscheme_dir="$HOME/.oh-my-zsh/additional/plugins/auto-suggestions/auto-suggestions.colorscheme.conf"
+#[ -f $autosuggestions_colorscheme_dir ] && ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=`$autosuggestions_colorscheme_dir`
+
+if [ -d $HOME/.oh-my-zsh/additional ];
+then
+
+    # autosuggestions_colorscheme
+    autosuggestions_colorscheme=$HOME/.oh-my-zsh/additional/plugins/auto-suggestions/auto-suggestions.colorscheme.conf
+    [ -f $autosuggestions_colorscheme ] && source $autosuggestions_colorscheme
+
+    # prompt
+    prompt_config=$HOME/.oh-my-zsh/additional/prompt.conf
+    [ -f $prompt_config ] && source $prompt_config
+fi
+
 
