@@ -149,7 +149,7 @@ cp -r $HOME/.oh-my-zsh/additional $theme_dir/.oh-my-zsh
 
 cp -r $HOME/.config/gtk-3.0 $theme_config
 cp -r $HOME/.config/gtk-2.0 $theme_config
-cp -r $HOME/.config/.gtkrc-2.0 $theme_dir
+cp -r $HOME/.config/.gtkrc-2.0 $theme_config
 
 echo
 echo [INFO]: finished copying config files
