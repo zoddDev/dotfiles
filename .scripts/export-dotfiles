@@ -123,7 +123,7 @@ mkdir -p $theme_config/startpage &> /dev/null
 cp -r $HOME/.config/startpage/{style.css,resources} $theme_config/startpage
 
 mkdir $theme_config/neofetch &> /dev/null
-cp -r $HOME/.config/neofetch/{ascii,launch-neofetch.sh} $theme_config/neofetch
+cp -r $HOME/.config/neofetch/{ascii,image.png,launch-neofetch.sh} $theme_config/neofetch
 
 mkdir -p $theme_config/rofi &> /dev/null
 cp -r $HOME/.config/rofi/config.rasi $theme_config/rofi
@@ -131,8 +131,8 @@ cp -r $HOME/.config/rofi/config.rasi $theme_config/rofi
 # polybar
 mkdir $theme_config/polybar &> /dev/null
 cp -r $HOME/.config/polybar/{config.bspwm,config.openbox} $theme_config/polybar
-[ `ps -e | grep bspwm | wc -l` -gt 0 ] && cp $HOME/.config/polybar/config $theme_config/global-config/.config/polybar/config.bspwm
-[ `ps -e | grep openbox | wc -l` -gt 0 ] && cp $HOME/.config/polybar/config $theme_config/global-config/.config/polybar/config.openbox
+[ `ps -e | grep bspwm | wc -l` -gt 0 ] && cp $HOME/.config/polybar/config $theme_config/polybar/config.bspwm
+[ `ps -e | grep openbox | wc -l` -gt 0 ] && cp $HOME/.config/polybar/config $theme_config/polybar/config.openbox
 
 
 cp -r $HOME/.config/dunst $theme_config
