@@ -8,6 +8,7 @@
 syntax on
 filetype plugin indent on
 
+set encoding=UTF-8
 set undofile
 set relativenumber
 set nu rnu
@@ -55,12 +56,22 @@ noremap <Right> <Nop>
 
 " }
 
-" move to adjacent nodes {
+" splits {
 
-noremap <C-h> <Esc>bb
-noremap <C-j> <Esc>5j
-noremap <C-k> <Esc>5k
-noremap <C-l> <Esc>ww
+" circular windows navigation
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+
+" simple resizing of splits
+
+map - <C-W>-
+map + <C-W>+
+
+" }
+
+" move faster {
 
 noremap <M-h> <Esc>bb
 noremap <M-j> <Esc>5j
@@ -87,13 +98,13 @@ call plug#begin()
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdcommenter'
 Plug 'chrisbra/colorizer'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'morhetz/gruvbox'
 Plug 'arcticicestudio/nord-vim'
 Plug 'miyakogi/sidepanel.vim'
 Plug 'preservim/nerdtree'
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 " }
@@ -101,7 +112,7 @@ call plug#end()
 " NERDTree {
 
 " Toggle
-map <C-s> :NERDTreeToggle<CR>
+nnoremap <C-s> :call NERDTreeToggleInCurDir()<cr>
 
 " Set position (left or right) if neccesary (default: "left").
 let g:sidepanel_pos = "left"
@@ -118,6 +129,22 @@ let g:sidepanel_config['gundo'] = {}
 let g:sidepanel_config['buffergator'] = {}
 let g:sidepanel_config['vimfiler'] = {}
 let g:sidepanel_config['defx'] = {}
+
+let NERDTreeShowHidden=1
+
+" }
+
+" coc vim {
+
+nnoremap <leader>u <C-O>
+nnoremap <leader>r <C-I>
+
+" jump to definition
+nnoremap <leader><leader> :call CocAction('jumpDefinition', 'drop')<CR>
+
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <C-Space> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 " }
 
@@ -144,3 +171,20 @@ map <M-p> <M-P><Esc>
 map <M-y> <M-Y><Esc>
 
 source $HOME/.config/nvim/colorscheme.vim
+
+" Functions {
+
+function! NERDTreeToggleInCurDir()
+  " If NERDTree is open in the current buffer
+  if (exists("t:NERDTreeBufName") && bufwinnr(t:NERDTreeBufName) != -1)
+    exe ":NERDTreeClose"
+  else
+    if (expand("%:t") != '')
+      exe ":NERDTreeFind"
+    else
+      exe ":NERDTreeToggle"
+    endif
+  endif
+endfunction
+
+" }

@@ -129,6 +129,9 @@ alias solarized="cd $HOME/Documents/git-lab/dotfiles/themes/SolarizedDark"
 
 
 # ---------------------------------------- File Editing ----------------------------------------
+
+# vim = nvim
+alias vim='nvim'
  
 # aliaschanger
 alias aliases='nvim $HOME/.zshrc'
@@ -169,6 +172,8 @@ alias myps='watch ps o pid,ppid,stat,comm'
 
 # spiecitify
 alias spicetify='$HOME/spicetify-cli/spicetify'
+
+alias findman="man -k . | rofi -dmenu | awk '{print $1}' | xargs -r man -Tpdf | zathura -"
 
 
 # ---------------------------------------- Showcase ----------------------------------------
