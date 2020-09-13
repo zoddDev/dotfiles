@@ -103,6 +103,7 @@ expat
 fakeroot
 feh
 ffmpeg
+ffmpegthumbnailer
 fftw
 figlet
 file
@@ -156,6 +157,7 @@ gnome-themes-extra
 gnu-free-fonts
 gnupg
 gnutls
+go
 go-tools
 gobject-introspection-runtime
 gperf
@@ -386,6 +388,7 @@ libgpg-error
 libgphoto2
 libgudev
 libgusb
+libhandy
 libheif
 libibus
 libice
@@ -488,7 +491,6 @@ libusb
 libusbmuxd
 libutempter
 libutf8proc
-libutil-linux
 libuv
 libva
 libvdpau
