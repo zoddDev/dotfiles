@@ -1,0 +1,3 @@
+#!/bin/bash
+
+kitty -e /bin/zsh -c "neofetch --backend ascii --source $HOME/.config/neofetch/ascii && zsh"

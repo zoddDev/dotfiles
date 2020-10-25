@@ -126,7 +126,7 @@ mkdir $theme_config/neofetch &> /dev/null
 cp -r $HOME/.config/neofetch/{ascii,image.png,launch-neofetch.sh} $theme_config/neofetch
 
 mkdir -p $theme_config/rofi &> /dev/null
-cp -r $HOME/.config/rofi/config.rasi $theme_config/rofi
+cp -r $HOME/.config/rofi/{config.rasi,launch-rofi.sh} $theme_config/rofi
 
 # polybar
 mkdir $theme_config/polybar &> /dev/null
