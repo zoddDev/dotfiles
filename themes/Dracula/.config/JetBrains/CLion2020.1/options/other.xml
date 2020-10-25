@@ -1,0 +1,23 @@
+<application>
+  <component name="NodeJsLocalInterpreters">
+    <local-interpreter path="/usr/bin/node" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="KEYMAP" value="rename&#10;comment&#10;delete line" />
+    <property name="MarketplacePluginsSearchHistory" value="dracula&#10;sola&#10;solarized&#10;gruv&#10;g" />
+    <property name="SettingsSearchHistory" value="cursor&#10;keyma" />
+    <property name="UITheme.relaunch" value="true" />
+    <property name="appcds.runOnSecondStart" value="CL-201.7846.88-4550991230380eae758093c49aee61d6ab99da0c85f3d837c078e92dfa3fd3e6" />
+    <property name="file.chooser.recent.files" value="$USER_HOME$/CLionProjects/Executer&#10;/home/zodd/Dropbox/Programming/C/TestCLION" />
+    <property name="file.gist.reindex.count" value="70" />
+    <property name="fileTypeChangedCounter" value="1" />
+    <property name="lastSeenTip" value="neue-CommitCtrlK.html" />
+    <property name="lastTimeTipsWereShown" value="1592737530654" />
+    <property name="last_opened_file_path" value="$USER_HOME$/CLionProjects/Executer" />
+    <property name="seenTips" value="neue-CommitCtrlK.html" />
+    <property name="selected.color.option.type" value="OC.KEYWORD" />
+    <property name="settings.code.style.selected.tab.ObjectiveC" value="Tabs and Indents" />
+    <property name="tasks.pass.word.conversion.enforced" value="true" />
+    <property name="ts.lib.d.ts.version" value="3.8.2" />
+  </component>
+</application>

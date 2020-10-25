@@ -1,0 +1,7 @@
+<application>
+  <component name="PySdkSettings">
+    <option name="PREFERRED_ENVIRONMENT_TYPE" value="Virtualenv" />
+    <option name="PREFERRED_VIRTUALENV_BASE_PATH" value="$PROJECT_DIR$/venv" />
+    <option name="PREFERRED_VIRTUALENV_BASE_SDK" value="/usr/bin/python3.8" />
+  </component>
+</application>

@@ -18,7 +18,6 @@ lxpolkit &
 xset -dpms s off & # disable screen blanking
 dropbox &
 dunst &
-$HOME/.config/bspwm/bspborders &
 
 # Swallow
 
@@ -27,7 +26,6 @@ pidof $HOME/.scripts/bspswallow || $HOME/.scripts/bspswallow &
 # Workspaces
 
 $HOME/.config/bspwm/autostart
-bspc config border_width         10
 bspc config window_gap          20
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
@@ -47,9 +45,9 @@ sleep 0.69
 bspc rule -a \* -o state=floating && sleep 0.015 ; kitty -e $SHELL -c "$HOME/.config/neofetch/launch-neofetch.sh && $SHELL" &
 
 #sleep 0.55 
-sleep 0.25 
+sleep 0.55 
 #/bin/bash -c 'bspc desktop -f '^2' --follow ; bspc rule -a \* -o node=@$(bspc query -D -d):.focused split_dir=south follow=off ; firefox https://www.google.es &' 
-/bin/bash -c 'bspc desktop -f '^2' --follow ; bspc rule -a \* -o node=@$(bspc query -D -d):.focused split_dir=south follow=off ; google-chrome-stable file:///home/zodd/.config/startpage/index.html &' 
+/bin/bash -c 'bspc desktop -f '^2' --follow ; bspc rule -a \* -o node=@$(bspc query -D -d):.focused split_dir=south follow=off ; firefox file:///home/zodd/.config/startpage/index.html &' 
 bspc desktop -f '^2' --follow
 
 #sleep 3.5

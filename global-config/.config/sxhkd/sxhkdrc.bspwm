@@ -42,9 +42,9 @@ ctrl + alt + w
 shift + super + r
     kitty -e ranger
 
-# chrome
+# browser
 ctrl + alt + f
-    google-chrome-stable file:///home/zodd/.config/startpage/index.html
+    firefox file:///home/zodd/.config/startpage/index.html
 
 # idea
 ctrl + alt + i
@@ -68,7 +68,7 @@ super + shift + Print
 
 # rofi 
 super + Return 
-    rofi -font "Iosevka Bold 11" -show drun -show-icons -width 25 -lines 11
+    $HOME/.config/rofi/launch-rofi.sh
 
 # rofi-usb unmount
 super + u

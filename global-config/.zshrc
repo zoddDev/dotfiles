@@ -132,6 +132,7 @@ alias solarized="cd $HOME/Documents/git-lab/dotfiles/themes/SolarizedDark"
 
 # vim = nvim
 alias vim='nvim'
+alias v='nvim'
  
 # aliaschanger
 alias aliases='nvim $HOME/.zshrc'
@@ -204,10 +205,12 @@ alias rock='mpv --shuffle $HOME/Music/ROCK'
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="$HOME/.config/polybar/scripts:$PATH"
 export PATH="$DOTFILES/setup-scripts:$PATH"
+export PATH="/home/zodd/.local/bin:$PATH"
+export PATH="/home/zodd/Documents/git-lab/dotfiles/setup-scripts:$PATH"
 PATH=$PATH:$HOME/.config/polybar/scripts:$HOME/.scripts
 
 export DOTFILES="$HOME/Documents/git-lab/dotfiles"
-export BROWSER="google-chrome-stable"
+export BROWSER="firefox"
 export WALLPAPERS="$HOME/Pictures/Wallpapers/Wallpapers"
 export PINK_NORD="$DOTFILES/themes/PinkNord"
 export SOLARIZED="$DOTFILES/themes/SolarizedDark"

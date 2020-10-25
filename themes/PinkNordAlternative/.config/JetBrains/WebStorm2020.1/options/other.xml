@@ -1,0 +1,19 @@
+<application>
+  <component name="NodeJsLocalInterpreters">
+    <local-interpreter path="/usr/bin/node" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GeneralSettings.initiallyConfigured" value="true" />
+    <property name="KEYMAP" value="comment line&#10;delete line" />
+    <property name="MarketplacePluginsSearchHistory" value="gruvbox" />
+    <property name="SettingsSearchHistory" value="caret&#10;keym" />
+    <property name="appcds.runOnSecondStart" value="WS-201.7846.79-351a10992abf6eae17f007cb52fd4d48ad6789ee4a016c335aa8ab426c60f754" />
+    <property name="evlsprt3.201" value="10" />
+    <property name="file.chooser.recent.files" value="$USER_HOME$/Documents/git-lab/zodd18.github.io" />
+    <property name="file.gist.reindex.count" value="6" />
+    <property name="ide.memory.adjusted" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/git-lab/zodd18.github.io" />
+    <property name="tasks.pass.word.conversion.enforced" value="true" />
+    <property name="ts.lib.d.ts.version" value="3.8.2" />
+  </component>
+</application>

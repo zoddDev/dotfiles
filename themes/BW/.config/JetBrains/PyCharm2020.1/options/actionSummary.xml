@@ -1,0 +1,213 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <data>
+      <entry key="$Undo">
+        <ActionSummary times="100" last="1594119761511" />
+      </entry>
+      <entry key="BraceOrQuoteOut">
+        <ActionSummary times="3" last="1593809417447" />
+      </entry>
+      <entry key="CommentByLineComment">
+        <ActionSummary times="20" last="1594119265507" />
+      </entry>
+      <entry key="Debug">
+        <ActionSummary times="1" last="1594119440994" />
+      </entry>
+      <entry key="EditorBackSpace">
+        <ActionSummary times="358" last="1594420771803" />
+      </entry>
+      <entry key="EditorChooseLookupItem">
+        <ActionSummary times="91" last="1594119635769" />
+      </entry>
+      <entry key="EditorCopy">
+        <ActionSummary times="31" last="1594119697428" />
+      </entry>
+      <entry key="EditorCut">
+        <ActionSummary times="17" last="1594119458925" />
+      </entry>
+      <entry key="EditorDelete">
+        <ActionSummary times="70" last="1594119755848" />
+      </entry>
+      <entry key="EditorDeleteLine">
+        <ActionSummary times="102" last="1594119670511" />
+      </entry>
+      <entry key="EditorDeleteToWordEnd">
+        <ActionSummary times="2" last="1592738308838" />
+      </entry>
+      <entry key="EditorDeleteToWordStart">
+        <ActionSummary times="33" last="1594118989873" />
+      </entry>
+      <entry key="EditorDown">
+        <ActionSummary times="3098" last="1594420785000" />
+      </entry>
+      <entry key="EditorDownWithSelection">
+        <ActionSummary times="718" last="1594420784106" />
+      </entry>
+      <entry key="EditorEnter">
+        <ActionSummary times="144" last="1594119658682" />
+      </entry>
+      <entry key="EditorEscape">
+        <ActionSummary times="15" last="1594119312272" />
+      </entry>
+      <entry key="EditorLeft">
+        <ActionSummary times="823" last="1594119755521" />
+      </entry>
+      <entry key="EditorLeftWithSelection">
+        <ActionSummary times="48" last="1594118409068" />
+      </entry>
+      <entry key="EditorLineEnd">
+        <ActionSummary times="52" last="1594119419681" />
+      </entry>
+      <entry key="EditorLineEndWithSelection">
+        <ActionSummary times="58" last="1594119458377" />
+      </entry>
+      <entry key="EditorLineStart">
+        <ActionSummary times="39" last="1594119106310" />
+      </entry>
+      <entry key="EditorLineStartWithSelection">
+        <ActionSummary times="25" last="1593819023246" />
+      </entry>
+      <entry key="EditorNextWord">
+        <ActionSummary times="295" last="1594119750817" />
+      </entry>
+      <entry key="EditorNextWordWithSelection">
+        <ActionSummary times="329" last="1594119723305" />
+      </entry>
+      <entry key="EditorPaste">
+        <ActionSummary times="54" last="1594119730521" />
+      </entry>
+      <entry key="EditorPreviousWord">
+        <ActionSummary times="834" last="1594119721643" />
+      </entry>
+      <entry key="EditorPreviousWordWithSelection">
+        <ActionSummary times="311" last="1594119730335" />
+      </entry>
+      <entry key="EditorRight">
+        <ActionSummary times="566" last="1594119751005" />
+      </entry>
+      <entry key="EditorRightWithSelection">
+        <ActionSummary times="67" last="1593819158145" />
+      </entry>
+      <entry key="EditorScrollDown">
+        <ActionSummary times="40" last="1594119468264" />
+      </entry>
+      <entry key="EditorScrollUp">
+        <ActionSummary times="28" last="1594119720304" />
+      </entry>
+      <entry key="EditorTab">
+        <ActionSummary times="34" last="1594118999657" />
+      </entry>
+      <entry key="EditorTextEnd">
+        <ActionSummary times="15" last="1594119765825" />
+      </entry>
+      <entry key="EditorTextEndWithSelection">
+        <ActionSummary times="2" last="1594118358721" />
+      </entry>
+      <entry key="EditorTextStart">
+        <ActionSummary times="8" last="1594420778721" />
+      </entry>
+      <entry key="EditorTextStartWithSelection">
+        <ActionSummary times="3" last="1593819057606" />
+      </entry>
+      <entry key="EditorUnindentSelection">
+        <ActionSummary times="4" last="1593811881556" />
+      </entry>
+      <entry key="EditorUp">
+        <ActionSummary times="3124" last="1594420781843" />
+      </entry>
+      <entry key="EditorUpWithSelection">
+        <ActionSummary times="653" last="1594118411094" />
+      </entry>
+      <entry key="Exit">
+        <ActionSummary times="2" last="1594670865090" />
+      </entry>
+      <entry key="FileChooser.NewFolder">
+        <ActionSummary times="2" last="1593808600781" />
+      </entry>
+      <entry key="GotoDeclaration">
+        <ActionSummary times="1" last="1593811130198" />
+      </entry>
+      <entry key="GotoNextError">
+        <ActionSummary times="2" last="1593810537037" />
+      </entry>
+      <entry key="MethodDown">
+        <ActionSummary times="322" last="1594119749266" />
+      </entry>
+      <entry key="MethodUp">
+        <ActionSummary times="213" last="1594119733969" />
+      </entry>
+      <entry key="MoveStatementDown">
+        <ActionSummary times="1" last="1593809081173" />
+      </entry>
+      <entry key="NewPythonFile">
+        <ActionSummary times="1" last="1593808642486" />
+      </entry>
+      <entry key="NextTemplateVariable">
+        <ActionSummary times="1" last="1593810541440" />
+      </entry>
+      <entry key="PasteMultiple">
+        <ActionSummary times="1" last="1593818405582" />
+      </entry>
+      <entry key="RenameElement">
+        <ActionSummary times="4" last="1593812788276" />
+      </entry>
+      <entry key="Rerun">
+        <ActionSummary times="8" last="1593811096582" />
+      </entry>
+      <entry key="Run">
+        <ActionSummary times="88" last="1594119767585" />
+      </entry>
+      <entry key="RunClass">
+        <ActionSummary times="1" last="1593808746219" />
+      </entry>
+      <entry key="SaveAll">
+        <ActionSummary times="331" last="1594119766836" />
+      </entry>
+      <entry key="SearchEverywhere">
+        <ActionSummary times="1" last="1593808811022" />
+      </entry>
+      <entry key="ShowIntentionActions">
+        <ActionSummary times="9" last="1594118927945" />
+      </entry>
+      <entry key="ShowSettings">
+        <ActionSummary times="8" last="1594420677112" />
+      </entry>
+      <entry key="Stop">
+        <ActionSummary times="6" last="1593810990305" />
+      </entry>
+      <entry key="Tree-selectPrevious">
+        <ActionSummary times="2" last="1593809077786" />
+      </entry>
+      <entry key="WelcomeScreen.Configure.DesktopEntry">
+        <ActionSummary times="1" last="1592738476474" />
+      </entry>
+      <entry key="WelcomeScreen.Settings">
+        <ActionSummary times="3" last="1592738471789" />
+      </entry>
+      <entry key="com.intellij.codeInsight.daemon.impl.DaemonTooltipWithActionRenderer$addActionsRow$2">
+        <ActionSummary times="1" last="1594119692670" />
+      </entry>
+      <entry key="com.intellij.openapi.keymap.impl.ui.KeymapPanel$13">
+        <ActionSummary times="3" last="1593812772227" />
+      </entry>
+      <entry key="com.intellij.openapi.keymap.impl.ui.KeymapPanel$16">
+        <ActionSummary times="2" last="1593812770079" />
+      </entry>
+      <entry key="com.intellij.openapi.project.DumbAwareAction$SimpleDumbAwareAction">
+        <ActionSummary times="1" last="1593808812233" />
+      </entry>
+      <entry key="com.intellij.openapi.ui.impl.DialogWrapperPeerImpl$AnCancelAction">
+        <ActionSummary times="1" last="1593812983928" />
+      </entry>
+      <entry key="com.intellij.openapi.wm.impl.ToolWindowHeader$HideAction">
+        <ActionSummary times="6" last="1594119444681" />
+      </entry>
+      <entry key="com.intellij.openapi.wm.impl.welcomeScreen.FlatWelcomeFrame$FlatWelcomeScreen$5">
+        <ActionSummary times="4" last="1592738475037" />
+      </entry>
+      <entry key="com.intellij.openapi.wm.impl.welcomeScreen.FlatWelcomeFrame$FlatWelcomeScreen$6">
+        <ActionSummary times="1" last="1593808568874" />
+      </entry>
+    </data>
+  </component>
+</application>

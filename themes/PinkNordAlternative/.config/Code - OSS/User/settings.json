@@ -1,0 +1,16 @@
+{
+    "editor.fontFamily": "Fira Code Medium",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 16,
+    "editor.cursorStyle": "block",
+    "editor.minimap.enabled": false,
+    "editor.renderControlCharacters": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "C_Cpp.updateChannel": "Insiders",
+    "workbench.colorTheme": "Nord Deep",
+    "terminal.integrated.shell.linux": "/bin/fish",
+    "window.zoomLevel": 0,
+    "go.autocompleteUnimportedPackages": true,
+    // "go.inferGopath": false,
+    // "go.gopath": ""
+}
