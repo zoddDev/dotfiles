@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+    <path d="M32 5v14H18L4 33h14v14l14 14V47h14l14-14H46V19z" opacity=".2"/>
+    <path d="M32 32H4l14-14h14" fill="#F9BD2E"/>
+    <path d="M32 32V4l14 14v14" fill="#FA4934"/>
+    <path d="M18 32v14l14 14V32" fill="#7CB668"/>
+    <path d="M32 32h28L46 46H32" fill="#066678"/>
+    <path d="M32 32v1h27l1-1H32z" opacity=".2" fill="#F9F5D7"/>
+    <path d="M32 32l14-14v14z" fill="#8F3F71"/>
+    <path d="M32 32L18 46V32z" fill="#73C48F"/>
+    <path d="M46 46L32 32v14z" fill="#8F3F71"/>
+    <path d="M18 18l14 14V18z" fill="#FD8019"/>
+    <path d="M32 4v1l14 14v-1L32 4zM18 18L4 32h1l13-13h14v-1H18z" opacity=".2" fill="#F9F5D7"/>
+    <path d="M32 26l-2.5 5.5L24 34l5.5 2.5L32 42l2.5-5.5L40 34l-5.5-2.5z" opacity=".2"/>
+    <path d="M32 24l-2.5 5.5L24 32l5.5 2.5L32 40l2.5-5.5L40 32l-5.5-2.5z" fill="#F9F5D7"/>
+    <path d="M24 32l5.5 2.5L32 40v-8z" fill="#F9F5D7"/>
+    <path d="M40 32l-5.5 2.5L32 40v-8z" fill="#F9F5D7"/>
+</svg>
