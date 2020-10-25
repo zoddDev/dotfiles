@@ -7,7 +7,7 @@ Those are my different bspwm and openbox themes dotfiles, hope you find somethin
 # Theme Previews
 
 
-[## Fleon](https://github.com/owl4ce/dotfiles)
+## PinkNord Alternative [(Fleon based)](https://github.com/owl4ce/dotfiles)
 ![alt text](screenshots/Alternative-pinknord.png)
 
 ## PinkNord
