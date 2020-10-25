@@ -6,6 +6,10 @@ Those are my different bspwm and openbox themes dotfiles, hope you find somethin
 
 # Theme Previews
 
+
+## Fleon
+![alt text](screenshots/Alternative-pinknord.png)
+
 ## PinkNord
 ![alt text](screenshots/PinkNord.png)
 
