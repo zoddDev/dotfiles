@@ -88,7 +88,7 @@ label-occupied-foreground = #e5e9f0
 label-occupied-padding = 2
 
 label-urgent = %name%
-label-urgent-background = ${colors.red}
+label-urgent-background = ${colors.magenta}
 label-urgent-foreground = #e5e9f0
 label-urgent-padding = 2
 
