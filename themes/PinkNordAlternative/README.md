@@ -1,1 +1,1 @@
-[!alt_text](../../screenshots/Alternative_pinknord.png)
+![alt_text](../../screenshots/Alternative_pinknord.png)
