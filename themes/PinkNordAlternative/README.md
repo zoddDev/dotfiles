@@ -1,1 +1,2 @@
-![alt_text](../../screenshots/Alternative_pinknord.png)
+## Alternative PinkNord
+![alt_text](../../screenshots/Alternative-pinknord.png)
