@@ -90,6 +90,8 @@ may be:
 ```
 pink-nord               - Pink Nord look
 gruvbox                 - Classic Gruvbox look
+solarized-dark          - Solarized Dark look
+pink-nord-alternative   - Based on Fleon look
 ```
 
 example:
