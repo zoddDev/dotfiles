@@ -5,8 +5,8 @@ Hello there!
 
 Those are my different bspwm and (no longer supported) openbox themes dotfiles, hope you find something useful in this mess ^^
 
-# Theme Previews
 
+![alt text](readme-resources/themes.png)
 
 ## PinkNord Alternative [(Fleon based)](https://github.com/owl4ce/dotfiles)
 ![alt text](screenshots/Alternative-pinknord.png)
@@ -34,6 +34,7 @@ Those are my different bspwm and (no longer supported) openbox themes dotfiles, 
 
 ## Nice! Now you have a completely look and feel for your Linux desktop!
 ![alt text](screenshots/theme-swap-showcase-2.png)
+
 
 ![alt text](readme-resources/scripts.png)
 
