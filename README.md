@@ -35,7 +35,7 @@ Those are my different bspwm and (no longer supported) openbox themes dotfiles, 
 ## Nice! Now you have a completely look and feel for your Linux desktop!
 ![alt text](screenshots/theme-swap-showcase-2.png)
 
-# Installation
+![alt text](readme-resources/scripts.png)
 
 ## [WARNING]: Installation scripts are still work in progress. Use them at your own risk!!
 ### [WARNING!]: These are my personal config files, executing these scripts will overwrite several files in your system, only execute these in case you have a backup of your files.
