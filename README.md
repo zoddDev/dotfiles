@@ -11,9 +11,9 @@ Here are some details about my setup:
 - **WM**                           : [bspwm](https://github.com/baskerville/bspwm) :art: 4 changable themes/mode!
 - **DM**                           : [getty](https://wiki.archlinux.org/index.php/Getty) :blossom: minimal DM!
 - **Shell**                        : [zsh](https://wiki.archlinux.org/index.php/zsh) :shell: with [oh my zsh](https://github.com/ohmyzsh/ohmyzsh) framework!
-- **Terminal**                     : [kitty](https://github.com/kovidgoyal/kitty)
+- **Terminal**                     : [kitty](https://github.com/kovidgoyal/kitty) :cat:
 - **Panel**                        : [polybar](https://github.com/polybar/polybar) :shaved_ice: nerd fonts glyphs!
-- **Compositor**                   : [compton](https://github.com/chjj/compton)
+- **Compositor**                   : [compton](https://github.com/chjj/compton) :light:
 - **Notify Daemon**                : [Dunst](https://wiki.archlinux.org/index.php/Dunst) :leaves: minimalism!
 - **Application Launcher**         : [Rofi](https://github.com/davatorium/rofi) :rocket: apps & sidebar menu!
 - **File Manager**                 : [Thunar](https://wiki.archlinux.org/index.php/Thunar) :bookmark: customized sidebar & icon!
