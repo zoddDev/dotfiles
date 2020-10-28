@@ -1,8 +1,6 @@
 ![alt text](readme-resources/dotfiles.png)
 
-<p align="center"><a name="top" href="#octocat-hi-there-thanks-for-visiting-"><img height="60%" width="100%" src="https://i.ibb.co/k4PbLjv/dotfiles.png"></a></p>
-
-Hello there!
+### Hello there! :octocat:
 
 Those are my different bspwm and (no longer supported) openbox themes dotfiles, hope you find something useful in this mess ^^
 
