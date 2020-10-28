@@ -1,4 +1,5 @@
-# dotfiles
+![alt text](readme-resources/dotfiles.png)
+
 
 Hello there!
 
