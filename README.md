@@ -17,7 +17,7 @@ Here are some details about my setup:
 - **Notify Daemon**                : [Dunst](https://wiki.archlinux.org/index.php/Dunst) :leaves: minimalism!
 - **Application Launcher**         : [Rofi](https://github.com/davatorium/rofi) :rocket: apps & sidebar menu!
 - **File Manager**                 : [Thunar](https://wiki.archlinux.org/index.php/Thunar) :bookmark: customized sidebar & icon!
-- **Text Editor**                  : [nvim](https://github.com/neovim/neovim) :computer
+- **Text Editor**                  : [nvim](https://github.com/neovim/neovim) :fire
 
 
 ![alt text](readme-resources/themes.png)
