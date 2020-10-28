@@ -2,7 +2,7 @@
 
 Hello there!
 
-Those are my different bspwm and openbox themes dotfiles, hope you find something useful in this mess ^^
+Those are my different bspwm and (no longer supported) openbox themes dotfiles, hope you find something useful in this mess ^^
 
 # Theme Previews
 
@@ -90,6 +90,8 @@ may be:
 ```
 pink-nord               - Pink Nord look
 gruvbox                 - Classic Gruvbox look
+solarized-dark          - Solarized Dark look
+pink-nord-alternative   - Based on Fleon look
 ```
 
 example:
