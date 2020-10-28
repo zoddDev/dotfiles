@@ -5,6 +5,23 @@ Hello there!
 
 Those are my different bspwm and (no longer supported) openbox themes dotfiles, hope you find something useful in this mess ^^
 
+I hope you understand everything here. :wink:
+
+Here are some details about my setup:
+- **WM**                           : [Openbox](http://openbox.org/wiki/Main_Page) :art: 4 changable themes/mode!
+- **DM**                           : [SLiM](https://wiki.archlinux.org/index.php/SLiM) :blossom: login themes Mac looks like!
+- **Shell**                        : [Zsh](https://wiki.archlinux.org/index.php/zsh) :shell: with [oh my zsh](https://github.com/ohmyzsh/ohmyzsh) framework!
+- **Terminal**                     : [URxvt](https://wiki.archlinux.org/index.php/Rxvt-unicode), [Termite](https://wiki.archlinux.org/index.php/Termite)
+- **Openbox Menu**                 : [Obmenu-generator](https://github.com/trizen/obmenu-generator)
+- **Panel**                        : [Tint2](https://wiki.archlinux.org/index.php/Tint2) :shaved_ice: material icon font!
+- **Compositor**                   : [Picom](https://github.com/yshui/picom)
+- **Notify Daemon**                : [Dunst](https://wiki.archlinux.org/index.php/Dunst) :leaves: minimalism!
+- **Application Launcher**         : [Rofi](https://github.com/davatorium/rofi) :rocket: apps & sidebar menu!
+- **File Manager**                 : [Thunar](https://wiki.archlinux.org/index.php/Thunar) :bookmark: customized sidebar & icon!
+- **Text Editor**                  : [Geany](https://www.geany.org/), [nano](https://www.nano-editor.org/), [vim](https://www.vim.org/)
+
+## :gift: Changelogs <img alt="Repo Size" align="right" src="https://github-size-badge.herokuapp.com/owl4ce/dotfiles.svg"/>
+<a href="https://youtu.be/_PTp5mh5_vQ"><img src="https://i.ibb.co/Ph343p2/click-yt.png" alt="" align="right" width="400px"></a>
 
 ![alt text](readme-resources/themes.png)
 
