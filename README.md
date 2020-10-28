@@ -27,6 +27,8 @@ Here are some details about my setup:
 ## PinkNord Alternative [(Fleon based)](https://github.com/owl4ce/dotfiles)
 ![alt text](screenshots/Alternative-pinknord.png)
 
+<br/><br/>
+
 ## PinkNord
 ![alt text](screenshots/PinkNord.png)
 
@@ -40,6 +42,8 @@ Here are some details about my setup:
 ## SolarizedDark
 ![alt text](screenshots/SolarizedDark.png)
 
+<br/><br/>
+
 # Custom Theme Swap Utility
 
 ## Click the brush icon
@@ -51,6 +55,7 @@ Here are some details about my setup:
 ## Nice! Now you have a completely look and feel for your Linux desktop!
 ![alt text](screenshots/theme-swap-showcase-2.png)
 
+<br/><br/>
 
 ![alt text](readme-resources/scripts.png)
 
