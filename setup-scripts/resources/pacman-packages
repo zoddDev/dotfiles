@@ -62,7 +62,6 @@ cantarell-fonts
 catimg
 cblas
 cdparanoia
-cdrtools
 chromaprint
 chromium
 cifs-utils
@@ -180,7 +179,6 @@ gimp
 girara
 git
 gjs
-glade
 glew
 glib-networking
 glib2
@@ -190,9 +188,7 @@ glslang
 glu
 gmime3
 gmp
-gnome-autoar
 gnome-backgrounds
-gnome-boxes
 gnome-calculator
 gnome-chess
 gnome-code-assistance
@@ -213,15 +209,10 @@ gnome-nibbles
 gnome-online-accounts
 gnome-online-miners
 gnome-photos
-gnome-recipes
 gnome-remote-desktop
 gnome-robots
-gnome-screenshot
 gnome-sound-recorder
-gnome-sudoku
 gnome-system-monitor
-gnome-taquin
-gnome-terminal
 gnome-tetravex
 gnome-themes-extra
 gnome-todo
@@ -266,7 +257,6 @@ gstreamer
 gtk-engine-murrine
 gtk-engines
 gtk-update-icon-cache
-gtk-vnc
 gtk2
 gtk3
 gtkmm
@@ -281,6 +271,7 @@ gupnp-igd
 gzip
 harfbuzz
 harfbuzz-icu
+haskell-base-prelude
 hicolor-icon-theme
 hidapi
 hitori
@@ -434,7 +425,6 @@ libbs2b
 libbsd
 libbytesize
 libcaca
-libcacard
 libcanberra
 libcanberra-pulse
 libcap
@@ -549,7 +539,6 @@ libndp
 libnetfilter_conntrack
 libnewt
 libnfnetlink
-libnfs
 libnftnl
 libnghttp2
 libnice
@@ -598,7 +587,6 @@ libseccomp
 libsecret
 libshout
 libsigc++
-libslirp
 libsm
 libsndfile
 libsodium
@@ -625,7 +613,6 @@ libtool
 libuninameslist
 libunistring
 libunwind
-liburing
 libusb
 libusbmuxd
 libutempter
@@ -634,7 +621,6 @@ libuv
 libva
 libvdpau
 libvirt
-libvirt-glib
 libvisio
 libvisual
 libvncserver
@@ -742,7 +728,6 @@ mps-youtube
 mpv
 msgpack-c
 mtdev
-mtools
 mujs
 mypaint-brushes1
 nasm
@@ -815,7 +800,6 @@ perl-error
 perl-mailtools
 perl-timedate
 perl-uri
-phodav
 phonon-qt5
 phonon-qt5-gstreamer
 pinentry
@@ -912,8 +896,6 @@ python2-setuptools
 python2-six
 qbs
 qca
-qemu
-qqwing
 qt5-base
 qt5-declarative
 qt5-imageformats
@@ -985,7 +967,6 @@ screenfetch
 scrot
 sdl
 sdl2
-seabios
 sed
 semver
 serd
@@ -1010,8 +991,6 @@ spandsp
 speech-dispatcher
 speex
 speexdsp
-spice
-spice-gtk
 spirv-tools
 sqlite
 sqlitebrowser
@@ -1073,25 +1052,20 @@ unrar
 unzip
 upower
 usbmuxd
-usbredir
 usbutils
 util-linux
 util-linux-libs
 v4l-utils
 vamp-plugin-sdk
-vde2
 vi
 vid.stab
 vim
 vim-runtime
 vino
-virglrenderer
 virtualbox
 virtualbox-host-modules-arch
 vmaf
 volume_key
-vte-common
-vte3
 vulkan-icd-loader
 vulkan-radeon
 w3m

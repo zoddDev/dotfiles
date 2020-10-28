@@ -17,6 +17,10 @@ super + u
 # mutt gmail
 ctrl + alt + g
     kitty -e /bin/zsh -c neomutt
+#
+# restart polybar
+ctrl + alt + p
+    restart-polybar.sh
 
 # open downloads folder
 super + d
