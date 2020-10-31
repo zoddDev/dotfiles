@@ -13,6 +13,7 @@ haguichi
 libwm-git
 logmein-hamachi
 mingetty
+ncurses5-compat-libs
 nerd-fonts-fira-mono
 nerd-fonts-ubuntu-mono
 obkey

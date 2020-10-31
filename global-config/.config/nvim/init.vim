@@ -106,6 +106,7 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'miyakogi/sidepanel.vim'
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
+Plug 'ntk148v/vim-horizon'
 call plug#end()
 
 " }

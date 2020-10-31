@@ -48,6 +48,7 @@ case "$arg" in
     "solarized-dark" ) setup_config "SolarizedDark" ;; 
     "pink-nord-alternative" ) setup_config "PinkNordAlternative" ;; 
     "pink-nord" ) setup_config "PinkNord" ;; 
+    "bw" ) setup_config "BW" ;; 
     #"nord" ) setup_config "Nord" ;; 
     *) echo "[ERROR]: no config with name \"$arg\" found" && notify-send -i $SETUP_ROOT/dotfiles/setup-scripts/resources/white-brush.png "[ERROR]: Selected theme does not exist" && exit 1 ;;
 esac

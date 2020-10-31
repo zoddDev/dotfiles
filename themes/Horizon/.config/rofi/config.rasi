@@ -1,0 +1,113 @@
+* {
+    backgroundcolor: #1C1E27;
+    bg1: #1C1E27;
+    backgroundcoloralternate: #1C1E27;
+    separatorcolor: #1C1E27;
+    scrollbarcolor: #1C1E27;
+    foregroundcolor: #cacacc;
+    foregroundcolorinverse: #1C1E27;// #839496;
+    selectioncolor: #E95678; // #3b4252
+
+
+    font-size: 1px;
+    border-color: @separatorcolor;
+    background-color: @backgroundcolor;
+    text-color: @foregroundcolor;
+    margin: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    spacing: 0;
+}
+
+#listview {
+    spacing: 0;
+    scrollbar: true;
+    margin: 0;
+    dynamic: true;
+
+}
+
+#window {
+    background-color: @backgroundcolor;
+    border-color: @separatorcolor;
+    border: 1;
+    border-radius: 2px;
+}
+
+#mainbox {
+    border: 0;
+    padding: 8;
+    background-color: @backgroundcoloralternate;
+}
+
+#element {
+    padding: 8;
+    border: 0 0 1 0;
+    border-color: @separatorcolor;
+    background-color: @backgroundcoloralternate;
+}
+
+#element.selected.normal {
+    background-color: @selectioncolor;
+    text-color: @foregroundcolorinverse;
+    border-radius: 0px;
+
+    border: 0 0 1 0;
+    border-color: @separatorcolor;
+}
+
+#element.alternate.normal {
+    background-color: @backgroundcoloralternate;
+}
+
+#element.normal.active {
+    background-color: #434c5e;
+}
+
+#element.alternate.active {
+    background-color: #434c5e;
+}
+
+#element.selected.active {
+    background-color: @selectioncolor;
+    text-color: @foregroundcolorinverse;
+    border-radius: 0px;
+
+    border: 0 0 1 0;
+    border-color: @separatorcolor;
+}
+
+#inputbar {
+    border: 0 solid 0 solid 1 solid 0 solid;
+    margin: 0;
+    spacing: 0;
+    border-color: @separatorcolor;
+}
+
+#prompt {
+    padding: 8;
+    background-color: @backgroundcoloralternate;
+    border: 0 1 0 0;
+}
+
+#entry {
+    padding: 8;
+}
+
+#scrollbar {
+    border: 0;
+    width: 8px;
+    handle-color: @scrollbarcolor;
+    handle-width: 8px;
+    background-color: @backgroundcoloralternate;
+}
+
+#scrollbar handle {
+    border: 1px;
+    border-color: #ff0000;
+}
+
+element-icon {
+    size: 2.8ch;
+}
+

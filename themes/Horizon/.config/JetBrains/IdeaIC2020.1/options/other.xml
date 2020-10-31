@@ -1,0 +1,37 @@
+<application>
+  <component name="PropertiesComponent">
+    <property name="ColorChooser.RecentColors" value="251-73-52-255" />
+    <property name="InstalledPluginsSearchHistory" value="icon&#10;ic&#10;material&#10;material icon&#10;icons" />
+    <property name="KEYMAP" value="close tab&#10;active tab" />
+    <property name="MarketplacePluginsSearchHistory" value="nord&#10;n&#10;close tab&#10;icons&#10;gruvbox icons" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="NonModalCommitCustomization.IsApplied" value="true" />
+    <property name="SettingsSearchHistory" value="close tab&#10;icon&#10;ic&#10;italic&#10;dracu" />
+    <property name="UITheme.relaunch" value="true" />
+    <property name="appcds.runOnSecondStart" value="IC-201.8743.12-7aca3522fe59f07989fd5fe8ab48d8a76cb66c81ea8ab7eb505e9b9c5480784d" />
+    <property name="ask.about.ctrl.y.shortcut" value="true" />
+    <property name="com.intellij.openapi.roots.ui.configuration.TabbedModuleEditor.selectedEditor" value="Sources" />
+    <property name="defaultJdkConfigured" value="true" />
+    <property name="file.chooser.recent.files" value="$USER_HOME$/Downloads/git-downloads/BetterGameEngine&#10;/home/zodd/Dropbox/Programming/Java/BetterGameEngine&#10;/home/zodd/Downloads/git-downloads/g2-gameshopanvil/GameStore&#10;/home/zodd/Dropbox/Programming/Java/Tests/PSC&#10;/home/zodd/Dropbox/Programming/Java/GameBackup&#10;/home/zodd/Dropbox/Programming/Java/PracticaEvaluablePSC_D&#10;/home/zodd/Dropbox/Programming/Java/TODO&#10;/home/zodd/Dropbox/Programming/Java/Tests/TODO&#10;/home/zodd/Dropbox/Programming/Java/CuentaPalabras&#10;/home/zodd/Dropbox/idea-settings.zip&#10;/home/zodd/Downloads/PracticaEvaluablePSC_A" />
+    <property name="file.gist.reindex.count" value="333" />
+    <property name="fileTypeChangedCounter" value="1" />
+    <property name="ide.memory.adjusted" value="true" />
+    <property name="ide.self.update.started.for.build" value="IC-201.8743.12" />
+    <property name="ideavim.statistics.timestamp" value="1592494439013" />
+    <property name="installed.kotlin.plugin.version" value="1.3.72-release-IJ2020.1-1" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="kotlin.plugin.releaseDate" value="1.3.72-release-IJ2020.1-1:2020-04-14" />
+    <property name="lastSeenTip" value="CreateTargetTag.html" />
+    <property name="lastTimeTipsWereShown" value="1592356475560" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/git-downloads/BetterGameEngine" />
+    <property name="mt.showInstallAtom" value="true" />
+    <property name="packagesearch.endpoint.url.fulltext" value="https://package-search.services.jetbrains.com/api/search/idea/fulltext" />
+    <property name="packagesearch.endpoint.url.suggest" value="https://package-search.services.jetbrains.com/api/search/idea/suggest" />
+    <property name="packagesearch.status.updated.ts" value="1596562944961" />
+    <property name="project.wizard.group" value="JAVA_MODULE" />
+    <property name="seenTips" value="CreateTargetTag.html" />
+    <property name="selected.color.option.type" value="MARKDOWN_ITALIC_MARKER" />
+    <property name="tasks.pass.word.conversion.enforced" value="true" />
+  </component>
+</application>

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=oomox-horizon_zodd__-dark-compact
+Comment=A Material Design theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=oomox-horizon_zodd__-dark-compact
+MetacityTheme=oomox-horizon_zodd__-dark-compact
+IconTheme=Adwaita
+CursorTheme=Adwaita
+CursorSize=24
