@@ -4,6 +4,8 @@
 
 Those are my different bspwm and (no longer supported) openbox themes dotfiles, hope you find something useful in this mess ^^
 
+Specific rices configs and colorschemes are [here](https://github.com/zodd18/dotfiles/tree/master/themes) and general configuration files are [here](https://github.com/zodd18/dotfiles/tree/master/global-config). You will need both.
+
 I hope you understand everything here. :wink:
 
 Here are some details about my setup:
@@ -22,6 +24,11 @@ Here are some details about my setup:
 <br/><br/><br/>
 
 ![alt text](readme-resources/themes.png)
+
+## Horizon
+![alt text](screenshots/Horizon.png)
+
+<br/><br/>
 
 ## PinkNord Alternative [(Fleon based)](https://github.com/owl4ce/dotfiles)
 ![alt text](screenshots/Alternative-pinknord.png)
@@ -114,6 +121,7 @@ pink-nord               - Pink Nord look
 gruvbox                 - Classic Gruvbox look
 solarized-dark          - Solarized Dark look
 pink-nord-alternative   - Based on Fleon look
+horizon                 - Based on VS Code Horizon Theme 
 ```
 
 example:
@@ -127,7 +135,7 @@ setup.sh all pink-nord
 You can try to install all at once by using "all" argument, however I'd install it one by one in case any installation fails. 
 I'd follow this order: pacman, aur, themes, rice.
 
-# Deprecated (old rices, they need a lot of cleaning)
+# Deprecated (old rices, these need a lot of cleaning)
 ```
 nord                    - Classic Nord look
 dracula                 - Classic Dracula look
