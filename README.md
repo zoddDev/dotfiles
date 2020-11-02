@@ -5,6 +5,7 @@
 Those are my different bspwm and (no longer supported) openbox themes dotfiles, hope you find something useful in this mess ^^
 
 Specific rices configs and colorschemes are [here](https://github.com/zodd18/dotfiles/tree/master/themes) and general configuration files are [here](https://github.com/zodd18/dotfiles/tree/master/global-config). You will need both.
+
 I hope you understand everything here. :wink:
 
 Here are some details about my setup:
