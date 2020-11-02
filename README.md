@@ -23,6 +23,11 @@ Here are some details about my setup:
 
 ![alt text](readme-resources/themes.png)
 
+## Horizon
+![alt text](screenshots/Horizon.png)
+
+<br/><br/>
+
 ## PinkNord Alternative [(Fleon based)](https://github.com/owl4ce/dotfiles)
 ![alt text](screenshots/Alternative-pinknord.png)
 
