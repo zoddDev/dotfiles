@@ -20,7 +20,7 @@ ctrl + alt + g
 #
 # restart polybar
 ctrl + alt + p
-    restart-polybar.sh
+    ~/.config/polybar/scripts/restart-polybar.sh
 
 # open downloads folder
 super + d
