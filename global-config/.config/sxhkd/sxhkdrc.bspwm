@@ -74,10 +74,6 @@ super + shift + Print
 super + Return 
     $HOME/.config/rofi/launch-rofi.sh
 
-# rofi-usb unmount
-super + u
-    sudo ~/.local/usb-rofi/usb_mgr -u
-
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
