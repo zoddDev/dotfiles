@@ -134,7 +134,7 @@ setup.sh all pink-nord
 You can try to install all at once by using "all" argument, however I'd install it one by one in case any installation fails. 
 I'd follow this order: pacman, aur, themes, rice.
 
-# Deprecated (old rices, they need a lot of cleaning)
+# Deprecated (old rices, these need a lot of cleaning)
 ```
 nord                    - Classic Nord look
 dracula                 - Classic Dracula look
