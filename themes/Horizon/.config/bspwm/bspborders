@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-source $HOME/.scripts/colors
 
 c_out="0x2e3440"
 c_focused="0xFA74B2"
