@@ -32,7 +32,6 @@ autoconf
 autoconf-archive
 automake
 avahi
-awesome
 babl
 baobab
 base
@@ -728,7 +727,6 @@ libwpg
 libwps
 libx11
 libxau
-libxaw
 libxcb
 libxcomposite
 libxcrypt
@@ -783,7 +781,6 @@ lua52-lpeg
 lua52-luajson
 lua52-socket
 lua53
-lua53-lgi
 luajit
 lvm2
 lxappearance
@@ -1167,7 +1164,6 @@ xorg-xauth
 xorg-xdpyinfo
 xorg-xinit
 xorg-xkbcomp
-xorg-xmessage
 xorg-xmodmap
 xorg-xprop
 xorg-xrdb
