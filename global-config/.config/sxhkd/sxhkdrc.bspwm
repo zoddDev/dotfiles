@@ -48,7 +48,7 @@ shift + super + r
 
 # browser
 ctrl + alt + f
-    firefox file:///home/zodd/.config/startpage/index.html
+    firefox file:///home/$USER/.config/startpage/index.html
 
 # idea
 ctrl + alt + i
