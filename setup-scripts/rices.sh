@@ -10,9 +10,10 @@ function setup_config {
     # args
     config_name=$1
     
-    # backup of .xinitrc and .bashrc
+    # backup of .xinitrc, .bashrc and .zshrc
     cp $HOME/.xinitrc $HOME/.xinitrc-backup
     cp $HOME/.bashrc $HOME/.bashrc-backup
+    cp $HOME/.zshrc $HOME/.zshrc-backup
 
     notify-send -i $SETUP_ROOT/dotfiles/setup-scripts/resources/white-brush.png "[INFO]: copying \"$config_name\" config files..."
 
