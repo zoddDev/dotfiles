@@ -15,3 +15,4 @@ cp -r $SETUP_ROOT/dotfiles/.icons $HOME
 cp -r $SETUP_ROOT/dotfiles/.themes $HOME
 
 cp -r $SETUP_ROOT/dotfiles/global-config/* $HOME
+
