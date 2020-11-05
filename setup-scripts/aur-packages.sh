@@ -3,7 +3,7 @@
 echo "[START]: aur/external-packages installation..."
 
 # output packages directory creation
-[ ! -d $HOME/Downloads/git-downloads ] && mkdir -p $HOME/Downloads/git-downloads
+[ -d $HOME/Downloads/git-downloads ] || mkdir -p $HOME/Downloads/git-downloads
 
 #
 # AUR
@@ -11,7 +11,7 @@ echo "[START]: aur/external-packages installation..."
 
 # yay
 # https://aur.archlinux.org/yay.git
-./aur-get https://aur.archlinux.org/yay.git
+./setup-scripts/aur-get https://aur.archlinux.org/yay.git
 
 yay -S `cat ./resources/aur-packages`
 sudo chmod a+wr /opt/spotify
@@ -30,7 +30,7 @@ pip install dbus-python
 
 # BeautifulDiscord
 # https://github.com/leovoel/BeautifulDiscord
-python3 -m pip install -U https://github.com/leovoel/BeautifulDiscord/archive/master.zip
+#python3 -m pip install -U https://github.com/leovoel/BeautifulDiscord/archive/master.zip
 # use: python -m beautifuldiscord --css ~/.config/discord/themes/$THEME_NAME
 
 echo "[FINISHED]: aur/external-packages installation"

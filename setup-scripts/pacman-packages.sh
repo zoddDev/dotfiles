@@ -2,7 +2,7 @@
 
 echo "[START]: general-packages installation..."
 
-sudo pacman -Sy `cat ./resources/pacman-packages`
+sudo pacman -Sy `cat ./setup-scripts/resources/pacman-packages`
 
 # ranger icons:
 devicons_dir=$HOME/.config/ranger/plugins/ranger_devicons
