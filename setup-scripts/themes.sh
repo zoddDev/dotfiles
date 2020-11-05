@@ -1,5 +1,7 @@
 #!/bin/bash
 
+SETUP_ROOT="$(dirname "$PWD")"
+
 notify-send -i $SETUP_ROOT/dotfiles/setup-scripts/resources/white-brush.png "[INFO]: Copying themes, icons, fonts and scripts..." &
 cp -r $SETUP_ROOT/dotfiles/.scripts $HOME
 

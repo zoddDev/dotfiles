@@ -5,6 +5,7 @@ echo "[START]: theme installation..."
 SETUP_ROOT="$(dirname "$PWD")"
 arg=$1
 copy_icons_and_themes=$2
+echo $SETUP_ROOT
 
 function setup_config {
     # args
