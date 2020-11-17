@@ -1,0 +1,13 @@
+<application>
+  <component name="CodeInsightSettings">
+    <option name="REFORMAT_ON_PASTE" value="1" />
+    <option name="INDENT_TO_CARET_ON_PASTE" value="true" />
+  </component>
+  <component name="DefaultFont">
+    <option name="FONT_SIZE" value="16" />
+    <option name="FONT_FAMILY" value="Fira Code Retina" />
+  </component>
+  <component name="EditorSettings">
+    <option name="IS_BLOCK_CURSOR" value="true" />
+  </component>
+</application>

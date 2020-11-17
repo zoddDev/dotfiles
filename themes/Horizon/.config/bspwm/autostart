@@ -9,4 +9,4 @@ bspc config normal_border_color "#282e3a"
 #ln -s $WALLPAPERS/nord-theme $HOME/.config/GIMP/2.10/splashes
 
 #$HOME/.config/bspwm/bspborders &
-$HOME/.scripts/autostart.bspwm
+#$HOME/.scripts/autostart.bspwm

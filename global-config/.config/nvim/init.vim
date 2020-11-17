@@ -107,6 +107,7 @@ Plug 'miyakogi/sidepanel.vim'
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'ntk148v/vim-horizon'
+Plug 'ayu-theme/ayu-vim'
 call plug#end()
 
 " }

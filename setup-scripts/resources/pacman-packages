@@ -18,6 +18,7 @@ arc-icon-theme
 archlinux-keyring
 argon2
 ark
+asciidoc
 at-spi2-atk
 at-spi2-core
 atk
@@ -30,6 +31,7 @@ autoconf
 autoconf-archive
 automake
 avahi
+awesome
 babl
 baobab
 base
@@ -50,7 +52,6 @@ c-ares
 ca-certificates
 ca-certificates-mozilla
 ca-certificates-utils
-cabal-install
 cairo
 cairomm
 cantarell-fonts
@@ -63,7 +64,9 @@ cifs-utils
 clucene
 clutter
 clutter-gtk
+cmake
 cmatrix
+cmocka
 code
 cogl
 colord
@@ -91,6 +94,8 @@ dleyna-renderer
 dleyna-server
 dmraid
 dnssec-anchors
+docbook-xml
+docbook-xsl
 dosfstools
 dotconf
 double-conversion
@@ -115,6 +120,7 @@ fakeroot
 feh
 ffmpeg
 ffmpegthumbnailer
+ffnvcodec-headers
 fftw
 figlet
 file
@@ -314,6 +320,7 @@ kwindowsystem
 kxmlgui
 kyotocabinet
 l-smash
+ladspa
 lame
 lapack
 lcms2
@@ -321,6 +328,7 @@ ldb
 ldns
 leiningen
 lensfun
+leptonica
 less
 libabw
 libaio
@@ -375,6 +383,7 @@ libelf
 libepoxy
 libepubgen
 libetonyek
+libev
 libevdev
 libevent
 libexif
@@ -540,6 +549,7 @@ libwpg
 libwps
 libx11
 libxau
+libxaw
 libxcb
 libxcomposite
 libxcrypt
@@ -594,6 +604,7 @@ lua52-lpeg
 lua52-luajson
 lua52-socket
 lua53
+lua53-lgi
 luajit
 lvm2
 lxappearance
@@ -610,6 +621,7 @@ md4c
 mdadm
 media-player-info
 mesa
+meson
 metis
 minizip
 mjpegtools
@@ -636,6 +648,7 @@ nettle
 networkmanager
 nfs-utils
 nfsidmap
+ninja
 nitrogen
 node-gyp
 nodejs
@@ -710,19 +723,24 @@ pulsemixer
 pyalpm
 python
 python-appdirs
+python-argcomplete
+python-asn1crypto
 python-astroid
 python-atspi
 python-attrs
 python-cachecontrol
 python-cairo
+python-cffi
 python-chardet
 python-click
 python-colorama
 python-contextlib2
+python-cryptography
 python-dbus
 python-dbus-common
 python-distlib
 python-distro
+python-docutils
 python-gobject
 python-html5lib
 python-idna
@@ -731,16 +749,20 @@ python-lazy-object-proxy
 python-lxml
 python-mccabe
 python-msgpack
+python-nose
 python-ordered-set
 python-packaging
 python-pafy
 python-pep517
 python-pillow
 python-pip
+python-ply
 python-progress
 python-pycodestyle
+python-pycparser
 python-pyflakes
 python-pylint
+python-pyopenssl
 python-pyparsing
 python-pystache
 python-pyxdg
@@ -785,6 +807,7 @@ re2
 readline
 redland
 rest
+rhash
 ripgrep
 rofi
 rpcbind
@@ -836,6 +859,7 @@ slang
 slop
 smbclient
 snappy
+sndio
 solid
 sonnet
 sord
@@ -852,7 +876,6 @@ sqlitebrowser
 squashfs-tools
 sratom
 srt
-stack
 startup-notification
 subversion
 sudo
@@ -874,6 +897,7 @@ telegram-desktop
 telepathy-glib
 tepl
 terminus-font
+tesseract
 tevent
 texinfo
 thin-provisioning-tools
@@ -901,10 +925,12 @@ unrar
 unzip
 upower
 usbmuxd
+uthash
 util-linux
 util-linux-libs
 v4l-utils
 vamp-plugin-sdk
+vapoursynth
 vi
 vid.stab
 vim
@@ -914,6 +940,7 @@ virtualbox
 virtualbox-host-modules-arch
 vmaf
 volume_key
+vulkan-headers
 vulkan-icd-loader
 w3m
 wavpack
@@ -954,7 +981,6 @@ xfconf
 xfsprogs
 xkeyboard-config
 xmlsec
-xorg-bdftopcf
 xorg-font-util
 xorg-fonts-encodings
 xorg-mkfontscale
@@ -964,9 +990,12 @@ xorg-setxkbmap
 xorg-xauth
 xorg-xdpyinfo
 xorg-xinit
+xorg-xinput
 xorg-xkbcomp
+xorg-xmessage
 xorg-xmodmap
 xorg-xprop
+xorg-xrandr
 xorg-xrdb
 xorg-xset
 xorg-xsetroot
@@ -985,6 +1014,7 @@ zathura-pdf-poppler
 zathura-ps
 zbar
 zeromq
+zimg
 zip
 zita-alsa-pcmi
 zita-resampler

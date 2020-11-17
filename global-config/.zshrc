@@ -155,6 +155,11 @@ alias rices='nvim $DOTFILES/setup-scripts/rices.sh'
 alias webpage='nvim $HOME/Documents/git-lab/zodd18.github.io'
 
 
+# ---------------------------------------- Modification ----------------------------------------
+
+alias cp='cp -v'
+alias mv='mv -v'
+
 # ---------------------------------------- Functionality ----------------------------------------
 
 # git-clean (clean /home/zodd/Downloads/git-downloads)    
@@ -168,6 +173,9 @@ alias used='df --total --block-size=G | grep dev/sd --color=never'
 
 # My ps
 alias myps='watch ps o pid,ppid,stat,comm'
+
+# Size of a directory
+alias sizeof='du -sh $1'
 
 # spiecitify
 alias spicetify='$HOME/spicetify-cli/spicetify'

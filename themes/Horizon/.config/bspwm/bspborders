@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 c_out="0x2e3440"
-c_focused="0xFA74B2"
+c_focused="0x6C6F93"
 c_unfocused="0x282e3a"
 
 unfocus() {

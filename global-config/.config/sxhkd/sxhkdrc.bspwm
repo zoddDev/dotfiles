@@ -68,7 +68,8 @@ super + Print
 
 # screenshot (region)
 super + shift + Print
-    maim -s -u | xclip -selection clipboard -t image/png -i
+    import /tmp/screenshot.png && cat /tmp/screenshot.png | xclip -sel clip -t image/png
+    #maim -s -u | xclip -selection clipboard -t image/png -i
 
 # rofi 
 super + Return 
@@ -89,7 +90,7 @@ super + Escape
 # AUDIO (pulsemixer)
 # pulsemixer
 ctrl + alt + v
-    bspc rule -a \* -o state=floating && kitty -e /bin/zsh -c pulsemixer
+    bspc rule -a \* -o state=floating && pavucontrol # kitty -e /bin/zsh -c pulsemixer
 
 # pulsemixer volume UP (+5)
 super + F8

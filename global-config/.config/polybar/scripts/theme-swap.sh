@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NUMBER_OF_THEMES=5
+NUMBER_OF_THEMES=6
 
 function change_theme {
     current_theme=`cat $HOME/.config/current_theme`
@@ -18,7 +18,7 @@ function change_theme {
 }
 
 
-chosen=$(echo -e "pink-nord\npink-nord-alternative\ngruvbox\nsolarized-dark\nhorizon" | rofi -font "Iosevka Bold 12" -show drun -show-icons -width 20 -lines $NUMBER_OF_THEMES -dmenu -i)
+chosen=$(echo -e "pink-nord\npink-nord-alternative\ngruvbox\nsolarized-dark\nhorizon\nayu" | rofi -font "Iosevka Bold 12" -show drun -show-icons -width 20 -lines $NUMBER_OF_THEMES -dmenu -i)
 
 [ -z $chosen ] || change_theme $chosen
 
