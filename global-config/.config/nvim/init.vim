@@ -139,8 +139,8 @@ let NERDTreeShowHidden=1
 
 " coc vim {
 
-nnoremap <leader>u <C-O>
-nnoremap <leader>r <C-I>
+nnoremap <leader>o <C-O>
+nnoremap <leader>i <C-I>
 
 " jump to definition
 nnoremap <leader><leader> :call CocAction('jumpDefinition', 'drop')<CR>

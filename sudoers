@@ -82,7 +82,7 @@ root ALL=(ALL) ALL
  %wheel ALL=(ALL) ALL
 
 ## Same thing without a password
- %wheel ALL=(ALL) NOPASSWD: /usr/bin/localectl set-keymap es, /usr/bin/pacman -Sy, /usr/bin/pacman -Q, /usr/bin/pacman -Qm, /usr/bin/pacman -Qn, /usr/bin/pacman -Ss, /usr/bin/pacman -Syu, /home/zodd/.config/polybar/scripts/remove-pacman-update-lock.sh
+ %wheel ALL=(ALL) NOPASSWD: /usr/bin/localectl set-keymap es, /usr/bin/pacman -Sy, /usr/bin/pacman -Q, /usr/bin/pacman -Qm, /usr/bin/pacman -Qn, /usr/bin/pacman -Ss, /usr/bin/pacman -Syu
 
 ## Uncomment to allow members of group sudo to execute any command
 # %sudo	ALL=(ALL) ALL

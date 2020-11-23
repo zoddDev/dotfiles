@@ -151,10 +151,6 @@ alias kbinds='nvim $HOME/.config/sxhkd/sxhkdrc'
 # rices.sh config
 alias rices='nvim $DOTFILES/setup-scripts/rices.sh'
 
-# zodd18 webpage
-alias webpage='nvim $HOME/Documents/git-lab/zodd18.github.io'
-
-
 # ---------------------------------------- Modification ----------------------------------------
 
 alias cp='cp -v'
@@ -189,6 +185,9 @@ alias esp="trans -s en :es $1"
 
 # just python as a calculator
 alias calc="python3"
+
+# num of installed packages
+alias packages='expac -s "%-45n %m" -H M | sort -rhk 2 | nvim'
 
 # ---------------------------------------- Showcase ----------------------------------------
 
