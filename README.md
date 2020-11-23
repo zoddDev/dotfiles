@@ -119,9 +119,9 @@ may be:
 ```
 nord                    - Classic Nord look
 pink-nord               - Pink Nord look
+pink-nord-alternative   - Based on Fleon look
 gruvbox                 - Classic Gruvbox look
 solarized-dark          - Solarized Dark look
-pink-nord-alternative   - Based on Fleon look
 horizon                 - Based on VS Code Horizon Theme 
 ```
 
