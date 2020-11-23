@@ -117,6 +117,7 @@ where
 may be:
 
 ```
+nord                    - Classic Nord look
 pink-nord               - Pink Nord look
 gruvbox                 - Classic Gruvbox look
 solarized-dark          - Solarized Dark look
@@ -137,7 +138,6 @@ I'd follow this order: pacman, aur, themes, rice.
 
 # Deprecated (old rices, these need a lot of cleaning)
 ```
-nord                    - Classic Nord look
 dracula                 - Classic Dracula look
 doombox                 - Doom version of gruvbox
 ```
