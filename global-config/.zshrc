@@ -186,6 +186,9 @@ alias esp="trans -s en :es $1"
 # just python as a calculator
 alias calc="python3"
 
+# calendar
+alias cal="cal -m -y"
+
 # num of installed packages
 alias packages='expac -s "%-45n %m" -H M | sort -rhk 2 | nvim'
 
