@@ -1,0 +1,7 @@
+<application>
+  <component name="ParameterNameHintsSettings">
+    <disabledLanguages>
+      <language id="JAVA" />
+    </disabledLanguages>
+  </component>
+</application>

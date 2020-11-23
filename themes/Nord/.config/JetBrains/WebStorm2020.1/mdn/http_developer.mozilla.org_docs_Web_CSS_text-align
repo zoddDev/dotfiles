@@ -1,0 +1,1 @@
+The <strong><code>text-align</code></strong> CSS property sets the horizontal alignment of a block element or table-cell box. This means it works like <a href="/en-US/docs/Web/CSS/vertical-align" title="The vertical-align CSS property sets vertical alignment of an inline, inline-block or table-cell box."><code>vertical-align</code></a> but in the horizontal direction.

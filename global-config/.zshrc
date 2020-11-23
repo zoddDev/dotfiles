@@ -159,6 +159,7 @@ alias webpage='nvim $HOME/Documents/git-lab/zodd18.github.io'
 
 alias cp='cp -v'
 alias mv='mv -v'
+alias rm='rm -v'
 
 # ---------------------------------------- Functionality ----------------------------------------
 
@@ -182,9 +183,12 @@ alias spicetify='$HOME/spicetify-cli/spicetify'
 
 alias findman="man -k . | rofi -dmenu | awk '{print $1}' | xargs -r man -Tpdf | zathura -"
 
+# eng => esp-eng | esp => eng-esp
 alias eng="trans -s es :en $1"
 alias esp="trans -s en :es $1"
 
+# just python as a calculator
+alias calc="python3"
 
 # ---------------------------------------- Showcase ----------------------------------------
 
@@ -198,6 +202,9 @@ alias colors="~/.scripts/color-scripts/`ls ~/.scripts/color-scripts | sort -R | 
 
 # opens a random pornhub video
 alias porn='mpv "http://www.pornhub.com/random"'
+
+# matrix effect (better than cmatrix since it supports terminal transparency)
+alias matrix='unimatrix -s 96'
 
 # ---------------------------------------- Music ----------------------------------------
 

@@ -16,11 +16,11 @@ frame_width = 8
 frame_color = "#2E3440"
 separator_color = "#404859"
 
-font = Inconsolata 10
+font = Inconsolata Bold 10
 
 line_height = 0
 markup = full
-format = "<span size='x-large' font_desc='Inconsolata 11' weight='bold' foreground='#88c0d0'>%s</span>\n\n%b"
+format = "<span size='x-large' font_desc='Inconsolata 11' weight='bold' foreground='#88C0D0'>%s</span>\n\n%b"
 alignment = center
 
 idle_threshold = 120
@@ -57,18 +57,18 @@ context = ctrl+shift+period
     # Otherwise the "#" and following would be interpreted as a comment.
     background = "#2E3440"
     foreground = "#D8DEE9"
-    timeout = 3 
+    timeout = 5 
     # Icon for notifications with low urgency, uncomment to enable
     #icon = /path/to/icon
 
 [urgency_normal]
     background = "#2E3440"
     foreground = "#D8DEE9"
-    timeout = 3
+    timeout = 5
     # Icon for notifications with normal urgency, uncomment to enable
     #icon = /path/to/icon
 
 [urgency_critical]
     background = "#2E3440"
     foreground = "#D8DEE9"
-    timeout = 3
+    timeout = 120

@@ -236,12 +236,13 @@ label-unmounted-foreground = #55
 [module/pacman-updates]
 type = custom/script
 exec = echo `$HOME/.config/polybar/scripts/pacman-updates.sh`
-interval = 40
+interval = 1000
 label = "   %output%  "
 format-foreground = ${colors.background}
 format-background = ${colors.green}
 click-left = kitty -e $SHELL -c 'sudo pacman -Syu'
-click-right = bspc rule -a \* -o state=floating ; sleep 0.015 ; kitty -e $SHELL -c 'pacman -Qu | less'
+click-right = bspc rule -a \* -o state=floating ; sleep 0.015 ; kitty -e $SHELL -c 'yay -Qu | less'
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [module/windowtitle]

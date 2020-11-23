@@ -75,9 +75,9 @@ super + shift + Print
 super + Return 
     $HOME/.config/rofi/launch-rofi.sh
 
-# rofi-usb unmount
-super + u
-    sudo ~/.local/usb-rofi/usb_mgr -u
+# system shutdown
+super + alt + t
+    ~/.config/polybar/scripts/theme-swap.sh
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -136,8 +136,8 @@ super + y
 	bspc node newest.marked.local -n newest.!automatic.local
 
 # swap the current node and the biggest node
-super + g
-	bspc node -s biggest
+#super + g
+	#bspc node -s biggest
 
 #
 # state/flags
@@ -200,23 +200,23 @@ ctrl + alt + {h,l}
 #
 
 # preselect the direction
-super + ctrl + {Left,Down,Up,Right}
-	bspc node -p {west,south,north,east}
+#super + ctrl + {Left,Down,Up,Right}
+	#bspc node -p {west,south,north,east}
 
-super + ctrl + {h,j,k,l}
-	bspc node -p {west,south,north,east}
+#super + ctrl + {h,j,k,l}
+	#bspc node -p {west,south,north,east}
 
 # preselect the ratio
-super + ctrl + {1-9}
-	bspc node -o 0.{1-9}
+#super + ctrl + {1-9}
+	#bspc node -o 0.{1-9}
 
 # cancel the preselection for the focused node
-super + ctrl + space
-	bspc node -p cancel
+#super + ctrl + space
+	#bspc node -p cancel
 
 # cancel the preselection for the focused desktop
-super + ctrl + shift + space
-	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
+#super + ctrl + shift + space
+	#bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
 
 #
 # move/resize
@@ -234,4 +234,6 @@ super + alt + shift + {Left,Down,Up,Right}
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
-# test2
+#super + shift + g : {plus,minus}
+    #bspc config window_gap $(( $(bspc config window_gap) {+,-} 5 ))
+

@@ -16,15 +16,14 @@ function restart_applications {
     then
         killall bspc 
         killall bspwmrc 
-        killall bspswallow
+        #killall bspswallow
 
         $HOME/.config/bspwm/autostart &
         xsetroot -cursor_name left_ptr &
         compton &
         nitrogen --restore &
         dunst &
-        $HOME/.config/bspwm/bspborders &
-        pidof $HOME/.scripts/bspswallow || $HOME/.scripts/bspswallow &
+        #pidof $HOME/.scripts/bspswallow || $HOME/.scripts/bspswallow &
         $HOME/.config/bspwm/autostart &
     fi
     
