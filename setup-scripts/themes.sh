@@ -20,3 +20,6 @@ cp -rv $SETUP_ROOT/dotfiles/.themes $HOME
 cp -rv $SETUP_ROOT/dotfiles/global-config/. $HOME
 
 sed -i "s/$replace_user/$USER/g" $HOME/.zshrc $HOME/.config/nitrogen/*.cfg
+
+# change shell to zsh, will require password
+chsh -s /usr/bin/zsh
