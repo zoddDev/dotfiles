@@ -21,5 +21,5 @@ cp -rv $SETUP_ROOT/dotfiles/global-config/. $HOME
 
 sed -i "s/$replace_user/$USER/g" $HOME/.zshrc $HOME/.config/nitrogen/*.cfg
 
-# change shell to zsh, will require password
+# change shell to zsh, will require password and reboot to apply changes
 chsh -s /usr/bin/zsh

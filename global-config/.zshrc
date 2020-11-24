@@ -275,3 +275,5 @@ then
 fi
 
 
+
+eval $(thefuck --alias)
