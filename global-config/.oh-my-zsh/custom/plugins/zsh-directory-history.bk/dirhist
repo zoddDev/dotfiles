@@ -1,0 +1,135 @@
+#!/usr/bin/env python2
+import sys
+import os
+import re
+from collections import OrderedDict
+from os.path import expanduser
+
+# Size of the history
+HISTSIZE = 10000
+
+# History file
+HISTFILE = ".directory_history"
+
+# Home directory of user
+home = expanduser("~")
+
+def get_dir_and_command(line):
+    parts = line.split(";")
+    return (parts[1], ";".join(parts[2:]))
+
+def remove_duplicates_front(commands):
+    """Remove duplicate entries from the front in commands.
+
+    Remove from the front since entries in the front are older
+    than the ones at the end of commands.
+    """
+    # [ls,vim,su,cat,ls] -> [vim,su,cat,ls]
+    commands.reverse()
+    commands_unique = list(OrderedDict.fromkeys(commands))
+    commands_unique.reverse()
+
+    return commands_unique
+
+def read_backwards(f, num_lines, delimiter, blocksize=1024):
+    """Read num_lines seperated by delimiter from end of file without
+    loading whole file."""
+    f.seek(0, 2)
+    end = f.tell()
+    block_number = -1
+    blocks = []
+
+    while num_lines > 0 and end > 0:
+        if (end - blocksize > 0):
+            f.seek(block_number*blocksize, 2)
+            blocks.append(f.read(blocksize))
+        else:
+            # Read remaining data
+            f.seek(0,0)
+            blocks.append(f.read(end))
+
+        num_lines -= blocks[-1].count(delimiter)
+        end -= blocksize
+        block_number -= 1
+
+    return ''.join(reversed(blocks))
+
+def get_commands_in_directory(directory):
+    """Returns all commands executed in directory.
+
+    Duplicates will be removed and more important commands will be at
+    the end of the returned list.
+    The most recent command in directory is considered the most
+    important command.
+    The oldest command from all other directories is considered the
+    least important command.
+    """
+    commands_dir = []
+    commands_not_dir = []
+    try:
+        with open(home + "/" + HISTFILE, "r") as f:
+            # Get commands from this directory
+            for line in reversed(read_backwards(f, HISTSIZE, '\0').strip().strip('\0').split('\0')):
+                try:
+                    directory_in_history, command = get_dir_and_command(line.strip())
+                except (ValueError, IndexError):
+                    continue
+
+                if directory_in_history == directory:
+                    commands_dir.append(command)
+
+            # Get commands not in this directory
+            for line in reversed(read_backwards(f, HISTSIZE, '\0').strip().strip('\0').split('\0')):
+                try:
+                    directory_in_history, command = get_dir_and_command(line.strip())
+                except (ValueError, IndexError):
+                    continue
+
+                if len(commands_not_dir) + len(commands_dir) >= HISTSIZE:
+                    break
+
+                if directory_in_history != directory:
+                    commands_not_dir.append(command)
+    except IOError:
+        open(home + "/" + HISTFILE, 'a').close()
+
+    # Least important command needs to be at the start
+    commands = list(reversed(commands_not_dir)) + list(reversed(commands_dir))
+
+    # Remove duplicates from the front
+    commands = remove_duplicates_front(commands)
+
+    return commands
+
+def get_indices_by_substring_and_directory(directory, substring):
+    """Return indices of substrings from a certain directory."""
+    commands = get_commands_in_directory(directory)
+
+    # Remove backslashes in front of ][()|\*?#<>~^
+    substring_no_escape = re.sub(r'\\([\][()|\\*?#<>~^])', r'\1', substring)
+
+    indices = []
+    for cmd in commands:
+        if substring_no_escape.lower() in cmd.lower():
+            index = commands.index(cmd)+1
+            indices.append(index)
+
+    return indices
+
+# Return complete history for a directory if -a/-all -d DIRECTORY are arguments
+if len(sys.argv) == 4 and (sys.argv[1] == "-a" or sys.argv[1] == "--all") and (sys.argv[2] == "-d"):
+    directory = sys.argv[3]
+
+    print "\0\n".join(get_commands_in_directory(directory))
+
+# Return list of indizes which match a given substring
+# dirhist -s/--substring SUBSTRING -d DIRECTORY
+if len(sys.argv) == 5 and (sys.argv[1] == "-s" or sys.argv[1] == "--substring") and sys.argv[3] == "-d":
+    directory = sys.argv[4]
+    substring = sys.argv[2]
+
+    indices = [str(i) for i in get_indices_by_substring_and_directory(directory, substring)]
+    if indices:
+        print "\n".join(indices)
+    else:
+        print "NONE"
