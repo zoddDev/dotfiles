@@ -18,6 +18,7 @@ lxpolkit &
 xset -dpms s off & # disable screen blanking
 dropbox &
 dunst &
+restart-polybar.sh &
 
 # Swallow
 

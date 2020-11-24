@@ -159,7 +159,7 @@ alias rm='rm -v'
 
 # ---------------------------------------- Functionality ----------------------------------------
 
-# git-clean (clean /home/zodd/Downloads/git-downloads)    
+# remove all files from ~/Downloads/git-downloads
 alias git-clean='rm -rf $HOME/Downloads/git-downloads/*'
 
 # reloads zsh config
