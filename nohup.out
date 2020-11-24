@@ -1274,3 +1274,568 @@ polybar: no process found
 polybar|warn:  No monitor specified, using "HDMI-2"
 polybar|warn:  pulseaudio: using default sink alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo
 polybar|warn:  Termination signal received, shutting down...
+polybar: no process found
+polybar|warn:  No monitor specified, using "HDMI-2"
+polybar|warn:  pulseaudio: using default sink alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo
+polybar|warn:  Dropping unmatched character ♟ (U+265f)
+polybar|warn:  Dropping unmatched character ♟ (U+265f)
+polybar|warn:  Dropping unmatched character ♟ (U+265f)
+polybar|warn:  Dropping unmatched character ♟ (U+265f)
+polybar|warn:  Dropping unmatched character ♟ (U+265f)
+polybar|warn:  Dropping unmatched character ♟ (U+265f)
+polybar|warn:  Dropping unmatched character ♟ (U+265f)
+polybar|warn:  Dropping unmatched character ♟ (U+265f)
+polybar|warn:  Dropping unmatched character ♟ (U+265f)
+polybar|warn:  Dropping unmatched character ♟ (U+265f)
+polybar|warn:  Termination signal received, shutting down...
+polybar: no process found
+polybar|warn:  No monitor specified, using "HDMI-2"
+polybar|warn:  pulseaudio: using default sink alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo
+polybar|warn:  Termination signal received, shutting down...
+[START]: theme installation...
+/home/zodd/Documents/git-lab
+bspc: no process found
+bspwmrc: no process found
+polybar: no process found
+polybar|warn:  No monitor specified, using "HDMI-2"
+
+[INFO]: applying "Gruvbox" theme...
+polybar|warn:  pulseaudio: using default sink alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo
+desktop: Unknown command: '--follow'.
+[FINISHED]: theme installation
+polybar|warn:  Termination signal received, shutting down...
+polybar: no process found
+polybar|warn:  No monitor specified, using "HDMI-2"
+polybar|warn:  pulseaudio: using default sink alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo
+[START]: theme installation...
+/home/zodd/Documents/git-lab
+
+[INFO]: applying "SolarizedDark" theme...
+polybar|warn:  Termination signal received, shutting down...
+polybar: no process found
+polybar|warn:  No monitor specified, using "HDMI-2"
+polybar|warn:  pulseaudio: using default sink alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo
+[FINISHED]: theme installation
+rm: cannot remove '/home/zodd/README.md': No such file or directory
+[START]: theme installation...
+/home/zodd/Documents/git-lab
+
+[INFO]: applying "Nord" theme...
+polybar|warn:  Termination signal received, shutting down...
+[FINISHED]: theme installation
+rm: cannot remove '/home/zodd/README.md': No such file or directory
+polybar: no process found
+polybar|warn:  No monitor specified, using "HDMI-2"
+polybar|warn:  pulseaudio: using default sink alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo
+polybar|warn:  Termination signal received, shutting down...
+[START]: theme installation...
+/home/zodd/Documents/git-lab
+
+[INFO]: applying "Horizon" theme...
+[FINISHED]: theme installation
+[?25l[?7l[0m[36m[1m
+__________________       __
+___  __ )__  __/_ |     / /
+__  __  |_  /  __ | /| / /
+_  /_/ /_  /   __ |/ |/ /
+/_____/ /_/    ____/|__/ [0m
+[6A[9999999D[30C[37m[0m[1m[34m[1mzodd[37m@[34m[1march[0m 
+[30C[37m[0m---------[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m Arch Linux[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m 5.9.4-arch1-1[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m 958 (pacman)[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m zsh 5.8[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m 1 hour, 13 mins[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m 114G / 429G (28%)[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m 1781MiB / 15971MiB[0m 
+
+[30C[30m[40m   [31m[41m   [32m[42m   [33m[43m   [34m[44m   [35m[45m   [36m[46m   [37m[47m   [m
+[30C[38;5;8m[48;5;8m   [38;5;9m[48;5;9m   [38;5;10m[48;5;10m   [38;5;11m[48;5;11m   [38;5;12m[48;5;12m   [38;5;13m[48;5;13m   [38;5;14m[48;5;14m   [38;5;15m[48;5;15m   [m
+
+
+[?25h[?7h[START]: theme installation...
+/home/zodd/Documents/git-lab
+
+[INFO]: applying "Gruvbox" theme...
+[FINISHED]: theme installation
+bspc: no process found
+bspwmrc: no process found
+polybar: no process found
+/home/zodd/.config/bspwm/bspborders: line 2: /home/zodd/.scripts/colors: No such file or directory
+polybar|warn:  No monitor specified, using "HDMI-2"
+/home/zodd/.config/bspwm/bspborders: line 2: /home/zodd/.scripts/colors: No such file or directory
+polybar|warn:  pulseaudio: using default sink alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo
+desktop: Unknown command: '--follow'.
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+[?25l[?7l[0m[35m[1m
+__________________       __
+___  __ )__  __/_ |     / /
+__  __  |_  /  __ | /| / /
+_  /_/ /_  /   __ |/ |/ /
+/_____/ /_/    ____/|__/ [0m
+[6A[9999999D[30C[37m[0m[1m[32m[1mzodd[32m@[32m[1march[0m 
+[30C[37m[0m---------[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m Arch Linux[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m 5.9.4-arch1-1[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m 958 (pacman)[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m zsh 5.8[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m 1 hour, 13 mins[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m 114G / 429G (28%)[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m 1790MiB / 15971MiB[0m 
+
+[30C[30m[40m   [31m[41m   [32m[42m   [33m[43m   [34m[44m   [35m[45m   [36m[46m   [37m[47m   [m
+[30C[38;5;8m[48;5;8m   [38;5;9m[48;5;9m   [38;5;10m[48;5;10m   [38;5;11m[48;5;11m   [38;5;12m[48;5;12m   [38;5;13m[48;5;13m   [38;5;14m[48;5;14m   [38;5;15m[48;5;15m   [m
+
+
+[?25h[?7h[START]: theme installation...
+/home/zodd/Documents/git-lab
+
+[INFO]: applying "Nord" theme...
+[FINISHED]: theme installation
+rm: cannot remove '/home/zodd/README.md': No such file or directory
+polybar|warn:  Termination signal received, shutting down...
+bspwmrc: no process found
+polybar: no process found
+polybar|warn:  No monitor specified, using "HDMI-2"
+polybar|warn:  pulseaudio: using default sink alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo
+desktop: Unknown command: '--follow'.
+[?25l[?7l[0m[36m[1m
+__________________       __
+___  __ )__  __/_ |     / /
+__  __  |_  /  __ | /| / /
+_  /_/ /_  /   __ |/ |/ /
+/_____/ /_/    ____/|__/ [0m
+[6A[9999999D[30C[37m[0m[1m[34m[1mzodd[37m@[34m[1march[0m 
+[30C[37m[0m---------[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m Arch Linux[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m 5.9.4-arch1-1[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m 958 (pacman)[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m zsh 5.8[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m 1 hour, 13 mins[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m 114G / 429G (28%)[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m 1786MiB / 15971MiB[0m 
+
+[30C[30m[40m   [31m[41m   [32m[42m   [33m[43m   [34m[44m   [35m[45m   [36m[46m   [37m[47m   [m
+[30C[38;5;8m[48;5;8m   [38;5;9m[48;5;9m   [38;5;10m[48;5;10m   [38;5;11m[48;5;11m   [38;5;12m[48;5;12m   [38;5;13m[48;5;13m   [38;5;14m[48;5;14m   [38;5;15m[48;5;15m   [m
+
+
+[?25h[?7h[START]: theme installation...
+/home/zodd/Documents/git-lab
+
+[INFO]: applying "Ayu" theme...
+[FINISHED]: theme installation
+rm: cannot remove '/home/zodd/README.md': No such file or directory
+polybar|warn:  Termination signal received, shutting down...
+bspc: no process found
+bspwmrc: no process found
+The program 'nitrogen' received an X Window System error.
+This probably reflects a bug in the program.
+The error was 'BadWindow (invalid Window parameter)'.
+  (Details: serial 211 error_code 3 request_code 20 minor_code 0)
+  (Note to programmers: normally, X errors are reported asynchronously;
+   that is, you will receive the error a while after causing it.
+   To debug your program, run it with the --sync command line
+   option to change this behavior. You can then get a meaningful
+   backtrace from your debugger if you break on the gdk_x_error() function.)
+polybar: no process found
+polybar|warn:  No monitor specified, using "HDMI-2"
+polybar|warn:  pulseaudio: using default sink alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo
+desktop: Unknown command: '--follow'.
+[?25l[?7l[0m[31m[1m
+__________________       __
+___  __ )__  __/_ |     / /
+__  __  |_  /  __ | /| / /
+_  /_/ /_  /   __ |/ |/ /
+/_____/ /_/    ____/|__/ [0m
+[6A[9999999D[30C[37m[0m[1m[35m[1mzodd[37m@[35m[1march[0m 
+[30C[37m[0m---------[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m Arch Linux[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m 5.9.4-arch1-1[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m 958 (pacman)[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m zsh 5.8[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m 1 hour, 13 mins[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m 114G / 429G (28%)[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m 1790MiB / 15971MiB[0m 
+
+[30C[30m[40m   [31m[41m   [32m[42m   [33m[43m   [34m[44m   [35m[45m   [36m[46m   [37m[47m   [m
+[30C[38;5;8m[48;5;8m   [38;5;9m[48;5;9m   [38;5;10m[48;5;10m   [38;5;11m[48;5;11m   [38;5;12m[48;5;12m   [38;5;13m[48;5;13m   [38;5;14m[48;5;14m   [38;5;15m[48;5;15m   [m
+
+
+[?25h[?7h[START]: theme installation...
+/home/zodd/Documents/git-lab
+
+[INFO]: applying "Nord" theme...
+[FINISHED]: theme installation
+rm: cannot remove '/home/zodd/README.md': No such file or directory
+polybar|warn:  Termination signal received, shutting down...
+bspc: no process found
+bspwmrc: no process found
+polybar: no process found
+polybar|warn:  No monitor specified, using "HDMI-2"
+polybar|warn:  pulseaudio: using default sink alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo
+desktop: Unknown command: '--follow'.
+zsh:1: no such file or directory: add/.config/neofetch/launch-neofetch.sh
+[START]: theme installation...
+/home/zodd/Documents/git-lab
+
+[INFO]: applying "Ayu" theme...
+[FINISHED]: theme installation
+rm: cannot remove '/home/zodd/README.md': No such file or directory
+zsh:1: no such file or directory: add/.config/polybar/scripts/after-theme-swap.sh
+[?25l[?7l[0m[31m[1m
+__________________       __
+___  __ )__  __/_ |     / /
+__  __  |_  /  __ | /| / /
+_  /_/ /_  /   __ |/ |/ /
+/_____/ /_/    ____/|__/ [0m
+[6A[9999999D[30C[37m[0m[1m[35m[1mzodd[37m@[35m[1march[0m 
+[30C[37m[0m---------[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m Arch Linux[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m 5.9.4-arch1-1[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m 958 (pacman)[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m zsh 5.8[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m 1 hour, 15 mins[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m 114G / 429G (28%)[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m 1832MiB / 15971MiB[0m 
+
+[30C[30m[40m   [31m[41m   [32m[42m   [33m[43m   [34m[44m   [35m[45m   [36m[46m   [37m[47m   [m
+[30C[38;5;8m[48;5;8m   [38;5;9m[48;5;9m   [38;5;10m[48;5;10m   [38;5;11m[48;5;11m   [38;5;12m[48;5;12m   [38;5;13m[48;5;13m   [38;5;14m[48;5;14m   [38;5;15m[48;5;15m   [m
+
+
+[?25h[?7h[START]: theme installation...
+/home/zodd/Documents/git-lab
+
+[INFO]: applying "Gruvbox" theme...
+[FINISHED]: theme installation
+polybar|warn:  Termination signal received, shutting down...
+bspc: no process found
+bspwmrc: no process found
+polybar: no process found
+polybar|warn:  No monitor specified, using "HDMI-2"
+/home/zodd/.config/bspwm/bspborders: line 2: /home/zodd/.scripts/colors: No such file or directory
+/home/zodd/.config/bspwm/bspborders: line 2: /home/zodd/.scripts/colors: No such file or directory
+polybar|warn:  pulseaudio: using default sink alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo
+desktop: Unknown command: '--follow'.
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+[?25l[?7l[0m[35m[1m
+__________________       __
+___  __ )__  __/_ |     / /
+__  __  |_  /  __ | /| / /
+_  /_/ /_  /   __ |/ |/ /
+/_____/ /_/    ____/|__/ [0m
+[6A[9999999D[30C[37m[0m[1m[32m[1mzodd[32m@[32m[1march[0m 
+[30C[37m[0m---------[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m Arch Linux[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m 5.9.4-arch1-1[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m 958 (pacman)[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m zsh 5.8[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m 1 hour, 15 mins[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m 114G / 429G (28%)[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m 1787MiB / 15971MiB[0m 
+
+[30C[30m[40m   [31m[41m   [32m[42m   [33m[43m   [34m[44m   [35m[45m   [36m[46m   [37m[47m   [m
+[30C[38;5;8m[48;5;8m   [38;5;9m[48;5;9m   [38;5;10m[48;5;10m   [38;5;11m[48;5;11m   [38;5;12m[48;5;12m   [38;5;13m[48;5;13m   [38;5;14m[48;5;14m   [38;5;15m[48;5;15m   [m
+
+
+[?25h[?7h[START]: theme installation...
+/home/zodd/Documents/git-lab
+
+[INFO]: applying "Nord" theme...
+[FINISHED]: theme installation
+rm: cannot remove '/home/zodd/README.md': No such file or directory
+polybar|warn:  Termination signal received, shutting down...
+bspwmrc: no process found
+polybar: no process found
+polybar|warn:  No monitor specified, using "HDMI-2"
+polybar|warn:  pulseaudio: using default sink alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo
+desktop: Unknown command: '--follow'.
+[?25l[?7l[0m[36m[1m
+__________________       __
+___  __ )__  __/_ |     / /
+__  __  |_  /  __ | /| / /
+_  /_/ /_  /   __ |/ |/ /
+/_____/ /_/    ____/|__/ [0m
+[6A[9999999D[30C[37m[0m[1m[34m[1mzodd[37m@[34m[1march[0m 
+[30C[37m[0m---------[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m Arch Linux[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m 5.9.4-arch1-1[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m 958 (pacman)[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m zsh 5.8[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m 1 hour, 28 mins[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m 114G / 429G (28%)[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m 2107MiB / 15971MiB[0m 
+
+[30C[30m[40m   [31m[41m   [32m[42m   [33m[43m   [34m[44m   [35m[45m   [36m[46m   [37m[47m   [m
+[30C[38;5;8m[48;5;8m   [38;5;9m[48;5;9m   [38;5;10m[48;5;10m   [38;5;11m[48;5;11m   [38;5;12m[48;5;12m   [38;5;13m[48;5;13m   [38;5;14m[48;5;14m   [38;5;15m[48;5;15m   [m
+
+
+[?25h[?7h[START]: theme installation...
+/home/zodd/Documents/git-lab
+
+[INFO]: applying "PinkNordAlternative" theme...
+[FINISHED]: theme installation
+polybar|warn:  Termination signal received, shutting down...
+bspc: no process found
+bspwmrc: no process found
+polybar: no process found
+ln: failed to create symbolic link '/home/zodd/.config/GIMP/2.10/splashes/nord-theme': File exists
+ln: failed to create symbolic link '/home/zodd/.config/GIMP/2.10/splashes/nord-theme': File exists
+polybar|warn:  No monitor specified, using "HDMI-2"
+polybar|warn:  pulseaudio: using default sink alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo
+desktop: Unknown command: '--follow'.
+[?25l[?7l[0m[35m[1m
+__________________       __
+___  __ )__  __/_ |     / /
+__  __  |_  /  __ | /| / /
+_  /_/ /_  /   __ |/ |/ /
+/_____/ /_/    ____/|__/ [0m
+[6A[9999999D[30C[37m[0m[1m[36m[1mzodd[37m@[36m[1march[0m 
+[30C[37m[0m---------[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m Arch Linux[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m 5.9.4-arch1-1[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m 958 (pacman)[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m zsh 5.8[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m 1 hour, 28 mins[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m 114G / 429G (28%)[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m 2089MiB / 15971MiB[0m 
+
+[30C[30m[40m   [31m[41m   [32m[42m   [33m[43m   [34m[44m   [35m[45m   [36m[46m   [37m[47m   [m
+[30C[38;5;8m[48;5;8m   [38;5;9m[48;5;9m   [38;5;10m[48;5;10m   [38;5;11m[48;5;11m   [38;5;12m[48;5;12m   [38;5;13m[48;5;13m   [38;5;14m[48;5;14m   [38;5;15m[48;5;15m   [m
+
+
+[?25h[?7h[START]: theme installation...
+/home/zodd/Documents/git-lab
+
+[INFO]: applying "Nord" theme...
+[FINISHED]: theme installation
+rm: cannot remove '/home/zodd/README.md': No such file or directory
+polybar|warn:  Termination signal received, shutting down...
+bspc: no process found
+bspwmrc: no process found
+polybar: no process found
+polybar|warn:  No monitor specified, using "HDMI-2"
+polybar|warn:  pulseaudio: using default sink alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo
+desktop: Unknown command: '--follow'.
+polybar|warn:  Dropping unmatched character ♟ (U+265f)
+polybar|warn:  Dropping unmatched character ♟ (U+265f)
+polybar|warn:  Dropping unmatched character ♟ (U+265f)
+polybar|warn:  Dropping unmatched character ♟ (U+265f)
+polybar|warn:  Dropping unmatched character ♟ (U+265f)
+polybar|warn:  Dropping unmatched character ♟ (U+265f)
+polybar|warn:  Dropping unmatched character ♟ (U+265f)
+polybar|warn:  Dropping unmatched character ♟ (U+265f)
+polybar|warn:  Dropping unmatched character ♟ (U+265f)
+polybar|warn:  Dropping unmatched character ♟ (U+265f)
+polybar|warn:  Termination signal received, shutting down...
+[?25l[?7l[0m[35m[1m
+__________________       __
+___  __ )__  __/_ |     / /
+__  __  |_  /  __ | /| / /
+_  /_/ /_  /   __ |/ |/ /
+/_____/ /_/    ____/|__/ [0m
+[6A[9999999D[30C[37m[0m[1m[36m[1mzodd[37m@[36m[1march[0m 
+[30C[37m[0m---------[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m Arch Linux[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m 5.9.4-arch1-1[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m 958 (pacman)[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m zsh 5.8[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m 1 hour, 28 mins[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m 114G / 429G (28%)[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m 2053MiB / 15971MiB[0m 
+
+[30C[30m[40m   [31m[41m   [32m[42m   [33m[43m   [34m[44m   [35m[45m   [36m[46m   [37m[47m   [m
+[30C[38;5;8m[48;5;8m   [38;5;9m[48;5;9m   [38;5;10m[48;5;10m   [38;5;11m[48;5;11m   [38;5;12m[48;5;12m   [38;5;13m[48;5;13m   [38;5;14m[48;5;14m   [38;5;15m[48;5;15m   [m
+
+
+[?25h[?7h[START]: theme installation...
+/home/zodd/Documents/git-lab
+
+[INFO]: applying "Gruvbox" theme...
+[FINISHED]: theme installation
+bspwmrc: no process found
+kitty: no process found
+polybar: no process found
+/home/zodd/.config/bspwm/bspborders: line 2: /home/zodd/.scripts/colors: No such file or directory
+/home/zodd/.config/bspwm/bspborders: line 2: /home/zodd/.scripts/colors: No such file or directory
+polybar|warn:  No monitor specified, using "HDMI-2"
+polybar|warn:  pulseaudio: using default sink alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo
+desktop: Unknown command: '--follow'.
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+[?25l[?7l[0m[35m[1m
+__________________       __
+___  __ )__  __/_ |     / /
+__  __  |_  /  __ | /| / /
+_  /_/ /_  /   __ |/ |/ /
+/_____/ /_/    ____/|__/ [0m
+[6A[9999999D[30C[37m[0m[1m[32m[1mzodd[32m@[32m[1march[0m 
+[30C[37m[0m---------[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m Arch Linux[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m 5.9.4-arch1-1[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m 958 (pacman)[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m zsh 5.8[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m 1 hour, 28 mins[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m 114G / 429G (28%)[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m 2097MiB / 15971MiB[0m 
+
+[30C[30m[40m   [31m[41m   [32m[42m   [33m[43m   [34m[44m   [35m[45m   [36m[46m   [37m[47m   [m
+[30C[38;5;8m[48;5;8m   [38;5;9m[48;5;9m   [38;5;10m[48;5;10m   [38;5;11m[48;5;11m   [38;5;12m[48;5;12m   [38;5;13m[48;5;13m   [38;5;14m[48;5;14m   [38;5;15m[48;5;15m   [m
+
+
+[?25h[?7h[START]: theme installation...
+/home/zodd/Documents/git-lab
+
+[INFO]: applying "Horizon" theme...
+[FINISHED]: theme installation
+polybar|warn:  Termination signal received, shutting down...
+bspwmrc: no process found
+polybar: no process found
+polybar|warn:  No monitor specified, using "HDMI-2"
+polybar|warn:  pulseaudio: using default sink alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo
+desktop: Unknown command: '--follow'.
+[?25l[?7l[0m[31m[1m
+__________________       __
+___  __ )__  __/_ |     / /
+__  __  |_  /  __ | /| / /
+_  /_/ /_  /   __ |/ |/ /
+/_____/ /_/    ____/|__/ [0m
+[6A[9999999D[30C[37m[0m[1m[35m[1mzodd[37m@[35m[1march[0m 
+[30C[37m[0m---------[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m Arch Linux[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m 5.9.4-arch1-1[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m 958 (pacman)[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m zsh 5.8[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m 1 hour, 28 mins[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m 114G / 429G (28%)[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m 2099MiB / 15971MiB[0m 
+
+[30C[30m[40m   [31m[41m   [32m[42m   [33m[43m   [34m[44m   [35m[45m   [36m[46m   [37m[47m   [m
+[30C[38;5;8m[48;5;8m   [38;5;9m[48;5;9m   [38;5;10m[48;5;10m   [38;5;11m[48;5;11m   [38;5;12m[48;5;12m   [38;5;13m[48;5;13m   [38;5;14m[48;5;14m   [38;5;15m[48;5;15m   [m
+
+
+[?25h[?7h[START]: theme installation...
+/home/zodd/Documents/git-lab
+
+[INFO]: applying "Ayu" theme...
+[FINISHED]: theme installation
+rm: cannot remove '/home/zodd/README.md': No such file or directory
+polybar|warn:  Termination signal received, shutting down...
+bspc: no process found
+bspwmrc: no process found
+polybar: no process found
+polybar|warn:  No monitor specified, using "HDMI-2"
+polybar|warn:  pulseaudio: using default sink alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo
+desktop: Unknown command: '--follow'.
+[?25l[?7l[0m[31m[1m
+__________________       __
+___  __ )__  __/_ |     / /
+__  __  |_  /  __ | /| / /
+_  /_/ /_  /   __ |/ |/ /
+/_____/ /_/    ____/|__/ [0m
+[6A[9999999D[30C[37m[0m[1m[35m[1mzodd[37m@[35m[1march[0m 
+[30C[37m[0m---------[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m Arch Linux[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m 5.9.4-arch1-1[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m 958 (pacman)[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m zsh 5.8[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m 1 hour, 28 mins[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m 114G / 429G (28%)[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m 2100MiB / 15971MiB[0m 
+
+[30C[30m[40m   [31m[41m   [32m[42m   [33m[43m   [34m[44m   [35m[45m   [36m[46m   [37m[47m   [m
+[30C[38;5;8m[48;5;8m   [38;5;9m[48;5;9m   [38;5;10m[48;5;10m   [38;5;11m[48;5;11m   [38;5;12m[48;5;12m   [38;5;13m[48;5;13m   [38;5;14m[48;5;14m   [38;5;15m[48;5;15m   [m
+
+
+[?25h[?7h[START]: theme installation...
+/home/zodd/Documents/git-lab
+
+[INFO]: applying "Nord" theme...
+[FINISHED]: theme installation
+rm: cannot remove '/home/zodd/README.md': No such file or directory
+polybar|warn:  Termination signal received, shutting down...
+bspc: no process found
+bspwmrc: no process found
+polybar: no process found
+polybar|warn:  No monitor specified, using "HDMI-2"
+polybar|warn:  pulseaudio: using default sink alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo
+desktop: Unknown command: '--follow'.
+[?25l[?7l[0m[36m[1m
+__________________       __
+___  __ )__  __/_ |     / /
+__  __  |_  /  __ | /| / /
+_  /_/ /_  /   __ |/ |/ /
+/_____/ /_/    ____/|__/ [0m
+[6A[9999999D[30C[37m[0m[1m[34m[1mzodd[37m@[34m[1march[0m 
+[30C[37m[0m---------[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m Arch Linux[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m 5.9.4-arch1-1[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m 958 (pacman)[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m zsh 5.8[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m 1 hour, 28 mins[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m 114G / 429G (28%)[0m 
+[30C[0m[32m[1m[0m[0m[32m [37m[0m 2097MiB / 15971MiB[0m 
+
+[30C[30m[40m   [31m[41m   [32m[42m   [33m[43m   [34m[44m   [35m[45m   [36m[46m   [37m[47m   [m
+[30C[38;5;8m[48;5;8m   [38;5;9m[48;5;9m   [38;5;10m[48;5;10m   [38;5;11m[48;5;11m   [38;5;12m[48;5;12m   [38;5;13m[48;5;13m   [38;5;14m[48;5;14m   [38;5;15m[48;5;15m   [m
+
+
+[?25h[?7h[START]: theme installation...
+/home/zodd/Documents/git-lab
+
+[INFO]: applying "PinkNord" theme...
+[FINISHED]: theme installation
+polybar|warn:  Termination signal received, shutting down...
+bspc: no process found
+bspwmrc: no process found
+ln: failed to create symbolic link '/home/zodd/.config/GIMP/2.10/splashes/nord-theme': File exists
+polybar: no process found
+ln: failed to create symbolic link '/home/zodd/.config/GIMP/2.10/splashes/nord-theme': File exists
+/home/zodd/.config/bspwm/bspborders: line 2: /home/zodd/.scripts/colors: No such file or directory
+polybar|warn:  No monitor specified, using "HDMI-2"
+/home/zodd/.config/bspwm/bspborders: line 2: /home/zodd/.scripts/colors: No such file or directory
+polybar|warn:  pulseaudio: using default sink alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo
+desktop: Unknown command: '--follow'.
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+[?25l[?7l[0m[35m[1m
+__________________       __
+___  __ )__  __/_ |     / /
+__  __  |_  /  __ | /| / /
+_  /_/ /_  /   __ |/ |/ /
+/_____/ /_/    ____/|__/ [0m
+[6A[9999999D[30C[37m[0m[1m[36m[1mzodd[37m@[36m[1march[0m 
+[30C[37m[0m---------[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m Arch Linux[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m 5.9.4-arch1-1[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m 958 (pacman)[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m zsh 5.8[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m 1 hour, 29 mins[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m 114G / 429G (28%)[0m 
+[30C[0m[36m[1m[0m[0m[36m [37m[0m 2097MiB / 15971MiB[0m 
+
+[30C[30m[40m   [31m[41m   [32m[42m   [33m[43m   [34m[44m   [35m[45m   [36m[46m   [37m[47m   [m
+[30C[38;5;8m[48;5;8m   [38;5;9m[48;5;9m   [38;5;10m[48;5;10m   [38;5;11m[48;5;11m   [38;5;12m[48;5;12m   [38;5;13m[48;5;13m   [38;5;14m[48;5;14m   [38;5;15m[48;5;15m   [m
+
+
+[?25h[?7h[START]: theme installation...
+/home/zodd/Documents/git-lab
+
+[INFO]: applying "Nord" theme...
+[FINISHED]: theme installation
+rm: cannot remove '/home/zodd/README.md': No such file or directory
+polybar|warn:  Termination signal received, shutting down...
+bspwmrc: no process found
+polybar: no process found
+polybar|warn:  No monitor specified, using "HDMI-2"
+polybar|warn:  pulseaudio: using default sink alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo
+desktop: Unknown command: '--follow'.

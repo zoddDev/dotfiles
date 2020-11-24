@@ -24,7 +24,7 @@ function setup_config {
     echo
     echo "[INFO]: applying \"$config_name\" theme..."
 
-    nohup cp -r $SETUP_ROOT/dotfiles/global-config/. $HOME &> /dev/null
+    #nohup cp -r $SETUP_ROOT/dotfiles/global-config/. $HOME &> /dev/null
     nohup rm -rf $HOME/.oh-my-zsh/additional/* &> /dev/null
     nohup cp -r -a $SETUP_ROOT/dotfiles/themes/$config_name/. $HOME #&> /dev/null
     nohup dconf load /org/gnome/gedit/ < $HOME/.config/gedit-dump.dconf
@@ -41,6 +41,8 @@ function setup_config {
 
     echo "[FINISHED]: theme installation"
     nohup notify-send -i $SETUP_ROOT/dotfiles/setup-scripts/resources/white-brush.png "[INFO]: FINISHED! Enjoy your new theme :)"
+
+    rm $HOME/README.md
 }
 
 shopt -s nocasematch
