@@ -205,6 +205,7 @@ harfbuzz
 harfbuzz-icu
 hicolor-icon-theme
 hidapi
+highlight
 htop
 http-parser
 hunspell
@@ -643,6 +644,7 @@ python-contextlib2
 python-cryptography
 python-dbus
 python-dbus-common
+python-decorator
 python-distlib
 python-distro
 python-gobject
@@ -658,10 +660,12 @@ python-pillow
 python-pip
 python-ply
 python-progress
+python-psutil
 python-pycparser
 python-pyopenssl
 python-pyparsing
 python-pystache
+python-pyte
 python-requests
 python-resolvelib
 python-retrying
@@ -670,6 +674,7 @@ python-six
 python-termcolor
 python-toml
 python-urllib3
+python-wcwidth
 python-webencodings
 python-yaml
 python-zope-interface
@@ -780,6 +785,7 @@ termite
 termite-terminfo
 tevent
 texinfo
+thefuck
 thin-provisioning-tools
 thunar
 thunar-volman
