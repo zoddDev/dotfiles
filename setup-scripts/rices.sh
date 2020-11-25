@@ -42,7 +42,9 @@ function setup_config {
     echo "[FINISHED]: theme installation"
     nohup notify-send -i $SETUP_ROOT/dotfiles/setup-scripts/resources/white-brush.png "[INFO]: FINISHED! Enjoy your new theme :)"
 
-    rm $HOME/README.md
+    rm $HOME/README.md > /dev/null
+
+    sed -i "s/$replace_user/$USER/g" $HOME/.config/nitrogen/*.cfg
 }
 
 shopt -s nocasematch

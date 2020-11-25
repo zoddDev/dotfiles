@@ -19,7 +19,10 @@ cp -rv $SETUP_ROOT/dotfiles/.themes $HOME
 
 cp -rv $SETUP_ROOT/dotfiles/global-config/. $HOME
 
-sed -i "s/$replace_user/$USER/g" $HOME/.zshrc $HOME/.config/nitrogen/*.cfg
+# install plugins for nvim
+nvim -E -s -u "$HOME/.config/nvim/init.vim" +PlugInstall +qall
+
+sed -i "s/$replace_user/$USER/g" $HOME/.zshrc 
 
 # change shell to zsh, will require password and reboot to apply changes
 chsh -s /usr/bin/zsh
