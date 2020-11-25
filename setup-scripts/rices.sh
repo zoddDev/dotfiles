@@ -8,6 +8,7 @@ copy_icons_and_themes=$2
 echo $SETUP_ROOT
 
 function setup_config {
+    replace_user="zodd"
     # args
     config_name=$1
     
