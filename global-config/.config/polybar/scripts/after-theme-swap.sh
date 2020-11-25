@@ -30,7 +30,7 @@ function restart_applications {
     killall kitty
     nohup $HOME/.config/polybar/scripts/restart-polybar.sh &
     sleep 0.3
-    nohup floating-term-bspwm.sh
+    nohup floating-term-bspwm.sh &
 }
 
 restart_applications $1
