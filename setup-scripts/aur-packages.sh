@@ -2,6 +2,9 @@
 
 echo "[START]: aur/external-packages installation..."
 
+# import keys
+./global-config/.scripts/addkey.sh `cat ./setup-scripts/resources/keys | grep -v '#'`
+
 # output packages directory creation
 [ -d $HOME/Downloads/git-downloads ] || mkdir -p $HOME/Downloads/git-downloads
 
@@ -13,9 +16,11 @@ echo "[START]: aur/external-packages installation..."
 # https://aur.archlinux.org/yay.git
 sudo pacman -Qi yay || ./setup-scripts/aur-get https://aur.archlinux.org/yay.git
 
-yay -S --mflags --skipinteg `cat ./setup-scripts/resources/aur-packages`
+yay -S --mflags --skipinteg `cat ./setup-scripts/resources/aur-packages` || exit 1
 sudo chmod a+wr /opt/spotify
 sudo chmod a+wr /opt/spotify/Apps -R
+
+yay -S wmutils-git ueberzug
 
 pip install dbus-python
 
