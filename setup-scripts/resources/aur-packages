@@ -10,6 +10,7 @@ haguichi
 logmein-hamachi
 mingetty
 ncurses5-compat-libs
+nodejs-nativefier
 obkey
 obtheme
 ocs-url
@@ -30,6 +31,7 @@ tty-clock
 ufetch-git
 unimatrix-git
 update-grub
+whatsapp-nativefier
 yay
 youtube-to-mp3
 ytop
