@@ -3,7 +3,7 @@
 echo "[START]: aur/external-packages installation..."
 
 # import keys
-./global-config/.scripts/addkey.sh `cat ./setup-scripts/resources/keys | grep -v '#'`
+./.scripts/addkey.sh `cat ./setup-scripts/resources/keys | grep -v '#'`
 
 # output packages directory creation
 [ -d $HOME/Downloads/git-downloads ] || mkdir -p $HOME/Downloads/git-downloads
