@@ -102,6 +102,7 @@ source $ZSH/oh-my-zsh.sh
 alias idea='$HOME/software/idea-IC-201.7846.76/bin/idea.sh'
 alias animalese='java -jar ~/Dropbox/Programming/Java/Tests/Animalese/out/artifacts/Animalese_jar/Animalese.jar'
 alias sqldeveloper='$HOME/250gb/Desktop/sqldeveloper/sqldeveloper.sh'
+alias webcamconf='guvcview'
 
 # -------------------- Places --------------------
 
@@ -191,6 +192,9 @@ alias cal="cal -m -y"
 
 # num of installed packages
 alias packages='expac -s "%-45n %m" -H M | sort -rhk 2 | nvim'
+
+# displays the window classname
+alias classname="xprop | grep 'CLASS'"
 
 # ---------------------------------------- Showcase ----------------------------------------
 
