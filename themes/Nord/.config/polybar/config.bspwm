@@ -264,7 +264,7 @@ label-mounted-foreground = ${colors.blue}
 [module/pacman-updates]
 type = custom/script
 exec = $HOME/.config/polybar/scripts/pacman-updates.sh
-interval = 5
+interval = 1000
 label = "   %output% "
 format-foreground = ${colors.green}
 format-foreground-error = ${colors.red}
