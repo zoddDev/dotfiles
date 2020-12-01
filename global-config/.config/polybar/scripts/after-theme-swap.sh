@@ -27,6 +27,8 @@ function restart_applications {
         $HOME/.config/bspwm/autostart &
     fi
     
+    /bin/neofetch --clean &
+    
     killall kitty
     nohup $HOME/.config/polybar/scripts/restart-polybar.sh &
     sleep 0.3

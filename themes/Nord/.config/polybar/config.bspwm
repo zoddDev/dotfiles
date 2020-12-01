@@ -263,10 +263,11 @@ label-mounted-foreground = ${colors.blue}
 
 [module/pacman-updates]
 type = custom/script
-exec = echo `$HOME/.config/polybar/scripts/pacman-updates.sh`
-interval = 1000
+exec = $HOME/.config/polybar/scripts/pacman-updates.sh
+interval = 5
 label = "   %output% "
 format-foreground = ${colors.green}
+format-foreground-error = ${colors.red}
 ;format-background = ${colors.green}
 click-left = kitty -e $SHELL -c 'sudo pacman -Syu'
 click-right = bspc rule -a \* -o state=floating ; sleep 0.015 ; kitty -e $SHELL -c 'yay -Qu | less'
