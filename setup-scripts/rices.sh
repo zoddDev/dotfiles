@@ -17,7 +17,7 @@ function setup_config {
     cp $HOME/.bashrc $HOME/.bashrc-backup
     cp $HOME/.zshrc $HOME/.zshrc-backup
 
-    notify-send -i $SETUP_ROOT/dotfiles/setup-scripts/resources/white-brush.png "[INFO]: copying \"$config_name\" config files..."
+    notify-send -i $SETUP_ROOT/dotfiles/setup-scripts/resources/white-brush.png "[INFO]: copying \"$config_name\" config files..." &
 
     #
     # copying theme dotfiles
@@ -41,11 +41,13 @@ function setup_config {
     #nohup $SETUP_ROOT/dotfiles/setup-scripts/set-spotify-theme.sh &
 
     echo "[FINISHED]: theme installation"
-    nohup notify-send -i $SETUP_ROOT/dotfiles/setup-scripts/resources/white-brush.png "[INFO]: FINISHED! Enjoy your new theme :)"
+    nohup notify-send -i $SETUP_ROOT/dotfiles/setup-scripts/resources/white-brush.png "[INFO]: FINISHED! Enjoy your new theme :)" &
 
     rm $HOME/README.md > /dev/null
 
     sed -i "s/$replace_user/$USER/g" $HOME/.config/nitrogen/*.cfg
+
+    exit 0
 }
 
 shopt -s nocasematch
@@ -58,8 +60,10 @@ case "$arg" in
     "bw" ) setup_config "BW" ;; 
     "ayu" ) setup_config "Ayu" ;; 
     "nord" ) setup_config "Nord" ;; 
-    *) echo "[ERROR]: no config with name \"$arg\" found" && notify-send -i $SETUP_ROOT/dotfiles/setup-scripts/resources/white-brush.png "[ERROR]: Selected theme does not exist" && exit 1 ;;
+    *) echo "[ERROR]: no config with name \"$arg\" found" && notify-send -i $SETUP_ROOT/dotfiles/setup-scripts/resources/white-brush.png "[ERROR]: Selected theme does not exist" & ;;
 esac
+
+exit 1
 
 
 
