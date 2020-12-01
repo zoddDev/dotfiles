@@ -8,6 +8,7 @@ notify-send -i $SETUP_ROOT/dotfiles/setup-scripts/resources/white-brush.png "[IN
 cp -rv $SETUP_ROOT/dotfiles/.scripts $HOME
 
 sudo cat $SETUP_ROOT/dotfiles/environment >> /etc/environment
+[ -d $HOME/Pictures/Screenshots ] || mkdir -p $HOME/Pictures/Screenshots
 
 echo "[INFO]: Copying wallpapers..."
 [ -d $HOME/Pictures/Wallpapers ] || mkdir -p $HOME/Pictures/Wallpapers
@@ -30,3 +31,5 @@ sed -i "s/$replace_user/$USER/g" $HOME/.zshrc $HOME/.config/sxhkd/sxhkdrc*
 
 # change shell to zsh, will require password and reboot to apply changes
 chsh -s /usr/bin/zsh
+
+$SETUP_ROOT/dotfiles/setup-scripts/kb-layout.sh
