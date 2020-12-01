@@ -26,7 +26,7 @@ cp -rv $SETUP_ROOT/dotfiles/global-config/. $HOME
 # install plugins for nvim
 nvim -E -s -u "$HOME/.config/nvim/init.vim" +PlugInstall +qall
 
-sed -i "s/$replace_user/$USER/g" $HOME/.zshrc $HOME/.config/sxhkd/sxhkdrc
+sed -i "s/$replace_user/$USER/g" $HOME/.zshrc $HOME/.config/sxhkd/sxhkdrc*
 
 # change shell to zsh, will require password and reboot to apply changes
 chsh -s /usr/bin/zsh
