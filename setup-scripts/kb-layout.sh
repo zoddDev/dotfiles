@@ -2,7 +2,7 @@
 
 echo -n "Select your keyboard layout (e.g. us) " && read REPLY
 
-[ -z $REPLY ]      || exit 1
+[ -z $REPLY ]      && exit 1
 setxkbmap "$REPLY" || exit 1
 
 echo "[INFO]: Selected keyboard layout: $REPLY"
