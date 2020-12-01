@@ -12,10 +12,14 @@ sudo cat $SETUP_ROOT/dotfiles/environment >> /etc/environment
 [ -d $HOME/Pictures/Wallpapers ] || mkdir -p $HOME/Pictures/Wallpapers
 cp -rv $SETUP_ROOT/dotfiles/Wallpapers $HOME/Pictures/Wallpapers
 
-cp -rv $SETUP_ROOT/dotfiles/.scripts $HOME
-cp -rv $SETUP_ROOT/dotfiles/.fonts $HOME
-cp -rv $SETUP_ROOT/dotfiles/.themes $HOME
-cp -rv $SETUP_ROOT/dotfiles/.icons $HOME
+echo "[INFO]: Copying scripts..."
+cp -r $SETUP_ROOT/dotfiles/.scripts $HOME
+echo "[INFO]: Copying fonts..."
+cp -r $SETUP_ROOT/dotfiles/.fonts $HOME
+echo "[INFO]: Copying themes..."
+cp -r $SETUP_ROOT/dotfiles/.themes $HOME
+echo "[INFO]: Copying icons..."
+cp -r $SETUP_ROOT/dotfiles/.icons $HOME
 
 cp -rv $SETUP_ROOT/dotfiles/global-config/. $HOME
 
