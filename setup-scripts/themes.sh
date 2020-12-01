@@ -14,8 +14,8 @@ cp -rv $SETUP_ROOT/dotfiles/Wallpapers $HOME/Pictures/Wallpapers
 
 cp -rv $SETUP_ROOT/dotfiles/.scripts $HOME
 cp -rv $SETUP_ROOT/dotfiles/.fonts $HOME
-cp -rv $SETUP_ROOT/dotfiles/.icons $HOME
 cp -rv $SETUP_ROOT/dotfiles/.themes $HOME
+cp -rv $SETUP_ROOT/dotfiles/.icons $HOME
 
 cp -rv $SETUP_ROOT/dotfiles/global-config/. $HOME
 
