@@ -13,3 +13,6 @@
 [submodule "themes/PinkNord"]
 	path = themes/PinkNord
 	url = https://github.com/zodd18/PinkNord.git
+[submodule "themes/Gruvbox"]
+	path = themes/Gruvbox
+	url = https://github.com/zodd18/Gruvbox.git

@@ -1,9 +1,0 @@
-#!/bin/bash
-bspc monitor -d    ﳁ   ﭮ  
-
-bspc config border_width         10
-bspc config focused_border_color "#928374"
-bspc config normal_border_color "#282828"
-
-$HOME/.config/bspwm/bspborders &
-$HOME/.scripts/autostart.bspwm
