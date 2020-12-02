@@ -2,9 +2,10 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/zodd/.gtkrc-2.0.mine"
-gtk-theme-name="Fleon"
-gtk-icon-theme-name="oomox-pink-nord_icon_alternative"
+gtk-theme-name="pink-nord-alternative-theme"
+gtk-icon-theme-name="pink-nord-alternative-icons"
 gtk-font-name="Cantarell 9"
+gtk-cursor-theme-name="DeppinWhite-cursors"
 gtk-cursor-theme-size=0
 gtk-toolbar-style=GTK_TOOLBAR_BOTH_HORIZ
 gtk-toolbar-icon-size=GTK_ICON_SIZE_LARGE_TOOLBAR
