@@ -234,7 +234,7 @@ export PATH="/home/zodd/.stack/snapshots/x86_64-linux-tinfo6/fe767865424443a2eed
 
 export DOTFILES="$HOME/Documents/git-lab/dotfiles"
 export BROWSER="firefox"
-export WALLPAPERS="$HOME/Pictures/Wallpapers/Wallpapers"
+export WALLPAPERS="$HOME/Pictures/Wallpapers"
 export PINK_NORD="$DOTFILES/themes/PinkNord"
 export SOLARIZED="$DOTFILES/themes/SolarizedDark"
 export GRUVBOX="$DOTFILES/themes/Gruvbox"
