@@ -1,0 +1,12 @@
+[geometry]
+posx=526
+posy=260
+sizex=843
+sizey=556
+
+[nitrogen]
+view=icon
+recurse=true
+sort=alpha
+icon_caps=false
+dirs=/home/zodd/Pictures/Wallpapers/gruvbox-theme;

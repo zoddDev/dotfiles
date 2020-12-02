@@ -1,0 +1,13 @@
+#! /bin/bash
+
+package=$1
+
+if [ ! -d $HOME/Downloads/git-downloads ]; then
+    mkdir $HOME/Downloads
+    mkdir $HOME/Downloads/git-downloads
+fi
+
+cd $HOME/Downloads/git-downloads
+git clone "$package" 
+cd "$(basename "$package" .git)" && makepkg -si
+

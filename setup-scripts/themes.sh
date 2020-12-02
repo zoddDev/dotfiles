@@ -11,7 +11,7 @@ sudo cat $SETUP_ROOT/dotfiles/environment >> /etc/environment
 [ -d $HOME/Pictures/Screenshots ] || mkdir -p $HOME/Pictures/Screenshots
 
 echo "[INFO]: Copying wallpapers..."
-cp -r $SETUP_ROOT/dotfiles/Wallpapers $HOME/Pictures
+cp -r $SETUP_ROOT/dotfiles/.wallpapers $HOME
 echo "[INFO]: Copying scripts..."
 cp -r $SETUP_ROOT/dotfiles/.scripts $HOME
 echo "[INFO]: Copying fonts..."

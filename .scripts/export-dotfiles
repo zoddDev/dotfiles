@@ -63,7 +63,7 @@ then
     [[ $* == *--fonts* || $* == -*f* ]] && echo "copying fonts..." && cp -r $HOME/.fonts/ $DOTFILES
     [[ $* == *--themes* || $* == -*t* ]] && echo "copying themes..." && cp -r $HOME/.themes/ $DOTFILES
     [[ $* == *--icons* || $* == -*i* ]] && echo "copying icons..." && cp -r $HOME/.icons/ $DOTFILES
-    [[ $* == *--wallpapers* || $* == -*w* ]] && echo "copying wallpapers..." && cp -r $HOME/Pictures/Wallpapers $DOTFILES
+    [[ $* == *--wallpapers* || $* == -*w* ]] && echo "copying wallpapers..." && cp -r $HOME/.wallpapers $DOTFILES
 
     echo
     figlet "done !"
