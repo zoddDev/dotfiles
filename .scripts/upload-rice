@@ -4,7 +4,7 @@ theme_name=$1
 
 echo [INFO]: updating $theme_name rice ...
 
-theme_dir="$(dirname $DOTFILES)/${theme_name}"
+theme_dir="$DOTFILES/themes/${theme_name}"
 
 [ ! -d $theme_dir ] && echo [ERROR]: theme: \'$theme_dir\' not found && exit 1
 
@@ -13,6 +13,6 @@ cd $theme_dir
 [ -d .git ] || git init && git remote add origin "https://github.com/zodd18/$theme_name"
 
 git add * 
-git commit -m "update"
+git commit -m "Minor changes"
 git push -u origin master
 

@@ -164,7 +164,16 @@ echo [INFO]: copying wallpapers...
 
 wallpapers_dir="$HOME/.wallpapers/$(cat $theme_config/current_theme)-theme"
 [ -d $theme_dir/.wallpapers ] || mkdir $theme_dir/.wallpapers
+[ -d $theme_dir/.icons ] || mkdir $theme_dir/.icons
+[ -d $theme_dir/.themes ] || mkdir $theme_dir/.themes
 cp -r $wallpapers_dir $theme_dir/.wallpapers || echo [ERROR]: no wallpapers found!
+
+simple_rice_name=$(cat $HOME/.config/current_theme)
+if [[ $* == *--all* || $* == -*a* ]]; then
+    echo "[INFO]: copying icons and themes..."
+    cp -r $HOME/.icons/$simple_rice_name-icons* $theme_dir/.icons
+    cp -r $HOME/.themes/$simple_rice_name-theme* $theme_dir/.themes
+fi
 
 echo
 echo [INFO]: finished copying config files
