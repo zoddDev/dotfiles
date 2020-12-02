@@ -4,3 +4,6 @@
 [submodule "global-config/.oh-my-zsh"]
 	path = global-config/.oh-my-zsh
 	url = https://github.com/ohmyzsh/ohmyzsh
+[submodule "themes/Nord"]
+	path = themes/Nord
+	url = https://github.com/zodd18/Nord.git
