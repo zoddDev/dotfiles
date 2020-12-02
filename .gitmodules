@@ -22,3 +22,6 @@
 [submodule "themes/Horizon"]
 	path = themes/Horizon
 	url = https://github.com/zodd18/Horizon.git
+[submodule "themes/Ayu"]
+	path = themes/Ayu
+	url = https://github.com/zodd18/Ayu.git
