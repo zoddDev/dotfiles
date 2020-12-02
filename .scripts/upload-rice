@@ -10,9 +10,19 @@ theme_dir="$DOTFILES/themes/${theme_name}"
 
 cd $theme_dir
 
-[ -d .git ] || git init && git remote add origin "https://github.com/zodd18/$theme_name"
+new=0
+[ ! -d .git ] && new=1
+[ ! -d .git ] && git init && git remote add origin "https://github.com/zodd18/$theme_name"
 
 git add * 
+git add ./.* 
+git add ./.
 git commit -m "Minor changes"
 git push -u origin master
 
+if [[ $new -eq 1 || $* == *--submodule* || $* == -*submodule* ]];
+then
+    cd $DOTFILES
+    git rm -r --cached ./themes/$theme_name
+    git submodule add https://github.com/zodd18/$theme_name.git ./themes/$theme_name
+fi
