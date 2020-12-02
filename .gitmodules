@@ -7,3 +7,6 @@
 [submodule "themes/Nord"]
 	path = themes/Nord
 	url = https://github.com/zodd18/Nord.git
+[submodule "themes/PinkNordAlternative"]
+	path = themes/PinkNordAlternative
+	url = https://github.com/zodd18/PinkNordAlternative.git
