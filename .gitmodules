@@ -10,3 +10,6 @@
 [submodule "themes/PinkNordAlternative"]
 	path = themes/PinkNordAlternative
 	url = https://github.com/zodd18/PinkNordAlternative.git
+[submodule "themes/PinkNord"]
+	path = themes/PinkNord
+	url = https://github.com/zodd18/PinkNord.git
