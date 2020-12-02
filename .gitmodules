@@ -16,3 +16,6 @@
 [submodule "themes/Gruvbox"]
 	path = themes/Gruvbox
 	url = https://github.com/zodd18/Gruvbox.git
+[submodule "themes/SolarizedDark"]
+	path = themes/SolarizedDark
+	url = https://github.com/zodd18/SolarizedDark.git
