@@ -2,9 +2,9 @@
 
 echo "[START]: general-packages installation..."
 
-sudo pacman -Qi pacutils || sudo pacman -S pacutils --needed --noconfirm --overwrite "*"
-#sudo pacman -Sy --needed --noconfirm --overwrite "*" `cat ./setup-scripts/resources/pacman-packages` || exit 1
-pacinstall --no-confirm --resolve-conflicts=all `cat ./setup-scripts/resources/pacman-packages` || exit 1
+#sudo pacman -Qi pacutils || sudo pacman -S pacutils --needed --noconfirm --overwrite "*"
+#pacinstall --no-confirm --resolve-conflicts=all `cat ./setup-scripts/resources/pacman-packages` || exit 1
+sudo pacman -Sy --needed --noconfirm --overwrite "*" `cat ./setup-scripts/resources/pacman-packages` --ask 4 || exit 1
 
 # ranger icons:
 devicons_dir=$HOME/.config/ranger/plugins/ranger_devicons
