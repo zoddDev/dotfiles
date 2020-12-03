@@ -19,7 +19,7 @@ function setup_config {
     cp $HOME/.bashrc $HOME/.bashrc-backup
     cp $HOME/.zshrc $HOME/.zshrc-backup
 
-    nohup notify-send -i $SETUP_ROOT/dotfiles/setup-scripts/resources/white-brush.png "[INFO]: copying \"$config_name\" config files..." &
+    #nohup notify-send -i $SETUP_ROOT/dotfiles/setup-scripts/resources/white-brush.png "[INFO]: copying \"$config_name\" config files..." &
 
     #
     # copying theme dotfiles
@@ -44,10 +44,11 @@ function setup_config {
     #nohup $SETUP_ROOT/dotfiles/setup-scripts/set-spotify-theme.sh &
 
     echo "[FINISHED]: theme installation"
-    nohup notify-send -i $SETUP_ROOT/dotfiles/setup-scripts/resources/white-brush.png "[INFO]: FINISHED! Enjoy your new theme :)" &
+    #nohup notify-send -i $SETUP_ROOT/dotfiles/setup-scripts/resources/white-brush.png "[INFO]: FINISHED! Enjoy your new theme :)" &
 
     rm $HOME/README.md > /dev/null
 
+    nohup nvim -E -s -u "$HOME/.config/nvim/init.vim" +PlugInstall +qall &
 
     exit 0
 }
