@@ -37,13 +37,17 @@ then
     cp $HOME/.config/bspwm/{bspwmrc,noswallow,terminals} $DOTFILES/shared-config/.config/bspwm
 
     # sxhkd
-    mkdir -p $DOTFILES/shared-config/.config/sxhkd &> /dev/null
+    [ -d $DOTFILES/shared-config/.config/sxhkd ] || mkdir -p $DOTFILES/shared-config/.config/sxhkd
     cp $HOME/.config/sxhkd/{sxhkdrc.bspwm,sxhkdrc.openbox} $DOTFILES/shared-config/.config/sxhkd
     [ `ps -e | grep bspwm | wc -l` -gt 0 ] && cp $HOME/.config/sxhkd/sxhkdrc $DOTFILES/shared-config/.config/sxhkd/sxhkdrc.bspwm
     [ `ps -e | grep openbox | wc -l` -gt 0 ] && cp $HOME/.config/sxhkd/sxhkdrc $DOTFILES/shared-config/.config/sxhkd/sxhkdrc.openbox
 
     # ranger
     cp -r $HOME/.config/ranger $DOTFILES/shared-config/.config &> /dev/null
+
+    # rofi
+    [ -d $DOTFILES/shared-config/.config/rofi ] || mkdir -p $DOTFILES/shared-config/.config/rofi
+    cp -r $HOME/.config/rofi/config $DOTFILES/shared-config/.config/rofi
 
     # thunar
     cp $HOME/.config/thunar $DOTFILES/shared-config/.config
@@ -126,7 +130,7 @@ mkdir $theme_config/neofetch &> /dev/null
 cp -r $HOME/.config/neofetch/{ascii,image.png,launch-neofetch.sh} $theme_config/neofetch
 
 mkdir -p $theme_config/rofi &> /dev/null
-cp -r $HOME/.config/rofi/{config,config.rasi,launch-rofi.sh} $theme_config/rofi
+cp -r $HOME/.config/rofi/{config.rasi,launch-rofi.sh} $theme_config/rofi
 
 # polybar
 mkdir $theme_config/polybar &> /dev/null

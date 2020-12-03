@@ -124,9 +124,9 @@ alias git-d='cd $HOME/Downloads/git-downloads'
 alias javadir='cd $HOME/Dropbox/Programming/Java'
 
 # custom themes directories
-alias pink-nord="cd $HOME/Documents/git-lab/dotfiles/themes/PinkNord"
-alias gruvbox="cd $HOME/Documents/git-lab/dotfiles/themes/Gruvbox"
-alias solarized="cd $HOME/Documents/git-lab/dotfiles/themes/SolarizedDark"
+alias pink-nord="cd $HOME/Documents/git-lab/dotfiles/rices/PinkNord"
+alias gruvbox="cd $HOME/Documents/git-lab/dotfiles/rices/Gruvbox"
+alias solarized="cd $HOME/Documents/git-lab/dotfiles/rices/SolarizedDark"
 
 
 # ---------------------------------------- File Editing ----------------------------------------
@@ -237,9 +237,9 @@ export PATH="/home/zodd/.stack/snapshots/x86_64-linux-tinfo6/fe767865424443a2eed
 export DOTFILES="$HOME/Documents/git-lab/dotfiles"
 export BROWSER="firefox"
 export WALLPAPERS="$HOME/.wallpapers"
-export PINK_NORD="$DOTFILES/themes/PinkNord"
-export SOLARIZED="$DOTFILES/themes/SolarizedDark"
-export GRUVBOX="$DOTFILES/themes/Gruvbox"
+export PINK_NORD="$DOTFILES/rices/PinkNord"
+export SOLARIZED="$DOTFILES/rices/SolarizedDark"
+export GRUVBOX="$DOTFILES/rices/Gruvbox"
 
 #ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=2,regular,underline"
 
