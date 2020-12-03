@@ -9,7 +9,7 @@ function change_theme {
     chosen=$1
     [[ $chosen == $current_theme ]] && notify-send -i ~/.config/polybar/scripts/resources/white-brush.png "[WARNING]: You are already using this theme!" && return 1
 
-    cd $DOTFILES && nohup $SHELL -c "~/.config/neofetch/launch-neofetch.sh ; $DOTFILES/setup-scripts/rices.sh $chosen ; ~/.config/polybar/scripts/after-theme-swap.sh"
+    nohup $SHELL -c "cd $DOTFILES && $DOTFILES/setup-scripts/rices.sh $chosen ; ~/.config/polybar/scripts/after-theme-swap.sh"
 }
 
 

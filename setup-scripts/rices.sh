@@ -50,6 +50,8 @@ function setup_config {
 
     nohup nvim -E -s -u "$HOME/.config/nvim/init.vim" +PlugInstall +qall &
 
+    /bin/neofetch --clean
+
     exit 0
 }
 

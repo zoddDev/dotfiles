@@ -19878,3 +19878,14 @@ XIO:  fatal IO error 0 (Success) on X server ":0"
 polybar|warn:  Termination signal received, shutting down...
 XIO:  fatal IO error 4 (Interrupted system call) on X server ":0"
       after 8333 requests (8333 known processed) with 0 events remaining.
+polybar: no process found
+polybar|warn:  No monitor specified, using "HDMI-2"
+polybar|warn:  pulseaudio: using default sink alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo
+polybar|warn:  Termination signal received, shutting down...
+polybar: no process found
+polybar|warn:  No monitor specified, using "HDMI-2"
+polybar|warn:  pulseaudio: using default sink alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo
+polybar|warn:  Termination signal received, shutting down...
+Vim: Caught deadly signal 'SIGHUP'
+
+Vim: Finished.
