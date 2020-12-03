@@ -12,7 +12,7 @@ function setup_config {
     # args
     config_name=$1
 
-    [ -z $(ls -a ./themes/$config_name | grep -v -w '^\.') ] && ./setup-scripts/download-rice.sh $config_name
+    [ -z "$(ls -a ./themes/$config_name | grep -v -w '^\.')" ] && ./setup-scripts/download-rice.sh $config_name
     
     # backup of .xinitrc, .bashrc and .zshrc
     cp $HOME/.xinitrc $HOME/.xinitrc-backup
@@ -29,7 +29,7 @@ function setup_config {
 
     #nohup cp -r $SETUP_ROOT/dotfiles/global-config/. $HOME &> /dev/null
     nohup rm -rf $HOME/.oh-my-zsh/additional/* &> /dev/null
-    nohup cp -r -a $SETUP_ROOT/dotfiles/themes/$config_name/. $HOME #&> /dev/null
+    rsync -rav $SETUP_ROOT/dotfiles/themes/$config_name/. $HOME #&> /dev/null
     nohup dconf load /org/gnome/gedit/ < $HOME/.config/gedit-dump.dconf
 
     #
