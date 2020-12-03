@@ -42,7 +42,7 @@ Here are some details about my setup:
 
 ## [Gruvbox](https://github.com/zodd18/Gruvbox)
 ![alt text](screenshots/Gruvbox.png)
-![alt text](themes/Gruvbox/screenshot.png) 
+![alt text](https://github.com/zodd18/Gruvbox/blob/master/screenshot.png) 
 
 <br/><br/>
 
