@@ -30,22 +30,22 @@ Here are some details about my setup:
 
 <br/><br/>
 
-## ## [PinkNordAlternative](https://github.com/zodd18/PinkNordAlternative) [(Fleon based)](https://github.com/owl4ce/dotfiles)
+## [PinkNordAlternative](https://github.com/zodd18/PinkNordAlternative) [(Fleon based)](https://github.com/owl4ce/dotfiles)
 ![alt text](screenshots/Alternative-pinknord.png)
 
 <br/><br/>
 
-## ## [PinkNord](https://github.com/zodd18/PinkNord)
+## [PinkNord](https://github.com/zodd18/PinkNord)
 ![alt text](screenshots/PinkNord.png)
 
 <br/><br/>
 
-## ## [Gruvbox](https://github.com/zodd18/Gruvbox)
+## [Gruvbox](https://github.com/zodd18/Gruvbox)
 ![alt text](screenshots/Gruvbox.png)
 
 <br/><br/>
 
-## ## [SolarizedDark](https://github.com/zodd18/SolarizedDark)
+## [SolarizedDark](https://github.com/zodd18/SolarizedDark)
 ![alt text](screenshots/SolarizedDark.png)
 
 <br/><br/>
