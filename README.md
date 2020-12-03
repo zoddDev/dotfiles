@@ -37,12 +37,6 @@ Here are some details about my setup:
 
 <br/><br/>
 
-## [PinkNordAlternative](https://github.com/zodd18/PinkNordAlternative) [(Fleon based)](https://github.com/owl4ce/dotfiles)
-![alt text](https://github.com/zodd18/PinkNordAlternative/blob/master/screenshot.png) 
-
-
-<br/><br/>
-
 ## [PinkNord](https://github.com/zodd18/PinkNord)
 ![alt text](https://github.com/zodd18/PinkNord/blob/master/screenshot.png) 
 
@@ -52,6 +46,11 @@ Here are some details about my setup:
 ## [SolarizedDark](https://github.com/zodd18/SolarizedDark)
 ![alt text](https://github.com/zodd18/SolarizedDark/blob/master/screenshot.png) 
 
+
+<br/><br/>
+
+## [PinkNordAlternative](https://github.com/zodd18/PinkNordAlternative) [(Fleon based)](https://github.com/owl4ce/dotfiles)
+![alt text](https://github.com/zodd18/PinkNordAlternative/blob/master/screenshot.png) 
 
 <br/><br/>
 
