@@ -28,9 +28,9 @@ function setup_config {
     echo "[INFO]: applying \"$config_name\" theme..."
 
     #nohup cp -r $SETUP_ROOT/dotfiles/global-config/. $HOME &> /dev/null
-    nohup rm -rf $HOME/.oh-my-zsh/additional/* &> /dev/null
-    rsync -rav $SETUP_ROOT/dotfiles/themes/$config_name/. $HOME #&> /dev/null
-    nohup dconf load /org/gnome/gedit/ < $HOME/.config/gedit-dump.dconf
+    nohup rm -rf $HOME/.oh-my-zsh/additional/* &> /dev/null &
+    nohup rsync -rav $SETUP_ROOT/dotfiles/themes/$config_name/. $HOME & #&> /dev/null 
+    nohup dconf load /org/gnome/gedit/ < $HOME/.config/gedit-dump.dconf &
 
     #
     # configuring discord theme (beautifuldiscord)
