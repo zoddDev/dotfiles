@@ -2,6 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
+ZSH_DISABLE_COMPFIX="true"
 export ZSH="/home/zodd/.oh-my-zsh"
 DISABLE_AUTO_UPDATE="true"
 
