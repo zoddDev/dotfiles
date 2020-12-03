@@ -70,7 +70,7 @@ Here are some details about my setup:
 
 ## Download
 ```
-mkdir -p ~/Documents/git-lab && git clone https://github.com/zodd18/dotfiles.git ~/Documents/git-lab/dotfiles
+mkdir -p ~/Documents/git-lab && git clone https://github.com/zodd18/dotfiles.git ~/Documents/git-lab/dotfiles && cd ~/Documents/git-lab/dotfiles
 ```
 
 ## Executing the script
