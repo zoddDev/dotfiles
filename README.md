@@ -25,27 +25,27 @@ Here are some details about my setup:
 
 ![alt text](readme-resources/themes.png)
 
-## Horizon
+## [Horizon](https://github.com/zodd18/Horizon)
 ![alt text](screenshots/Horizon.png)
 
 <br/><br/>
 
-## PinkNord Alternative [(Fleon based)](https://github.com/owl4ce/dotfiles)
+## [PinkNordAlternative](https://github.com/zodd18/PinkNordAlternative) [(Fleon based)](https://github.com/owl4ce/dotfiles)
 ![alt text](screenshots/Alternative-pinknord.png)
 
 <br/><br/>
 
-## PinkNord
+## [PinkNord](https://github.com/zodd18/PinkNord)
 ![alt text](screenshots/PinkNord.png)
 
 <br/><br/>
 
-## Gruvbox
+## [Gruvbox](https://github.com/zodd18/Gruvbox)
 ![alt text](screenshots/Gruvbox.png)
 
 <br/><br/>
 
-## SolarizedDark
+## [SolarizedDark](https://github.com/zodd18/SolarizedDark)
 ![alt text](screenshots/SolarizedDark.png)
 
 <br/><br/>
