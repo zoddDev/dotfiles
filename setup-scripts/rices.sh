@@ -19,7 +19,7 @@ function setup_config {
     cp $HOME/.bashrc $HOME/.bashrc-backup
     cp $HOME/.zshrc $HOME/.zshrc-backup
 
-    #nohup notify-send -i $SETUP_ROOT/dotfiles/setup-scripts/resources/white-brush.png "[INFO]: copying \"$config_name\" config files..." &
+    nohup notify-send -i $SETUP_ROOT/dotfiles/setup-scripts/resources/white-brush.png "[INFO]: copying \"$config_name\" config files..." &
 
     #
     # copying theme dotfiles
