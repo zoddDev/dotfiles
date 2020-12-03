@@ -16,7 +16,8 @@ echo "[START]: aur/external-packages installation..."
 # https://aur.archlinux.org/yay.git
 sudo pacman -Qi yay || ./setup-scripts/aur-get https://aur.archlinux.org/yay.git
 
-yay -S --noconfirm --needed --mflags --skipinteg --overwrite "*" `cat ./setup-scripts/resources/aur-packages` || exit 1
+yes | yay -Syu
+yes | yay -S --needed --mflags --skipinteg --overwrite "*" --nodeps --nodeps `cat ./setup-scripts/resources/aur-packages` || exit 1
 sudo chmod a+wr /opt/spotify
 sudo chmod a+wr /opt/spotify/Apps -R
 
