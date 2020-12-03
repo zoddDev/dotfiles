@@ -26,3 +26,5 @@ then
     git rm -r --cached ./themes/$theme_name
     git submodule add https://github.com/zodd18/$theme_name.git ./themes/$theme_name
 fi
+
+upload-dotfiles
