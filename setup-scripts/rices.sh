@@ -11,6 +11,8 @@ function setup_config {
     replace_user="zodd"
     # args
     config_name=$1
+
+    [ -z $(ls ./themes/$config_name) ] && ./setup-scripts/download-rice.sh $config_name
     
     # backup of .xinitrc, .bashrc and .zshrc
     cp $HOME/.xinitrc $HOME/.xinitrc-backup
