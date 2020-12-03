@@ -36,7 +36,7 @@ shift + super + d
 
 # ranger wallpapers
 shift + super + w
-    kitty -e ranger /home/zodd/Pictures/Wallpapers/Wallpapers/nord-theme
+    kitty -e ranger /home/zodd/.wallpapers
 
 # nitrogen
 ctrl + alt + w

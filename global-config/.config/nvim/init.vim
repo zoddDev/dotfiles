@@ -100,7 +100,6 @@ Plug 'preservim/nerdcommenter'
 Plug 'chrisbra/colorizer'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'morhetz/gruvbox'
 Plug 'dracula/vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'miyakogi/sidepanel.vim'
@@ -108,6 +107,8 @@ Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'ntk148v/vim-horizon'
 Plug 'ayu-theme/ayu-vim'
+Plug 'lifepillar/vim-gruvbox8'
+Plug 'sainnhe/gruvbox-material'
 call plug#end()
 
 " }
