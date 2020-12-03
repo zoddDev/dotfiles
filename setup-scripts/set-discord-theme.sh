@@ -17,7 +17,7 @@ fi
                                                                                                                                                     
 python -m beautifuldiscord --revert
 sleep 3
-python -m beautifuldiscord --css $HOME/.config/discord/themes/$beautifuldiscord_theme
+python -m beautifuldiscord --css $HOME/.config/discord/rices/$beautifuldiscord_theme
 sleep 3
 killall discord
 

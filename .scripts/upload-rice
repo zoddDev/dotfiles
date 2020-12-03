@@ -4,7 +4,7 @@ theme_name=$1
 
 echo [INFO]: updating $theme_name rice ...
 
-theme_dir="$DOTFILES/themes/${theme_name}"
+theme_dir="$DOTFILES/rices/${theme_name}"
 
 [ ! -d $theme_dir ] && echo [ERROR]: theme: \'$theme_dir\' not found && exit 1
 
@@ -23,8 +23,8 @@ git push
 if [[ $new -eq 1 || $* == *--submodule* || $* == -*submodule* ]];
 then
     cd $DOTFILES
-    git rm -r --cached ./themes/$theme_name
-    git submodule add https://github.com/zodd18/$theme_name.git ./themes/$theme_name
+    git rm -r --cached ./rices/$theme_name
+    git submodule add https://github.com/zodd18/$theme_name.git ./rices/$theme_name
 fi
 
 upload-dotfiles

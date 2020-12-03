@@ -3,61 +3,61 @@
 if [[ $* == *--update* || $* == -*u* ]];
 then
     echo
-    echo "updating dotfiles global configuration..."
+    echo "updating dotfiles shared configuration..."
     echo
 
     # fish
-    [ -d $DOTFILES/global-config/.config/fish ] || mkdir -p $DOTFILES/global-config/.config/fish
-    cp $HOME/.config/fish/{config.fish,fish_variables} $DOTFILES/global-config/.config/fish
+    [ -d $DOTFILES/shared-config/.config/fish ] || mkdir -p $DOTFILES/shared-config/.config/fish
+    cp $HOME/.config/fish/{config.fish,fish_variables} $DOTFILES/shared-config/.config/fish
 
     # zsh
-    cp -r $HOME/{.zshrc,.oh-my-zsh} $DOTFILES/global-config &> /dev/null
+    cp -r $HOME/{.zshrc,.oh-my-zsh} $DOTFILES/shared-config &> /dev/null
 
     # kitty
-    cp -r $HOME/.config/kitty/kitty.conf $DOTFILES/global-config/.config/kitty
+    cp -r $HOME/.config/kitty/kitty.conf $DOTFILES/shared-config/.config/kitty
 
     # neofetch
-    [ -d $DOTFILES/global-config/.config/neofetch ] || mkdir -p $DOTFILES/global-config/.config/neofetch
-    cp -r $HOME/.config/neofetch/config.conf $DOTFILES/global-config/.config/neofetch
+    [ -d $DOTFILES/shared-config/.config/neofetch ] || mkdir -p $DOTFILES/shared-config/.config/neofetch
+    cp -r $HOME/.config/neofetch/config.conf $DOTFILES/shared-config/.config/neofetch
 
     # nvim
-    cp -r $HOME/.config/nvim $DOTFILES/global-config/.config &> /dev/null
-    rm $DOTFILES/global-config/.config/nvim/colorscheme.vim
+    cp -r $HOME/.config/nvim $DOTFILES/shared-config/.config &> /dev/null
+    rm $DOTFILES/shared-config/.config/nvim/colorscheme.vim
 
     # gedit
-    mkdir -p $DOTFILES/global-config/.local/share/gedit &> /dev/null
-    cp -r $HOME/.local/share/gedit/styles $DOTFILES/global-config/.local/share/gedit
+    mkdir -p $DOTFILES/shared-config/.local/share/gedit &> /dev/null
+    cp -r $HOME/.local/share/gedit/styles $DOTFILES/shared-config/.local/share/gedit
 
     # browser startpage
-    cp $HOME/.config/startpage/{index.html,script.js} $DOTFILES/global-config/.config/startpage
-    [ -d $DOTFILES/global-config/.config/startpage/resources ] || mkdir -p $DOTFILES/global-config/.config/startpage/resources
+    cp $HOME/.config/startpage/{index.html,script.js} $DOTFILES/shared-config/.config/startpage
+    [ -d $DOTFILES/shared-config/.config/startpage/resources ] || mkdir -p $DOTFILES/shared-config/.config/startpage/resources
 
     # bspwm
-    [ -d $DOTFILES/global-config/.config/bspwm ] || mkdir -p $DOTFILES/global-config/.config/bspwm
-    cp $HOME/.config/bspwm/{bspwmrc,noswallow,terminals} $DOTFILES/global-config/.config/bspwm
+    [ -d $DOTFILES/shared-config/.config/bspwm ] || mkdir -p $DOTFILES/shared-config/.config/bspwm
+    cp $HOME/.config/bspwm/{bspwmrc,noswallow,terminals} $DOTFILES/shared-config/.config/bspwm
 
     # sxhkd
-    mkdir -p $DOTFILES/global-config/.config/sxhkd &> /dev/null
-    cp $HOME/.config/sxhkd/{sxhkdrc.bspwm,sxhkdrc.openbox} $DOTFILES/global-config/.config/sxhkd
-    [ `ps -e | grep bspwm | wc -l` -gt 0 ] && cp $HOME/.config/sxhkd/sxhkdrc $DOTFILES/global-config/.config/sxhkd/sxhkdrc.bspwm
-    [ `ps -e | grep openbox | wc -l` -gt 0 ] && cp $HOME/.config/sxhkd/sxhkdrc $DOTFILES/global-config/.config/sxhkd/sxhkdrc.openbox
+    mkdir -p $DOTFILES/shared-config/.config/sxhkd &> /dev/null
+    cp $HOME/.config/sxhkd/{sxhkdrc.bspwm,sxhkdrc.openbox} $DOTFILES/shared-config/.config/sxhkd
+    [ `ps -e | grep bspwm | wc -l` -gt 0 ] && cp $HOME/.config/sxhkd/sxhkdrc $DOTFILES/shared-config/.config/sxhkd/sxhkdrc.bspwm
+    [ `ps -e | grep openbox | wc -l` -gt 0 ] && cp $HOME/.config/sxhkd/sxhkdrc $DOTFILES/shared-config/.config/sxhkd/sxhkdrc.openbox
 
     # ranger
-    cp -r $HOME/.config/ranger $DOTFILES/global-config/.config &> /dev/null
+    cp -r $HOME/.config/ranger $DOTFILES/shared-config/.config &> /dev/null
 
     # thunar
-    cp $HOME/.config/thunar $DOTFILES/global-config/.config
+    cp $HOME/.config/thunar $DOTFILES/shared-config/.config
     
     # ~/.scripts
     cp -r $HOME/.scripts $DOTFILES
 
     # polybar scripts
-    cp -r $HOME/.config/polybar/{scripts,fonts,modules} $DOTFILES/global-config/.config/polybar
+    cp -r $HOME/.config/polybar/{scripts,fonts,modules} $DOTFILES/shared-config/.config/polybar
 
     # .bashrc, .zprofile, .xinitrc
-    cp $HOME/.bashrc $DOTFILES/global-config
-    cp $HOME/.zprofile $DOTFILES/global-config
-    cp $HOME/.xinitrc $DOTFILES/global-config
+    cp $HOME/.bashrc $DOTFILES/shared-config
+    cp $HOME/.zprofile $DOTFILES/shared-config
+    cp $HOME/.xinitrc $DOTFILES/shared-config
 
     # Additional flags
     [[ $* == *--fonts* || $* == -*f* ]] && echo "copying fonts..." && cp -r $HOME/.fonts/ $DOTFILES
@@ -76,9 +76,9 @@ fi
 theme_name=$1
 
 echo [INFO]: preparing $theme_name theme configuration ...
-echo with dotfiles in $DOTFILES ...
+echo with dotfiles in $DOTFILES/rices/$theme_name ...
 
-theme_dir="$DOTFILES/themes/${theme_name}"
+theme_dir="$DOTFILES/rices/${theme_name}"
 
 if [ -d $theme_dir ];
 then

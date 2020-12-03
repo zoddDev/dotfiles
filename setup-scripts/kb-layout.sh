@@ -6,5 +6,5 @@ echo -n "Select your keyboard layout (e.g. us) " && read REPLY
 setxkbmap "$REPLY" || exit 1
 
 echo "[INFO]: Selected keyboard layout: $REPLY"
-cp ./global-config/.xinitrc $HOME
+cp ./shared-config/.xinitrc $HOME
 sed -i "s/setxkbmap es/setxkbmap $REPLY/g" $HOME/.xinitrc

@@ -14,7 +14,7 @@ echo "[START]: aur/external-packages installation..."
 
 # yay
 # https://aur.archlinux.org/yay.git
-sudo pacman -Qi yay || ./setup-scripts/aur-get https://aur.archlinux.org/yay.git
+sudo pacman -Qi yay || ./.scripts/aur-get https://aur.archlinux.org/yay.git
 
 yes | yay -Syu
 yes | yay -S --needed --mflags --skipinteg --overwrite "*" --nodeps --nodeps `cat ./setup-scripts/resources/aur-packages` || exit 1
@@ -37,6 +37,6 @@ pip install dbus-python
 # BeautifulDiscord
 # https://github.com/leovoel/BeautifulDiscord
 #python3 -m pip install -U https://github.com/leovoel/BeautifulDiscord/archive/master.zip
-# use: python -m beautifuldiscord --css ~/.config/discord/themes/$THEME_NAME
+# use: python -m beautifuldiscord --css ~/.config/discord/rices/$THEME_NAME
 
 echo "[FINISHED]: aur/external-packages installation"

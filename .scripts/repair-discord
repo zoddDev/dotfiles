@@ -11,7 +11,7 @@ function repair {
     killall discord
     
     rm -rf $HOME/.config/discord
-    cp -r $DOTFILES/themes/$theme/.config/discord $HOME/.config
+    cp -r $DOTFILES/rices/$theme/.config/discord $HOME/.config
 
     if [ `ps -e | grep discord | wc -l` -gt 0 ];    
     then    
@@ -21,7 +21,7 @@ function repair {
     fi    
 
     sleep 3    
-    python -m beautifuldiscord --css $HOME/.config/discord/themes/$beautifuldiscord_theme    
+    python -m beautifuldiscord --css $HOME/.config/discord/rices/$beautifuldiscord_theme    
 }
 
 echo "Current theme: $current_theme"
