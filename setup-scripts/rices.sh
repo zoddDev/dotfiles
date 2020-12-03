@@ -19,7 +19,7 @@ function setup_config {
     cp $HOME/.bashrc $HOME/.bashrc-backup
     cp $HOME/.zshrc $HOME/.zshrc-backup
 
-    notify-send -i $SETUP_ROOT/dotfiles/setup-scripts/resources/white-brush.png "[INFO]: copying \"$config_name\" config files..." &
+    nohup notify-send -i $SETUP_ROOT/dotfiles/setup-scripts/resources/white-brush.png "[INFO]: copying \"$config_name\" config files..." &
 
     #
     # copying theme dotfiles
@@ -28,9 +28,10 @@ function setup_config {
     echo "[INFO]: applying \"$config_name\" theme..."
 
     #nohup cp -r $SETUP_ROOT/dotfiles/global-config/. $HOME &> /dev/null
-    nohup rm -rf $HOME/.oh-my-zsh/additional/* &> /dev/null &
-    nohup rsync -rav $SETUP_ROOT/dotfiles/themes/$config_name/. $HOME & #&> /dev/null 
-    nohup dconf load /org/gnome/gedit/ < $HOME/.config/gedit-dump.dconf &
+    rm -rf $HOME/.oh-my-zsh/additional/* &> /dev/null
+    dconf load /org/gnome/gedit/ < $HOME/.config/gedit-dump.dconf
+    rsync -rav $SETUP_ROOT/dotfiles/themes/$config_name/. $HOME
+    sed -i "s/$replace_user/$USER/g" $HOME/.config/nitrogen/*.cfg
 
     #
     # configuring discord theme (beautifuldiscord)
@@ -47,7 +48,6 @@ function setup_config {
 
     rm $HOME/README.md > /dev/null
 
-    sed -i "s/$replace_user/$USER/g" $HOME/.config/nitrogen/*.cfg
 
     exit 0
 }
