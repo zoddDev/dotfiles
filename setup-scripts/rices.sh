@@ -28,6 +28,7 @@ function setup_config {
     echo "[INFO]: applying \"$config_name\" theme..."
 
     #nohup cp -r $SETUP_ROOT/dotfiles/shared-config/. $HOME &> /dev/null
+    cp ./shared-config/.config/neofetch/config.conf $HOME/.config/neofetch
     rm -rf $HOME/.oh-my-zsh/additional/* &> /dev/null
     dconf load /org/gnome/gedit/ < $HOME/.config/gedit-dump.dconf
     rsync -rav $SETUP_ROOT/dotfiles/rices/$config_name/. $HOME
