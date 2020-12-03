@@ -25,3 +25,24 @@
 [submodule "themes/Ayu"]
 	path = themes/Ayu
 	url = https://github.com/zodd18/Ayu.git
+[submodule "rices/Nord"]
+	path = rices/Nord
+	url = https://github.com/zodd18/Nord.git
+[submodule "rices/Gruvbox"]
+	path = rices/Gruvbox
+	url = https://github.com/zodd18/Gruvbox.git
+[submodule "rices/Horizon"]
+	path = rices/Horizon
+	url = https://github.com/zodd18/Horizon.git
+[submodule "rices/PinkNord"]
+	path = rices/PinkNord
+	url = https://github.com/zodd18/PinkNord.git
+[submodule "rices/PinkNordAlternative"]
+	path = rices/PinkNordAlternative
+	url = https://github.com/zodd18/PinkNordAlternative.git
+[submodule "rices/Ayu"]
+	path = rices/Ayu
+	url = https://github.com/zodd18/Ayu.git
+[submodule "rices/SolarizedDark"]
+	path = rices/SolarizedDark
+	url = https://github.com/zodd18/SolarizedDark.git
