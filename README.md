@@ -31,6 +31,12 @@ Here are some details about my setup:
 
 <br/><br/>
 
+## [Gruvbox](https://github.com/zodd18/Gruvbox)
+![alt text](https://github.com/zodd18/Gruvbox/blob/master/screenshot.png) 
+
+
+<br/><br/>
+
 ## [PinkNordAlternative](https://github.com/zodd18/PinkNordAlternative) [(Fleon based)](https://github.com/owl4ce/dotfiles)
 ![alt text](https://github.com/zodd18/PinkNordAlternative/blob/master/screenshot.png) 
 
@@ -40,11 +46,6 @@ Here are some details about my setup:
 ## [PinkNord](https://github.com/zodd18/PinkNord)
 ![alt text](https://github.com/zodd18/PinkNord/blob/master/screenshot.png) 
 
-
-<br/><br/>
-
-## [Gruvbox](https://github.com/zodd18/Gruvbox)
-![alt text](https://github.com/zodd18/Gruvbox/blob/master/screenshot.png) 
 
 <br/><br/>
 
