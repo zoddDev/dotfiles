@@ -213,6 +213,7 @@ alias porn='mpv "http://www.pornhub.com/random"'
 
 # matrix effect (better than cmatrix since it supports terminal transparency)
 alias matrix='unimatrix -s 96'
+alias cmatrix='unimatrix -s 96'
 
 # ---------------------------------------- Music ----------------------------------------
 

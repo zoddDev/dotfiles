@@ -109,6 +109,7 @@ Plug 'ntk148v/vim-horizon'
 Plug 'ayu-theme/ayu-vim'
 Plug 'lifepillar/vim-gruvbox8'
 Plug 'sainnhe/gruvbox-material'
+Plug 'lifepillar/vim-solarized8'
 call plug#end()
 
 " }
