@@ -25,31 +25,31 @@ Here are some details about my setup:
 
 ![alt text](readme-resources/themes.png)
 
-## [Horizon](https://github.com/zodd18/Horizon)
+## [🌟 Horizon](https://github.com/zodd18/Horizon)
 ![alt text](https://github.com/zodd18/Horizon/blob/master/screenshot.png) 
 
 
 <br/><br/>
 
-## [Gruvbox](https://github.com/zodd18/Gruvbox)
+## [🌴 Gruvbox](https://github.com/zodd18/Gruvbox)
 ![alt text](https://github.com/zodd18/Gruvbox/blob/master/screenshot.png) 
 
 
 <br/><br/>
 
-## [PinkNord](https://github.com/zodd18/PinkNord)
+## [🌸 PinkNord](https://github.com/zodd18/PinkNord)
 ![alt text](https://github.com/zodd18/PinkNord/blob/master/screenshot.png) 
 
 
 <br/><br/>
 
-## [SolarizedDark](https://github.com/zodd18/SolarizedDark)
+## [🌊 SolarizedDark](https://github.com/zodd18/SolarizedDark)
 ![alt text](https://github.com/zodd18/SolarizedDark/blob/master/screenshot.png) 
 
 
 <br/><br/>
 
-## [PinkNordAlternative](https://github.com/zodd18/PinkNordAlternative) [(Fleon based)](https://github.com/owl4ce/dotfiles)
+## [🎀 PinkNordAlternative](https://github.com/zodd18/PinkNordAlternative) [(Fleon based)](https://github.com/owl4ce/dotfiles)
 ![alt text](https://github.com/zodd18/PinkNordAlternative/blob/master/screenshot.png) 
 
 <br/><br/>
