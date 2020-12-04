@@ -25,7 +25,7 @@ Here are some details about my setup:
 
 ![alt text](readme-resources/themes.png)
 
-## [🌟 Horizon](https://github.com/zodd18/Horizon)
+## [🍁 Horizon](https://github.com/zodd18/Horizon)
 ![alt text](https://github.com/zodd18/Horizon/blob/master/screenshot.png) 
 
 
