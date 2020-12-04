@@ -6,7 +6,7 @@
 #                 ░▀▀░░▀▀▀░▀░░░▀░▀░▀░▀
 #
 
-$HOME/.scripts/autostart.bspwm
+#$HOME/.scripts/autostart.bspwm
 xsetroot -cursor_name left_ptr &
 sxhkd &
 #nm-applet &

@@ -110,6 +110,8 @@ Plug 'ayu-theme/ayu-vim'
 Plug 'lifepillar/vim-gruvbox8'
 Plug 'sainnhe/gruvbox-material'
 Plug 'lifepillar/vim-solarized8'
+Plug 'andymass/vim-matchup'
+Plug 'zodd18/vim-ocl'
 call plug#end()
 
 " }
