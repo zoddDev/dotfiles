@@ -46,6 +46,10 @@ ctrl + alt + w
 shift + super + r
     kitty -e ranger
 
+# class name
+super + alt + c
+    notify-send "$(xprop | grep 'CLASS')"
+
 # browser
 ctrl + alt + f
     firefox file:///home/$USER/.config/startpage/index.html
