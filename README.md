@@ -52,6 +52,12 @@ Here are some details about my setup:
 ## [🎀 PinkNordAlternative](https://github.com/zodd18/PinkNordAlternative) [(Fleon based)](https://github.com/owl4ce/dotfiles)
 ![alt text](https://github.com/zodd18/PinkNordAlternative/blob/master/screenshot.png) 
 
+
+<br/><br/>
+
+## [🔥 DOOMBOX](https://github.com/zodd18/Doombox)
+![alt text](https://github.com/zodd18/Doombox/blob/master/screenshot.png) 
+
 <br/><br/>
 
 # Custom Theme Swap Utility
