@@ -12,8 +12,6 @@ function setup_config {
     # args
     config_name=$1
 
-    [ -d ./rices/$config_name ] || echo "[ERROR]: no config with name \"$config_name\" found" && notify-send -i $SETUP_ROOT/dotfiles/setup-scripts/resources/white-brush.png "[ERROR]: Selected theme does not exist" &
-
     # download rice if rice config directory is empty
     [ -z "$(ls -a ./rices/$config_name | grep -v -w '^\.')" ] && ./setup-scripts/download-rice.sh $config_name
     
