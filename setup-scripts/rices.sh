@@ -12,6 +12,9 @@ function setup_config {
     # args
     config_name=$1
 
+    [ -d ./rices/$config_name ] || echo "[ERROR]: no config with name \"$config_name\" found" && notify-send -i $SETUP_ROOT/dotfiles/setup-scripts/resources/white-brush.png "[ERROR]: Selected theme does not exist" &
+
+    # download rice if rice config directory is empty
     [ -z "$(ls -a ./rices/$config_name | grep -v -w '^\.')" ] && ./setup-scripts/download-rice.sh $config_name
     
     # backup of .xinitrc, .bashrc and .zshrc
@@ -34,8 +37,12 @@ function setup_config {
     rsync -rav $SETUP_ROOT/dotfiles/rices/$config_name/. $HOME
     sed -i "s/$replace_user/$USER/g" $HOME/.config/nitrogen/*.cfg
 
+    # nvim plugins installation
+    nohup nvim -E -s -u "$HOME/.config/nvim/init.vim" +PlugInstall +qall &
+
     rm $HOME/.config/sxhkd/sxhkdrc.*
     rm $HOME/.config/polybar/config.*
+    rm $HOME/README.md &> /dev/null
 
     #
     # configuring discord theme (beautifuldiscord)
@@ -48,13 +55,6 @@ function setup_config {
     #nohup $SETUP_ROOT/dotfiles/setup-scripts/set-spotify-theme.sh &
 
     echo "[FINISHED]: theme installation"
-    #nohup notify-send -i $SETUP_ROOT/dotfiles/setup-scripts/resources/white-brush.png "[INFO]: FINISHED! Enjoy your new theme :)" &
-
-    rm $HOME/README.md > /dev/null
-
-    nohup nvim -E -s -u "$HOME/.config/nvim/init.vim" +PlugInstall +qall &
-
-    /bin/neofetch --clean
 
     exit 0
 }
@@ -69,6 +69,7 @@ case "$arg" in
     "bw" ) setup_config "BW" ;; 
     "ayu" ) setup_config "Ayu" ;; 
     "nord" ) setup_config "Nord" ;; 
+    "doombox" ) setup_config "Doombox" ;; 
     *) echo "[ERROR]: no config with name \"$arg\" found" && notify-send -i $SETUP_ROOT/dotfiles/setup-scripts/resources/white-brush.png "[ERROR]: Selected theme does not exist" & ;;
 esac
 

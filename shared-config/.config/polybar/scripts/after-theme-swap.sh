@@ -16,7 +16,6 @@ function restart_applications {
     then
         killall bspc 
         killall bspwmrc 
-        #killall bspswallow
 
         $HOME/.config/bspwm/autostart &
         xsetroot -cursor_name left_ptr &
@@ -24,9 +23,9 @@ function restart_applications {
         nitrogen --restore &
         dunst &
         nohup pidof $HOME/.scripts/bspswallow || $HOME/.scripts/bspswallow &
-        $HOME/.config/bspwm/autostart &
     fi
     
+    # reset neofetch cache
     /bin/neofetch --clean &
     
     killall kitty
