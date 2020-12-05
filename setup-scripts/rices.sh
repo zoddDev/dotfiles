@@ -34,6 +34,9 @@ function setup_config {
     rsync -rav $SETUP_ROOT/dotfiles/rices/$config_name/. $HOME
     sed -i "s/$replace_user/$USER/g" $HOME/.config/nitrogen/*.cfg
 
+    rm $HOME/.config/sxhkd/sxhkdrc.*
+    rm $HOME/.config/polybar/config.*
+
     #
     # configuring discord theme (beautifuldiscord)
     #

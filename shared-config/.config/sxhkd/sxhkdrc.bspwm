@@ -14,10 +14,10 @@ super + e
 super + u
     bspc rule -a \* -o state=floating && kitty -e $SHELL -c "figlet update... && sudo pacman -Syu"
 
-# mutt gmail
-ctrl + alt + g
-    kitty -e /bin/zsh -c neomutt
-#
+# class name
+super + alt + c
+    notify-send "$(xprop | grep 'CLASS')"
+
 # restart polybar
 ctrl + alt + p
     ~/.config/polybar/scripts/restart-polybar.sh
@@ -36,7 +36,7 @@ shift + super + d
 
 # ranger wallpapers
 shift + super + w
-    kitty -e ranger /home/zodd/Pictures/Wallpapers/Wallpapers/nord-theme
+    kitty -e ranger /home/zodd/.wallpapers
 
 # nitrogen
 ctrl + alt + w

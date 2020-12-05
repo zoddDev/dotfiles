@@ -46,3 +46,6 @@
 [submodule "rices/SolarizedDark"]
 	path = rices/SolarizedDark
 	url = https://github.com/zodd18/SolarizedDark.git
+[submodule "rices/Doombox"]
+	path = rices/Doombox
+	url = https://github.com/zodd18/Doombox.git
