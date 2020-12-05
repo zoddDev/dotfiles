@@ -13,6 +13,6 @@ function change_theme {
 }
 
 
-chosen=$(echo -e "nord\npink-nord\npink-nord-alternative\ngruvbox\nsolarized-dark\nhorizon\nayu" | rofi -font "Iosevka Bold 12" -show drun -show-icons -width 20 -lines $NUMBER_OF_THEMES -dmenu -i)
+chosen=$(echo -e "nord\npink-nord\npink-nord-alternative\ngruvbox\nsolarized-dark\nhorizon\nayu" | rofi -font "Iosevka Bold 12" -show drun -show-icons -width 20 -lines $NUMBER_OF_THEMES -dmenu -i -config ~/.config/rofi/config)
 
 [ -z $chosen ] || change_theme $chosen
