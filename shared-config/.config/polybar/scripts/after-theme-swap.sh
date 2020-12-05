@@ -23,7 +23,7 @@ function restart_applications {
         compton &
         nitrogen --restore &
         dunst &
-        #pidof $HOME/.scripts/bspswallow || $HOME/.scripts/bspswallow &
+        nohup pidof $HOME/.scripts/bspswallow || $HOME/.scripts/bspswallow &
         $HOME/.config/bspwm/autostart &
     fi
     

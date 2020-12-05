@@ -21,7 +21,7 @@ dunst &
 
 # Swallow
 
-pidof $HOME/.scripts/bspswallow || $HOME/.scripts/bspswallow &
+noup pidof $HOME/.scripts/bspswallow || $HOME/.scripts/bspswallow &
 
 # Workspaces
 
