@@ -8,6 +8,7 @@ alsa-lib
 alsa-plugins
 alsa-topology-conf
 alsa-ucm-conf
+alsa-utils
 aom
 apache
 apparmor
@@ -16,6 +17,7 @@ apr-util
 arc-icon-theme
 archlinux-keyring
 argon2
+asar
 asciiquarium
 aspell
 at-spi2-atk
@@ -57,6 +59,7 @@ cdparanoia
 chromaprint
 cifs-utils
 clucene
+cmake
 code
 colord
 coreutils
@@ -72,9 +75,9 @@ dconf
 dconf-editor
 desktop-file-utils
 device-mapper
+dialog
 diffutils
 ding-libs
-discord
 djvulibre
 dmraid
 dnssec-anchors
@@ -84,6 +87,7 @@ dunst
 e2fsprogs
 efibootmgr
 efivar
+electron
 electron9
 elfutils
 enchant
@@ -124,6 +128,7 @@ gdbm
 gdk-pixbuf2
 gdl
 gegl
+gendesk
 gettext
 ghostscript
 giblib
@@ -151,8 +156,10 @@ gnome-usage
 gnu-free-fonts
 gnupg
 gnutls
+go
 gobject-introspection-runtime
 gom
+gparted
 gpgme
 gpm
 gptfdisk
@@ -177,6 +184,7 @@ gst-plugins-base
 gst-plugins-base-libs
 gst-plugins-good
 gst-plugins-ugly
+gst-python
 gstreamer
 gtk-engine-murrine
 gtk-engines
@@ -205,6 +213,7 @@ hunspell
 hwids
 hwloc
 hyphen
+i3-wm
 iagno
 iana-etc
 icu
@@ -299,6 +308,7 @@ libelf
 libepoxy
 libepubgen
 libetonyek
+libev
 libevdev
 libevent
 libexif
@@ -622,6 +632,7 @@ python-appdirs
 python-argcomplete
 python-asn1crypto
 python-attrs
+python-babel
 python-cachecontrol
 python-cairo
 python-cffi
@@ -635,9 +646,14 @@ python-dbus-common
 python-decorator
 python-distlib
 python-distro
+python-docopt
+python-docutils
 python-gobject
 python-html5lib
 python-idna
+python-imagesize
+python-jinja
+python-markupsafe
 python-msgpack
 python-ordered-set
 python-packaging
@@ -649,20 +665,32 @@ python-ply
 python-progress
 python-psutil
 python-pycparser
+python-pygments
 python-pyopenssl
 python-pyparsing
 python-pystache
 python-pyte
+python-pytz
 python-requests
 python-resolvelib
 python-retrying
 python-setuptools
 python-six
+python-snowballstemmer
+python-sphinx
+python-sphinx-alabaster-theme
+python-sphinxcontrib-applehelp
+python-sphinxcontrib-devhelp
+python-sphinxcontrib-htmlhelp
+python-sphinxcontrib-jsmath
+python-sphinxcontrib-qthelp
+python-sphinxcontrib-serializinghtml
 python-termcolor
 python-toml
 python-urllib3
 python-wcwidth
 python-webencodings
+python-xlib
 python-yaml
 python-zope-interface
 python2
@@ -691,6 +719,7 @@ re2
 readline
 redland
 rest
+rhash
 ripgrep
 rofi
 rpcbind
@@ -756,9 +785,6 @@ svt-hevc
 sxhkd
 sxiv
 sysfsutils
-systemd
-systemd-libs
-systemd-sysvcompat
 taglib
 talloc
 tar
@@ -790,6 +816,7 @@ tzdata
 uchardet
 udevil
 udisks2
+ueberzug
 unibilium
 unrar
 unzip
@@ -806,8 +833,6 @@ vid.stab
 vim
 vim-runtime
 vino
-virtualbox
-virtualbox-host-modules-arch
 vmaf
 volume_key
 vulkan-icd-loader

@@ -1,9 +1,10 @@
 aurutils
+blockify
+bsp-layout
 cava
 colorpicker
 compton-tryone-git
 consolas-font
-dropbox
 etcher-bin
 gconf
 gksu
@@ -21,7 +22,6 @@ python2-fuse
 siji-git
 simple-mtpfs
 snapd
-spotify
 ttf-monaco
 ttf-ms-fonts
 ttf-symbola

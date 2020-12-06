@@ -6,7 +6,7 @@ function update {
 
     EXCLUDE='(systemd|^themix|nativefier|^resvg|discord|spotify|skype|virtualbox|dropbox)'
 
-    sudo pacman -$pacman_arg | grep -Ev $EXCLUDE | cut -d ' ' -f 1 # > $DOTFILES/setup-scripts/resources/$output_file
+    sudo pacman -$pacman_arg | grep -Ev $EXCLUDE | cut -d ' ' -f 1 > $DOTFILES/setup-scripts/resources/$output_file
 }
 
 arg=$1
