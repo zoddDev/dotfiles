@@ -1,8 +1,6 @@
 #!/bin/bash
 
-cp $HOME/.config/polybar/config.bspwm $HOME/.config/polybar/config
-killall polybar
-
+killall -9 polybar
 polybar example &
 
 sleep 1

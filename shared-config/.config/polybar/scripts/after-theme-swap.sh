@@ -4,7 +4,7 @@ function restart_applications {
     config_name=$1
 
     # ------ kill applications ------
-    killall polybar &
+    killall -9 polybar &
     killall dunst &
     killall compton &
      
@@ -14,8 +14,9 @@ function restart_applications {
 
     if [ $bspwm_running -gt 0 ]; 
     then
-        killall bspc 
+        #killall bspc 
         killall bspwmrc 
+        #killall bspswallow
 
         $HOME/.config/bspwm/autostart &
         xsetroot -cursor_name left_ptr &
@@ -23,14 +24,19 @@ function restart_applications {
         nitrogen --restore &
         dunst &
         nohup pidof $HOME/.scripts/bspswallow || $HOME/.scripts/bspswallow &
+        $HOME/.config/bspwm/autostart &
+
+        cp $HOME/.config/polybar/config.bspwm $HOME/.config/polybar/config
     fi
-    
-    # reset neofetch cache
+
     /bin/neofetch --clean &
     
     killall kitty
     nohup $HOME/.config/polybar/scripts/restart-polybar.sh &
+
     sleep 0.3
+    rm $HOME/.config/sxhkd/sxhkdrc.*
+    rm $HOME/.config/polybar/config.*
     nohup floating-term-bspwm.sh &
 }
 

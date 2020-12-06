@@ -3,7 +3,10 @@
 function update {
     pacman_arg=$1
     output_file=$2
-    sudo pacman -$pacman_arg | grep -v '^themix' | grep -v 'nativefier' | grep -v 'nativefier' | grep -v '^resvg' | cut -d ' ' -f 1 > $DOTFILES/setup-scripts/resources/$output_file
+
+    EXCLUDE='(systemd|^themix|nativefier|^resvg|discord|spotify|skype|virtualbox|dropbox)'
+
+    sudo pacman -$pacman_arg | grep -Ev $EXCLUDE | cut -d ' ' -f 1 # > $DOTFILES/setup-scripts/resources/$output_file
 }
 
 arg=$1

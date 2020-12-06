@@ -38,7 +38,7 @@ then
 
     # sxhkd
     [ -d $DOTFILES/shared-config/.config/sxhkd ] || mkdir -p $DOTFILES/shared-config/.config/sxhkd
-    cp $HOME/.config/sxhkd/{sxhkdrc.bspwm,sxhkdrc.openbox} $DOTFILES/shared-config/.config/sxhkd
+    #cp $HOME/.config/sxhkd/{sxhkdrc.bspwm,sxhkdrc.openbox} $DOTFILES/shared-config/.config/sxhkd
     [ `ps -e | grep bspwm | wc -l` -gt 0 ] && cp $HOME/.config/sxhkd/sxhkdrc $DOTFILES/shared-config/.config/sxhkd/sxhkdrc.bspwm
     [ `ps -e | grep openbox | wc -l` -gt 0 ] && cp $HOME/.config/sxhkd/sxhkdrc $DOTFILES/shared-config/.config/sxhkd/sxhkdrc.openbox
 

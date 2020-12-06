@@ -15,13 +15,10 @@ echo "[START]: aur/external-packages installation..."
 # yay
 # https://aur.archlinux.org/yay.git
 sudo pacman -Qi yay || ./.scripts/aur-get https://aur.archlinux.org/yay.git
+yay -Syu
 
-yes | yay -Syu
-yes | yay -S --needed --mflags --skipinteg --overwrite "*" --nodeps --nodeps `cat ./setup-scripts/resources/aur-packages` || exit 1
-sudo chmod a+wr /opt/spotify
-sudo chmod a+wr /opt/spotify/Apps -R
-
-yay -S --noconfirm --needed --mflags --skipinteg --overwrite "*" wmutils-git ueberzug
+yes "y" | yay -S --noconfirm --useask --norebuild --needed --batchinstall --mflags --skipinteg --overwrite "*" --nodeps `cat ./setup-scripts/resources/aur-packages` || exit 1
+yes "y" | yay -S --noconfirm --useask --norebuild --needed --batchinstall --mflags --skipinteg --overwrite "*" --nodeps wmutils-git ueberzug
 
 pip install dbus-python
 
@@ -29,6 +26,8 @@ pip install dbus-python
 # https://aur.archlinux.org/spicetify-cli.git
 # spicetify config current_theme $THEME_NAME
 # spicetify auto backup apply
+sudo chmod a+wr /opt/spotify
+sudo chmod a+wr /opt/spotify/Apps -R
 
 #
 # GITHUB
