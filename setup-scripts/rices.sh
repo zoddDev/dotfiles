@@ -41,6 +41,7 @@ function setup_config {
     nohup nvim -E -s -u "$HOME/.config/nvim/init.vim" +PlugInstall +qall &
 
     rm $HOME/README.md &> /dev/null
+    cp $HOME/.config/polybar/config.bspwm $HOME/.config/polybar/config
 
     #
     # configuring discord theme (beautifuldiscord)

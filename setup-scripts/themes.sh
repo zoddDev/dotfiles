@@ -31,7 +31,6 @@ sed -i "s/$replace_user/$USER/g" $HOME/.zshrc $HOME/.config/sxhkd/sxhkdrc*
 
 # default wm is bspwm
 cp $HOME/.config/sxhkd/sxhkdrc.bspwm $HOME/.config/sxhkd/sxhkdrc
-cp $HOME/.config/polybar/config.bspwm $HOME/.config/polybar/config
 
 # change user default shell to zsh, will require password and reboot to apply changes
 chsh -s /usr/bin/zsh
