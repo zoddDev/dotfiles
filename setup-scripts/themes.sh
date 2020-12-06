@@ -29,6 +29,8 @@ nvim -E -s -u "$HOME/.config/nvim/init.vim" +PlugInstall +qall
 
 sed -i "s/$replace_user/$USER/g" $HOME/.zshrc $HOME/.config/sxhkd/sxhkdrc*
 
+[ -f $HOME/.scripts/custom-autostart ] || cat '#!/bin/bash' >> $HOME/.scripts/custom-autostart && chmod +x $HOME/.scripts/custom-autostart 
+
 # default wm is bspwm
 cp $HOME/.config/sxhkd/sxhkdrc.bspwm $HOME/.config/sxhkd/sxhkdrc
 
