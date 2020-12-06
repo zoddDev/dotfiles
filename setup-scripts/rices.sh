@@ -33,7 +33,7 @@ function setup_config {
     rm -rf $HOME/.oh-my-zsh/additional/* &> /dev/null
     dconf load /org/gnome/gedit/ < $HOME/.config/gedit-dump.dconf
     rsync -rav --exclude "*git*" --exclude ".icons" --exclude ".themes" --exclude ".wallpapers" $SETUP_ROOT/dotfiles/rices/$config_name/. $HOME
-    rsync -ravu ./rices/$config_name/.wallpapers $HOME
+    rsync -ravu ./rices/$config_name/.wallpapers ./rices/$config_name/.icons ./rices/$config_name/.themes $HOME
 
     sed -i "s/$replace_user/$USER/g" $HOME/.config/nitrogen/*.cfg
 
