@@ -123,12 +123,6 @@ alias git-d='cd $HOME/Downloads/git-downloads'
 # java
 alias javadir='cd $HOME/Dropbox/Programming/Java'
 
-# custom themes directories
-alias pink-nord="cd $HOME/Documents/git-lab/dotfiles/rices/PinkNord"
-alias gruvbox="cd $HOME/Documents/git-lab/dotfiles/rices/Gruvbox"
-alias solarized="cd $HOME/Documents/git-lab/dotfiles/rices/SolarizedDark"
-
-
 # ---------------------------------------- File Editing ----------------------------------------
 
 # vim = nvim
@@ -197,6 +191,9 @@ alias packages='expac -s "%-45n %m" -H M | sort -rhk 2 | nvim'
 
 # displays the window classname
 alias classname="xprop | grep 'CLASS'"
+
+# git add, git commit, git push all my rices
+alias upload-all-rices="cd $DOTFILES/rices && find * -maxdepth 0 -type d -exec upload-rice '{}' ';'"
 
 # ---------------------------------------- Showcase ----------------------------------------
 
