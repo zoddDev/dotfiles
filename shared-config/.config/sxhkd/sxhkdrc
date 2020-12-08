@@ -38,6 +38,11 @@ shift + super + d
 shift + super + w
     kitty -e ranger /home/zodd/.wallpapers
 
+# ranger programming
+shift + super + p
+    kitty -e ranger /home/zodd/Dropbox/Programming
+
+
 # nitrogen
 ctrl + alt + w
     bspc rule -a \* -o state=floating && nitrogen

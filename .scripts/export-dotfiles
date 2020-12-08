@@ -38,9 +38,10 @@ then
 
     # sxhkd
     [ -d $DOTFILES/shared-config/.config/sxhkd ] || mkdir -p $DOTFILES/shared-config/.config/sxhkd
+    cp $HOME/.config/sxhkd/sxhkdrc $DOTFILES/shared-config/.config/sxhkd
     #cp $HOME/.config/sxhkd/{sxhkdrc.bspwm,sxhkdrc.openbox} $DOTFILES/shared-config/.config/sxhkd
-    [ `ps -e | grep bspwm | wc -l` -gt 0 ] && cp $HOME/.config/sxhkd/sxhkdrc $DOTFILES/shared-config/.config/sxhkd/sxhkdrc.bspwm
-    [ `ps -e | grep openbox | wc -l` -gt 0 ] && cp $HOME/.config/sxhkd/sxhkdrc $DOTFILES/shared-config/.config/sxhkd/sxhkdrc.openbox
+    #[ `ps -e | grep bspwm | wc -l` -gt 0 ] && cp $HOME/.config/sxhkd/sxhkdrc $DOTFILES/shared-config/.config/sxhkd/sxhkdrc.bspwm
+    #[ `ps -e | grep openbox | wc -l` -gt 0 ] && cp $HOME/.config/sxhkd/sxhkdrc $DOTFILES/shared-config/.config/sxhkd/sxhkdrc.openbox
 
     # ranger
     cp -r $HOME/.config/ranger $DOTFILES/shared-config/.config &> /dev/null
@@ -134,9 +135,10 @@ cp -r $HOME/.config/rofi/{config.rasi,launch-rofi.sh} $theme_config/rofi
 
 # polybar
 mkdir $theme_config/polybar &> /dev/null
+cp $HOME/.config/polybar/config $theme_config/polybar
 #cp -r $HOME/.config/polybar/{config.bspwm,config.openbox} $theme_config/polybar
-[ `ps -e | grep bspwm | wc -l` -gt 0 ] && cp $HOME/.config/polybar/config $theme_config/polybar/config.bspwm
-[ `ps -e | grep openbox | wc -l` -gt 0 ] && cp $HOME/.config/polybar/config $theme_config/polybar/config.openbox
+#[ `ps -e | grep bspwm | wc -l` -gt 0 ] && cp $HOME/.config/polybar/config $theme_config/polybar/config.bspwm
+#[ `ps -e | grep openbox | wc -l` -gt 0 ] && cp $HOME/.config/polybar/config $theme_config/polybar/config.openbox
 
 
 cp -r $HOME/.config/dunst $theme_config

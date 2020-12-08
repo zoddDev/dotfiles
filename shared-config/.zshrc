@@ -238,9 +238,14 @@ export PATH="/home/zodd/.stack/snapshots/x86_64-linux-tinfo6/fe767865424443a2eed
 export DOTFILES="$HOME/Documents/git-lab/dotfiles"
 export BROWSER="firefox"
 export WALLPAPERS="$HOME/.wallpapers"
+export PROGRAMMING="$HOME/Dropbox/Programming"
+
 export PINK_NORD="$DOTFILES/rices/PinkNord"
-export SOLARIZED="$DOTFILES/rices/SolarizedDark"
+export PINK_NORD_ALTERNATIVE="$DOTFILES/rices/PinkNordAlternative"
+export SOLARIZED_DARK="$DOTFILES/rices/SolarizedDark"
 export GRUVBOX="$DOTFILES/rices/Gruvbox"
+export NORD="$DOTFILES/rices/Nord"
+export DOOMBOX="$DOTFILES/rices/Doombox"
 
 #ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=2,regular,underline"
 
