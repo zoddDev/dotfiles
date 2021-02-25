@@ -4,7 +4,7 @@
 
 Those are my bspwm dotfiles, hope you find something useful here ^^
 
-Specific rices configs and colorschemes are [here](https://github.com/zodd18/dotfiles/tree/master/themes) and general configuration files are [here](https://github.com/zodd18/dotfiles/tree/master/global-config). You will need both.
+Specific rices configs and colorschemes are [here](https://github.com/zodd18/dotfiles/tree/master/rices) and general configuration files are [here](https://github.com/zodd18/dotfiles/tree/master/shared-config). You will need both.
 
 I hope you understand everything here. :wink:
 
