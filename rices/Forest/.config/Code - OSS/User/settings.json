@@ -1,0 +1,15 @@
+{
+    "editor.fontFamily": "Iosevka Nerd Font Mono",
+    "editor.fontLigatures": true,
+    "editor.cursorStyle": "block",
+    "editor.minimap.enabled": false,
+    "editor.renderControlCharacters": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "C_Cpp.updateChannel": "Insiders",
+    "workbench.colorTheme": "Forest Night",
+    "terminal.integrated.shell.linux": "/bin/fish",
+    "go.autocompleteUnimportedPackages": true,
+    "editor.fontSize": 13.5,
+    // "go.inferGopath": false,
+    // "go.gopath": ""
+}

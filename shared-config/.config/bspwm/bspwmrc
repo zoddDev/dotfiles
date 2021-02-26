@@ -7,6 +7,7 @@
 #
 
 $HOME/.scripts/custom-autostart
+
 xsetroot -cursor_name left_ptr &
 sxhkd &
 #nm-applet &
@@ -21,7 +22,7 @@ dunst &
 
 # Swallow
 
-noup pidof $HOME/.scripts/bspswallow || $HOME/.scripts/bspswallow &
+nohup pidof $HOME/.scripts/bspswallow || $HOME/.scripts/bspswallow &
 
 # Workspaces
 
@@ -49,5 +50,3 @@ bspc rule -a \* -o state=floating && sleep 0.015 ; kitty -e $SHELL -c "$HOME/.co
 sleep 0.55 
 /bin/bash -c "bspc desktop -f '^2' --follow ; bspc rule -a \* -o node=@$(bspc query -D -d):.focused split_dir=south follow=off ; firefox file:///home/$USER/.config/startpage/index.html &" &
 bspc desktop -f '^2' --follow &
-sleep 0.1 
-bsp-layout set tall -- --master-size 0.65 &

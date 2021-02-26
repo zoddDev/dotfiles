@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#$HOME/.config/bspwm/masterlayout.sh &
+#bspc config external_rules_command  $HOME/.config/bspwm/external_rules.sh &
+
+#bspc monitor -d TERM WEB CODE MISC EDIT CHAT DISCORD MUSIC
+bspc monitor -d   ﬏    ﭮ 
+
+#bsp-layout set tall  -- --master-size 0.65 &
+
+for i in $(bspc query -D --names)
+do
+    bsp-layout set tall $i -- --master-size 0.65 &
+done
+
+bspc config border_width         14
+bspc config focused_border_color "#a7c080"
+bspc config normal_border_color "#3c474d"
+
+nohup $HOME/.config/bspwm/bspborders &

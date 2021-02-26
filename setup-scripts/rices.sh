@@ -32,6 +32,8 @@ function setup_config {
     cp ./shared-config/.config/neofetch/config.conf $HOME/.config/neofetch
     rm -rf $HOME/.oh-my-zsh/additional/* &> /dev/null
     dconf load /org/gnome/gedit/ < $HOME/.config/gedit-dump.dconf
+    rm $HOME/.mozilla/firefox/mxrcz6ht.default-release-1594850756736/chrome/userChrome.css
+    rsync -ravu ./shared-config/.config/polybar/scripts/rofi-poweroff.sh ./shared-config/.config/polybar/scripts/theme-swap.sh ~/.config/polybar/scripts
     rsync -rav --exclude "*git*" --exclude ".icons" --exclude ".themes" --exclude ".wallpapers" $SETUP_ROOT/dotfiles/rices/$config_name/. $HOME
     rsync -ravu ./rices/$config_name/.wallpapers ./rices/$config_name/.icons ./rices/$config_name/.themes $HOME
 
@@ -68,6 +70,7 @@ case "$arg" in
     "ayu" ) setup_config "Ayu" ;; 
     "nord" ) setup_config "Nord" ;; 
     "doombox" ) setup_config "Doombox" ;; 
+    "forest" ) setup_config "Forest" ;; 
     *) echo "[ERROR]: no config with name \"$arg\" found" && notify-send -i $SETUP_ROOT/dotfiles/setup-scripts/resources/white-brush.png "[ERROR]: Selected theme does not exist" & ;;
 esac
 

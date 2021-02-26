@@ -1,0 +1,39 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/CLionProjects/Tests">
+          <value>
+            <RecentProjectMetaInfo projectWorkspaceId="1dvFWK30IZ7L54cCS746oFVvUQh">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="CL-201.7846.88" />
+              <option name="buildTimestamp" value="1591174775585" />
+              <frame x="12" y="52" width="1892" height="1012" />
+              <option name="productionCode" value="CL" />
+              <option name="projectOpenTimestamp" value="1593297689876" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/CLionProjects/Executer">
+          <value>
+            <RecentProjectMetaInfo opened="true" projectWorkspaceId="1djjsuJFHap7RWDtCin5sTgb0tH">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="CL-201.7846.88" />
+              <option name="buildTimestamp" value="1591174747588" />
+              <frame x="12" y="50" width="1892" height="1014" />
+              <option name="productionCode" value="CL" />
+              <option name="projectOpenTimestamp" value="1594671072482" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastProjectLocation" value="$USER_HOME$/CLionProjects" />
+    <option name="recentPaths">
+      <list>
+        <option value="$USER_HOME$/CLionProjects/Executer" />
+        <option value="$USER_HOME$/CLionProjects/Tests" />
+      </list>
+    </option>
+  </component>
+</application>

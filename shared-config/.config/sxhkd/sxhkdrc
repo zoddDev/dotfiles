@@ -74,7 +74,6 @@ super + Print
 # screenshot (region)
 super + shift + Print
     import /tmp/screenshot.png && cat /tmp/screenshot.png | xclip -sel clip -t image/png
-    #maim -s -u | xclip -selection clipboard -t image/png -i
 
 # rofi 
 super + Return 
@@ -95,7 +94,7 @@ super + Escape
 # AUDIO (pulsemixer)
 # pulsemixer
 ctrl + alt + v
-    bspc rule -a \* -o state=floating && pavucontrol # kitty -e /bin/zsh -c pulsemixer
+    bspc rule -a \* -o state=floating ; pavucontrol # kitty -e /bin/zsh -c pulsemixer
 
 # pulsemixer volume UP (+5)
 super + F8
@@ -181,7 +180,7 @@ super + bracket{left,right}
 
 # focus the last node/desktop
 super + {grave,Tab}
-	bspc {node,desktop} -f last
+	bspc {node,desktop} -f last || zsh -c "last-workspace.sh"
 
 # focus the older or newer node in the focus history
 super + {o,i}

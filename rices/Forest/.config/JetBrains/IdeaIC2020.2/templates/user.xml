@@ -1,0 +1,7 @@
+<templateSet group="user">
+  <template name="syso" value="System.out.println($END$);" description="syso" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>

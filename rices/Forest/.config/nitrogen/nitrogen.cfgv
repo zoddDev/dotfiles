@@ -1,0 +1,12 @@
+[geometry]
+posx=609
+posy=301
+sizex=745
+sizey=494
+
+[nitrogen]
+view=icon
+recurse=true
+sort=alpha
+icon_caps=false
+dirs=/home/zodd/.wallpapers/nord-theme;

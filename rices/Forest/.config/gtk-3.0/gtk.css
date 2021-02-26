@@ -1,0 +1,53 @@
+.window-frame, .window-frame:backdrop {
+  box-shadow: 0 0 0 black;
+  border-style: none;
+  margin: 0;
+  border-radius: 0;
+}
+    
+.titlebar {
+  border-radius: 0;
+}
+
+/* remove window title from Client-Side Decorations */
+.solid-csd headerbar .title {
+    font-size: 0;
+}
+
+/* hide extra window decorations/double border */
+window decoration {
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+
+* {
+  text-shadow: none;
+}
+
+VteTerminal, vte-terminal {
+    padding: 44px;
+}
+
+  window.thunar grid *:selected,
+  window.thunar grid *:active {
+    /*background: #3b4252;*/
+    border-radius: 3px; }
+  window.thunar .sidebar {
+    background-color: #2e3440;
+    /*box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 1);*/
+    padding: 1rem; }
+  window.thunar treeview {
+    padding: 3px; }
+  window.thunar .frame {
+    border: 0px; }
+  window.thunar toolbar box {
+    padding: 5px; }
+  window.thunar toolbar {
+    padding: 5px 0; }
+
+   .pavucontrol-window tabs tab {
+     padding: 16px; }
+ .pavucontrol-window .show-volume-meters-check-button {
+   padding: 8px; }
+

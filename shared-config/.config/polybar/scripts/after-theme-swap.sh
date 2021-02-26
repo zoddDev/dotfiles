@@ -6,7 +6,8 @@ function restart_applications {
     # ------ kill applications ------
     killall -9 polybar &
     killall dunst &
-    killall compton &
+    killall -9 compton &
+    killall -9 picom &
      
     # ------ restart applications ------
     nitrogen --restore
@@ -20,7 +21,7 @@ function restart_applications {
 
         $HOME/.config/bspwm/autostart &
         xsetroot -cursor_name left_ptr &
-        compton &
+        picom &
         nitrogen --restore &
         dunst &
         nohup pidof $HOME/.scripts/bspswallow || $HOME/.scripts/bspswallow &

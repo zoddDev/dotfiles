@@ -106,7 +106,8 @@ theme_config="$theme_dir/.config"
 
 echo [INFO]: copying $HOME/.config to $theme_config ...
 
-cp -r $HOME/.config/compton.conf $theme_config
+mkdir -p $theme_config/picom &> /dev/null
+cp -r $HOME/.config/picom/picom.conf $theme_config/picom
 
 cp -r $HOME/.config/nitrogen $theme_config
 
@@ -134,18 +135,18 @@ mkdir -p $theme_config/rofi &> /dev/null
 cp -r $HOME/.config/rofi/{config.rasi,launch-rofi.sh} $theme_config/rofi
 
 # polybar
-mkdir $theme_config/polybar &> /dev/null
-cp $HOME/.config/polybar/config $theme_config/polybar
-#cp -r $HOME/.config/polybar/{config.bspwm,config.openbox} $theme_config/polybar
-#[ `ps -e | grep bspwm | wc -l` -gt 0 ] && cp $HOME/.config/polybar/config $theme_config/polybar/config.bspwm
-#[ `ps -e | grep openbox | wc -l` -gt 0 ] && cp $HOME/.config/polybar/config $theme_config/polybar/config.openbox
+mkdir $theme_config/polybar/scripts &> /dev/null
+cp -r $HOME/.config/polybar/{config,scripts/rofi-poweroff-theme.sh,scripts/theme-swap-theme.sh} $theme_config/polybar
+cp -r $HOME/.config/polybar/scripts/{rofi-poweroff-theme.sh,theme-swap-theme.sh} $theme_config/polybar/scripts
 
-
+# dunst
 cp -r $HOME/.config/dunst $theme_config
 
+# discord
 mkdir $theme_config/discord &> /dev/null
 cp $HOME/.config/discord/custom-discord-theme.css $theme_config/discord
 
+# spicetify
 mkdir $theme_config/spicetify &> /dev/null
 cp -r $HOME/.config/spicetify/{Extracted,config.ini} $theme_config/spicetify
 

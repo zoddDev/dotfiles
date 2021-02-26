@@ -128,7 +128,11 @@ alias javadir='cd $HOME/Dropbox/Programming/Java'
 # vim = nvim
 alias vim='nvim'
 alias v='nvim'
- 
+alias p='python3'
+
+# ranger
+alias r='ranger'
+
 # aliaschanger
 alias aliases='nvim $HOME/.zshrc'
 
