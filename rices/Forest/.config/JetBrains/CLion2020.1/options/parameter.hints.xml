@@ -1,7 +1,0 @@
-<application>
-  <component name="ParameterNameHintsSettings">
-    <disabledLanguages>
-      <language id="ObjectiveC" />
-    </disabledLanguages>
-  </component>
-</application>

@@ -49,3 +49,6 @@
 [submodule "rices/Doombox"]
 	path = rices/Doombox
 	url = https://github.com/zodd18/Doombox.git
+[submodule "rices/Forest"]
+	path = rices/Forest
+	url = https://github.com/zodd18/Forest.git

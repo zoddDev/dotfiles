@@ -1,5 +1,0 @@
-<application>
-  <component name="ToStringTemplates">
-    <option name="defaultTempalteName" value="String concat (+)" />
-  </component>
-</application>

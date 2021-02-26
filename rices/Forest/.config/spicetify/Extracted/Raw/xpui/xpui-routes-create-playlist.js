@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[21],{ppzG:function(e,t,n){"use strict";n.r(t),n.d(t,"CreatePlaylist",(function(){return u}));var c=n("mXGw"),o=n.n(c),a=n("oNR1"),r=n("/m4v"),s=n("odWe");const u=o.a.memo(()=>{const e=Object(r.c)();return Object(c.useEffect)(()=>{e(Object(s.y)())},[e]),o.a.createElement(a.a,{to:"/"})});t.default=u}}]);
