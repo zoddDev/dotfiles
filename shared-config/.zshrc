@@ -129,9 +129,9 @@ alias javadir='cd $HOME/Dropbox/Programming/Java'
 alias vim='nvim'
 alias v='nvim'
 alias p='python3'
-
-# ranger
 alias r='ranger'
+alias z='zathura'
+alias j='java -jar'
 
 # aliaschanger
 alias aliases='nvim $HOME/.zshrc'
@@ -141,6 +141,7 @@ alias rangerc='nvim $HOME/.config/ranger'
 
 # nvim configuration file
 alias vimrc='nvim $HOME/.config/nvim/init.vim'
+alias bspwmrc='nvim $HOME/.config/bspwm/bspwmrc'
     
 # Polybar config
 alias polycfg='nvim $HOME/.config/polybar/config' 
@@ -237,6 +238,7 @@ PATH=$PATH:$HOME/.config/polybar/scripts:$HOME/.scripts
 export PATH="/home/zodd/.stack/snapshots/x86_64-linux-tinfo6/fe767865424443a2eed6f45f1f52e31d92286477e7e51ee31adfa3e42e907dac/8.8.4/bin:/home/zodd/.stack/compiler-tools/x86_64-linux-tinfo6/ghc-8.8.4/bin:/home/zodd/.stack/programs/x86_64-linux/ghc-tinfo6-8.8.4/bin:home/zodd/.yarn/bin:/home/zodd/.config/yarn/global/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin:$PATH"
 
 export DOTFILES="$HOME/Documents/git-lab/dotfiles"
+export RICES="$DOTFILES/rices"
 export BROWSER="firefox"
 export WALLPAPERS="$HOME/.wallpapers"
 export PROGRAMMING="$HOME/Dropbox/Programming"

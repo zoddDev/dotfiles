@@ -1,0 +1,10 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+use Term::ANSIColor; 
+
+my $color=shift;
+while (<>) {
+    print color("$color").$_.color("reset");
+} 

@@ -71,7 +71,7 @@ then
     [[ $* == *--wallpapers* || $* == -*w* ]] && echo "copying wallpapers..." && cp -r $HOME/.wallpapers $DOTFILES
 
     echo
-    figlet "done !"
+    figlet 'done !' | color "green"
     exit
 fi
 
@@ -186,5 +186,5 @@ echo
 echo [INFO]: finished copying config files
 echo
 
-figlet "done !"
+figlet 'done !' | color "green"
 

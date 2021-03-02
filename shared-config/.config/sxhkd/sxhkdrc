@@ -6,7 +6,7 @@
 ctrl + alt + t
 	kitty -e zsh -c "$HOME/.config/neofetch/launch-neofetch.sh ; zsh"
 
-# dolphin
+# filemanager
 super + e
     thunar 
 
