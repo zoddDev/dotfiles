@@ -15,7 +15,7 @@ function restart_applications {
 
     if [ $bspwm_running -gt 0 ]; 
     then
-        #killall bspc 
+        killall bspc 
         killall bspwmrc 
         #killall bspswallow
 
