@@ -132,7 +132,8 @@ pink-nord               - Pink Nord look
 pink-nord-alternative   - Based on Fleon look
 gruvbox                 - Classic Gruvbox look
 solarized-dark          - Solarized Dark look
-horizon                 - Based on VS Code Horizon Theme 
+horizon                 - Based on VS Code Horizon Theme
+doombox                 - Doom version of gruvbox
 ```
 
 example:
@@ -149,6 +150,5 @@ I'd follow this order: pacman, aur, themes, rice.
 # Deprecated (old rices, these need a lot of cleaning)
 ```
 dracula                 - Classic Dracula look
-doombox                 - Doom version of gruvbox
 ```
 
