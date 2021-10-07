@@ -162,6 +162,9 @@ alias rm='rm -v'
 
 # ---------------------------------------- Functionality ----------------------------------------
 
+alias current-milis='date +%s%3N'
+
+
 # remove all files from ~/Downloads/git-downloads
 alias git-clean='rm -rf $HOME/Downloads/git-downloads/*'
 
