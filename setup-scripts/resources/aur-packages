@@ -3,15 +3,13 @@ aurutils
 blurwal
 bsp-layout
 cava
-code-minimap
 colorpicker
 consolas-font
-etcher-bin
 eww-git
 gconf
 gksu
 libgksu
-libmagick6
+libglade
 mingetty
 ncurses5-compat-libs
 obkey
@@ -25,6 +23,7 @@ polybar
 pygtk
 python2-fuse
 python2-gobject2
+python2-pathlib
 siji-git
 simple-mtpfs
 snapd
@@ -33,9 +32,9 @@ ttf-ms-fonts
 ttf-symbola
 ttf-ubraille
 tty-clock
-ufetch-git
 unimatrix-git
 update-grub
+xtitle
 yay
-youtube-to-mp3
+ytfzf-git
 ytop

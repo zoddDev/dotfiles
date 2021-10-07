@@ -112,7 +112,6 @@ Plug 'sainnhe/gruvbox-material'
 Plug 'lifepillar/vim-solarized8'
 Plug 'andymass/vim-matchup'
 Plug 'zodd18/vim-ocl'
-Plug 'wfxr/minimap.vim'
 Plug 'sainnhe/forest-night'
 call plug#end()
 
