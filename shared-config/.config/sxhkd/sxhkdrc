@@ -127,7 +127,7 @@ super + alt + {q,r}
 	bspc {quit,wm -r}
 
 # close and kill
-ctrl + q
+super + q
 	bspc node -c
 #bspc node -{c,k}
 

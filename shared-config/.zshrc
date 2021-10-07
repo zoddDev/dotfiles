@@ -133,8 +133,9 @@ alias r='ranger'
 alias z='zathura'
 alias j='java -jar'
 
-# aliaschanger
+# ~/.zshrc
 alias aliases='nvim $HOME/.zshrc'
+alias zshrc='nvim $HOME/.zshrc'
 
 # Ranger configuration file
 alias rangerc='nvim $HOME/.config/ranger'
@@ -205,9 +206,6 @@ alias upload-all-rices="cd $DOTFILES/rices && find * -maxdepth 0 -type d -exec u
 # choose neofetch ascii distro
 alias neofetch="clear && $HOME/.config/neofetch/launch-neofetch.sh"
 
-# colors showcase
-alias colors="~/.scripts/color-scripts/`ls ~/.scripts/color-scripts | sort -R | head -n 1`"
-
 # ---------------------------------------- Random ----------------------------------------
 
 # opens a random pornhub video
@@ -271,7 +269,7 @@ bindkey '^H' autosuggest-clear
 # -------------------- ADDITIONAL SOURCES --------------------
 #
 
-source $HOME/.oh-my-zsh/custom/plugins/zsh-directory-history/directory-history.plugin.zsh
+#source $HOME/.oh-my-zsh/custom/plugins/zsh-directory-history/directory-history.plugin.zsh
 
 # autosuggestions color
 #autosuggestions_colorscheme_dir="$HOME/.oh-my-zsh/additional/plugins/auto-suggestions/auto-suggestions.colorscheme.conf"
@@ -289,6 +287,3 @@ then
     [ -f $prompt_config ] && source $prompt_config
 fi
 
-
-
-eval $(thefuck --alias)
