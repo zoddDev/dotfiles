@@ -71,6 +71,7 @@ case "$arg" in
     "nord" ) setup_config "Nord" ;; 
     "doombox" ) setup_config "Doombox" ;; 
     "forest" ) setup_config "Forest" ;; 
+    "dracula" ) setup_config "Dracula" ;; 
     *) echo "[ERROR]: no config with name \"$arg\" found" && notify-send -i $SETUP_ROOT/dotfiles/setup-scripts/resources/white-brush.png "[ERROR]: Selected theme does not exist" & ;;
 esac
 
