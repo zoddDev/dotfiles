@@ -135,7 +135,7 @@ mkdir -p $theme_config/rofi &> /dev/null
 cp -r $HOME/.config/rofi/{config.rasi,launch-rofi.sh} $theme_config/rofi
 
 # polybar
-mkdir $theme_config/polybar/scripts &> /dev/null
+mkdir -p $theme_config/polybar/scripts &> /dev/null
 cp -r $HOME/.config/polybar/{config,scripts/rofi-poweroff-theme.sh,scripts/theme-swap-theme.sh} $theme_config/polybar
 cp -r $HOME/.config/polybar/scripts/{rofi-poweroff-theme.sh,theme-swap-theme.sh} $theme_config/polybar/scripts
 

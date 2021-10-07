@@ -52,3 +52,6 @@
 [submodule "rices/Forest"]
 	path = rices/Forest
 	url = https://github.com/zodd18/Forest.git
+[submodule "rices/Dracula"]
+	path = rices/Dracula
+	url = https://github.com/zodd18/Dracula.git
