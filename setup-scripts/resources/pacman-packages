@@ -117,7 +117,6 @@ evince
 evolution-data-server
 exempi
 exiv2
-exo
 expac
 expat
 faac
@@ -146,7 +145,6 @@ fuse-common
 fuse2
 fuse3
 fzf
-garcon
 gavl
 gawk
 gc
@@ -565,7 +563,6 @@ libvterm
 libwacom
 libwebp
 libwmf
-libwnck3
 libwpd
 libwpe
 libwpg
@@ -580,8 +577,6 @@ libxdamage
 libxdg-basedir
 libxdmcp
 libxext
-libxfce4ui
-libxfce4util
 libxfixes
 libxfont2
 libxft
@@ -595,10 +590,8 @@ libxml2
 libxmlb
 libxmu
 libxpm
-libxpresent
 libxrandr
 libxrender
-libxres
 libxshmfence
 libxslt
 libxss
@@ -688,12 +681,10 @@ nspr
 nss
 ntfs-3g
 numactl
-obconf
 obs-studio
 ocl-icd
 oniguruma
 openal
-openbox
 opencore-amr
 opencv
 openexr
@@ -912,7 +903,6 @@ terminus-font
 tevent
 texinfo
 thin-provisioning-tools
-thunar
 tldr
 tmate
 totem
@@ -999,10 +989,7 @@ xdg-user-dirs-gtk
 xdg-utils
 xdo
 xf86-input-libinput
-xfconf
 xfsprogs
-xfwm4
-xfwm4-themes
 xkeyboard-config
 xorg-font-util
 xorg-fonts-encodings
