@@ -2,7 +2,6 @@ a52dec
 aalib
 accountsservice
 acl
-adobe-source-code-pro-fonts
 adwaita-icon-theme
 alacritty
 alsa-card-profiles
@@ -72,7 +71,6 @@ clang
 clutter
 clutter-gst
 clutter-gtk
-code
 cogl
 colord
 colord-gtk
@@ -162,7 +160,6 @@ gdm
 gedit
 gegl
 geoclue
-geocode-glib
 gettext
 gfbgraph
 ghostscript
@@ -304,7 +301,6 @@ inkscape
 iproute2
 iptables
 iputils
-iso-codes
 jack2
 jansson
 jasper
@@ -910,7 +906,6 @@ tar
 tbb
 tcl
 tdb
-telegram-desktop
 telepathy-glib
 tepl
 terminus-font
@@ -933,7 +928,6 @@ ts-node
 tslib
 ttf-baekmuk
 ttf-dejavu
-ttf-fira-code
 ttf-liberation
 ttf-opensans
 tumbler
