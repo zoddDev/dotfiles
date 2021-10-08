@@ -293,7 +293,6 @@ hunspell
 hwids
 hwloc
 hyphen
-i3-wm
 iana-etc
 icu
 ijs
@@ -527,7 +526,6 @@ libsm
 libsndfile
 libsodium
 libsoup
-libsoup3
 libsoxr
 libspectre
 libspeechd
@@ -920,7 +918,6 @@ tevent
 texinfo
 thin-provisioning-tools
 thunar
-tint2
 tldr
 tmate
 totem
