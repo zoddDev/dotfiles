@@ -132,6 +132,7 @@ alias p='python3'
 alias r='ranger'
 alias z='zathura'
 alias j='java -jar'
+alias y='yay'
 
 # ~/.zshrc
 alias aliases='nvim $HOME/.zshrc'

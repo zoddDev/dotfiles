@@ -24,10 +24,10 @@ ctrl + alt + p
 
 # open downloads folder
 super + d
-	thunar ~/Downloads
+	nautilus ~/Downloads
 
 # ranger screenshots
-shift + super + s
+shift + super + i
     kitty -e ranger /home/zodd/Pictures/Screenshots 
 
 # ranger downloads
@@ -72,7 +72,7 @@ super + Print
     scrot -u $HOME/Pictures/Screenshots/screenshot-$(date +%F_%T).png -e 'xclip -selection c -t image/png < $f'
 
 # screenshot (region)
-super + shift + Print
+super + shift + S
     import /tmp/screenshot.png && cat /tmp/screenshot.png | xclip -sel clip -t image/png
 
 # rofi 
