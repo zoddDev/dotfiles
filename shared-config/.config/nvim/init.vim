@@ -95,24 +95,31 @@ let mapleader=" "
 " plugins {
 
 call plug#begin()
+
+" Languages support
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'zodd18/vim-ocl'
+
+" Functionalities
 Plug 'preservim/nerdcommenter'
 Plug 'chrisbra/colorizer'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'dracula/vim'
-Plug 'arcticicestudio/nord-vim'
 Plug 'miyakogi/sidepanel.vim'
 Plug 'preservim/nerdtree'
+Plug 'andymass/vim-matchup'
+
+" Theming
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
+Plug 'dracula/vim'
+Plug 'sainnhe/forest-night'
 Plug 'ntk148v/vim-horizon'
 Plug 'ayu-theme/ayu-vim'
 Plug 'lifepillar/vim-gruvbox8'
 Plug 'sainnhe/gruvbox-material'
 Plug 'lifepillar/vim-solarized8'
-Plug 'andymass/vim-matchup'
-Plug 'zodd18/vim-ocl'
-Plug 'sainnhe/forest-night'
+Plug 'arcticicestudio/nord-vim'
+
 call plug#end()
 
 " }
@@ -198,4 +205,12 @@ function! NERDTreeToggleInCurDir()
   endif
 endfunction
 
+" }
+
+" :term {
+
+map <C-t> <C-l>:sp<CR>:cd `dirname $(ls %:p)`<CR><C-j>:term<CR>:resize 10<CR><M-A>
+tnoremap <Esc> <C-\><C-n>
+noremap <C-d><C-d> :q!<CR>
+tnoremap <C-d><C-d> <Esc> <C-\><C-n>:q!<CR>
 " }
