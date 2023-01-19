@@ -1,0 +1,13 @@
+#!/bin/bash
+
+cd $DOTFILES
+
+# Additional flags                                                                                                                                                                       
+[[ $* == *--pull* ]] && git pull && [[ $* == *--push* ]] && git push && exit
+[[ $* == *--push* ]] && git push && [[ $* == *--pull* ]] && git pull && exit
+
+# Default operation
+MESSAGE=$1
+[ -z "$MESSAGE" ] && MESSAGE="Minor changes"
+git add -f ./. && git add -f * && git commit -m "$MESSAGE" && git push --recurse-submodules=check
+git submodule update

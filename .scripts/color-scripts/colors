@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+export c00="2e3440" #3f3f3f
+export c08="5f5f5f" #5f5f5f
+export c01="ff4845" #ff4845
+export c09="d4665d" #d4665d
+export c02="daa6ca" #67e225
+export c10="47aa12" #47aa12
+export c03="fffd00" #fffd00
+export c11="cecb00" #cecb00
+export c04="288ad6" #288ad6
+export c12="4c83ad" #4c83ad
+export c05="d469d7" #d469d7
+export c13="af66b1" #af66b1
+export c06="6b7db4" #6b7db4
+export c14="5f6a8b" #5f6a8b
+export c07="e3e3e3" #e3e3e3
+export c15="bababa" #bababa
+

@@ -1,0 +1,149 @@
+/home/zodd/.config/bspwm/bspborders: line 3: /home/zodd/.scripts/colors: No such file or directory
+/home/zodd/.config/bspwm/bspborders: line 3: /home/zodd/.scripts/colors: No such file or directory
+polybar|notice:  Parsing config file: /home/zodd/.config/polybar/config
+polybar|warn:  No monitor specified, using "DP-2"
+polybar|notice:  pulseaudio: using default sink alsa_output.pci-0000_00_1f.3.iec958-stereo
+polybar|notice:  Loaded font "Iosevka Semibold:size=10" (name=Iosevka, offset=3, file=/home/zodd/.fonts/iosevka-semibold.ttf)
+polybar|notice:  Loaded font "SauceCodePro Nerd Font Mono:size=20" (name=SauceCodePro Nerd Font Mono, offset=5, file=/usr/local/share/fonts/s/Sauce_Code_Pro_Nerd_Font_Complete_Mono.ttf)
+polybar|notice:  Loaded font "Material Icons:pixelsize=15" (name=Material Icons, offset=5, file=/usr/share/fonts/ttf-material-design-icons/MaterialIcons-Regular.ttf)
+polybar|notice:  Loaded font "Sinji:pixelsize=15" (name=DejaVu Sans, offset=5, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "Togalite medium:pixelsize=11" (name=Togalite, offset=2, file=/home/zodd/.fonts/togalite-medium.otf)
+desktop: Unknown command: '--follow'.
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+kitty
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+kitty
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: chwb2: warning: pixmap is greater than border size
+warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+polybar|notice:  Parsing config file: /home/zodd/.config/polybar/config
+polybar|warn:  No monitor specified, using "DP-2"
+polybar|notice:  pulseaudio: using default sink alsa_output.pci-0000_00_1f.3.iec958-stereo
+polybar|notice:  Loaded font "Inconsolata CondensedBlack:size=13" (name=Inconsolata, offset=3, file=/home/zodd/.fonts/InconsolataCondensed-Black.ttf)
+polybar|notice:  Loaded font "SauceCodePro Nerd Font Mono:size=22" (name=SauceCodePro Nerd Font Mono, offset=6, file=/usr/local/share/fonts/s/Sauce_Code_Pro_Nerd_Font_Complete_Mono.ttf)
+polybar|notice:  Loaded font "Material Icons:pixelsize=15" (name=Material Icons, offset=5, file=/usr/share/fonts/ttf-material-design-icons/MaterialIcons-Regular.ttf)
+polybar|notice:  Loaded font "Sinji:pixelsize=15" (name=DejaVu Sans, offset=5, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "Togalite medium:pixelsize=11" (name=Togalite, offset=2, file=/home/zodd/.fonts/togalite-medium.otf)
+kitty
+kitty
+polybar|notice:  Parsing config file: /home/zodd/.config/polybar/config
+polybar|warn:  No monitor specified, using "DP-2"
+polybar|error: Invalid value for "module/bspwm.label-focused-background", using default value (reason: The reference ${colors.black} does not exist (no fallback set))
+polybar|error: Invalid value for "module/bspwm.label-occupied-background", using default value (reason: The reference ${colors.black} does not exist (no fallback set))
+polybar|error: Invalid value for "module/bspwm.label-urgent-background", using default value (reason: The reference ${colors.black} does not exist (no fallback set))
+polybar|error: Invalid value for "module/bspwm.label-empty-background", using default value (reason: The reference ${colors.black} does not exist (no fallback set))
+polybar|notice:  pulseaudio: using default sink alsa_output.pci-0000_00_1f.3.iec958-stereo
+polybar|notice:  Loaded font "Inconsolata CondensedBlack:size=12" (name=Inconsolata, offset=3, file=/home/zodd/.fonts/InconsolataCondensed-Black.ttf)
+polybar|notice:  Loaded font "SauceCodePro Nerd Font Mono:size=20" (name=SauceCodePro Nerd Font Mono, offset=5, file=/usr/local/share/fonts/s/Sauce_Code_Pro_Nerd_Font_Complete_Mono.ttf)
+polybar|notice:  Loaded font "Material Icons:pixelsize=15" (name=Material Icons, offset=5, file=/usr/share/fonts/ttf-material-design-icons/MaterialIcons-Regular.ttf)
+polybar|notice:  Loaded font "Sinji:pixelsize=15" (name=DejaVu Sans, offset=5, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "Togalite medium:pixelsize=11" (name=Togalite, offset=2, file=/home/zodd/.fonts/togalite-medium.otf)
+kitty
+/home/zodd/.config/bspwm/bspborders: line 3: /home/zodd/.scripts/colors: No such file or directory
+/home/zodd/.config/bspwm/bspborders: line 3: /home/zodd/.scripts/colors: No such file or directory
+polybar|notice:  Parsing config file: /home/zodd/.config/polybar/config
+polybar|warn:  No monitor specified, using "DP-2"
+polybar|notice:  pulseaudio: using default sink alsa_output.pci-0000_00_1f.3.iec958-stereo
+polybar|notice:  Loaded font "Iosevka Semibold:size=10" (name=Iosevka, offset=3, file=/home/zodd/.fonts/iosevka-semibold.ttf)
+polybar|notice:  Loaded font "SauceCodePro Nerd Font Mono:size=20" (name=SauceCodePro Nerd Font Mono, offset=5, file=/usr/local/share/fonts/s/Sauce_Code_Pro_Nerd_Font_Complete_Mono.ttf)
+polybar|notice:  Loaded font "Material Icons:pixelsize=15" (name=Material Icons, offset=5, file=/usr/share/fonts/ttf-material-design-icons/MaterialIcons-Regular.ttf)
+polybar|notice:  Loaded font "Sinji:pixelsize=15" (name=DejaVu Sans, offset=5, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "Togalite medium:pixelsize=11" (name=Togalite, offset=2, file=/home/zodd/.fonts/togalite-medium.otf)
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: chwb2: warning: pixmap is greater than border size
+warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+kitty
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+kitty
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: chwb2: warning: pixmap is greater than border size
+warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+polybar|notice:  Parsing config file: /home/zodd/.config/polybar/config
+polybar|warn:  No monitor specified, using "DP-2"
+polybar|notice:  pulseaudio: using default sink alsa_output.pci-0000_00_1f.3.iec958-stereo
+polybar|notice:  Loaded font "Inconsolata CondensedBlack:size=13" (name=Inconsolata, offset=3, file=/home/zodd/.fonts/InconsolataCondensed-Black.ttf)
+polybar|notice:  Loaded font "SauceCodePro Nerd Font Mono:size=22" (name=SauceCodePro Nerd Font Mono, offset=6, file=/usr/local/share/fonts/s/Sauce_Code_Pro_Nerd_Font_Complete_Mono.ttf)
+polybar|notice:  Loaded font "Material Icons:pixelsize=15" (name=Material Icons, offset=5, file=/usr/share/fonts/ttf-material-design-icons/MaterialIcons-Regular.ttf)
+polybar|notice:  Loaded font "Sinji:pixelsize=15" (name=DejaVu Sans, offset=5, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "Togalite medium:pixelsize=11" (name=Togalite, offset=2, file=/home/zodd/.fonts/togalite-medium.otf)
+kitty
+polybar|notice:  Parsing config file: /home/zodd/.config/polybar/config
+polybar|warn:  No monitor specified, using "DP-2"
+polybar|error: Invalid value for "module/bspwm.label-focused-background", using default value (reason: The reference ${colors.black} does not exist (no fallback set))
+polybar|error: Invalid value for "module/bspwm.label-occupied-background", using default value (reason: The reference ${colors.black} does not exist (no fallback set))
+polybar|error: Invalid value for "module/bspwm.label-urgent-background", using default value (reason: The reference ${colors.black} does not exist (no fallback set))
+polybar|error: Invalid value for "module/bspwm.label-empty-background", using default value (reason: The reference ${colors.black} does not exist (no fallback set))
+polybar|notice:  pulseaudio: using default sink alsa_output.pci-0000_00_1f.3.iec958-stereo
+polybar|notice:  Loaded font "Inconsolata CondensedBlack:size=12" (name=Inconsolata, offset=3, file=/home/zodd/.fonts/InconsolataCondensed-Black.ttf)
+polybar|notice:  Loaded font "SauceCodePro Nerd Font Mono:size=20" (name=SauceCodePro Nerd Font Mono, offset=5, file=/usr/local/share/fonts/s/Sauce_Code_Pro_Nerd_Font_Complete_Mono.ttf)
+polybar|notice:  Loaded font "Material Icons:pixelsize=15" (name=Material Icons, offset=5, file=/usr/share/fonts/ttf-material-design-icons/MaterialIcons-Regular.ttf)
+polybar|notice:  Loaded font "Sinji:pixelsize=15" (name=DejaVu Sans, offset=5, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "Togalite medium:pixelsize=11" (name=Togalite, offset=2, file=/home/zodd/.fonts/togalite-medium.otf)
+kitty
+polybar|notice:  Termination signal received, shutting down...

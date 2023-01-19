@@ -1,0 +1,18 @@
+#!/bin/bash
+
+dir="$HOME/Pictures/Wallpapers/Wallpapers/$1-theme"
+
+#SECONDS OF COOLDOWN
+COOLDOWN=256
+
+# Error check
+[ ! -d $dir ] && echo "Directory $dir does not exist" && exit 1
+
+# Just one iteration
+[ $2 = 'next' ] && feh --randomize --bg-fill $dir && exit 0      
+
+while : 
+do
+    feh --randomize --bg-fill $dir
+    sleep $COOLDOWN
+done

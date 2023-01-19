@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#cp $HOME/.config/sxhkd/sxhkdrc.bspwm $HOME/.config/sxhkd/sxhkdrc
+#cp $HOME/.config/polybar/config.bspwm $HOME/.config/polybar/config

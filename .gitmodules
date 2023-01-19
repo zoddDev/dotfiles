@@ -1,0 +1,60 @@
+[submodule "global-config/.config/ranger/plugins/ranger_devicons"]
+	path = global-config/.config/ranger/plugins/ranger_devicons
+	url = https://github.com/alexanderjeurissen/ranger_devicons.git
+[submodule "global-config/.oh-my-zsh"]
+	path = global-config/.oh-my-zsh
+	url = https://github.com/ohmyzsh/ohmyzsh
+[submodule "themes/Nord"]
+	path = themes/Nord
+	url = https://github.com/zodd18/Nord.git
+[submodule "themes/PinkNordAlternative"]
+	path = themes/PinkNordAlternative
+	url = https://github.com/zodd18/PinkNordAlternative.git
+[submodule "themes/PinkNord"]
+	path = themes/PinkNord
+	url = https://github.com/zodd18/PinkNord.git
+[submodule "themes/Gruvbox"]
+	path = themes/Gruvbox
+	url = https://github.com/zodd18/Gruvbox.git
+[submodule "themes/SolarizedDark"]
+	path = themes/SolarizedDark
+	url = https://github.com/zodd18/SolarizedDark.git
+[submodule "themes/Horizon"]
+	path = themes/Horizon
+	url = https://github.com/zodd18/Horizon.git
+[submodule "themes/Ayu"]
+	path = themes/Ayu
+	url = https://github.com/zodd18/Ayu.git
+[submodule "rices/Nord"]
+	path = rices/Nord
+	url = https://github.com/zodd18/Nord.git
+[submodule "rices/Gruvbox"]
+	path = rices/Gruvbox
+	url = https://github.com/zodd18/Gruvbox.git
+[submodule "rices/Horizon"]
+	path = rices/Horizon
+	url = https://github.com/zodd18/Horizon.git
+[submodule "rices/PinkNord"]
+	path = rices/PinkNord
+	url = https://github.com/zodd18/PinkNord.git
+[submodule "rices/PinkNordAlternative"]
+	path = rices/PinkNordAlternative
+	url = https://github.com/zodd18/PinkNordAlternative.git
+[submodule "rices/Ayu"]
+	path = rices/Ayu
+	url = https://github.com/zodd18/Ayu.git
+[submodule "rices/SolarizedDark"]
+	path = rices/SolarizedDark
+	url = https://github.com/zodd18/SolarizedDark.git
+[submodule "rices/Doombox"]
+	path = rices/Doombox
+	url = https://github.com/zodd18/Doombox.git
+[submodule "rices/Forest"]
+	path = rices/Forest
+	url = https://github.com/zodd18/Forest.git
+[submodule "rices/Dracula"]
+	path = rices/Dracula
+	url = https://github.com/zodd18/Dracula.git
+[submodule "rices/GruvboxMaterial"]
+	path = rices/GruvboxMaterial
+	url = https://github.com/zodd18/GruvboxMaterial.git

@@ -1,0 +1,166 @@
+#!/bin/bash
+
+if [[ $* == *--update* || $* == -*u* ]];
+then
+    echo
+    echo "updating dotfiles global configuration..."
+    echo
+
+    # fish
+    [ -d $DOTFILES/global-config/.config/fish ] || mkdir -p $DOTFILES/global-config/.config/fish
+    cp $HOME/.config/fish/{config.fish,fish_variables} $DOTFILES/global-config/.config/fish
+
+    # zsh
+    cp -r $HOME/{.zshrc,.oh-my-zsh} $DOTFILES/global-config &> /dev/null
+
+    # kitty
+    cp -r $HOME/.config/kitty/kitty.conf $DOTFILES/global-config/.config/kitty
+
+    # neofetch
+    [ -d $DOTFILES/global-config/.config/neofetch ] || mkdir -p $DOTFILES/global-config/.config/neofetch
+    cp -r $HOME/.config/neofetch/config.conf $DOTFILES/global-config/.config/neofetch
+
+    # nvim
+    cp -r $HOME/.config/nvim $DOTFILES/global-config/.config &> /dev/null
+    rm $DOTFILES/global-config/.config/nvim/colorscheme.vim
+
+    # gedit
+    mkdir -p $DOTFILES/global-config/.local/share/gedit &> /dev/null
+    cp -r $HOME/.local/share/gedit/styles $DOTFILES/global-config/.local/share/gedit
+
+    # browser startpage
+    cp $HOME/.config/startpage/{index.html,script.js} $DOTFILES/global-config/.config/startpage
+    [ -d $DOTFILES/global-config/.config/startpage/resources ] || mkdir -p $DOTFILES/global-config/.config/startpage/resources
+
+    # bspwm
+    [ -d $DOTFILES/global-config/.config/bspwm ] || mkdir -p $DOTFILES/global-config/.config/bspwm
+    cp $HOME/.config/bspwm/{bspwmrc,noswallow,terminals} $DOTFILES/global-config/.config/bspwm
+
+    # sxhkd
+    mkdir -p $DOTFILES/global-config/.config/sxhkd &> /dev/null
+    cp $HOME/.config/sxhkd/{sxhkdrc.bspwm,sxhkdrc.openbox} $DOTFILES/global-config/.config/sxhkd
+    [ `ps -e | grep bspwm | wc -l` -gt 0 ] && cp $HOME/.config/sxhkd/sxhkdrc $DOTFILES/global-config/.config/sxhkd/sxhkdrc.bspwm
+    [ `ps -e | grep openbox | wc -l` -gt 0 ] && cp $HOME/.config/sxhkd/sxhkdrc $DOTFILES/global-config/.config/sxhkd/sxhkdrc.openbox
+
+    # ranger
+    cp -r $HOME/.config/ranger $DOTFILES/global-config/.config &> /dev/null
+
+    # thunar
+    cp $HOME/.config/thunar $DOTFILES/global-config/.config
+    
+    # ~/.scripts
+    cp -r $HOME/.scripts $DOTFILES
+
+    # polybar scripts
+    cp -r $HOME/.config/polybar/{scripts,fonts,modules} $DOTFILES/global-config/.config/polybar
+
+    # .bashrc, .zprofile, .xinitrc
+    cp $HOME/.bashrc $DOTFILES/global-config
+    cp $HOME/.zprofile $DOTFILES/global-config
+    cp $HOME/.xinitrc $DOTFILES/global-config
+
+    # Additional flags
+    [[ $* == *--fonts* || $* == -*f* ]] && echo "copying fonts..." && cp -r $HOME/.fonts/ $DOTFILES
+    [[ $* == *--themes* || $* == -*t* ]] && echo "copying themes..." && cp -r $HOME/.themes/ $DOTFILES
+    [[ $* == *--icons* || $* == -*i* ]] && echo "copying icons..." && cp -r $HOME/.icons/ $DOTFILES
+    [[ $* == *--wallpapers* || $* == -*w* ]] && echo "copying wallpapers..." && cp -r $HOME/.wallpapers $DOTFILES
+
+    echo
+    figlet "done !"
+    exit
+fi
+
+
+# ------------------- SPECIFIC THEME -------------------
+
+theme_name=$1
+
+echo [INFO]: preparing $theme_name theme configuration ...
+echo with dotfiles in $DOTFILES ...
+
+theme_dir="$DOTFILES/themes/${theme_name}"
+
+if [ -d $theme_dir ];
+then
+    echo -n "Theme $theme_name already exists, do you want to override its entire configuration? (y/N) " && read REPLY
+    
+    shopt -s nocasematch
+    case "$REPLY" in
+     "y" ) echo "[INFO]: overriding configuration ...";;
+     *) exit ;;
+    esac
+fi
+
+[ ! -d $theme_dir ] && mkdir -p $theme_dir && echo [INFO]: created theme directory in $theme_dir
+
+theme_config="$theme_dir/.config"
+[ ! -d $theme_config ] && mkdir $theme_config && echo [INFO]: created .config directory in $theme_dir
+
+
+# ------------------- Copying files... -------------------
+
+echo [INFO]: copying $HOME/.config to $theme_config ...
+
+cp -r $HOME/.config/compton.conf $theme_config
+
+cp -r $HOME/.config/nitrogen $theme_config
+
+mkdir -p $theme_config/kitty &> /dev/null
+cp -r $HOME/.config/kitty/colorscheme.conf $theme_config/kitty
+
+mkdir -p $theme_config/bspwm &> /dev/null
+cp -r $HOME/.config/bspwm/{bspborders,autostart} $theme_config/bspwm
+
+mkdir -p $theme_config/nvim &> /dev/null
+cp -r $HOME/.config/nvim/colorscheme.vim $theme_config/nvim
+
+cp -r $HOME/.config/Thunar $theme_config
+
+dconf dump /org/gnome/gedit/ > $theme_config/gedit-dump.dconf
+
+# browser startpage
+mkdir -p $theme_config/startpage &> /dev/null
+cp -r $HOME/.config/startpage/{style.css,resources} $theme_config/startpage
+
+mkdir $theme_config/neofetch &> /dev/null
+cp -r $HOME/.config/neofetch/{ascii,image.png,launch-neofetch.sh} $theme_config/neofetch
+
+mkdir -p $theme_config/rofi &> /dev/null
+cp -r $HOME/.config/rofi/{config.rasi,launch-rofi.sh} $theme_config/rofi
+
+# polybar
+mkdir $theme_config/polybar &> /dev/null
+#cp -r $HOME/.config/polybar/{config.bspwm,config.openbox} $theme_config/polybar
+[ `ps -e | grep bspwm | wc -l` -gt 0 ] && cp $HOME/.config/polybar/config $theme_config/polybar/config.bspwm
+[ `ps -e | grep openbox | wc -l` -gt 0 ] && cp $HOME/.config/polybar/config $theme_config/polybar/config.openbox
+
+
+cp -r $HOME/.config/dunst $theme_config
+
+mkdir $theme_config/discord &> /dev/null
+cp $HOME/.config/discord/custom-discord-theme.css $theme_config/discord
+
+mkdir $theme_config/spicetify &> /dev/null
+cp -r $HOME/.config/spicetify/{Extracted,config.ini} $theme_config/spicetify
+
+cp -r $HOME/.config/JetBrains $theme_config
+
+mkdir $theme_config/Code\ -\ OSS &> /dev/null
+cp $HOME/.config/Code\ -\ OSS/{Cookies,Cookies-journal,languagepacks.json,machineid,rapid_render.json,storage.json,TransportSecurity} $theme_config/Code\ -\ OSS
+mkdir -p $theme_config/Code\ -\ OSS/User &> /dev/null
+cp $HOME/.config/Code\ -\ OSS/User/{keybindings.json,settings.json,syncLocalSettings.json} $theme_config/Code\ -\ OSS/User
+
+
+[ -d $theme_dir/.oh-my-zsh/additional ] || mkdir -p $theme_dir/.oh-my-zsh/additional
+cp -r $HOME/.oh-my-zsh/additional $theme_dir/.oh-my-zsh
+
+cp -r $HOME/.config/gtk-3.0 $theme_config
+cp -r $HOME/.config/gtk-2.0 $theme_config
+cp $HOME/.gtkrc-2.0 $theme_dir
+
+echo
+echo [INFO]: finished copying config files
+echo
+
+figlet "done !"
+

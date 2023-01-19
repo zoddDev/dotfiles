@@ -1,0 +1,39 @@
+#!/bin/bash
+
+current_theme=`cat $HOME/.config/current_theme`
+
+
+function repair {
+    disc_config=$1
+    theme=$2
+    echo $DOTFILES 
+
+    killall discord
+    
+    rm -rf $HOME/.config/discord
+    cp -r $DOTFILES/rices/$theme/.config/discord $HOME/.config
+
+    if [ `ps -e | grep discord | wc -l` -gt 0 ];    
+    then    
+        discord > /dev/null &    
+        sleep 1
+        python -m beautifuldiscord --revert
+    fi    
+
+    sleep 3    
+    python -m beautifuldiscord --css $HOME/.config/discord/rices/$beautifuldiscord_theme    
+}
+
+echo "Current theme: $current_theme"
+
+shopt -s nocasematch
+case "$current_theme" in
+    "doombox" ) repair "Duvbox/duvbox.css" "DOOMBOX" ;;
+    "gruvbox" ) repair "Duvbox/duvbox.css" "Gruvbox" ;;
+    "alternative-gruvbox" ) repair "Duvbox/duvbox.css" "AlternativeGruvbox" ;;
+    "solarized-dark" ) repair "SolarizedDark/solarized_dark.css" "SolarizedDark" ;;
+    "dracula" ) repair "Dracula/discord-dracula.css" "Dracula" ;;
+    "nord" ) repair "Nord/discord-nord.css" "Nord" ;;
+    "pink-nord" ) repair "Nord/discord-nord.css" "PinkNord" ;;
+    *) echo "[ERROR]: no config with name \"$current_theme\" found" && echo "[ERROR]: Selected theme does not exist" && exit 1 ;;
+esac

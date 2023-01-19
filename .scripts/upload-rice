@@ -1,0 +1,30 @@
+#!/bin/bash
+
+theme_name=$1
+commit_msg=$2
+
+echo [INFO]: updating $theme_name rice ...
+
+theme_dir="$DOTFILES/rices/${theme_name}"
+
+[ ! -d $theme_dir ] && echo [ERROR]: theme: \'$theme_dir\' not found && exit 1
+
+cd $theme_dir
+
+new=0
+[ ! -d .git ] && new=1
+[ ! -d .git ] && git init && git remote add origin "https://github.com/zodd18/$theme_name"
+
+git add * 
+git add .
+([ -z $commit_msg ] && git commit -m "Minor changes") || git commit -m "$commit_msg"
+git push
+
+if [[ $new -eq 1 || $* == *--submodule* || $* == -*submodule* ]];
+then
+    cd $DOTFILES
+    git rm -r --cached ./rices/$theme_name
+    git submodule add https://github.com/zodd18/$theme_name.git ./rices/$theme_name
+fi
+
+upload-dotfiles

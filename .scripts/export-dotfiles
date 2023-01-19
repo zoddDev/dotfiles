@@ -1,0 +1,200 @@
+#!/bin/bash
+
+if [[ $* == *--update* || $* == -*u* ]];
+then
+    echo
+    echo "updating dotfiles shared configuration..."
+    echo
+
+    # fish
+    [ -d $DOTFILES/shared-config/.config/fish ] || mkdir -p $DOTFILES/shared-config/.config/fish
+    cp $HOME/.config/fish/{config.fish,fish_variables} $DOTFILES/shared-config/.config/fish
+
+    # zsh
+    cp -r $HOME/{.zshrc,.oh-my-zsh,.p10k.zsh} $DOTFILES/shared-config &> /dev/null
+
+    # kitty
+    cp -r $HOME/.config/kitty/kitty.conf $DOTFILES/shared-config/.config/kitty
+
+    # neofetch
+    [ -d $DOTFILES/shared-config/.config/neofetch ] || mkdir -p $DOTFILES/shared-config/.config/neofetch
+    cp -r $HOME/.config/neofetch/config.conf $DOTFILES/shared-config/.config/neofetch
+
+    # nvim
+    cp -r $HOME/.config/nvim $DOTFILES/shared-config/.config &> /dev/null
+    rm $DOTFILES/shared-config/.config/nvim/colorscheme.vim
+    rm -rf $DOTFILES/shared-config/.config/nvim/plugged/*
+
+    # gedit
+    mkdir -p $DOTFILES/shared-config/.local/share/gedit &> /dev/null
+    cp -r $HOME/.local/share/gedit/styles $DOTFILES/shared-config/.local/share/gedit
+
+    # browser startpage
+    cp $HOME/.config/startpage/{index.html,script.js} $DOTFILES/shared-config/.config/startpage
+    [ -d $DOTFILES/shared-config/.config/startpage/resources ] || mkdir -p $DOTFILES/shared-config/.config/startpage/resources
+
+    # bspwm
+    [ -d $DOTFILES/shared-config/.config/bspwm ] || mkdir -p $DOTFILES/shared-config/.config/bspwm
+    cp $HOME/.config/bspwm/{bspwmrc,noswallow,terminals} $DOTFILES/shared-config/.config/bspwm
+
+    # sxhkd
+    [ -d $DOTFILES/shared-config/.config/sxhkd ] || mkdir -p $DOTFILES/shared-config/.config/sxhkd
+    cp $HOME/.config/sxhkd/sxhkdrc $DOTFILES/shared-config/.config/sxhkd
+    #cp $HOME/.config/sxhkd/{sxhkdrc.bspwm,sxhkdrc.openbox} $DOTFILES/shared-config/.config/sxhkd
+    #[ `ps -e | grep bspwm | wc -l` -gt 0 ] && cp $HOME/.config/sxhkd/sxhkdrc $DOTFILES/shared-config/.config/sxhkd/sxhkdrc.bspwm
+    #[ `ps -e | grep openbox | wc -l` -gt 0 ] && cp $HOME/.config/sxhkd/sxhkdrc $DOTFILES/shared-config/.config/sxhkd/sxhkdrc.openbox
+
+    # ranger
+    rsync -rav --exclude "*plugins*" $HOME/.config/ranger $DOTFILES/shared-config/.config
+    mkdir -p $DOTFILES/shared-config/.config/ranger/plugins &> /dev/null
+
+    # rofi
+    [ -d $DOTFILES/shared-config/.config/rofi ] || mkdir -p $DOTFILES/shared-config/.config/rofi
+    cp -r $HOME/.config/rofi/config $DOTFILES/shared-config/.config/rofi
+
+    # thunar
+    #cp $HOME/.config/thunar $DOTFILES/shared-config/.config
+    
+    # ~/.scripts
+    cp -r $HOME/.scripts $DOTFILES
+
+    # polybar scripts
+    cp -r $HOME/.config/polybar/{scripts,fonts,modules} $DOTFILES/shared-config/.config/polybar
+
+    # .bashrc, .zprofile, .xinitrc
+    cp $HOME/.bashrc $DOTFILES/shared-config
+    cp $HOME/.zprofile $DOTFILES/shared-config
+    cp $HOME/.xinitrc $DOTFILES/shared-config
+
+    # Additional flags
+    [[ $* == *--fonts* || $* == -*f* ]] && echo "copying fonts..." && cp -r $HOME/.fonts/ $DOTFILES
+    [[ $* == *--themes* || $* == -*t* ]] && echo "copying themes..." && cp -r $HOME/.themes/ $DOTFILES
+    [[ $* == *--icons* || $* == -*i* ]] && echo "copying icons..." && cp -r $HOME/.icons/ $DOTFILES
+    [[ $* == *--wallpapers* || $* == -*w* ]] && echo "copying wallpapers..." && cp -r $HOME/.wallpapers $DOTFILES
+
+    echo
+    figlet 'done !' | color "green"
+    exit
+fi
+
+
+# ------------------- SPECIFIC THEME -------------------
+
+theme_name=$1
+
+echo [INFO]: preparing $theme_name theme configuration ...
+echo with dotfiles in $DOTFILES/rices/$theme_name ...
+
+theme_dir="$DOTFILES/rices/${theme_name}"
+
+if [ -d $theme_dir ];
+then
+    echo -n "Theme $theme_name already exists, do you want to override its entire configuration? (y/N) " && read REPLY
+    
+    shopt -s nocasematch
+    case "$REPLY" in
+     "y" ) echo "[INFO]: overriding configuration ...";;
+     *) exit ;;
+    esac
+fi
+
+[ ! -d $theme_dir ] && mkdir -p $theme_dir && echo [INFO]: created theme directory in $theme_dir
+
+theme_config="$theme_dir/.config"
+[ ! -d $theme_config ] && mkdir -p $theme_config && echo [INFO]: created .config directory in $theme_dir
+
+
+# ------------------- Copying files... -------------------
+
+echo [INFO]: copying $HOME/.config to $theme_config ...
+
+mkdir -p $theme_config/picom &> /dev/null
+cp -r $HOME/.config/picom/picom.conf $theme_config/picom
+
+cp -r $HOME/.config/nitrogen $theme_config
+
+mkdir -p $theme_config/kitty &> /dev/null
+cp -r $HOME/.config/kitty/colorscheme.conf $theme_config/kitty
+
+mkdir -p $theme_config/bspwm &> /dev/null
+cp -r $HOME/.config/bspwm/{bspborders,autostart} $theme_config/bspwm
+
+mkdir -p $theme_config/nvim &> /dev/null
+cp -r $HOME/.config/nvim/colorscheme.vim $theme_config/nvim
+
+cp -r $HOME/.config/Thunar $theme_config
+
+dconf dump /org/gnome/gedit/ > $theme_config/gedit-dump.dconf
+
+# browser startpage
+mkdir -p $theme_config/startpage &> /dev/null
+cp -r $HOME/.config/startpage/{style.css,resources} $theme_config/startpage
+
+mkdir $theme_config/neofetch &> /dev/null
+cp -r $HOME/.config/neofetch/{config.conf,ascii,image.png,launch-neofetch.sh} $theme_config/neofetch &> /dev/null
+
+mkdir -p $theme_config/rofi &> /dev/null
+cp -r $HOME/.config/rofi/{config.rasi,theme.rasi,launch-rofi.sh} $theme_config/rofi
+
+# polybar
+mkdir -p $theme_config/polybar/scripts &> /dev/null
+cp -r $HOME/.config/polybar/{config,scripts/rofi-poweroff-theme.sh,scripts/theme-swap-theme.sh} $theme_config/polybar
+cp -r $HOME/.config/polybar/scripts/{rofi-poweroff-theme.sh,theme-swap-theme.sh} $theme_config/polybar/scripts
+
+# dunst
+cp -r $HOME/.config/dunst $theme_config
+
+# discord
+#mkdir $theme_config/discord &> /dev/null
+#cp $HOME/.config/discord/custom-discord-theme.css $theme_config/discord
+
+# spicetify
+#mkdir $theme_config/spicetify &> /dev/null
+#cp -r $HOME/.config/spicetify/{Extracted,config.ini} $theme_config/spicetify
+
+# Jetbrains IDEs settings
+mkdir $theme_config/JetBrains &> /dev/null
+cp -r $HOME/.config/JetBrains/IntelliJIdea2021.2 $theme_config/JetBrains
+
+#mkdir $theme_config/Code\ -\ OSS &> /dev/null
+#cp $HOME/.config/Code\ -\ OSS/{Cookies,Cookies-journal,languagepacks.json,machineid,rapid_render.json,storage.json,TransportSecurity} $theme_config/Code\ -\ OSS
+#mkdir -p $theme_config/Code\ -\ OSS/User &> /dev/null
+#cp $HOME/.config/Code\ -\ OSS/User/{keybindings.json,settings.json,syncLocalSettings.json} $theme_config/Code\ -\ OSS/User
+
+mkdir $theme_config/Code &> /dev/null
+cp $HOME/.config/Code/{Cookies,Cookies-journal,languagepacks.json,machineid,rapid_render.json,storage.json,TransportSecurity} $theme_config/Code
+mkdir -p $theme_config/Code/User &> /dev/null
+cp $HOME/.config/Code/User/{keybindings.json,settings.json,syncLocalSettings.json} $theme_config/Code/User
+
+
+[ -d $theme_dir/.oh-my-zsh/additional ] || mkdir -p $theme_dir/.oh-my-zsh/additional
+cp -r $HOME/.oh-my-zsh/additional $theme_dir/.oh-my-zsh
+cp ~/.p10k.zsh $theme_dir
+
+cp -r $HOME/.config/gtk-3.0 $theme_config
+cp -r $HOME/.config/gtk-2.0 $theme_config
+cp $HOME/.gtkrc-2.0 $theme_dir
+
+cp $HOME/.config/current_theme $theme_config
+
+echo [INFO]: copying wallpapers...
+
+wallpapers_dir="$HOME/.wallpapers/$(cat $theme_config/current_theme)-theme"
+[ -d $theme_dir/.wallpapers ] || mkdir $theme_dir/.wallpapers
+[ -d $theme_dir/.icons ] || mkdir $theme_dir/.icons
+[ -d $theme_dir/.themes ] || mkdir $theme_dir/.themes
+cp -r $wallpapers_dir $theme_dir/.wallpapers || echo [ERROR]: no wallpapers found!
+
+simple_rice_name=$(cat $HOME/.config/current_theme)
+if [[ $* == *--all* || $* == -*a* ]]; then
+    echo "[INFO]: copying icons and themes..."
+    cp -r $HOME/.icons/$simple_rice_name-icons* $theme_dir/.icons
+    cp -r $HOME/.themes/$simple_rice_name-theme* $theme_dir/.themes
+fi
+
+echo
+echo [INFO]: finished copying config files
+echo
+
+figlet 'done !' | color "green"
+
