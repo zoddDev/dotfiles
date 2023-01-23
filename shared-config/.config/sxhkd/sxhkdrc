@@ -13,11 +13,11 @@ super + Escape
 
 # terminal emulator
 super + Return
-	kitty -e zsh -c "~/.config/neofetch/launch-neofetch.sh ; zsh"
+	kitty -e zsh -c "~/.config/neofetch/launch-neofetch.sh ; echo ; zsh"
 
 # filemanager
 super + e
-    nautilus 
+    thunar 
 
 # launch/restart polybar
 ctrl + alt + p
