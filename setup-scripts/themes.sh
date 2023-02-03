@@ -27,6 +27,9 @@ cp -rv ./shared-config/. $HOME
 # install plugins for nvim
 nvim -E -s -u "$HOME/.config/nvim/init.vim" +PlugInstall +qall
 
+# install nvim coc plugin
+cd $HOME/.config/nvim/plugged/coc.nvim && npm i && cd
+
 # devicons for ranger
 git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
 
@@ -42,3 +45,4 @@ chsh -s /usr/bin/zsh
 
 # ask user for keyboard layout
 ./setup-scripts/kb-layout.sh
+
