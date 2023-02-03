@@ -8,8 +8,7 @@ Specific rices configs and colorschemes are [here](https://github.com/zodd18/dot
 
 Here are some details about my setup:
 <a href="https://youtu.be/_PTp5mh5_vQ"><img src="readme-resources/cute-rice.png" alt="" align="right" width="400px"></a>
-- **WM**                           : [bspwm](https://github.com/baskerville/bspwm) :art: 4 switchable themes/mode!
-- **DM**                           : [getty](https://wiki.archlinux.org/index.php/Getty) :blossom: minimal DM!
+- **WM**                           : [bspwm](https://github.com/baskerville/bspwm) :art: several switchable themes!
 - **Shell**                        : [zsh](https://wiki.archlinux.org/index.php/zsh) :shell: with [oh my zsh](https://github.com/ohmyzsh/ohmyzsh) framework!
 - **Terminal**                     : [kitty](https://github.com/kovidgoyal/kitty) :cat:
 - **Panel**                        : [polybar](https://github.com/polybar/polybar) :shaved_ice: using [nerd fonts](https://github.com/ryanoasis/nerd-fonts) glyphs as icons!
@@ -101,9 +100,8 @@ where
 may be:
 
 ```
-pacman       - installs necessary packages from pacman
-aur          - installs necessary packages from AUR and external sources
-themes       - installs .themes, .icons, .fonts, wallpapers and necessary/personal scripts
+packages        - installs necessary packages from pacman/yay (also installs yay)
+themes          - installs .themes, .icons, .fonts, wallpapers and necessary/personal scripts
 ```
 
 You can also do:
@@ -145,7 +143,3 @@ example:
 setup.sh all pink-nord
 ```
 (this command would install all necessary packages, themes, icons and would install pink-nord rice)
-
-### Recomendation
-You can try to install all at once by using "all" argument, however it's recommended to install it one by one in case any installation fails. 
-I'd follow this order: pacman, aur, themes, rice.
