@@ -79,10 +79,10 @@ Here are some details about my setup:
 
 ## Download
 ```
-mkdir -p ~/Documents/git-lab && git clone --depth=1 https://github.com/zodd18/dotfiles.git ~/Documents/git-lab/dotfiles && cd ~/Documents/git-lab/dotfiles
+mkdir -p ~/Documents/git-lab && git clone --depth=1 https://github.com/zoddDev/dotfiles.git ~/Documents/git-lab/dotfiles && cd ~/Documents/git-lab/dotfiles
 ```
 
-## Executing the script
+## Installation
 You can install one of them by running the setup executable.
 
 Installing necessary packages:
@@ -100,15 +100,15 @@ where
 may be:
 
 ```
-packages        - installs necessary packages from pacman/yay (also installs yay)
-themes          - installs .themes, .icons, .fonts, wallpapers and necessary/personal scripts
+packages        - installs needed packages using yay (also installs yay if needed)
+themes          - installs needed general .themes, .icons, .fonts, wallpapers and necessary scripts
 ```
 
 You can also do:
 
 
 ```shell
-./setup.sh <ARG> <THEME_NAME>
+./setup.sh <ARG> <RICE_NAME>
 ```
 
 where 
@@ -116,8 +116,8 @@ where
 may be:
 
 ```
-rice         - installs <RICE_NAME> rice
-all          - installs all at once: pacman packages, aur packages, GTK themes, etc. And finally installs <RICE_NAME> theme if this argument was passed
+rice         - downloads (if needed) and installs <RICE_NAME> rice
+all          - installs all at once: packages, GTK themes, etc. And finally installs <RICE_NAME> theme if this argument was passed
 ```
 
 where 
@@ -125,21 +125,21 @@ where
 may be:
 
 ```
-nord                    - Classic Nord look
-dracula                 - Classic Dracula theme
-pink-nord               - Pink Nord look
-pink-nord-alternative   - Based on Fleon look
-gruvbox                 - Classic Gruvbox look
+nord                    - Nord theme
+dracula                 - Dracula theme
+gruvbox                 - Gruvbox theme
 gruvbox-material        - Soft edition of Gruvbox theme
-solarized-dark          - Solarized Dark look
-horizon                 - Based on VS Code Horizon Theme
-doombox                 - Doom version of gruvbox
-forest                  - Forest look
+solarized-dark          - Solarized Dark theme
+horizon                 - Based on VS Code Horizon theme
+forest                  - Everforest theme
+pink-nord               - Pink Nord theme
+pink-nord-alternative   - Based on Fleon theme
+doombox                 - Doom version of gruvbox theme
 ```
 
 example:
 
 ```
-setup.sh all pink-nord
+setup.sh all horizon
 ```
-(this command would install all necessary packages, themes, icons and would install pink-nord rice)
+(this command would install all necessary packages, themes, icons and would install horizon rice)
