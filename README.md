@@ -4,9 +4,12 @@
 
 Those are my bspwm dotfiles, hope you find something useful here ^^
 
-Specific rices configs and colorschemes are [here](https://github.com/zodd18/dotfiles/tree/master/rices) and general configuration files are [here](https://github.com/zodd18/dotfiles/tree/master/shared-config). You will need both.
+* The rices configs are [here](https://github.com/zodd18/dotfiles/tree/master/rices) and shared configuration files between all rices are [here](https://github.com/zodd18/dotfiles/tree/master/shared-config). **You will need both**.
+
+* There is also a `setup.sh` **script** you can use in order to **automatically install** needed packages, configs and specific rices. You will find instructions [here](#arrow_down-download).
 
 Here are some details about my setup:
+
 <a href="https://youtu.be/_PTp5mh5_vQ"><img src="https://static.vecteezy.com/system/resources/previews/010/948/374/original/cute-food-character-funny-sushi-traditional-japanese-food-in-cartoon-kawaii-illustration-for-emoticon-symbol-icon-etc-png.png" alt="" align="right" width="400px"></a>
 - **WM**                           : [bspwm](https://github.com/baskerville/bspwm) :art: several switchable themes!
 - **Shell**                        : [zsh](https://wiki.archlinux.org/index.php/zsh) :shell: with [oh my zsh](https://github.com/ohmyzsh/ohmyzsh) framework!
@@ -22,6 +25,9 @@ Here are some details about my setup:
 <br/>
 <br/>
 <br/>
+<br/>
+<br/>
+
 <pre align="center">
   <div align="center">
     <a href="#art-custom-theme-swap-utility">THEME SWAP</a> • <a href="#arrow_down-download">DOWNLOAD</a> • <a href="#gear-installation">INSTALLATION</a> • <a href="#information_source-use-cases">USE CASES</a>
@@ -85,13 +91,13 @@ Here are some details about my setup:
 
 # :art: Custom Theme Swap Utility
 
-### Click the brush icon in the polybar
+### 1 - Click the brush icon in the polybar
 <img src="./screenshots/brush.png" width=160 height=100>
 
-## Select a rice
+## 2 - Select a rice
 ![alt text](screenshots/theme-swap-showcase.png)
 
-## Now you have a completely new look and feel for your Linux desktop!
+## 3 - Now you have a completely new look and feel for your Linux desktop!
 ![alt text](screenshots/theme-swap-showcase-2.png)
 
 
