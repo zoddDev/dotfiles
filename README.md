@@ -13,10 +13,10 @@ Here are some details about my setup:
 - **Terminal**                     : [kitty](https://github.com/kovidgoyal/kitty) :cat:
 - **Panel**                        : [polybar](https://github.com/polybar/polybar) :shaved_ice: using [nerd fonts](https://github.com/ryanoasis/nerd-fonts) glyphs as icons!
 - **Compositor**                   : [picom](https://github.com/chjj/compton) :sparkles:
-- **Notify Daemon**                : [Dunst](https://wiki.archlinux.org/index.php/Dunst) :leaves: minimalism!
-- **Application Launcher**         : [Rofi](https://github.com/davatorium/rofi) :rocket: apps & sidebar menu!
-- **File Manager**                 : [Thunar](https://wiki.archlinux.org/index.php/Thunar) :bookmark: customized sidebar & icon!
-- **Text Editor**                  : [nvim](https://github.com/neovim/neovim) :computer:
+- **Notify Daemon**                : [dunst](https://wiki.archlinux.org/index.php/Dunst) 🔔 
+- **Application Launcher**         : [rofi](https://github.com/davatorium/rofi) :rocket: apps & sidebar menu!
+- **File Manager**                 : [thunar](https://wiki.archlinux.org/index.php/Thunar)/[ranger](https://github.com/ranger/ranger) 📂 minimal file managers!
+- **Wallpaper Manager**            : [nitrogen](https://github.com/l3ib/nitrogen) 🖼️
 
 ![alt text](readme-resources/themes_.png)
 
@@ -85,21 +85,23 @@ Here are some details about my setup:
 
 ![alt text](readme-resources/scripts_.png)
 
-### [WARNING!]: These are my personal config files, executing these scripts will overwrite several files in your system, only execute these in case you have a backup of your files.
+#### ⚠️ WARNING - These are my personal config files, executing these scripts will overwrite several configuration files in your system. Only execute these in case you have a backup of your current configuration.
 
-## Download
+## ⬇️ Download
 ```
 mkdir -p ~/Documents/git-lab && git clone --depth=1 https://github.com/zoddDev/dotfiles.git ~/Documents/git-lab/dotfiles && cd ~/Documents/git-lab/dotfiles
 ```
 
-## Installation
-You can install one of them by running the setup executable.
+<hr>
 
-Installing necessary packages:
+## ⚙️ Installation
+You can install the needed packages and configuration files by running the setup executable.
 
-[WARNING!]: Support for Arch Linux based systems only (installation via pacman).
+### 📦 Installing needed packages and general configurations:
 
-Use:
+#### ℹ️ INFO - Package installation is ONLY supported for **Arch Linux** based systems (installation via pacman).
+
+Execute:
 
 ```shell
 ./setup.sh <ARG> 
@@ -111,10 +113,13 @@ may be:
 
 ```
 packages        - installs needed packages using yay (also installs yay if needed)
-themes          - installs needed general .themes, .icons, .fonts, wallpapers and necessary scripts
+themes          - installs shared configuration between all rices: .themes, .icons, .fonts, wallpapers and necessary scripts
 ```
 
-You can also do:
+
+### 🖼️ Installing a specific rice:
+
+Execute:
 
 
 ```shell
@@ -147,9 +152,30 @@ pink-nord-alternative   - Based on Fleon theme
 doombox                 - Doom version of gruvbox theme
 ```
 
-example:
+### ℹ️ Use cases:
 
 ```
 setup.sh all horizon
 ```
-(this command would install all necessary packages, themes, icons and would install horizon rice)
+(This command would install all needed packages, themes, icons and would also install [**Horizon**](https://github.com/zoddDev/Horizon) rice)
+
+<hr>
+
+```
+setup.sh packages
+```
+(This command would download and install all the needed packages using yay)
+
+<hr>
+
+```
+setup.sh themes
+```
+(This command would install shared configurations between all rices, mandatory)
+
+<hr>
+
+```
+setup.sh rice horizon
+```
+(This command would install [**Horizon**](https://github.com/zoddDev/Horizon) rice)
