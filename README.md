@@ -26,6 +26,12 @@ Here are some details about my setup:
 
 <br/><br/>
 
+## [❄️ Nord](https://github.com/zoddDev/Nord) (using ![Genome 🧬](https://www.reddit.com/r/unixporn/comments/kzd6zt/qtile_genome/) decorations)
+![alt text](https://github.com/zoddDev/Nord/blob/master/screenshot.png) 
+
+
+<br/><br/>
+
 ## [🌲 Forest](https://github.com/zodd18/Forest)
 ![alt text](https://github.com/zodd18/Forest/blob/master/screenshot.png) 
 
@@ -50,7 +56,7 @@ Here are some details about my setup:
 
 <br/><br/>
 
-## [🎀 PinkNordAlternative](https://github.com/zodd18/PinkNordAlternative) [(Fleon based)](https://github.com/owl4ce/dotfiles)
+## [🎀 PinkNordAlternative](https://github.com/zodd18/PinkNordAlternative) (using [Fleon](https://github.com/owl4ce/dotfiles) colorscheme)
 ![alt text](https://github.com/zodd18/PinkNordAlternative/blob/master/screenshot.png) 
 
 
