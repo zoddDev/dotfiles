@@ -6,8 +6,8 @@ WORKING_DIR="$(cd -P -- "$(dirname -- "$0")" && pwd -P)"
 cd $WORKING_DIR
 
 rofi_theme_selector () {
-    NUMBER_OF_THEMES=9
     AVAILABLE_THEMES=$(cat ./available-themes)
+    NUMBER_OF_THEMES=$(($(printf `cat ./available-themes` | wc -l) + 1))
     echo -e $AVAILABLE_THEMES | rofi -font "Iosevka Bold 11" -show drun -show-icons -width 20 -l $NUMBER_OF_THEMES -dmenu -i
 }
 
