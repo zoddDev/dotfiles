@@ -8,7 +8,9 @@
 
 $HOME/.scripts/custom-autostart
 
+# Network manager
 #nm-applet &
+
 xsetroot -cursor_name left_ptr
 sxhkd &
 picom &
@@ -16,9 +18,9 @@ nitrogen --restore
 wmname LG3D &
 lxpolkit &
 xset -dpms s off & # disable screen blanking
-dropbox &
 dunst &
-nautilus --gapplication-service &
+#dropbox &
+#nautilus --gapplication-service &
 
 # Swallow
 

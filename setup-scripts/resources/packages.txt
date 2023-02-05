@@ -1,3 +1,4 @@
+wmname
 xorg-xsetroot
 scrot
 nomacs
