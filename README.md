@@ -90,6 +90,11 @@ Here are some details about my setup:
 ## [🧛 Dracula](https://github.com/zoddDev/Dracula) 
 ![alt text](https://github.com/zoddDev/Dracula/blob/main/screenshot_.png) 
 
+<br/><br/>
+
+## [☀️ Ayu](https://github.com/zoddDev/Ayu) 
+![alt text](https://github.com/zoddDev/Ayu/blob/master/screenshot.png) 
+
 <br/>
 
 <hr>
@@ -176,6 +181,7 @@ forest                  - Everforest theme
 pink-nord               - Pink Nord theme
 pink-nord-alternative   - Based on Fleon theme
 doombox                 - Doom version of gruvbox theme
+ayu                     - Ayu theme
 ```
 
 ### :information_source: Use cases:
