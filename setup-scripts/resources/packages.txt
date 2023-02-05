@@ -1,3 +1,4 @@
+rsync
 python3
 python-pip
 zsh

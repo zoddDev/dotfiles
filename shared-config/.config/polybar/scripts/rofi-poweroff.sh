@@ -1,7 +1,7 @@
 #!/bin/bash
 
 rofi_poweroff_menu () {
-    echo -e "Logout\nReboot\nShutdown" | rofi -font "Iosevka Bold 11" -show drun -show-icons -width 20 -lines 3 -dmenu -i
+    echo -e "Logout\nReboot\nShutdown" | rofi -font "Iosevka Bold 11" -show drun -show-icons -width 20 -l 3 -dmenu -i
 }
 
 chosen=$(rofi_poweroff_menu)
