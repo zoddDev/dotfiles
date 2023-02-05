@@ -1,3 +1,4 @@
+xorg-xsetroot
 scrot
 nomacs
 rsync

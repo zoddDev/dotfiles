@@ -28,7 +28,7 @@ restart_applications () {
 
         ~/.config/bspwm/autostart &
         xsetroot -cursor_name left_ptr &
-        picom --experimental-backends &
+        picom &
         nitrogen --restore &
         dunst &
         #nohup pidof $HOME/.scripts/bspswallow || $HOME/.scripts/bspswallow &
