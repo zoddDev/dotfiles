@@ -38,8 +38,13 @@ Here are some details about my setup:
 
 <br/><br/>
 
-## [🌴 Gruvbox](https://github.com/zodd18/Gruvbox)
-![alt text](https://github.com/zodd18/Gruvbox/blob/master/screenshot.png) 
+## [🔥 DOOMBOX](https://github.com/zodd18/Doombox)
+![alt text](https://github.com/zodd18/Doombox/blob/master/screenshot.png) 
+
+<br/><br/>
+
+## [🍃 GruvboxMaterial](https://github.com/zoddDev/GruvboxMaterial)
+![alt text](https://github.com/zoddDev/GruvboxMaterial/blob/main/screenshot.png) 
 
 
 <br/><br/>
@@ -59,11 +64,10 @@ Here are some details about my setup:
 ## [🎀 PinkNordAlternative](https://github.com/zodd18/PinkNordAlternative) (using [Fleon](https://github.com/owl4ce/dotfiles) colorscheme)
 ![alt text](https://github.com/zodd18/PinkNordAlternative/blob/master/screenshot.png) 
 
-
 <br/><br/>
 
-## [🔥 DOOMBOX](https://github.com/zodd18/Doombox)
-![alt text](https://github.com/zodd18/Doombox/blob/master/screenshot.png) 
+## [🌴 Gruvbox](https://github.com/zodd18/Gruvbox)
+![alt text](https://github.com/zodd18/Gruvbox/blob/master/screenshot.png) 
 
 <br/><br/>
 
