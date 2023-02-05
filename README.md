@@ -4,9 +4,12 @@
 
 Those are my bspwm dotfiles, hope you find something useful here ^^
 
-Specific rices configs and colorschemes are [here](https://github.com/zodd18/dotfiles/tree/master/rices) and general configuration files are [here](https://github.com/zodd18/dotfiles/tree/master/shared-config). You will need both.
+* The rices configs are [here](https://github.com/zodd18/dotfiles/tree/master/rices) and shared configuration files between all rices are [here](https://github.com/zodd18/dotfiles/tree/master/shared-config). **You will need both**.
+
+* There is also a `setup.sh` **script** you can use in order to **automatically install** needed packages, configs and specific rices. You will find instructions [here](#arrow_down-download).
 
 Here are some details about my setup:
+
 <a href="https://youtu.be/_PTp5mh5_vQ"><img src="https://static.vecteezy.com/system/resources/previews/010/948/374/original/cute-food-character-funny-sushi-traditional-japanese-food-in-cartoon-kawaii-illustration-for-emoticon-symbol-icon-etc-png.png" alt="" align="right" width="400px"></a>
 - **WM**                           : [bspwm](https://github.com/baskerville/bspwm) :art: several switchable themes!
 - **Shell**                        : [zsh](https://wiki.archlinux.org/index.php/zsh) :shell: with [oh my zsh](https://github.com/ohmyzsh/ohmyzsh) framework!
@@ -18,9 +21,22 @@ Here are some details about my setup:
 - **File Manager**                 : [thunar](https://wiki.archlinux.org/index.php/Thunar)/[ranger](https://github.com/ranger/ranger) 📂 minimal file managers!
 - **Wallpaper Manager**            : [nitrogen](https://github.com/l3ib/nitrogen) 🖼️
 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<pre align="center">
+  <div align="center">
+    <a href="#art-custom-theme-swap-utility">THEME SWAP</a> • <a href="#arrow_down-download">DOWNLOAD</a> • <a href="#gear-installation">INSTALLATION</a> • <a href="#information_source-use-cases">USE CASES</a>
+  </div>
+</pre>
+
 ![alt text](readme-resources/themes_.png)
 
-## [🍁 Horizon](https://github.com/zodd18/Horizon)
+## [:maple_leaf: Horizon](https://github.com/zodd18/Horizon)
 ![alt text](https://github.com/zodd18/Horizon/blob/master/screenshot.png) 
 
 
@@ -69,17 +85,19 @@ Here are some details about my setup:
 ## [🌴 Gruvbox](https://github.com/zodd18/Gruvbox)
 ![alt text](https://github.com/zodd18/Gruvbox/blob/master/screenshot.png) 
 
-<br/><br/>
+<br/>
 
-# Custom Theme Swap Utility
+<hr>
 
-## Click the brush icon
-![alt text](./screenshots/brush.png)
+# :art: Custom Theme Swap Utility
 
-## Choose the rice that you desire
+### 1 - Click the brush icon in the polybar
+<img src="./screenshots/brush.png" width=160 height=100>
+
+## 2 - Select a rice
 ![alt text](screenshots/theme-swap-showcase.png)
 
-## Nice! Now you have a completely look and feel for your Linux desktop!
+## 3 - Now you have a completely new look and feel for your Linux desktop!
 ![alt text](screenshots/theme-swap-showcase-2.png)
 
 
@@ -87,19 +105,22 @@ Here are some details about my setup:
 
 #### ⚠️ WARNING - These are my personal config files, executing these scripts will overwrite several configuration files in your system. Only execute these in case you have a backup of your current configuration.
 
-## ⬇️ Download
+## :arrow_down: Download
+
+ℹ️ For now, it's **mandatory** to clone this repo in `~/Documents/git-lab` to use the [Theme Swap Utility](#art-custom-theme-swap-utility), otherwise you won't be able to switch between these themes on the fly.
+
 ```
 mkdir -p ~/Documents/git-lab && git clone --depth=1 https://github.com/zoddDev/dotfiles.git ~/Documents/git-lab/dotfiles && cd ~/Documents/git-lab/dotfiles
 ```
 
 <hr>
 
-## ⚙️ Installation
+## :gear: Installation
 You can install the needed packages and configuration files by running the setup executable.
 
 ### 📦 Installing needed packages and general configurations:
 
-#### ℹ️ INFO - Package installation is ONLY supported for **Arch Linux** based systems (installation via pacman).
+#### ℹ️ Package installation is ONLY supported for **Arch Linux** based systems (installation via pacman).
 
 Execute:
 
@@ -152,7 +173,7 @@ pink-nord-alternative   - Based on Fleon theme
 doombox                 - Doom version of gruvbox theme
 ```
 
-### ℹ️ Use cases:
+### :information_source: Use cases:
 
 ```
 setup.sh all horizon
