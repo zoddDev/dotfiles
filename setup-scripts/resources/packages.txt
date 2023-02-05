@@ -1,3 +1,5 @@
+scrot
+nomacs
 rsync
 python3
 python-pip
