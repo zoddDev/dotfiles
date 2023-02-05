@@ -11,7 +11,7 @@ Those are my bspwm dotfiles, hope you find something useful here ^^
 Here are some details about my setup:
 
 <a href="https://youtu.be/_PTp5mh5_vQ"><img src="https://static.vecteezy.com/system/resources/previews/010/948/374/original/cute-food-character-funny-sushi-traditional-japanese-food-in-cartoon-kawaii-illustration-for-emoticon-symbol-icon-etc-png.png" alt="" align="right" width="400px"></a>
-- **WM**                           : [bspwm](https://github.com/baskerville/bspwm) :art: 10 switchable themes!
+- **WM**                           : [bspwm](https://github.com/baskerville/bspwm) :art: several switchable themes!
 - **Shell**                        : [zsh](https://wiki.archlinux.org/index.php/zsh) :shell: with [oh my zsh](https://github.com/ohmyzsh/ohmyzsh) framework!
 - **Terminal**                     : [kitty](https://github.com/kovidgoyal/kitty) :cat:
 - **Panel**                        : [polybar](https://github.com/polybar/polybar) :shaved_ice: using [nerd fonts](https://github.com/ryanoasis/nerd-fonts) glyphs as icons!
